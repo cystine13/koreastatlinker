@@ -1,0 +1,17 @@
+[
+    {
+        "Name": "Statistics Korea",
+        "Description": "The national statistics agency.",
+        "Website": "https://kostat.go.kr"
+    },
+    {
+        "Name": "Korea Development Institute",
+        "Description": "Focused on economic policy research.",
+        "Website": "https://www.kdi.re.kr"
+    },
+    {
+        "Name": "Bank of Korea",
+        "Description": "Central bank providing financial data.",
+        "Website": "https://www.bok.or.kr"
+    }
+]
