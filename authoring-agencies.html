@@ -27,15 +27,14 @@
             justify-content: center;
         }
         .agency-card {
-            flex: 1 1 calc(33.333% - 20px); /* 3열로 나열 */
+            flex: 1 1 calc(33.333% - 20px);
             max-width: calc(33.333% - 20px);
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
             background-color: #f9f9f9;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             text-align: center;
-            box-sizing: border-box;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .agency-card h3 {
             margin: 10px 0;
@@ -46,53 +45,39 @@
             color: #007BFF;
             font-weight: bold;
         }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #f4f4f4;
-            margin-top: 20px;
-        }
-        @media (max-width: 768px) {
-            .agency-card {
-                flex: 1 1 calc(50% - 20px); /* 2열로 정렬 */
-                max-width: calc(50% - 20px);
-            }
-        }
-        @media (max-width: 480px) {
-            .agency-card {
-                flex: 1 1 100%; /* 1열로 정렬 */
-                max-width: 100%;
-            }
-        }
     </style>
 </head>
 <body>
     <header>
         <h1>Authoring Agencies</h1>
         <p>Explore key authoring agencies and their contributions.</p>
-        <a href="index.html">Back to Home</a>
     </header>
     <div class="container">
-        <div class="agency-list">
-            <div class="agency-card">
-                <h3>Statistics Korea</h3>
-                <p>The national statistics agency of Korea.</p>
-                <a href="https://kostat.go.kr" target="_blank">Visit Website</a>
-            </div>
-            <div class="agency-card">
-                <h3>Korea Development Institute (KDI)</h3>
-                <p>Focused on economic policy and development research.</p>
-                <a href="https://www.kdi.re.kr" target="_blank">Visit Website</a>
-            </div>
-            <div class="agency-card">
-                <h3>Bank of Korea</h3>
-                <p>The central bank of South Korea providing financial data.</p>
-                <a href="https://www.bok.or.kr" target="_blank">Visit Website</a>
-            </div>
+        <div class="agency-list" id="agencyList">
+            <!-- JSON 데이터를 기반으로 콘텐츠가 동적으로 추가됩니다 -->
         </div>
     </div>
     <footer>
         <p>Copyright © 2024 KoreaStatLinker. All rights reserved.</p>
     </footer>
+    <script>
+        // JSON 파일 로드 및 데이터 추가
+        fetch('agencies.json') // JSON 파일 경로
+            .then(response => response.json())
+            .then(data => {
+                const agencyList = document.getElementById('agencyList');
+                data.forEach(agency => {
+                    const card = document.createElement('div');
+                    card.className = 'agency-card';
+                    card.innerHTML = `
+                        <h3>${agency.Name}</h3>
+                        <p>${agency.Description}</p>
+                        <a href="${agency.Website}" target="_blank">Visit Website</a>
+                    `;
+                    agencyList.appendChild(card);
+                });
+            })
+            .catch(error => console.error('Error loading JSON:', error));
+    </script>
 </body>
 </html>
