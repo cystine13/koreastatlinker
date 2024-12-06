@@ -72,23 +72,43 @@
         <p>Copyright © 2024 KoreaStatLinker. All rights reserved.</p>
     </footer>
     <script>
-        // JSON 파일 로드 및 데이터 추가
-        fetch('agencies.json') // JSON 파일 경로
-            .then(response => response.json())
-            .then(data => {
-                const agencyList = document.getElementById('agencyList');
-                data.forEach(agency => {
-                    const card = document.createElement('div');
-                    card.className = 'agency-card';
-                    card.innerHTML = `
-                        <h3>${agency.Name}</h3>
-                        <p>${agency.Description}</p>
-                        <a href="${agency.Website}" target="_blank">Visit Website</a>
-                    `;
-                    agencyList.appendChild(card);
-                });
-            })
-            .catch(error => console.error('Error loading JSON:', error));
+// JSON 데이터 로드 및 필터링
+fetch('agencies.json')
+    .then(response => response.json())
+    .then(data => {
+        const agencyList = document.getElementById('agencyList');
+        const categoryFilter = document.getElementById('categoryFilter');
+
+        // 데이터 렌더링 함수
+        function renderAgencies(filteredData) {
+            agencyList.innerHTML = ''; // 기존 콘텐츠 제거
+            filteredData.forEach(agency => {
+                const card = document.createElement('div');
+                card.className = 'agency-card';
+                card.innerHTML = `
+                    <h3>${agency.Name}</h3>
+                    <p>${agency.Description}</p>
+                    <a href="${agency.Website}" target="_blank">Visit Website</a>
+                `;
+                agencyList.appendChild(card);
+            });
+        }
+
+        // 초기 렌더링 (모든 데이터 표시)
+        renderAgencies(data);
+
+        // 카테고리 변경 시 필터링
+        categoryFilter.addEventListener('change', () => {
+            const selectedCategory = categoryFilter.value;
+            if (selectedCategory === 'All') {
+                renderAgencies(data); // 모든 데이터 표시
+            } else {
+                const filteredData = data.filter(agency => agency.Category === selectedCategory);
+                renderAgencies(filteredData);
+            }
+        });
+    })
+    .catch(error => console.error('Error loading JSON:', error));
     </script>
 </body>
 </html>
