@@ -4,27 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KoreaStatLinker</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 20px;
+            gap: 20px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .content h2 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>KoreaStatLinker</h1>
         <p>The hub connecting statistics, agencies, and resources.</p>
     </header>
-    <main>
-        <section>
+    <div class="container">
+        <div class="content">
             <h2>Statistics News</h2>
             <p>Stay updated with the latest statistics news.</p>
-        </section>
-        <section>
+        </div>
+        <div class="content">
             <h2>Authoring Agencies</h2>
-            <p>Explore key authoring agencies.</p>
-        </section>
-        <section>
+            <p>Explore key authoring agencies and their contributions.</p>
+        </div>
+        <div class="content">
             <h2>Statistics Resources</h2>
-            <p>Leverage various statistical resources.</p>
-        </section>
-    </main>
+            <p>Leverage various statistical tools and data sources.</p>
+        </div>
+    </div>
     <footer>
         <p>Copyright © 2024 KoreaStatLinker. All rights reserved.</p>
     </footer>
