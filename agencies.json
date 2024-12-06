@@ -13,5 +13,10 @@
         "Name": "Bank of Korea",
         "Description": "Central bank providing financial data.",
         "Website": "https://www.bok.or.kr"
+    },
+    {
+        "Name": "Bank of Korea",
+        "Description": "Central bank providing financial data.",
+        "Website": "https://www.bok.or.kr"
     }
 ]
