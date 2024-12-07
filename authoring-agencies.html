@@ -59,13 +59,12 @@
             color: #333;
             flex: 0 0 300px;
             max-width: 50%; /* 최대 50%까지 확장 */
-            white-space: nowrap; /* 텍스트 줄바꿈 방지 */
-            overflow: hidden; /* 넘치는 텍스트 숨김 */
-            text-overflow: ellipsis; /* 넘치는 텍스트에 '...' 추가 */
+            font-size: 1.2rem; /* 기본 글자 크기 */
+            transition: font-size 0.2s ease-in-out;
         }
         .agency-card p {
             margin: 0;
-            margin-left: 10px; /* 설명과 기관명 간의 간격 확보 */
+            margin-left: 10px; /* 설명과 기관명 간격 */
             color: #555;
             flex: 1; /* 남은 공간을 설명에 할당 */
         }
@@ -131,10 +130,31 @@
                         card.className = 'agency-card';
                         card.href = agency.Website; // 카드 전체를 링크로 설정
                         card.target = '_blank'; // 새 탭에서 열기
+
+                        // 긴 텍스트를 한 줄로 표시
+                        const name = agency.Name;
+                        const description = agency.Description;
+
                         card.innerHTML = `
-                            <h3>${agency.Name}</h3>
-                            <p>${agency.Description}</p>
+                            <h3>${name}</h3>
+                            <p>${description}</p>
                         `;
+
+                        // 기관명 동적 텍스트 크기 조정
+                        const tempElement = document.createElement('div');
+                        tempElement.style.fontSize = '1.2rem';
+                        tempElement.style.whiteSpace = 'nowrap';
+                        tempElement.style.position = 'absolute';
+                        tempElement.style.visibility = 'hidden';
+                        tempElement.innerHTML = name;
+                        document.body.appendChild(tempElement);
+
+                        if (tempElement.offsetWidth > 300) {
+                            card.querySelector('h3').style.fontSize = '1rem';
+                        }
+
+                        document.body.removeChild(tempElement);
+
                         agencyList.appendChild(card);
                     });
                 }
