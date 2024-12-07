@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authoring Agencies</title> 
+    <title>Authoring Agencies</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -54,18 +54,6 @@
     <header>
         <h1>Authoring Agencies</h1>
         <p>Explore key authoring agencies and their contributions.</p>
-        <label for="categoryFilter">Filter by Category:</label>
-        <select id="categoryFilter">
-            <option value="All">All Categories</option>
-            <option value="Central Administrative Agencies">Central Administrative Agencies</option>
-            <option value="Research Institutes">Research Institutes</option>
-            <option value="Financial Institutions">Financial Institutions</option>
-            <option value="Public Corporations">Public Corporations</option>
-            <option value="Local Governments">Local Governments</option>
-        </select>
-        <br><br>
-        <label for="searchBar">Search:</label>
-        <input type="text" id="searchBar" placeholder="Search by name or description">
     </header>
     <div class="container">
         <div class="agency-list" id="agencyList">
@@ -76,10 +64,10 @@
         <p>Copyright © 2024 KoreaStatLinker. All rights reserved.</p>
     </footer>
     <script>
-    // JSON 데이터 로드 및 필터링
-    fetch('agencies.json')
-        .then(response => response.json())
-        .then(data => {
+        // JSON 파일 로드 및 데이터 추가
+        fetch('agencies.json')
+            .then(response => response.json())
+            .then(data => {
                 const agencyList = document.getElementById('agencyList');
                 data.forEach(agency => {
                     // 카드 생성
@@ -93,32 +81,8 @@
                     `;
                     agencyList.appendChild(card);
                 });
-            }
-    
-            // 데이터 필터링 함수
-            function filterData() {
-                const selectedCategory = categoryFilter.value;
-                const searchKeyword = searchBar.value.toLowerCase();
-    
-                // 카테고리와 검색 키워드에 따라 데이터 필터링
-                const filteredData = data.filter(agency => {
-                    const matchesCategory = selectedCategory === 'All' || agency.Category === selectedCategory;
-                    const matchesSearch = agency.Name.toLowerCase().includes(searchKeyword) ||
-                                          agency.Description.toLowerCase().includes(searchKeyword);
-                    return matchesCategory && matchesSearch;
-                });
-    
-                renderAgencies(filteredData);
-            }
-    
-            // 초기 렌더링 (모든 데이터 표시)
-            renderAgencies(data);
-    
-            // 필터 변경 및 검색 입력 이벤트 처리
-            categoryFilter.addEventListener('change', filterData);
-            searchBar.addEventListener('input', filterData);
-        })
-        .catch(error => console.error('Error loading JSON:', error));
+            })
+            .catch(error => console.error('Error loading JSON:', error));
     </script>
 </body>
 </html>
