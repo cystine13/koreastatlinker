@@ -15,6 +15,18 @@
             padding: 20px;
             background-color: #f4f4f4;
         }
+        .filters {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .filters label, .filters select, .filters input {
+            font-size: 16px;
+            margin: 5px;
+        }
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -55,6 +67,23 @@
         <h1>Authoring Agencies</h1>
         <p>Explore key authoring agencies and their contributions.</p>
     </header>
+    <div class="filters">
+        <div>
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter">
+                <option value="All">All Categories</option>
+                <option value="Central Administrative Agencies">Central Administrative Agencies</option>
+                <option value="Research Institutes">Research Institutes</option>
+                <option value="Financial Institutions">Financial Institutions</option>
+                <option value="Public Corporations">Public Corporations</option>
+                <option value="Local Governments">Local Governments</option>
+            </select>
+        </div>
+        <div>
+            <label for="searchBar">Search:</label>
+            <input type="text" id="searchBar" placeholder="Search by name or description">
+        </div>
+    </div>
     <div class="container">
         <div class="agency-list" id="agencyList">
             <!-- JSON 데이터를 기반으로 콘텐츠가 동적으로 추가됩니다 -->
@@ -69,18 +98,47 @@
             .then(response => response.json())
             .then(data => {
                 const agencyList = document.getElementById('agencyList');
-                data.forEach(agency => {
-                    // 카드 생성
-                    const card = document.createElement('a');
-                    card.className = 'agency-card';
-                    card.href = agency.Website; // 카드 전체를 링크로 설정
-                    card.target = '_blank'; // 새 탭에서 열기
-                    card.innerHTML = `
-                        <h3>${agency.Name}</h3>
-                        <p>${agency.Description}</p>
-                    `;
-                    agencyList.appendChild(card);
-                });
+                const categoryFilter = document.getElementById('categoryFilter');
+                const searchBar = document.getElementById('searchBar');
+
+                // 데이터 렌더링 함수
+                function renderAgencies(filteredData) {
+                    agencyList.innerHTML = ''; // 기존 콘텐츠 제거
+                    filteredData.forEach(agency => {
+                        const card = document.createElement('a');
+                        card.className = 'agency-card';
+                        card.href = agency.Website; // 카드 전체를 링크로 설정
+                        card.target = '_blank'; // 새 탭에서 열기
+                        card.innerHTML = `
+                            <h3>${agency.Name}</h3>
+                            <p>${agency.Description}</p>
+                        `;
+                        agencyList.appendChild(card);
+                    });
+                }
+
+                // 데이터 필터링 함수
+                function filterData() {
+                    const selectedCategory = categoryFilter.value;
+                    const searchKeyword = searchBar.value.toLowerCase();
+
+                    // 카테고리와 검색 키워드에 따라 데이터 필터링
+                    const filteredData = data.filter(agency => {
+                        const matchesCategory = selectedCategory === 'All' || agency.Category === selectedCategory;
+                        const matchesSearch = agency.Name.toLowerCase().includes(searchKeyword) ||
+                                              agency.Description.toLowerCase().includes(searchKeyword);
+                        return matchesCategory && matchesSearch;
+                    });
+
+                    renderAgencies(filteredData);
+                }
+
+                // 초기 렌더링 (모든 데이터 표시)
+                renderAgencies(data);
+
+                // 필터 변경 및 검색 입력 이벤트 처리
+                categoryFilter.addEventListener('change', filterData);
+                searchBar.addEventListener('input', filterData);
             })
             .catch(error => console.error('Error loading JSON:', error));
     </script>
