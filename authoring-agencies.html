@@ -57,13 +57,25 @@
         .agency-card h3 {
             margin: 0;
             color: #333;
-            flex: 0 0 300px; /* 기관명 너비를 넓게 설정 */
-            max-width: 50%; /* 기관명이 길어질 경우를 대비한 비율 */
+            flex: 0 0 300px;
+            max-width: 50%; /* 최대 50%까지 확장 */
+            word-wrap: break-word; /* 긴 이름 줄바꿈 */
+            overflow-wrap: break-word; /* IE 호환 */
         }
         .agency-card p {
             margin: 0;
             color: #555;
             flex: 1; /* 남은 공간을 설명에 할당 */
+        }
+        @media (max-width: 768px) {
+            .agency-card {
+                flex-direction: column; /* 모바일에서 세로 정렬 */
+                text-align: left; /* 텍스트 왼쪽 정렬 */
+            }
+            .agency-card h3, .agency-card p {
+                max-width: 100%; /* 전체 너비 사용 */
+                flex: none; /* 너비 제한 해제 */
+            }
         }
     </style>
 </head>
