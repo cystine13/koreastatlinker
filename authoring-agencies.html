@@ -38,12 +38,14 @@
             gap: 20px; /* 콘텐츠 간 간격 */
         }
         .agency-card {
+            display: flex; /* 이름과 설명 가로 정렬 */
+            align-items: center;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
             background-color: #f9f9f9;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            cursor: pointer; /* 클릭 가능한 요소로 표시 */
+            cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
             text-decoration: none; /* 링크 기본 스타일 제거 */
             color: inherit; /* 텍스트 색상 유지 */
@@ -53,12 +55,14 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .agency-card h3 {
-            margin: 10px 0;
+            margin: 0;
             color: #333;
+            flex: 0 0 200px; /* 고정 너비 */
         }
         .agency-card p {
-            margin: 5px 0;
+            margin: 0;
             color: #555;
+            flex: 1; /* 남은 공간 채우기 */
         }
     </style>
 </head>
