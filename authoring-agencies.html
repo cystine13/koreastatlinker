@@ -22,28 +22,31 @@
         }
         .agency-list {
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+            flex-direction: column; /* 1열 정렬 */
+            gap: 20px; /* 콘텐츠 간 간격 */
         }
         .agency-card {
-            flex: 1 1 calc(33.333% - 20px);
-            max-width: calc(33.333% - 20px);
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
             background-color: #f9f9f9;
-            text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer; /* 클릭 가능한 요소로 표시 */
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none; /* 링크 기본 스타일 제거 */
+            color: inherit; /* 텍스트 색상 유지 */
+        }
+        .agency-card:hover {
+            transform: scale(1.02); /* 호버 시 확대 효과 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .agency-card h3 {
             margin: 10px 0;
             color: #333;
         }
-        .agency-card a {
-            text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
+        .agency-card p {
+            margin: 5px 0;
+            color: #555;
         }
     </style>
 </head>
@@ -77,20 +80,16 @@
     fetch('agencies.json')
         .then(response => response.json())
         .then(data => {
-            const agencyList = document.getElementById('agencyList');
-            const categoryFilter = document.getElementById('categoryFilter');
-            const searchBar = document.getElementById('searchBar');
-    
-            // 데이터 렌더링 함수
-            function renderAgencies(filteredData) {
-                agencyList.innerHTML = ''; // 기존 콘텐츠 제거
-                filteredData.forEach(agency => {
-                    const card = document.createElement('div');
+                const agencyList = document.getElementById('agencyList');
+                data.forEach(agency => {
+                    // 카드 생성
+                    const card = document.createElement('a');
                     card.className = 'agency-card';
+                    card.href = agency.Website; // 카드 전체를 링크로 설정
+                    card.target = '_blank'; // 새 탭에서 열기
                     card.innerHTML = `
                         <h3>${agency.Name}</h3>
                         <p>${agency.Description}</p>
-                        <a href="${agency.Website}" target="_blank">Visit Website</a>
                     `;
                     agencyList.appendChild(card);
                 });
