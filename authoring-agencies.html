@@ -134,7 +134,6 @@
                         card.target = '_blank'; // 새 탭에서 열기
                         card.innerHTML = `
                             <h3>${agency.Name}</h3>
-                            <p>${agency.Description}</p>
                         `;
                         agencyList.appendChild(card);
                     });
@@ -148,8 +147,7 @@
                     // 카테고리와 검색 키워드에 따라 데이터 필터링
                     const filteredData = data.filter(agency => {
                         const matchesCategory = selectedCategory === 'All' || agency.Category === selectedCategory;
-                        const matchesSearch = agency.Name.toLowerCase().includes(searchKeyword) ||
-                                              agency.Description.toLowerCase().includes(searchKeyword);
+                        const matchesSearch = agency.Name.toLowerCase().includes(searchKeyword);
                         return matchesCategory && matchesSearch;
                     });
 
