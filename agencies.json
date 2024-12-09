@@ -1,35 +1,5 @@
 [
 
-    {"Name": "Statistics Korea1", "Website": "https://kostat.go.kr", "Category": "Central Administrative Agencies"}, 
-
-    {
-        "Name": "Korea Development Institute (KDI)",
-        "Description": "Focused on economic policy research.",
-        "Website": "https://www.kdi.re.kr",
-        "Category": "Research Institutes"
-    },
-    {
-        "Name": "Bank of Korea",
-        "Description": "Central bank providing financial data.",
-        "Website": "https://www.bok.or.kr",
-        "Category": "Financial Institutions"
-    },
-    {
-        "Name": "Korea Electric Power Corporation",
-        "Description": "Provides electric power across South Korea.",
-        "Website": "https://www.kepco.co.kr",
-        "Category": "Public Corporations"
-    },
-    {
-        "Name": "National Pension Service",
-        "Description": "Manages pension funds for South Korea.",
-        "Website": "https://www.nps.or.kr",
-        "Category": "Public Corporations"
-    },
-    {
-        "Name": "Seoul Metropolitan Government",
-        "Description": "Local government for Seoul.",
-        "Website": "https://www.seoul.go.kr",
-        "Category": "Local Governments"
-    }
+    {"Name": "Statistics Korea1", "Website": "https://kostat.go.kr", "Category": "Central Administrative Agencies"}
+    
 ]
