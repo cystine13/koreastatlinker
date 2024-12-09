@@ -1,10 +1,7 @@
 [
-    {
-        "Name": "Statistics Korea",
-        "Description": "The national statistics agency.",
-        "Website": "https://kostat.go.kr",
-        "Category": "Central Administrative Agencies"
-    },
+
+    {"Name": "Statistics Korea", "Website": "https://kostat.go.kr", "Category": "Central Administrative Agencies"}, 
+
     {
         "Name": "Korea Development Institute (KDI)",
         "Description": "Focused on economic policy research.",
