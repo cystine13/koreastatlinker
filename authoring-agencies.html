@@ -38,9 +38,8 @@
             gap: 20px; /* 콘텐츠 간 간격 */
         }
         .agency-card {
-            display: flex; /* 이름과 카테고리를 한 줄로 정렬 */
+            display: flex; /* 이름과 카테고리 가로 정렬 */
             align-items: center;
-            justify-content: space-between; /* 끝부분에 여유 공간 배치 */
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -55,30 +54,34 @@
             transform: scale(1.02); /* 호버 시 확대 효과 */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .agency-name {
-            flex: 1; /* 기관명에 남는 공간 배정 */
-            font-size: 16px;
-            font-weight: bold;
+        .agency-card h3 {
+            margin: 0;
             color: #333;
+            flex: 0 0 60%; /* 기관명에 60% 너비 할당 */
+            max-width: 60%; /* 최대 60%까지 확장 */
+            white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+            overflow: hidden; /* 넘치는 텍스트 숨김 */
+            text-overflow: ellipsis; /* 넘치는 텍스트에 '...' 추가 */
         }
-        .agency-category {
-            flex-shrink: 0; /* 카테고리의 크기 고정 */
+        .agency-card span {
+            margin-left: 20px; /* 카테고리와 기관명 간의 간격 */
+            color: #555;
+            flex: 1; /* 나머지 공간에 카테고리 표시 */
             font-size: 14px;
-            margin-left: 20px;
-            color: #666;
+            white-space: nowrap; /* 줄바꿈 방지 */
         }
         @media (max-width: 768px) {
             .agency-card {
-                flex-direction: column; /* 모바일에서는 세로 정렬 */
+                flex-direction: column; /* 모바일에서 세로 정렬 */
                 text-align: left; /* 텍스트 왼쪽 정렬 */
             }
-            .agency-name, .agency-category {
-                flex: none;
+            .agency-card h3, .agency-card span {
+                max-width: 100%; /* 전체 너비 사용 */
+                flex: none; /* 너비 제한 해제 */
                 white-space: normal; /* 모바일에서는 줄바꿈 허용 */
             }
-            .agency-category {
+            .agency-card span {
                 margin-left: 0; /* 모바일에서는 간격 제거 */
-                margin-top: 5px;
             }
         }
     </style>
@@ -102,7 +105,7 @@
         </div>
         <div>
             <label for="searchBar">Search:</label>
-            <input type="text" id="searchBar" placeholder="Search by name or category">
+            <input type="text" id="searchBar" placeholder="Search by name or description">
         </div>
     </div>
     <div class="container">
@@ -131,8 +134,8 @@
                         card.href = agency.Website; // 카드 전체를 링크로 설정
                         card.target = '_blank'; // 새 탭에서 열기
                         card.innerHTML = `
-                            <span class="agency-name">${agency.Name}</span>
-                            <span class="agency-category">${agency.Category}</span>
+                            <h3>${agency.Name}</h3>
+                            <span>${agency.Category}</span>
                         `;
                         agencyList.appendChild(card);
                     });
