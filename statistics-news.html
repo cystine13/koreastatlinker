@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statistics News</title>
     <style>
+        /* 전체 페이지 스타일 */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
         }
+
+        /* 컨테이너 */
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -19,25 +22,41 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
+        /* 헤더 */
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* 뉴스 항목 */
         .news-item {
-            padding: 10px;
+            padding: 10px 0;
             border-bottom: 1px solid #ddd;
         }
+
         .news-item:last-child {
             border-bottom: none;
         }
+
+        /* 링크 스타일 */
         .news-item a {
             font-size: 18px;
             font-weight: bold;
             text-decoration: none;
             color: #007bff;
         }
+
         .news-item a:hover {
             text-decoration: underline;
         }
+
+        /* 등록일 스타일 */
         .news-item .date {
             font-size: 14px;
             color: #555;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -48,23 +67,38 @@
             <!-- 뉴스 데이터가 동적으로 추가됩니다 -->
         </div>
     </div>
+
     <script>
+        // 뉴스 데이터를 담은 JSON 파일 경로
+        const jsonUrl = 'news_posts.json';
+
         // JSON 데이터 불러오기 및 렌더링
-        fetch('news_posts.json')
-            .then(response => response.json())
+        fetch(jsonUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
             .then(data => {
                 const newsList = document.getElementById('newsList');
+
+                // 뉴스 항목 추가
                 data.forEach(post => {
                     const newsItem = document.createElement('div');
                     newsItem.className = 'news-item';
                     newsItem.innerHTML = `
                         <a href="${post.link}" target="_blank">${post.title}</a>
-                        <div class="date">${post.date}</div>
+                        <div class="date">Published on: ${post.date}</div>
                     `;
                     newsList.appendChild(newsItem);
                 });
             })
-            .catch(error => console.error('Error loading news data:', error));
+            .catch(error => {
+                console.error('Error loading news data:', error);
+                const newsList = document.getElementById('newsList');
+                newsList.innerHTML = `<p style="color: red;">Failed to load news data. Please try again later.</p>`;
+            });
     </script>
 </body>
 </html>
