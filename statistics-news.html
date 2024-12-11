@@ -11,74 +11,60 @@
             padding: 0;
             background-color: #f9f9f9;
         }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #4CAF50;
-            color: white;
-        }
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 20px auto;
             padding: 20px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .search-bar {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        .search-bar input {
-            width: 80%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .news-list {
-            list-style: none;
-            padding: 0;
-        }
         .news-item {
-            display: flex;
-            justify-content: space-between;
             padding: 10px;
             border-bottom: 1px solid #ddd;
         }
+        .news-item:last-child {
+            border-bottom: none;
+        }
         .news-item a {
-            text-decoration: none;
-            color: #333;
+            font-size: 18px;
             font-weight: bold;
+            text-decoration: none;
+            color: #007bff;
         }
         .news-item a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 768px) {
-            .news-item {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+        .news-item .date {
+            font-size: 14px;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Statistics News</h1>
-        <p>Get the latest updates from Statistics Korea.</p>
-    </header>
     <div class="container">
-        <div class="search-bar">
-            <input type="text" id="searchBar" placeholder="Search news by title...">
+        <h1>Statistics News</h1>
+        <div id="newsList">
+            <!-- 뉴스 데이터가 동적으로 추가됩니다 -->
         </div>
-        <ul class="news-list" id="newsList">
-            <!-- News items will be dynamically inserted here -->
-        </ul>
     </div>
-    <footer style="text-align: center; margin-top: 20px;">
-        <p>© 2024 KoreaStatLinker. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+    <script>
+        // JSON 데이터 불러오기 및 렌더링
+        fetch('news_posts.json')
+            .then(response => response.json())
+            .then(data => {
+                const newsList = document.getElementById('newsList');
+                data.forEach(post => {
+                    const newsItem = document.createElement('div');
+                    newsItem.className = 'news-item';
+                    newsItem.innerHTML = `
+                        <a href="${post.link}" target="_blank">${post.title}</a>
+                        <div class="date">${post.date}</div>
+                    `;
+                    newsList.appendChild(newsItem);
+                });
+            })
+            .catch(error => console.error('Error loading news data:', error));
+    </script>
 </body>
 </html>
