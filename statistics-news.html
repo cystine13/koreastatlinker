@@ -24,6 +24,18 @@
             font-size: 24px;
             margin-bottom: 20px;
         }
+        .search-bar {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
         .news-item {
             padding: 10px 0;
             border-bottom: 1px solid #ddd;
@@ -50,15 +62,21 @@
 <body>
     <div class="container">
         <h1>Statistics News</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for news...">
+        </div>
         <div id="newsList">
             <!-- 뉴스 데이터가 동적으로 추가됩니다 -->
         </div>
     </div>
 
     <script>
-        // JSON 데이터 파일 경로
-        const jsonUrl = './news_posts.json'; // JSON 파일이 같은 디렉토리에 있어야 합니다.
+        // JSON 데이터 경로
+        const jsonUrl = './news_posts.json';
 
+        let newsData = []; // JSON 데이터를 저장할 변수
+
+        // 초기 데이터 로드 및 렌더링
         fetch(jsonUrl)
             .then(response => {
                 if (!response.ok) {
@@ -67,24 +85,40 @@
                 return response.json();
             })
             .then(data => {
-                const newsList = document.getElementById('newsList');
-
-                // 뉴스 항목 추가
-                data.forEach(post => {
-                    const newsItem = document.createElement('div');
-                    newsItem.className = 'news-item';
-                    newsItem.innerHTML = `
-                        <a href="${post.link}" target="_blank">${post.title}</a>
-                        <div class="date">Published on: ${post.date}</div>
-                    `;
-                    newsList.appendChild(newsItem);
-                });
+                newsData = data; // JSON 데이터를 변수에 저장
+                renderNews(newsData); // 초기 렌더링
             })
             .catch(error => {
-                console.error('Error loading news data:', error);
+                console.error('Error loading JSON data:', error);
                 const newsList = document.getElementById('newsList');
                 newsList.innerHTML = `<p style="color: red;">Failed to load news data. Please try again later.</p>`;
             });
+
+        // 뉴스 데이터를 렌더링하는 함수
+        function renderNews(newsItems) {
+            const newsList = document.getElementById("newsList");
+            newsList.innerHTML = ""; // 기존 데이터 초기화
+            newsItems.forEach(news => {
+                const newsItem = document.createElement("div");
+                newsItem.className = "news-item";
+                newsItem.innerHTML = `
+                    <a href="${news.link}" target="_blank">${news.title}</a>
+                    <div class="date">Published on: ${news.date}</div>
+                `;
+                newsList.appendChild(newsItem);
+            });
+        }
+
+        // 검색 기능
+        const searchInput = document.getElementById("searchInput");
+        searchInput.addEventListener("input", function () {
+            const query = searchInput.value.toLowerCase(); // 검색어를 소문자로 변환
+            const filteredNews = newsData.filter(news =>
+                news.title.toLowerCase().includes(query) || // 제목에서 검색
+                news.date.includes(query) // 날짜에서 검색
+            );
+            renderNews(filteredNews);
+        });
     </script>
 </body>
 </html>
