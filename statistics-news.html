@@ -52,7 +52,7 @@
         .news-item a:hover {
             text-decoration: underline;
         }
-        .news-item .date {
+        .news-item .date, .news-item .source {
             font-size: 14px;
             color: #555;
             margin-top: 5px;
@@ -102,7 +102,8 @@
                 const newsItem = document.createElement("div");
                 newsItem.className = "news-item";
                 newsItem.innerHTML = `
-                    <a href="${news.link}" target="_blank">${news.title}</a>
+                    <a href="${news.link}" target="_blank">${news.title_en}</a>
+                    <div class="source">Source: ${news.source_en}</div>
                     <div class="date">Published on: ${news.date}</div>
                 `;
                 newsList.appendChild(newsItem);
@@ -114,7 +115,8 @@
         searchInput.addEventListener("input", function () {
             const query = searchInput.value.toLowerCase(); // 검색어를 소문자로 변환
             const filteredNews = newsData.filter(news =>
-                news.title.toLowerCase().includes(query) || // 제목에서 검색
+                news.title_en.toLowerCase().includes(query) || // 영문 제목에서 검색
+                news.source_en.toLowerCase().includes(query) || // 영문 출처에서 검색
                 news.date.includes(query) // 날짜에서 검색
             );
             renderNews(filteredNews);
