@@ -106,7 +106,7 @@
                 searchInput.addEventListener('input', () => {
                     const query = searchInput.value.toLowerCase();
                     const filteredResources = resources.filter(resource =>
-                        resource.name_kr.toLowerCase().includes(query) ||
+                        resource.name_kr.toLowerCase().includes(query) || 
                         resource.name_en.toLowerCase().includes(query) ||
                         resource.category_kr.toLowerCase().includes(query) ||
                         resource.category_en.toLowerCase().includes(query) ||
@@ -127,9 +127,9 @@
                     data.forEach(resource => {
                         const li = document.createElement('li');
                         li.innerHTML = `
-                            <a href="${resource.link}" target="_blank">${resource.name_kr} (${resource.name_en})</a>
-                            <p><strong>Category:</strong> ${resource.category_kr} (${resource.category_en})</p>
-                            <p><strong>Source:</strong> ${resource.source_kr} (${resource.source_en})</p>
+                            <a href="${resource.link}" target="_blank">${resource.name_en}</a>
+                            <p><strong>Category:</strong> ${resource.category_en}</p>
+                            <p><strong>Source:</strong> ${resource.source_en}</p>
                         `;
                         resourceList.appendChild(li);
                     });
