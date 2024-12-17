@@ -4,15 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statistics Resources</title>
+    <style>
+        /* 기본 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .search-bar input {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .resource-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .resource-list li {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .resource-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .resource-list a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            display: block;
+        }
+
+        .resource-list p {
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Statistics Resources</h1>
-        <p>Useful tools and resources for statistical analysis.</p>
-        <a href="index.html">Back to Home</a>
+        <p>Explore useful statistical resources with categories and sources.</p>
     </header>
     <main>
-        <p>Content about statistics resources goes here...</p>
+        <!-- 검색창 -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for resources...">
+        </div>
+
+        <!-- JSON 데이터로 채워질 목록 -->
+        <ul class="resource-list" id="resourceList"></ul>
     </main>
+
+    <script>
+        // JSON 파일 불러오기 및 렌더링
+        async function loadResources() {
+            try {
+                const response = await fetch('statistics-resources.json'); // JSON 파일 경로
+                const resources = await response.json();
+                const resourceList = document.getElementById('resourceList');
+                const searchInput = document.getElementById('searchInput');
+
+                // 초기 렌더링
+                renderResources(resources);
+
+                // 검색 이벤트 추가
+                searchInput.addEventListener('input', () => {
+                    const query = searchInput.value.toLowerCase();
+                    const filteredResources = resources.filter(resource =>
+                        resource.name_kr.toLowerCase().includes(query) ||
+                        resource.name_en.toLowerCase().includes(query) ||
+                        resource.category_kr.toLowerCase().includes(query) ||
+                        resource.category_en.toLowerCase().includes(query) ||
+                        resource.source_kr.toLowerCase().includes(query) ||
+                        resource.source_en.toLowerCase().includes(query)
+                    );
+                    renderResources(filteredResources);
+                });
+
+                // 데이터 렌더링 함수
+                function renderResources(data) {
+                    resourceList.innerHTML = '';
+                    if (data.length === 0) {
+                        resourceList.innerHTML = '<li>No results found.</li>';
+                        return;
+                    }
+
+                    data.forEach(resource => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `
+                            <a href="${resource.link}" target="_blank">${resource.name_kr} (${resource.name_en})</a>
+                            <p><strong>Category:</strong> ${resource.category_kr} (${resource.category_en})</p>
+                            <p><strong>Source:</strong> ${resource.source_kr} (${resource.source_en})</p>
+                        `;
+                        resourceList.appendChild(li);
+                    });
+                }
+            } catch (error) {
+                console.error('Error loading resources:', error);
+            }
+        }
+
+        // 페이지 로드 시 실행
+        window.onload = loadResources;
+    </script>
 </body>
 </html>
