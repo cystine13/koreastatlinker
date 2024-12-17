@@ -1,0 +1,47 @@
+[
+    {
+        "name_kr": "통계청 국가통계포털",
+        "name_en": "Statistics Korea National Statistical Portal",
+        "link": "https://kostat.go.kr/portal/eng/index.action",
+        "category_kr": "국가통계",
+        "category_en": "National Statistics",
+        "source_kr": "통계청",
+        "source_en": "Statistics Korea"
+    },
+    {
+        "name_kr": "OECD 데이터",
+        "name_en": "OECD Data",
+        "link": "https://data.oecd.org/",
+        "category_kr": "국제통계",
+        "category_en": "International Statistics",
+        "source_kr": "OECD",
+        "source_en": "Organisation for Economic Co-operation and Development"
+    },
+    {
+        "name_kr": "세계은행 오픈 데이터",
+        "name_en": "World Bank Open Data",
+        "link": "https://data.worldbank.org/",
+        "category_kr": "글로벌 데이터",
+        "category_en": "Global Data",
+        "source_kr": "세계은행",
+        "source_en": "World Bank"
+    },
+    {
+        "name_kr": "UN 데이터",
+        "name_en": "United Nations Data",
+        "link": "https://data.un.org/",
+        "category_kr": "국제통계",
+        "category_en": "International Statistics",
+        "source_kr": "유엔",
+        "source_en": "United Nations"
+    },
+    {
+        "name_kr": "IMF 데이터",
+        "name_en": "IMF Data",
+        "link": "https://www.imf.org/en/Data",
+        "category_kr": "국제금융",
+        "category_en": "International Finance",
+        "source_kr": "국제통화기금",
+        "source_en": "International Monetary Fund"
+    }
+]
