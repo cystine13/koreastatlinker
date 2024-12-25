@@ -1,5 +1,21 @@
 [
     {
+        "title_kr": "제21차 국가통계위원회 개최",
+        "title_en": "21st National Statistical Commission",
+        "link": "https://kostat.go.kr/board.es?mid=a10301150000&act=view&bid=246&list_no=434487",
+        "date": "2024-12-24",
+        "source_kr": "통계청",
+        "source_en": "Statistics Korea"
+    },
+    {
+        "title_kr": "[보도자료] 2024년 12월 소비자동향조사 결과",
+        "title_en": "[Press Release] Consumer Trend Survey Results for December 2024",
+        "link": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?nttId=10088802&menuNo=201264",
+        "date": "2024-12-24",
+        "source_kr": "한국은행",
+        "source_en": "Bank of Korea"
+    },
+    {
         "title_kr": "2024년 11월 월간 수출입 현황[확정치]",
         "title_en": "Monthly Import and Export Status in November 2024 [Confirmed Value]",
         "link": "https://www.mss.go.kr/site/smba/foffice/ex/statDB/StReportContentDetailView.do?gb=1&reSeq=2114",
