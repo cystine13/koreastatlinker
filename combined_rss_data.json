@@ -1,5 +1,29 @@
 [
     {
+        "title_kr": "2024년(2023년기준) 중소기업실태조사",
+        "title_en": "2024 (as of 2023) Small Business Status Survey",
+        "link": "https://www.mss.go.kr/site/smba/foffice/ex/statDB/StReportContentDetailView.do?gb=1&reSeq=2116",
+        "date": "2024-12-31",
+        "source_en": "SMEs Statistics System",
+        "source_kr": "중소기업 통계"
+    },
+    {
+        "title_kr": "2024년 11월 산업활동동향",
+        "title_en": "Industrial Activity Trends November 2024",
+        "link": "https://www.mss.go.kr/site/smba/foffice/ex/statDB/StReportContentDetailView.do?gb=1&reSeq=2117",
+        "date": "2024-12-31",
+        "source_en": "SMEs Statistics System",
+        "source_kr": "중소기업 통계"
+    },
+    {
+        "title_kr": "2024 중소기업술통계조사 보고서",
+        "title_en": "2024 SME Statistics Survey Report",
+        "link": "https://www.mss.go.kr/site/smba/foffice/ex/statDB/StReportContentDetailView.do?gb=1&reSeq=2118",
+        "date": "2024-12-31",
+        "source_en": "SMEs Statistics System",
+        "source_kr": "중소기업 통계"
+    },
+    {
         "title_kr": "2024년 11월 월간 수출입 현황[확정치]",
         "title_en": "Monthly Import and Export Status in November 2024 [Confirmed Value]",
         "link": "https://www.mss.go.kr/site/smba/foffice/ex/statDB/StReportContentDetailView.do?gb=1&reSeq=2114",
