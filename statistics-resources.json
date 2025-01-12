@@ -32,6 +32,7 @@
     {"name_kr": "화물수송실적", "name_en": "Cargo handling result at seaports", "link": "https://www.mof.go.kr/statPortal/stp/ofs/stl/ztlStatsList.do?statsId=1975044", "category_kr": "교통·물류", "category_en": "Transport and Traffic", "source_kr": "해양수산부", "source_en": "Ministry of Oceans and Fisheries"},
     {"name_kr": "등록선박통계", "name_en": "Number of Registered Vessels", "link": "https://www.mof.go.kr/statPortal/stp/ofs/stl/ztlStatsList.do?statsId=1975031", "category_kr": "교통·물류", "category_en": "Transport and Traffic", "source_kr": "해양수산부", "source_en": "Ministry of Oceans and Fisheries"},
     {"name_kr": "낚시어선어획량조사", "name_en": "Stat of sports fishing catch quantity on the sports fishing boat", "link": "https://www.mof.go.kr/statPortal/stp/ofs/stl/ztlStatsList.do?statsId=2022048", "category_kr": "수산", "category_en": "Fishery", "source_kr": "해양수산부", "source_en": "Ministry of Oceans and Fisheries"},
+    {"name_kr": "설비투자계획조사", "name_en": "Survey of Facility Investment Plan", "link": "https://rd.kdb.co.kr/index.jsp", "category_kr": "경제일반·경기", "category_en": "Economy and Market", "source_kr": "한국산업은행", "source_en": "Korea Development Bank"},
     {
         "name_kr": "통계청 국가통계포털",
         "name_en": "Statistics Korea National Statistical Portal",
