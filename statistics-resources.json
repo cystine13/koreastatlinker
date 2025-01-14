@@ -38,6 +38,7 @@
     {"name_kr": "건설업조사", "name_en": "Construction Survey", "link": "https://kostat.go.kr/board.es?mid=a10301100300&bid=237", "category_kr": "건설", "category_en": "Construction", "source_kr": "통계청", "source_en": "Statistics Korea"},
     {"name_kr": "산림기본통계", "name_en": "Basic Forest Statistics", "link": "https://kfss.forest.go.kr/stat/ptl/article/articleList.do?curMenu=9795&bbsId=ptlPdsBase", "category_kr": "농림", "category_en": "Agriculture and Forestry", "source_kr": "산림청", "source_en": "Korea Forest Service"},
     {"name_kr": "배합사료생산실적및원료사용실적", "name_en": "Assorted Feed Products and Ingredient Usage Report", "link": "https://www.mafra.go.kr/home/5102/subview.do", "category_kr": "농림", "category_en": "Agriculture and Forestry", "source_kr": "농림축산식품부", "source_en": "Ministry of Agriculture, Food and Rural Affairs"},
+    {"name_kr": "우편물통계", "name_en": "Postal statistics", "link": "https://www.koreapost.go.kr/kpost/subIndex/4255.do", "category_kr": "정보통신", "category_en": "Information and Communication ", "source_kr": "과학기술정보통신부", "source_en": "Ministry of Science and ICT"},
     {
         "name_kr": "통계청 국가통계포털",
         "name_en": "Statistics Korea National Statistical Portal",
