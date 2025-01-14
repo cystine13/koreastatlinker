@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .results-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .result-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+        .result-item h3 {
+            margin: 0 0 10px;
+        }
+        .result-item a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .result-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Search Results</h1>
+        <p>Results for your query:</p>
+    </header>
+
+    <div class="results-container" id="results">
+        <!-- 검색 결과가 동적으로 추가됩니다 -->
+    </div>
+
+    <footer>
+        <p>Copyright © 2024 KoreaStatLinker. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 검색어 가져오기
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get("query").toLowerCase();
+
+        // 예제 데이터
+        const data = [
+            { type: "News", title: "2024 Statistics Update", link: "statistics-news.html" },
+            { type: "Agency", title: "Korean Statistical Agency", link: "authoring-agencies.html" },
+            { type: "Resource", title: "Statistical Yearbook", link: "statistics-resources.html" }
+        ];
+
+        // 검색 결과 필터링
+        const results = data.filter(item => item.title.toLowerCase().includes(query));
+
+        // 결과 표시
+        const resultsContainer = document.getElementById("results");
+        if (results.length > 0) {
+            results.forEach(item => {
+                const div = document.createElement("div");
+                div.className = "result-item";
+                div.innerHTML = `
+                    <h3>${item.type}: ${item.title}</h3>
+                    <a href="${item.link}">View More</a>
+                `;
+                resultsContainer.appendChild(div);
+            });
+        } else {
+            resultsContainer.innerHTML = "<p>No results found.</p>";
+        }
+    </script>
+</body>
+</html>
