@@ -20,6 +20,14 @@
             margin: 20px auto;
             padding: 20px;
         }
+        .result-section {
+            margin-bottom: 30px;
+        }
+        .result-section h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
         .result-item {
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -58,30 +66,70 @@
         const urlParams = new URLSearchParams(window.location.search);
         const query = urlParams.get("query").toLowerCase();
 
-        // 예제 데이터
-        const data = [
-            { type: "News", title: "2024 Statistics Update", link: "statistics-news.html" },
-            { type: "Agency", title: "Korean Statistical Agency", link: "authoring-agencies.html" },
-            { type: "Resource", title: "Statistical Yearbook", link: "statistics-resources.html" }
-        ];
+        // JSON 파일 경로
+        const jsonFiles = {
+            agencies: "agencies.json",
+            news: "news_posts.json",
+            resources: "statistics-resources.json"
+        };
 
-        // 검색 결과 필터링
-        const results = data.filter(item => item.title.toLowerCase().includes(query));
+        // 결과 표시 함수
+        function displayResults(sectionTitle, results, container) {
+            const section = document.createElement("div");
+            section.className = "result-section";
+            section.innerHTML = `<h2>${sectionTitle}</h2>`;
 
-        // 결과 표시
-        const resultsContainer = document.getElementById("results");
-        if (results.length > 0) {
-            results.forEach(item => {
-                const div = document.createElement("div");
-                div.className = "result-item";
-                div.innerHTML = `
-                    <h3>${item.type}: ${item.title}</h3>
-                    <a href="${item.link}">View More</a>
-                `;
-                resultsContainer.appendChild(div);
-            });
+            if (results.length > 0) {
+                results.forEach(result => {
+                    const div = document.createElement("div");
+                    div.className = "result-item";
+
+                    // 결과 내용 추가
+                    div.innerHTML = `
+                        <h3>${result.title || result.name_en}</h3>
+                        <p>${result.category || result.date || ''}</p>
+                        <a href="${result.link}" target="_blank">View More</a>
+                    `;
+                    section.appendChild(div);
+                });
+            } else {
+                section.innerHTML += "<p>No results found in this section.</p>";
+            }
+
+            container.appendChild(section);
+        }
+
+        // JSON 파일 읽기 및 처리
+        async function fetchResults() {
+            const resultsContainer = document.getElementById("results");
+
+            // 각 JSON 파일 처리
+            for (const [key, file] of Object.entries(jsonFiles)) {
+                const response = await fetch(file);
+                const data = await response.json();
+
+                // 검색 결과 필터링
+                const results = data.filter(item => {
+                    return Object.values(item).some(value => 
+                        typeof value === "string" && value.toLowerCase().includes(query)
+                    );
+                });
+
+                // 섹션별로 결과 표시
+                let sectionTitle;
+                if (key === "agencies") sectionTitle = "Authoring Agencies";
+                else if (key === "news") sectionTitle = "Statistics News";
+                else if (key === "resources") sectionTitle = "Statistics Resources";
+
+                displayResults(sectionTitle, results, resultsContainer);
+            }
+        }
+
+        // 검색어 유효성 확인 후 처리
+        if (query) {
+            fetchResults();
         } else {
-            resultsContainer.innerHTML = "<p>No results found.</p>";
+            document.getElementById("results").innerHTML = "<p>Please enter a search term.</p>";
         }
     </script>
 </body>
