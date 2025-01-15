@@ -20,30 +20,26 @@
             margin: 20px auto;
             padding: 20px;
         }
-        .result-section {
-            margin-bottom: 30px;
-        }
-        .result-section h2 {
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
         .result-item {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 10px;
-            background-color: #f9f9f9;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .result-item:last-child {
+            border-bottom: none;
         }
         .result-item h3 {
-            margin: 0 0 10px;
+            margin: 0 0 5px;
         }
-        .result-item a {
+        .result-item h3 a {
             color: #007BFF;
             text-decoration: none;
         }
-        .result-item a:hover {
+        .result-item h3 a:hover {
             text-decoration: underline;
+        }
+        .result-item p {
+            margin: 0;
+            color: #555;
         }
     </style>
 </head>
@@ -73,36 +69,10 @@
             resources: "statistics-resources.json"
         };
 
-        // 결과 표시 함수
-        function displayResults(sectionTitle, results, container) {
-            const section = document.createElement("div");
-            section.className = "result-section";
-            section.innerHTML = `<h2>${sectionTitle}</h2>`;
-
-            if (results.length > 0) {
-                results.forEach(result => {
-                    const div = document.createElement("div");
-                    div.className = "result-item";
-
-                    // 결과 내용 추가
-                    div.innerHTML = `
-                        <h3>${result.Name || result.title_en || result.name_en}</h3>
-                        <p>${result.category || result.date || result.category_en || ''}</p>
-                        <p>${result.source_en || ''}</p>
-                        <a href="${result.link}" target="_blank">View More</a>
-                    `;
-                    section.appendChild(div);
-                });
-            } else {
-                section.innerHTML += "<p>No results found in this section.</p>";
-            }
-
-            container.appendChild(section);
-        }
-
         // JSON 파일 읽기 및 처리
         async function fetchResults() {
             const resultsContainer = document.getElementById("results");
+            let totalResults = 0;
 
             // 각 JSON 파일 처리
             for (const [key, file] of Object.entries(jsonFiles)) {
@@ -116,13 +86,31 @@
                     );
                 });
 
-                // 섹션별로 결과 표시
-                let sectionTitle;
-                if (key === "agencies") sectionTitle = "Authoring Agencies";
-                else if (key === "news") sectionTitle = "Statistics News";
-                else if (key === "resources") sectionTitle = "Statistics Resources";
+                // 결과 표시
+                if (results.length > 0) {
+                    results.forEach(result => {
+                        const div = document.createElement("div");
+                        div.className = "result-item";
 
-                displayResults(sectionTitle, results, resultsContainer);
+                        // 제목 또는 이름에 링크 걸기
+                        const title = result.Name || result.title_en || result.name_en || "Untitled";
+                        const link = result.link || "#";
+                        const additionalInfo = result.category || result.date || result.category_en || "";
+
+                        div.innerHTML = `
+                            <h3><a href="${link}" target="_blank">${title}</a></h3>
+                            <p>${additionalInfo}</p>
+                        `;
+
+                        resultsContainer.appendChild(div);
+                        totalResults++;
+                    });
+                }
+            }
+
+            // 검색 결과가 없는 경우
+            if (totalResults === 0) {
+                resultsContainer.innerHTML = "<p>No results found.</p>";
             }
         }
 
