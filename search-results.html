@@ -86,8 +86,9 @@
 
                     // 결과 내용 추가
                     div.innerHTML = `
-                        <h3>${result.title || result.name_en}</h3>
-                        <p>${result.category || result.date || ''}</p>
+                        <h3>${result.Name || result.title_en || result.name_en}</h3>
+                        <p>${result.category || result.date || result.category_en || ''}</p>
+                        <p>${result.source_en || ''}</p>
                         <a href="${result.link}" target="_blank">View More</a>
                     `;
                     section.appendChild(div);
