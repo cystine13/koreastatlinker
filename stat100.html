@@ -19,9 +19,9 @@
             text-align: center;
             margin: 20px;
         }
-        select {
-            padding: 10px;
+        label, select, button {
             font-size: 16px;
+            margin: 5px;
         }
         table {
             width: 80%;
@@ -43,12 +43,17 @@
 <body>
     <header>
         <h1>Population Statistics</h1>
-        <p>Select a year to view data:</p>
+        <p>Select a period to view data:</p>
     </header>
 
     <div class="controls">
-        <label for="yearSelect">Select Year:</label>
-        <select id="yearSelect"></select>
+        <label for="startYear">Start Year:</label>
+        <select id="startYear"></select>
+
+        <label for="endYear">End Year:</label>
+        <select id="endYear"></select>
+
+        <button id="filterButton">View Data</button>
     </div>
 
     <table id="populationTable">
@@ -70,46 +75,58 @@
         const jsonFile = "population_data.json";
 
         // DOM 요소
-        const yearSelect = document.getElementById("yearSelect");
+        const startYearSelect = document.getElementById("startYear");
+        const endYearSelect = document.getElementById("endYear");
+        const filterButton = document.getElementById("filterButton");
         const tableBody = document.querySelector("#populationTable tbody");
 
-        // JSON 데이터 로드
+        // JSON 데이터 로드 및 초기화
         fetch(jsonFile)
             .then(response => response.json())
             .then(data => {
                 const years = Object.keys(data).sort();
                 // 연도 선택 옵션 추가
                 years.forEach(year => {
-                    const option = document.createElement("option");
-                    option.value = year;
-                    option.textContent = year;
-                    yearSelect.appendChild(option);
+                    const option1 = document.createElement("option");
+                    const option2 = document.createElement("option");
+                    option1.value = year;
+                    option2.value = year;
+                    option1.textContent = year;
+                    option2.textContent = year;
+                    startYearSelect.appendChild(option1);
+                    endYearSelect.appendChild(option2);
                 });
 
-                // 기본 선택 연도 데이터 표시
-                if (years.length > 0) {
-                    displayData(years[0], data);
-                }
+                // 기본 기간 설정
+                startYearSelect.value = years[0];
+                endYearSelect.value = years[years.length - 1];
 
-                // 선택한 연도에 따라 데이터 표시
-                yearSelect.addEventListener("change", () => {
-                    const selectedYear = yearSelect.value;
-                    displayData(selectedYear, data);
+                // 기본 데이터 표시
+                displayData(years[0], years[years.length - 1], data);
+
+                // 필터 버튼 클릭 이벤트
+                filterButton.addEventListener("click", () => {
+                    const startYear = startYearSelect.value;
+                    const endYear = endYearSelect.value;
+                    displayData(startYear, endYear, data);
                 });
             })
             .catch(error => console.error("Error loading data:", error));
 
         // 데이터 표시 함수
-        function displayData(year, data) {
+        function displayData(startYear, endYear, data) {
             tableBody.innerHTML = ""; // 기존 데이터 삭제
-            const row = document.createElement("tr");
-            row.innerHTML = `
-                <td>${year}</td>
-                <td>${data[year]?.population?.toLocaleString() || "N/A"}</td>
-                <td>${data[year]?.births?.toLocaleString() || "N/A"}</td>
-                <td>${data[year]?.deaths?.toLocaleString() || "N/A"}</td>
-            `;
-            tableBody.appendChild(row);
+            const years = Object.keys(data).filter(year => year >= startYear && year <= endYear);
+            years.forEach(year => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${year}</td>
+                    <td>${data[year]?.population?.toLocaleString() || ""}</td>
+                    <td>${data[year]?.births?.toLocaleString() || ""}</td>
+                    <td>${data[year]?.deaths?.toLocaleString() || ""}</td>
+                `;
+                tableBody.appendChild(row);
+            });
         }
     </script>
 </body>
