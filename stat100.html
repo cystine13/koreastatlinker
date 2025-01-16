@@ -113,7 +113,7 @@
                 allItems.forEach(item => {
                     const option = document.createElement("option");
                     option.value = item;
-                    option.textContent = `${item} (명)`; // 단위 추가
+                    option.textContent = item; // 단위는 별도로 표시하지 않음
                     if (defaultItems.includes(item)) {
                         option.selected = true; // 기본 선택 항목
                     }
@@ -151,8 +151,9 @@
                 const row = document.createElement("tr");
                 row.innerHTML = `<td>${year}</td>`;
                 items.forEach(item => {
-                    const value = data[year]?.[item]?.toLocaleString() || ""; // 값이 없으면 공란
-                    row.innerHTML += `<td>${value}</td>`;
+                    const value = data[year]?.[item]?.value?.toLocaleString() || ""; // 값이 없으면 공란
+                    const unit = data[year]?.[item]?.unit || ""; // 단위 가져오기
+                    row.innerHTML += `<td>${value} ${unit}</td>`;
                 });
                 tableBody.appendChild(row);
             });
