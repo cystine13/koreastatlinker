@@ -43,7 +43,7 @@
 <body>
     <header>
         <h1>Population Statistics</h1>
-        <p>Select a period to view data:</p>
+        <p>Select a period and items to view data:</p>
     </header>
 
     <div class="controls">
@@ -53,6 +53,11 @@
         <label for="endYear">End Year:</label>
         <select id="endYear"></select>
 
+        <label for="itemSelect">Select Items:</label>
+        <select id="itemSelect" multiple>
+            <!-- 항목이 동적으로 추가됩니다 -->
+        </select>
+
         <button id="filterButton">View Data</button>
     </div>
 
@@ -60,9 +65,7 @@
         <thead>
             <tr>
                 <th>Year</th>
-                <th>Total Population</th>
-                <th>Births</th>
-                <th>Deaths</th>
+                <!-- 항목이 동적으로 추가됩니다 -->
             </tr>
         </thead>
         <tbody>
@@ -77,14 +80,19 @@
         // DOM 요소
         const startYearSelect = document.getElementById("startYear");
         const endYearSelect = document.getElementById("endYear");
+        const itemSelect = document.getElementById("itemSelect");
         const filterButton = document.getElementById("filterButton");
+        const tableHead = document.querySelector("#populationTable thead tr");
         const tableBody = document.querySelector("#populationTable tbody");
 
         // JSON 데이터 로드 및 초기화
         fetch(jsonFile)
             .then(response => response.json())
             .then(data => {
-                const years = Object.keys(data).sort();
+                const years = Object.keys(data).sort().reverse().slice(0, 10).reverse(); // 최근 10개 연도
+                const allItems = Object.keys(data[years[0]] || {}); // 데이터에서 항목 추출
+                const defaultItems = allItems.slice(0, 5); // 기본 5개 항목
+
                 // 연도 선택 옵션 추가
                 years.forEach(year => {
                     const option1 = document.createElement("option");
@@ -101,30 +109,51 @@
                 startYearSelect.value = years[0];
                 endYearSelect.value = years[years.length - 1];
 
+                // 항목 선택 옵션 추가
+                allItems.forEach(item => {
+                    const option = document.createElement("option");
+                    option.value = item;
+                    option.textContent = `${item} (명)`; // 단위 추가
+                    if (defaultItems.includes(item)) {
+                        option.selected = true; // 기본 선택 항목
+                    }
+                    itemSelect.appendChild(option);
+                });
+
                 // 기본 데이터 표시
-                displayData(years[0], years[years.length - 1], data);
+                displayData(years[0], years[years.length - 1], data, defaultItems);
 
                 // 필터 버튼 클릭 이벤트
                 filterButton.addEventListener("click", () => {
                     const startYear = startYearSelect.value;
                     const endYear = endYearSelect.value;
-                    displayData(startYear, endYear, data);
+                    const selectedItems = Array.from(itemSelect.selectedOptions).map(option => option.value);
+                    displayData(startYear, endYear, data, selectedItems);
                 });
             })
             .catch(error => console.error("Error loading data:", error));
 
         // 데이터 표시 함수
-        function displayData(startYear, endYear, data) {
-            tableBody.innerHTML = ""; // 기존 데이터 삭제
+        function displayData(startYear, endYear, data, items) {
+            tableHead.innerHTML = "<th>Year</th>"; // 기존 항목 헤더 초기화
+            tableBody.innerHTML = ""; // 기존 데이터 초기화
+
+            // 항목 헤더 추가
+            items.forEach(item => {
+                const th = document.createElement("th");
+                th.textContent = `${item} (명)`; // 단위 포함
+                tableHead.appendChild(th);
+            });
+
+            // 데이터 추가
             const years = Object.keys(data).filter(year => year >= startYear && year <= endYear);
             years.forEach(year => {
                 const row = document.createElement("tr");
-                row.innerHTML = `
-                    <td>${year}</td>
-                    <td>${data[year]?.population?.toLocaleString() || ""}</td>
-                    <td>${data[year]?.births?.toLocaleString() || ""}</td>
-                    <td>${data[year]?.deaths?.toLocaleString() || ""}</td>
-                `;
+                row.innerHTML = `<td>${year}</td>`;
+                items.forEach(item => {
+                    const value = data[year]?.[item]?.toLocaleString() || ""; // 값이 없으면 공란
+                    row.innerHTML += `<td>${value}</td>`;
+                });
                 tableBody.appendChild(row);
             });
         }
