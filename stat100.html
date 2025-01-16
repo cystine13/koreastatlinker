@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Population Statistics</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <header style="text-align: center; margin: 20px;">
+        <h1>Population Statistics</h1>
+        <p>Annual Resident Registration Population Data</p>
+    </header>
+
+    <table id="populationTable">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Population</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 데이터가 동적으로 추가됩니다 -->
+        </tbody>
+    </table>
+
+    <script>
+        // JSON 파일 경로
+        const jsonFile = "population_data.json";
+
+        // 데이터 로드 및 테이블 생성
+        fetch(jsonFile)
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector("#populationTable tbody");
+                data.forEach(item => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td>${item.PRD_DE}</td> <!-- 연도 -->
+                        <td>${parseInt(item.DT, 10).toLocaleString()}</td> <!-- 인구수 -->
+                    `;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error("Error loading data:", error));
+    </script>
+</body>
+</html>
