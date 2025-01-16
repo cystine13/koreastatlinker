@@ -1,5 +1,21 @@
 [
     {
+        "title_kr": "2024년 12월 및 연간 고용동향",
+        "title_en": "December 2024 and Annual Employment Trends",
+        "link": "https://www.mss.go.kr/site/smba/foffice/ex/statDB/StReportContentDetailView.do?gb=1&reSeq=2119",
+        "date": "2025-01-16",
+        "source_en": "SMEs Statistics System",
+        "source_kr": "중소기업 통계"
+    },
+    {
+        "title_kr": "2024년 12월 월간 수출입 현황 [확정치]",
+        "title_en": "Monthly import and export status in December 2024 [confirmed value]",
+        "link": "https://www.mss.go.kr/site/smba/foffice/ex/statDB/StReportContentDetailView.do?gb=1&reSeq=2120",
+        "date": "2025-01-16",
+        "source_en": "SMEs Statistics System",
+        "source_kr": "중소기업 통계"
+    },
+    {
         "title_kr": "2025년 1월 중소기업경기전망",
         "title_en": "Small Business Economics Outlook, January 2025",
         "link": "https://www.mss.go.kr/site/smba/foffice/ex/statDB/StReportContentDetailView.do?gb=1&reSeq=2115",
