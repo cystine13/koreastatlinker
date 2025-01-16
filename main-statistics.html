@@ -3,160 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Population Statistics</title>
+    <title>Korea Indicator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-        }
-        header {
-            text-align: center;
             padding: 20px;
-            background-color: #f4f4f4;
         }
-        .controls {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
             text-align: center;
-            margin: 20px;
+            margin-bottom: 20px;
         }
-        label, select, button {
-            font-size: 16px;
-            margin: 5px;
+        label {
+            display: block;
+            margin-top: 20px;
         }
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
+        select, button {
+            width: 100%;
             padding: 10px;
-            text-align: center;
+            margin-top: 10px;
         }
-        th {
-            background-color: #f4f4f4;
+        /* 아이템 선택창 스크롤 추가 */
+        select[multiple] {
+            height: 100px; /* 크롬에서 모든 옵션이 표시되지 않도록 높이 제한 */
+            overflow-y: scroll; /* 스크롤 활성화 */
+        }
+        .results {
+            margin-top: 30px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .result-item {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Population Statistics</h1>
-        <p>Select a period and items to view data:</p>
-    </header>
-
-    <div class="controls">
-        <label for="startYear">Start Year:</label>
-        <select id="startYear"></select>
-
-        <label for="endYear">End Year:</label>
-        <select id="endYear"></select>
-
-        <label for="itemSelect">Select Items:</label>
-        <select id="itemSelect" multiple>
-            <!-- 항목이 동적으로 추가됩니다 -->
+    <div class="container">
+        <h1>Korea Indicator</h1>
+        
+        <!-- 연도 선택 -->
+        <label for="years">Select Year Range:</label>
+        <select id="years" multiple>
+            <!-- Python이 JSON의 모든 연도를 삽입 -->
         </select>
 
-        <button id="filterButton">View Data</button>
+        <!-- 항목 선택 -->
+        <label for="items">Select Items:</label>
+        <select id="items" multiple>
+            <!-- Python이 JSON의 모든 항목 삽입 -->
+        </select>
+
+        <!-- 조회 버튼 -->
+        <button onclick="fetchData()">Show Data</button>
+
+        <!-- 결과 표시 -->
+        <div class="results" id="results"></div>
     </div>
 
-    <table id="populationTable">
-        <thead>
-            <tr>
-                <th>Year</th>
-                <!-- 항목이 동적으로 추가됩니다 -->
-            </tr>
-        </thead>
-        <tbody>
-            <!-- 데이터가 동적으로 추가됩니다 -->
-        </tbody>
-    </table>
-
     <script>
-        // JSON 파일 경로
-        const jsonFile = "population_data.json";
-
-        // DOM 요소
-        const startYearSelect = document.getElementById("startYear");
-        const endYearSelect = document.getElementById("endYear");
-        const itemSelect = document.getElementById("itemSelect");
-        const filterButton = document.getElementById("filterButton");
-        const tableHead = document.querySelector("#populationTable thead tr");
-        const tableBody = document.querySelector("#populationTable tbody");
-
-        // JSON 데이터 로드 및 초기화
-        fetch(jsonFile)
+        // JSON 데이터 로드 및 표시
+        fetch('population_data.json')
             .then(response => response.json())
             .then(data => {
-                const years = Object.keys(data).sort().reverse().slice(0, 10).reverse(); // 최근 10개 연도
-                const allItems = Object.keys(data[years[0]] || {}); // 데이터에서 항목 추출
-                const defaultItems = allItems.slice(0, 5); // 기본 5개 항목
+                populateDropdown(data, 'years', 'year');
+                populateDropdown(data, 'items', 'name');
+            });
 
-                // 연도 선택 옵션 추가
+        // 드롭다운 채우기 함수
+        function populateDropdown(data, dropdownId, key) {
+            const dropdown = document.getElementById(dropdownId);
+            if (key === 'year') {
+                const years = [...new Set(data.map(item => item.year))].sort((a, b) => b - a); // 연도 중복 제거 및 내림차순 정렬
                 years.forEach(year => {
-                    const option1 = document.createElement("option");
-                    const option2 = document.createElement("option");
-                    option1.value = year;
-                    option2.value = year;
-                    option1.textContent = year;
-                    option2.textContent = year;
-                    startYearSelect.appendChild(option1);
-                    endYearSelect.appendChild(option2);
+                    const option = document.createElement('option');
+                    option.value = year;
+                    option.textContent = year;
+                    dropdown.appendChild(option);
                 });
-
-                // 기본 기간 설정
-                startYearSelect.value = years[0];
-                endYearSelect.value = years[years.length - 1];
-
-                // 항목 선택 옵션 추가
-                allItems.forEach(item => {
-                    const option = document.createElement("option");
-                    option.value = item;
-                    option.textContent = item; // 단위는 별도로 표시하지 않음
-                    if (defaultItems.includes(item)) {
-                        option.selected = true; // 기본 선택 항목
-                    }
-                    itemSelect.appendChild(option);
-                });
-
-                // 기본 데이터 표시
-                displayData(years[0], years[years.length - 1], data, defaultItems);
-
-                // 필터 버튼 클릭 이벤트
-                filterButton.addEventListener("click", () => {
-                    const startYear = startYearSelect.value;
-                    const endYear = endYearSelect.value;
-                    const selectedItems = Array.from(itemSelect.selectedOptions).map(option => option.value);
-                    displayData(startYear, endYear, data, selectedItems);
-                });
-            })
-            .catch(error => console.error("Error loading data:", error));
-
-        // 데이터 표시 함수
-        function displayData(startYear, endYear, data, items) {
-            tableHead.innerHTML = "<th>Year</th>"; // 기존 항목 헤더 초기화
-            tableBody.innerHTML = ""; // 기존 데이터 초기화
-
-            // 항목 헤더 추가
-            items.forEach(item => {
-                const th = document.createElement("th");
-                th.textContent = `${item} (명)`; // 단위 포함
-                tableHead.appendChild(th);
-            });
-
-            // 데이터 추가
-            const years = Object.keys(data).filter(year => year >= startYear && year <= endYear);
-            years.forEach(year => {
-                const row = document.createElement("tr");
-                row.innerHTML = `<td>${year}</td>`;
+            } else if (key === 'name') {
+                const items = [...new Set(data.map(item => item.name))];
                 items.forEach(item => {
-                    const value = data[year]?.[item]?.value?.toLocaleString() || ""; // 값이 없으면 공란
-                    const unit = data[year]?.[item]?.unit || ""; // 단위 가져오기
-                    row.innerHTML += `<td>${value} ${unit}</td>`;
+                    const option = document.createElement('option');
+                    option.value = item;
+                    option.textContent = item;
+                    dropdown.appendChild(option);
                 });
-                tableBody.appendChild(row);
-            });
+            }
+        }
+
+        // 조회 버튼 클릭 시 데이터 필터링
+        function fetchData() {
+            const selectedYears = Array.from(document.getElementById('years').selectedOptions).map(opt => opt.value);
+            const selectedItems = Array.from(document.getElementById('items').selectedOptions).map(opt => opt.value);
+
+            fetch('population_data.json')
+                .then(response => response.json())
+                .then(data => {
+                    const filteredData = data.filter(item => selectedYears.includes(item.year) && selectedItems.includes(item.name));
+                    displayResults(filteredData);
+                });
+        }
+
+        // 결과 표시
+        function displayResults(data) {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = ''; // 기존 결과 초기화
+            if (data.length === 0) {
+                resultsDiv.textContent = 'No data available for the selected criteria.';
+            } else {
+                data.forEach(item => {
+                    const resultItem = document.createElement('div');
+                    resultItem.className = 'result-item';
+                    resultItem.textContent = `${item.year}: ${item.name} - ${item.value}`;
+                    resultsDiv.appendChild(resultItem);
+                });
+            }
         }
     </script>
 </body>
