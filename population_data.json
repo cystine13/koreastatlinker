@@ -2,121 +2,158 @@
     "2000": {
         "Resident Population (Person)": 47732558,
         "Births (Person)": 640089,
-        "Deaths (Person)": 248740
+        "Deaths (Person)": 248740,
+        "Resident Households (households)": 15765275
     },
     "2001": {
         "Resident Population (Person)": 48021543,
         "Births (Person)": 559934,
-        "Deaths (Person)": 243813
+        "Deaths (Person)": 243813,
+        "Resident Households (households)": 16080992
     },
     "2002": {
         "Resident Population (Person)": 48229948,
         "Births (Person)": 496911,
-        "Deaths (Person)": 247524
+        "Deaths (Person)": 247524,
+        "Resident Households (households)": 16489107
     },
     "2003": {
         "Resident Population (Person)": 48386823,
         "Births (Person)": 495036,
-        "Deaths (Person)": 246463
+        "Deaths (Person)": 246463,
+        "Resident Households (households)": 16987634
     },
     "2004": {
         "Resident Population (Person)": 48583805,
         "Births (Person)": 476958,
-        "Deaths (Person)": 246220
+        "Deaths (Person)": 246220,
+        "Resident Households (households)": 17391932
     },
     "2005": {
         "Resident Population (Person)": 48782274,
         "Births (Person)": 438707,
-        "Deaths (Person)": 245874
+        "Deaths (Person)": 245874,
+        "Resident Households (households)": 17857511
     },
     "2006": {
         "Resident Population (Person)": 48991779,
         "Births (Person)": 451759,
-        "Deaths (Person)": 244162
+        "Deaths (Person)": 244162,
+        "Resident Households (households)": 18326619
     },
     "2007": {
         "Resident Population (Person)": 49268928,
         "Births (Person)": 496822,
-        "Deaths (Person)": 246482
+        "Deaths (Person)": 246482,
+        "Resident Households (households)": 18687694
     },
     "2008": {
         "Resident Population (Person)": 49540367,
         "Births (Person)": 465892,
-        "Deaths (Person)": 246113
+        "Deaths (Person)": 246113,
+        "Resident Households (households)": 19005339
     },
     "2009": {
         "Resident Population (Person)": 49773145,
         "Births (Person)": 444849,
-        "Deaths (Person)": 246942
+        "Deaths (Person)": 246942,
+        "Resident Households (households)": 19261292
     },
     "2010": {
         "Resident Population (Person)": 50515666,
         "Births (Person)": 470171,
-        "Deaths (Person)": 255405
+        "Deaths (Person)": 255405,
+        "Resident Households (households)": 19865179
     },
     "2011": {
         "Resident Population (Person)": 50734284,
         "Births (Person)": 471265,
-        "Deaths (Person)": 257396
+        "Deaths (Person)": 257396,
+        "Resident Households (households)": 20033142
     },
     "2012": {
         "Resident Population (Person)": 50948272,
         "Births (Person)": 484550,
-        "Deaths (Person)": 267221
+        "Deaths (Person)": 267221,
+        "Resident Households (households)": 20211770
     },
     "2013": {
         "Resident Population (Person)": 51141463,
         "Births (Person)": 436455,
-        "Deaths (Person)": 266257
+        "Deaths (Person)": 266257,
+        "Resident Households (households)": 20456588
     },
     "2014": {
         "Resident Population (Person)": 51327916,
         "Births (Person)": 435435,
-        "Deaths (Person)": 267692
+        "Deaths (Person)": 267692,
+        "Resident Households (households)": 20724094
     },
     "2015": {
         "Resident Population (Person)": 51529338,
         "Births (Person)": 438420,
-        "Deaths (Person)": 275895
+        "Deaths (Person)": 275895,
+        "Household (households)": 19560603,
+        "Resident Households (households)": 21011152
     },
     "2016": {
         "Resident Population (Person)": 51696216,
         "Births (Person)": 406243,
-        "Deaths (Person)": 280827
+        "Deaths (Person)": 280827,
+        "Household (households)": 19837665,
+        "Resident Households (households)": 21294009
     },
     "2017": {
         "Resident Population (Person)": 51778544,
         "Births (Person)": 357771,
-        "Deaths (Person)": 285534
+        "Deaths (Person)": 285534,
+        "Household (households)": 20167922,
+        "Resident Households (households)": 21632851
     },
     "2018": {
         "Resident Population (Person)": 51826059,
         "Births (Person)": 326822,
-        "Deaths (Person)": 298820
+        "Deaths (Person)": 298820,
+        "Household (households)": 20499543,
+        "Resident Households (households)": 22042947
     },
     "2019": {
         "Resident Population (Person)": 51849861,
         "Births (Person)": 302676,
-        "Deaths (Person)": 295110
+        "Deaths (Person)": 295110,
+        "Household (households)": 20891348,
+        "Resident Households (households)": 22481466
     },
     "2020": {
         "Resident Population (Person)": 51829023,
         "Births (Person)": 272337,
-        "Deaths (Person)": 304948
+        "Deaths (Person)": 304948,
+        "Household (households)": 21484785,
+        "Resident Households (households)": 23093108
     },
     "2021": {
         "Resident Population (Person)": 51638809,
         "Births (Person)": 260562,
-        "Deaths (Person)": 317680
+        "Deaths (Person)": 317680,
+        "Household (households)": 22022753,
+        "Resident Households (households)": 23472895
     },
     "2022": {
         "Resident Population (Person)": 51439038,
         "Births (Person)": 249186,
-        "Deaths (Person)": 372939
+        "Deaths (Person)": 372939,
+        "Household (households)": 22383187,
+        "Resident Households (households)": 23705814
     },
     "2023": {
         "Resident Population (Person)": 51325329,
         "Births (Person)": 230028,
-        "Deaths (Person)": 352511
+        "Deaths (Person)": 352511,
+        "Household (households)": 22728163,
+        "Resident Households (households)": 23914851
+    },
+    "2024": {
+        "Resident Population (Person)": 51217221,
+        "Resident Households (households)": 24118928
     }
 }
