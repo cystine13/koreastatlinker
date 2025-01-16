@@ -97,7 +97,7 @@
                     // 제목 또는 이름에 링크 걸기
                     const title = result.Name || result.title_en || result.name_en || "Untitled";
                     const link = result.link || "#";
-                    const additionalInfo = result.category || result.date || result.category_en || "";
+                    const additionalInfo = result.category || result.date || result.source_en || "";
 
                     div.innerHTML = `
                         <h3><a href="${link}" target="_blank">${title}</a></h3>
