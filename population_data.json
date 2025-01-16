@@ -69,81 +69,93 @@
         "Resident Population (Person)": 50734284,
         "Births (Person)": 471265,
         "Deaths (Person)": 257396,
-        "Resident Households (households)": 20033142
+        "Resident Households (households)": 20033142,
+        "Crime Occurrence (Cases)": 1752598
     },
     "2012": {
         "Resident Population (Person)": 50948272,
         "Births (Person)": 484550,
         "Deaths (Person)": 267221,
-        "Resident Households (households)": 20211770
+        "Resident Households (households)": 20211770,
+        "Crime Occurrence (Cases)": 1793400
     },
     "2013": {
         "Resident Population (Person)": 51141463,
         "Births (Person)": 436455,
         "Deaths (Person)": 266257,
-        "Resident Households (households)": 20456588
+        "Resident Households (households)": 20456588,
+        "Crime Occurrence (Cases)": 1857276
     },
     "2014": {
         "Resident Population (Person)": 51327916,
         "Births (Person)": 435435,
         "Deaths (Person)": 267692,
-        "Resident Households (households)": 20724094
+        "Resident Households (households)": 20724094,
+        "Crime Occurrence (Cases)": 1778966
     },
     "2015": {
         "Resident Population (Person)": 51529338,
         "Births (Person)": 438420,
         "Deaths (Person)": 275895,
         "Household (households)": 19560603,
-        "Resident Households (households)": 21011152
+        "Resident Households (households)": 21011152,
+        "Crime Occurrence (Cases)": 1861657
     },
     "2016": {
         "Resident Population (Person)": 51696216,
         "Births (Person)": 406243,
         "Deaths (Person)": 280827,
         "Household (households)": 19837665,
-        "Resident Households (households)": 21294009
+        "Resident Households (households)": 21294009,
+        "Crime Occurrence (Cases)": 1849450
     },
     "2017": {
         "Resident Population (Person)": 51778544,
         "Births (Person)": 357771,
         "Deaths (Person)": 285534,
         "Household (households)": 20167922,
-        "Resident Households (households)": 21632851
+        "Resident Households (households)": 21632851,
+        "Crime Occurrence (Cases)": 1662341
     },
     "2018": {
         "Resident Population (Person)": 51826059,
         "Births (Person)": 326822,
         "Deaths (Person)": 298820,
         "Household (households)": 20499543,
-        "Resident Households (households)": 22042947
+        "Resident Households (households)": 22042947,
+        "Crime Occurrence (Cases)": 1580751
     },
     "2019": {
         "Resident Population (Person)": 51849861,
         "Births (Person)": 302676,
         "Deaths (Person)": 295110,
         "Household (households)": 20891348,
-        "Resident Households (households)": 22481466
+        "Resident Households (households)": 22481466,
+        "Crime Occurrence (Cases)": 1611906
     },
     "2020": {
         "Resident Population (Person)": 51829023,
         "Births (Person)": 272337,
         "Deaths (Person)": 304948,
         "Household (households)": 21484785,
-        "Resident Households (households)": 23093108
+        "Resident Households (households)": 23093108,
+        "Crime Occurrence (Cases)": 1587866
     },
     "2021": {
         "Resident Population (Person)": 51638809,
         "Births (Person)": 260562,
         "Deaths (Person)": 317680,
         "Household (households)": 22022753,
-        "Resident Households (households)": 23472895
+        "Resident Households (households)": 23472895,
+        "Crime Occurrence (Cases)": 1429826
     },
     "2022": {
         "Resident Population (Person)": 51439038,
         "Births (Person)": 249186,
         "Deaths (Person)": 372939,
         "Household (households)": 22383187,
-        "Resident Households (households)": 23705814
+        "Resident Households (households)": 23705814,
+        "Crime Occurrence (Cases)": 1482433
     },
     "2023": {
         "Resident Population (Person)": 51325329,
