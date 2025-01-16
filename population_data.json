@@ -1,338 +1,122 @@
 {
     "2000": {
-        "population": {
-            "value": 47732558,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 640089,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 248740,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 47732558,
+        "Births (Person)": 640089,
+        "Deaths (Person)": 248740
     },
     "2001": {
-        "population": {
-            "value": 48021543,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 559934,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 243813,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 48021543,
+        "Births (Person)": 559934,
+        "Deaths (Person)": 243813
     },
     "2002": {
-        "population": {
-            "value": 48229948,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 496911,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 247524,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 48229948,
+        "Births (Person)": 496911,
+        "Deaths (Person)": 247524
     },
     "2003": {
-        "population": {
-            "value": 48386823,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 495036,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 246463,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 48386823,
+        "Births (Person)": 495036,
+        "Deaths (Person)": 246463
     },
     "2004": {
-        "population": {
-            "value": 48583805,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 476958,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 246220,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 48583805,
+        "Births (Person)": 476958,
+        "Deaths (Person)": 246220
     },
     "2005": {
-        "population": {
-            "value": 48782274,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 438707,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 245874,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 48782274,
+        "Births (Person)": 438707,
+        "Deaths (Person)": 245874
     },
     "2006": {
-        "population": {
-            "value": 48991779,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 451759,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 244162,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 48991779,
+        "Births (Person)": 451759,
+        "Deaths (Person)": 244162
     },
     "2007": {
-        "population": {
-            "value": 49268928,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 496822,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 246482,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 49268928,
+        "Births (Person)": 496822,
+        "Deaths (Person)": 246482
     },
     "2008": {
-        "population": {
-            "value": 49540367,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 465892,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 246113,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 49540367,
+        "Births (Person)": 465892,
+        "Deaths (Person)": 246113
     },
     "2009": {
-        "population": {
-            "value": 49773145,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 444849,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 246942,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 49773145,
+        "Births (Person)": 444849,
+        "Deaths (Person)": 246942
     },
     "2010": {
-        "population": {
-            "value": 50515666,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 470171,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 255405,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 50515666,
+        "Births (Person)": 470171,
+        "Deaths (Person)": 255405
     },
     "2011": {
-        "population": {
-            "value": 50734284,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 471265,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 257396,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 50734284,
+        "Births (Person)": 471265,
+        "Deaths (Person)": 257396
     },
     "2012": {
-        "population": {
-            "value": 50948272,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 484550,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 267221,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 50948272,
+        "Births (Person)": 484550,
+        "Deaths (Person)": 267221
     },
     "2013": {
-        "population": {
-            "value": 51141463,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 436455,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 266257,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 51141463,
+        "Births (Person)": 436455,
+        "Deaths (Person)": 266257
     },
     "2014": {
-        "population": {
-            "value": 51327916,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 435435,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 267692,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 51327916,
+        "Births (Person)": 435435,
+        "Deaths (Person)": 267692
     },
     "2015": {
-        "population": {
-            "value": 51529338,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 438420,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 275895,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 51529338,
+        "Births (Person)": 438420,
+        "Deaths (Person)": 275895
     },
     "2016": {
-        "population": {
-            "value": 51696216,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 406243,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 280827,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 51696216,
+        "Births (Person)": 406243,
+        "Deaths (Person)": 280827
     },
     "2017": {
-        "population": {
-            "value": 51778544,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 357771,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 285534,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 51778544,
+        "Births (Person)": 357771,
+        "Deaths (Person)": 285534
     },
     "2018": {
-        "population": {
-            "value": 51826059,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 326822,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 298820,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 51826059,
+        "Births (Person)": 326822,
+        "Deaths (Person)": 298820
     },
     "2019": {
-        "population": {
-            "value": 51849861,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 302676,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 295110,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 51849861,
+        "Births (Person)": 302676,
+        "Deaths (Person)": 295110
     },
     "2020": {
-        "population": {
-            "value": 51829023,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 272337,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 304948,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 51829023,
+        "Births (Person)": 272337,
+        "Deaths (Person)": 304948
     },
     "2021": {
-        "population": {
-            "value": 51638809,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 260562,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 317680,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 51638809,
+        "Births (Person)": 260562,
+        "Deaths (Person)": 317680
     },
     "2022": {
-        "population": {
-            "value": 51439038,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 249186,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 372939,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 51439038,
+        "Births (Person)": 249186,
+        "Deaths (Person)": 372939
     },
     "2023": {
-        "population": {
-            "value": 51325329,
-            "unit": "Person"
-        },
-        "births": {
-            "value": 230028,
-            "unit": "Person"
-        },
-        "deaths": {
-            "value": 352511,
-            "unit": "Person"
-        }
+        "Resident Population (Person)": 51325329,
+        "Births (Person)": 230028,
+        "Deaths (Person)": 352511
     }
 }
