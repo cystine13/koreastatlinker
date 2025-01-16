@@ -1,122 +1,338 @@
 {
     "2000": {
-        "population": 47732558,
-        "births": 640089,
-        "deaths": 248740
+        "population": {
+            "value": 47732558,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 640089,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 248740,
+            "unit": "Person"
+        }
     },
     "2001": {
-        "population": 48021543,
-        "births": 559934,
-        "deaths": 243813
+        "population": {
+            "value": 48021543,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 559934,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 243813,
+            "unit": "Person"
+        }
     },
     "2002": {
-        "population": 48229948,
-        "births": 496911,
-        "deaths": 247524
+        "population": {
+            "value": 48229948,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 496911,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 247524,
+            "unit": "Person"
+        }
     },
     "2003": {
-        "population": 48386823,
-        "births": 495036,
-        "deaths": 246463
+        "population": {
+            "value": 48386823,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 495036,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 246463,
+            "unit": "Person"
+        }
     },
     "2004": {
-        "population": 48583805,
-        "births": 476958,
-        "deaths": 246220
+        "population": {
+            "value": 48583805,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 476958,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 246220,
+            "unit": "Person"
+        }
     },
     "2005": {
-        "population": 48782274,
-        "births": 438707,
-        "deaths": 245874
+        "population": {
+            "value": 48782274,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 438707,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 245874,
+            "unit": "Person"
+        }
     },
     "2006": {
-        "population": 48991779,
-        "births": 451759,
-        "deaths": 244162
+        "population": {
+            "value": 48991779,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 451759,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 244162,
+            "unit": "Person"
+        }
     },
     "2007": {
-        "population": 49268928,
-        "births": 496822,
-        "deaths": 246482
+        "population": {
+            "value": 49268928,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 496822,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 246482,
+            "unit": "Person"
+        }
     },
     "2008": {
-        "population": 49540367,
-        "births": 465892,
-        "deaths": 246113
+        "population": {
+            "value": 49540367,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 465892,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 246113,
+            "unit": "Person"
+        }
     },
     "2009": {
-        "population": 49773145,
-        "births": 444849,
-        "deaths": 246942
+        "population": {
+            "value": 49773145,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 444849,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 246942,
+            "unit": "Person"
+        }
     },
     "2010": {
-        "population": 50515666,
-        "births": 470171,
-        "deaths": 255405
+        "population": {
+            "value": 50515666,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 470171,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 255405,
+            "unit": "Person"
+        }
     },
     "2011": {
-        "population": 50734284,
-        "births": 471265,
-        "deaths": 257396
+        "population": {
+            "value": 50734284,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 471265,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 257396,
+            "unit": "Person"
+        }
     },
     "2012": {
-        "population": 50948272,
-        "births": 484550,
-        "deaths": 267221
+        "population": {
+            "value": 50948272,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 484550,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 267221,
+            "unit": "Person"
+        }
     },
     "2013": {
-        "population": 51141463,
-        "births": 436455,
-        "deaths": 266257
+        "population": {
+            "value": 51141463,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 436455,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 266257,
+            "unit": "Person"
+        }
     },
     "2014": {
-        "population": 51327916,
-        "births": 435435,
-        "deaths": 267692
+        "population": {
+            "value": 51327916,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 435435,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 267692,
+            "unit": "Person"
+        }
     },
     "2015": {
-        "population": 51529338,
-        "births": 438420,
-        "deaths": 275895
+        "population": {
+            "value": 51529338,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 438420,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 275895,
+            "unit": "Person"
+        }
     },
     "2016": {
-        "population": 51696216,
-        "births": 406243,
-        "deaths": 280827
+        "population": {
+            "value": 51696216,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 406243,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 280827,
+            "unit": "Person"
+        }
     },
     "2017": {
-        "population": 51778544,
-        "births": 357771,
-        "deaths": 285534
+        "population": {
+            "value": 51778544,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 357771,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 285534,
+            "unit": "Person"
+        }
     },
     "2018": {
-        "population": 51826059,
-        "births": 326822,
-        "deaths": 298820
+        "population": {
+            "value": 51826059,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 326822,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 298820,
+            "unit": "Person"
+        }
     },
     "2019": {
-        "population": 51849861,
-        "births": 302676,
-        "deaths": 295110
+        "population": {
+            "value": 51849861,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 302676,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 295110,
+            "unit": "Person"
+        }
     },
     "2020": {
-        "population": 51829023,
-        "births": 272337,
-        "deaths": 304948
+        "population": {
+            "value": 51829023,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 272337,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 304948,
+            "unit": "Person"
+        }
     },
     "2021": {
-        "population": 51638809,
-        "births": 260562,
-        "deaths": 317680
+        "population": {
+            "value": 51638809,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 260562,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 317680,
+            "unit": "Person"
+        }
     },
     "2022": {
-        "population": 51439038,
-        "births": 249186,
-        "deaths": 372939
+        "population": {
+            "value": 51439038,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 249186,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 372939,
+            "unit": "Person"
+        }
     },
     "2023": {
-        "population": 51325329,
-        "births": 230028,
-        "deaths": 352511
+        "population": {
+            "value": 51325329,
+            "unit": "Person"
+        },
+        "births": {
+            "value": 230028,
+            "unit": "Person"
+        },
+        "deaths": {
+            "value": 352511,
+            "unit": "Person"
+        }
     }
 }
