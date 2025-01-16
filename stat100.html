@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Population Statistics</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .controls {
+            text-align: center;
+            margin: 20px;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+        }
         table {
             width: 80%;
             margin: 20px auto;
@@ -23,16 +41,23 @@
     </style>
 </head>
 <body>
-    <header style="text-align: center; margin: 20px;">
+    <header>
         <h1>Population Statistics</h1>
-        <p>Annual Resident Registration Population Data</p>
+        <p>Select a year to view data:</p>
     </header>
+
+    <div class="controls">
+        <label for="yearSelect">Select Year:</label>
+        <select id="yearSelect"></select>
+    </div>
 
     <table id="populationTable">
         <thead>
             <tr>
                 <th>Year</th>
-                <th>Population</th>
+                <th>Total Population</th>
+                <th>Births</th>
+                <th>Deaths</th>
             </tr>
         </thead>
         <tbody>
@@ -44,21 +69,48 @@
         // JSON 파일 경로
         const jsonFile = "population_data.json";
 
-        // 데이터 로드 및 테이블 생성
+        // DOM 요소
+        const yearSelect = document.getElementById("yearSelect");
+        const tableBody = document.querySelector("#populationTable tbody");
+
+        // JSON 데이터 로드
         fetch(jsonFile)
             .then(response => response.json())
             .then(data => {
-                const tableBody = document.querySelector("#populationTable tbody");
-                data.forEach(item => {
-                    const row = document.createElement("tr");
-                    row.innerHTML = `
-                        <td>${item.PRD_DE}</td> <!-- 연도 -->
-                        <td>${parseInt(item.DT, 10).toLocaleString()}</td> <!-- 인구수 -->
-                    `;
-                    tableBody.appendChild(row);
+                const years = Object.keys(data).sort();
+                // 연도 선택 옵션 추가
+                years.forEach(year => {
+                    const option = document.createElement("option");
+                    option.value = year;
+                    option.textContent = year;
+                    yearSelect.appendChild(option);
+                });
+
+                // 기본 선택 연도 데이터 표시
+                if (years.length > 0) {
+                    displayData(years[0], data);
+                }
+
+                // 선택한 연도에 따라 데이터 표시
+                yearSelect.addEventListener("change", () => {
+                    const selectedYear = yearSelect.value;
+                    displayData(selectedYear, data);
                 });
             })
             .catch(error => console.error("Error loading data:", error));
+
+        // 데이터 표시 함수
+        function displayData(year, data) {
+            tableBody.innerHTML = ""; // 기존 데이터 삭제
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${year}</td>
+                <td>${data[year]?.population?.toLocaleString() || "N/A"}</td>
+                <td>${data[year]?.births?.toLocaleString() || "N/A"}</td>
+                <td>${data[year]?.deaths?.toLocaleString() || "N/A"}</td>
+            `;
+            tableBody.appendChild(row);
+        }
     </script>
 </body>
 </html>
