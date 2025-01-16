@@ -25,11 +25,17 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filters label {
+            margin-right: 10px;
         }
 
         .filters select {
             padding: 5px;
             font-size: 16px;
+            width: auto;
         }
 
         .statistics-table {
@@ -53,21 +59,19 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Main Statistics</h1>
+            <h1>Korea Indicator</h1>
         </div>
 
         <div class="filters">
             <div>
-                <label for="start-year">Start Year:</label>
+                <label for="year-range">Year:</label>
                 <select id="start-year"></select>
-            </div>
-            <div>
-                <label for="end-year">End Year:</label>
+                <span>~</span>
                 <select id="end-year"></select>
             </div>
             <div>
                 <label for="items">Items:</label>
-                <select id="items" multiple size="3"></select>
+                <select id="items" multiple size="3" style="height: auto;"></select>
             </div>
         </div>
 
@@ -96,16 +100,20 @@
 
                 // Populate year dropdowns
                 years.forEach(year => {
-                    const option = document.createElement("option");
-                    option.value = year;
-                    option.textContent = year;
-                    startYearSelect.appendChild(option.cloneNode(true));
-                    endYearSelect.appendChild(option);
+                    const startOption = document.createElement("option");
+                    const endOption = document.createElement("option");
+                    startOption.value = endOption.value = year;
+                    startOption.textContent = endOption.textContent = year;
+
+                    startYearSelect.appendChild(startOption);
+                    endYearSelect.appendChild(endOption);
                 });
 
-                // Default to the last 10 years
-                startYearSelect.value = years[Math.min(10, years.length) - 1];
-                endYearSelect.value = years[0];
+                // Default year range (last 10 years)
+                const defaultStartYear = years[Math.min(10, years.length) - 1];
+                const defaultEndYear = years[0];
+                startYearSelect.value = defaultStartYear;
+                endYearSelect.value = defaultEndYear;
 
                 // Get unique item names
                 const itemNames = [...new Set(years.flatMap(year => Object.keys(data[year])))];
@@ -123,10 +131,15 @@
                     itemsSelect.options[i].selected = true;
                 }
 
+                // Add commas to numbers for better readability
+                function formatNumber(number) {
+                    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                }
+
                 // Update table based on selected filters
                 function updateTable() {
-                    const startYear = startYearSelect.value;
-                    const endYear = endYearSelect.value;
+                    const startYear = parseInt(startYearSelect.value);
+                    const endYear = parseInt(endYearSelect.value);
                     const selectedItems = Array.from(itemsSelect.selectedOptions).map(opt => opt.value);
 
                     // Clear the table
@@ -151,7 +164,11 @@
 
                             selectedItems.forEach(item => {
                                 const cell = document.createElement("td");
-                                cell.textContent = data[year][item] !== undefined ? data[year][item] : "-";
+                                if (data[year][item] !== undefined) {
+                                    cell.textContent = formatNumber(data[year][item]);
+                                } else {
+                                    cell.textContent = "-";
+                                }
                                 row.appendChild(cell);
                             });
 
