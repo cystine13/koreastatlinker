@@ -3,123 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A platform to explore and analyze Korea's statistical data.">
-    <meta name="keywords" content="Korea Statistics, Data Analysis, Statistics Portal">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>KoreaStatLinker</title>
+    <title>Korea Indicator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
         }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .search-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .search-container input {
-            width: 60%;
-            padding: 10px;
-            font-size: 16px;
-            margin-right: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .search-container button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .search-container button:hover {
-            background-color: #0056b3;
-        }
+
         .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .filters {
             display: flex;
             justify-content: space-between;
-            align-items: stretch;
-            flex-wrap: nowrap; /* 한 줄로 강제 표시 */
-            margin: 20px auto;
-            gap: 20px;
-            max-width: 1200px; /* 화면 폭 제한 */
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
         }
-        .content {
-            flex: 1; /* 모든 카드가 같은 크기 */
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+
+        .filters label {
+            margin-right: 10px;
+        }
+
+        /* Custom Dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            padding: 8px 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
             background-color: #f9f9f9;
-            text-align: center;
-            cursor: pointer; /* 커서 변경 */
-            transition: transform 0.2s ease-in-out;
+            cursor: pointer;
+            user-select: none;
         }
-        .content:hover {
-            transform: scale(1.05); /* 호버 시 확대 효과 */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 200px;
+            z-index: 1;
+            max-height: 150px;
+            overflow-y: auto;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        .content h2 {
-            color: #333;
+
+        .dropdown-content label {
+            display: block;
+            padding: 5px 10px;
+            cursor: pointer;
         }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #f4f4f4;
+
+        .dropdown-content label:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown-content input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .dropdown.show .dropdown-content {
+            display: block;
+        }
+
+        .statistics-table {
+            width: 100%;
+            border-collapse: collapse;
             margin-top: 20px;
+        }
+
+        .statistics-table th,
+        .statistics-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .statistics-table th {
+            background-color: #f4f4f4;
         }
     </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N3SG24QXER"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N3SG24QXER');
-</script>    
 <body>
-    <header>
-        <h1>KoreaStatLinker</h1>
-        <p>The hub connecting statistics, agencies, and resources.</p>
-    </header>
-
-    <!-- 통합 검색창 -->
-    <div class="search-container">
-        <form action="search-results.html" method="GET">
-            <input type="text" name="query" placeholder="Search news, agencies, resources..." required>
-            <button type="submit">Search</button>
-        </form>
-    </div>
-
     <div class="container">
-        <div class="content" onclick="location.href='statistics-news.html'">
-            <h2>Statistics News</h2>
-            <p>Stay updated with the latest statistics news.</p>
+        <div class="header">
+            <h1>Korea Indicator</h1>
         </div>
-        <div class="content" onclick="location.href='authoring-agencies.html'">
-            <h2>Authoring Agencies</h2>
-            <p>Explore key authoring agencies and their contributions.</p>
+
+        <div class="filters">
+            <div>
+                <label for="year-range">Year:</label>
+                <select id="start-year"></select>
+                <span>~</span>
+                <select id="end-year"></select>
+            </div>
+            <div>
+                <label for="items">Items:</label>
+                <div class="dropdown" id="items-dropdown">
+                    <div class="dropdown-button">Select Items</div>
+                    <div class="dropdown-content" id="items-options"></div>
+                </div>
+            </div>
         </div>
-        <div class="content" onclick="location.href='statistics-resources.html'">
-            <h2>Statistics Resources</h2>
-            <p>Leverage various statistical tools and data sources.</p>
-        </div>
-        <div class="content" onclick="location.href='main-statistics.html'">
-            <h2>Korea Indicator</h2> <!-- 제목 변경 -->
-            <p>Discover key statistical insights and trends.</p>
-        </div>
+
+        <table class="statistics-table">
+            <thead>
+                <tr id="table-header">
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody id="statistics-body">
+            </tbody>
+        </table>
     </div>
 
-    <footer>
-        <p>Copyright © 2024 KoreaStatLinker. All rights reserved.</p>
-    </footer>
+    <script>
+        // Load data from JSON file
+        fetch("population_data.json")
+            .then(response => response.json())
+            .then(data => {
+                const years = Object.keys(data).sort((a, b) => b - a); // Sort years in descending order
+                const startYearSelect = document.getElementById("start-year");
+                const endYearSelect = document.getElementById("end-year");
+                const itemsDropdown = document.getElementById("items-dropdown");
+                const itemsOptions = document.getElementById("items-options");
+                const tableHeader = document.getElementById("table-header");
+                const tableBody = document.getElementById("statistics-body");
+
+                // Populate year dropdowns
+                years.forEach(year => {
+                    const startOption = document.createElement("option");
+                    const endOption = document.createElement("option");
+                    startOption.value = endOption.value = year;
+                    startOption.textContent = endOption.textContent = year;
+
+                    startYearSelect.appendChild(startOption);
+                    endYearSelect.appendChild(endOption);
+                });
+
+                // Default year range (last 10 years)
+                const defaultStartYear = years[Math.min(10, years.length) - 1];
+                const defaultEndYear = years[0];
+                startYearSelect.value = defaultStartYear;
+                endYearSelect.value = defaultEndYear;
+
+                // Get unique item names
+                const itemNames = [...new Set(years.flatMap(year => Object.keys(data[year])))];
+
+                // Populate items dropdown
+                itemNames.forEach(name => {
+                    const label = document.createElement("label");
+                    const checkbox = document.createElement("input");
+                    checkbox.type = "checkbox";
+                    checkbox.value = name;
+                    checkbox.checked = itemsOptions.children.length < 5; // Default first 5 items selected
+
+                    label.appendChild(checkbox);
+                    label.append(name);
+                    itemsOptions.appendChild(label);
+                });
+
+                // Toggle dropdown visibility
+                itemsDropdown.querySelector(".dropdown-button").addEventListener("click", () => {
+                    itemsDropdown.classList.toggle("show");
+                });
+
+                // Close dropdown if clicked outside
+                window.addEventListener("click", (e) => {
+                    if (!itemsDropdown.contains(e.target)) {
+                        itemsDropdown.classList.remove("show");
+                    }
+                });
+
+                // Add commas to numbers for better readability
+                function formatNumber(number) {
+                    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                }
+
+                // Get selected items from dropdown
+                function getSelectedItems() {
+                    return Array.from(itemsOptions.querySelectorAll("input[type='checkbox']:checked")).map(cb => cb.value);
+                }
+
+                // Update table based on selected filters
+                function updateTable() {
+                    const startYear = parseInt(startYearSelect.value);
+                    const endYear = parseInt(endYearSelect.value);
+                    const selectedItems = getSelectedItems();
+
+                    // Clear the table
+                    tableHeader.innerHTML = "<th>Year</th>";
+                    tableBody.innerHTML = "";
+
+                    // Add selected items to table header
+                    selectedItems.forEach(item => {
+                        const th = document.createElement("th");
+                        th.textContent = item;
+                        tableHeader.appendChild(th);
+                    });
+
+                    // Add rows for each year in the selected range
+                    years
+                        .filter(year => year >= startYear && year <= endYear)
+                        .forEach(year => {
+                            const row = document.createElement("tr");
+                            const yearCell = document.createElement("td");
+                            yearCell.textContent = year;
+                            row.appendChild(yearCell);
+
+                            selectedItems.forEach(item => {
+                                const cell = document.createElement("td");
+                                if (data[year][item] !== undefined) {
+                                    cell.textContent = formatNumber(data[year][item]);
+                                } else {
+                                    cell.textContent = "-";
+                                }
+                                row.appendChild(cell);
+                            });
+
+                            tableBody.appendChild(row);
+                        });
+                }
+
+                // Attach event listeners
+                startYearSelect.addEventListener("change", updateTable);
+                endYearSelect.addEventListener("change", updateTable);
+                itemsOptions.addEventListener("change", updateTable);
+
+                // Initialize table
+                updateTable();
+            })
+            .catch(error => console.error("Error loading data:", error));
+    </script>
 </body>
 </html>
