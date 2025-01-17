@@ -32,6 +32,12 @@
             margin-right: 10px;
         }
 
+        .filters select {
+            padding: 5px;
+            font-size: 16px;
+            width: auto;
+        }
+
         /* Custom Dropdown */
         .dropdown {
             position: relative;
@@ -54,17 +60,21 @@
             background-color: #f9f9f9;
             border: 1px solid #ddd;
             border-radius: 4px;
-            width: 200px;
+            width: 300px; /* 너비 증가 */
             z-index: 1;
-            max-height: 150px;
-            overflow-y: auto;
+            max-height: 200px; /* 높이 제한 */
+            overflow-y: auto; /* 스크롤 추가 */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         .dropdown-content label {
-            display: block;
+            display: flex; /* 체크박스와 텍스트를 가로로 정렬 */
+            align-items: center; /* 세로 가운데 정렬 */
             padding: 5px 10px;
             cursor: pointer;
+            white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+            overflow: hidden;
+            text-overflow: ellipsis; /* 넘치는 텍스트에 '...' 추가 */
         }
 
         .dropdown-content label:hover {
@@ -72,7 +82,7 @@
         }
 
         .dropdown-content input[type="checkbox"] {
-            margin-right: 10px;
+            margin-right: 10px; /* 체크박스와 텍스트 간격 */
         }
 
         .dropdown.show .dropdown-content {
