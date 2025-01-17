@@ -45,27 +45,29 @@
         .container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between; /* 콘텐츠 간 간격 조정 */
             align-items: stretch;
-            margin: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
             gap: 20px;
         }
         .content {
-            flex: 1 1 calc(33.333% - 40px);
-            max-width: calc(33.333% - 40px);
+            flex: 1 1 calc(25% - 20px); /* 4개 한 줄로 표시 */
+            max-width: calc(25% - 20px);
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
             background-color: #f9f9f9;
             text-align: center;
+            cursor: pointer; /* 커서 변경 */
+            transition: transform 0.2s ease-in-out;
+        }
+        .content:hover {
+            transform: scale(1.05); /* 호버 시 확대 효과 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .content h2 {
             color: #333;
-        }
-        .content a {
-            text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
         }
         footer {
             text-align: center;
@@ -75,13 +77,7 @@
         }
         @media (max-width: 768px) {
             .content {
-                flex: 1 1 calc(50% - 40px);
-                max-width: calc(50% - 40px);
-            }
-        }
-        @media (max-width: 480px) {
-            .content {
-                flex: 1 1 100%;
+                flex: 1 1 100%; /* 모바일에서 4줄 표시 */
                 max-width: 100%;
             }
         }
@@ -95,7 +91,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-N3SG24QXER');
-</script>    
+</script>     
 <body>
     <header>
         <h1>KoreaStatLinker</h1>
@@ -111,20 +107,21 @@
     </div>
 
     <div class="container">
-        <div class="content">
+        <div class="content" onclick="location.href='statistics-news.html'">
             <h2>Statistics News</h2>
             <p>Stay updated with the latest statistics news.</p>
-            <a href="statistics-news.html">Go to Statistics News</a>
         </div>
-        <div class="content">
+        <div class="content" onclick="location.href='authoring-agencies.html'">
             <h2>Authoring Agencies</h2>
             <p>Explore key authoring agencies and their contributions.</p>
-            <a href="authoring-agencies.html">Go to Authoring Agencies</a>
         </div>
-        <div class="content">
+        <div class="content" onclick="location.href='statistics-resources.html'">
             <h2>Statistics Resources</h2>
             <p>Leverage various statistical tools and data sources.</p>
-            <a href="statistics-resources.html">Go to Statistics Resources</a>
+        </div>
+        <div class="content" onclick="location.href='k-indicator.html'">
+            <h2>K Indicator</h2>
+            <p>Explore key Korean indicators and trends.</p>
         </div>
     </div>
 
