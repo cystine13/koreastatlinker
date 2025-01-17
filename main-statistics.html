@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KoreaStatLinker - Main Statistics</title>
+    <title>Korea Indicator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,10 +32,51 @@
             margin-right: 10px;
         }
 
-        .filters select {
-            padding: 5px;
+        /* Custom Dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            padding: 8px 12px;
             font-size: 16px;
-            width: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 200px;
+            z-index: 1;
+            max-height: 150px;
+            overflow-y: auto;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown-content label {
+            display: block;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .dropdown-content label:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown-content input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .dropdown.show .dropdown-content {
+            display: block;
         }
 
         .statistics-table {
@@ -71,7 +112,10 @@
             </div>
             <div>
                 <label for="items">Items:</label>
-                <select id="items" multiple size="3" style="height: auto;"></select>
+                <div class="dropdown" id="items-dropdown">
+                    <div class="dropdown-button">Select Items</div>
+                    <div class="dropdown-content" id="items-options"></div>
+                </div>
             </div>
         </div>
 
@@ -94,7 +138,8 @@
                 const years = Object.keys(data).sort((a, b) => b - a); // Sort years in descending order
                 const startYearSelect = document.getElementById("start-year");
                 const endYearSelect = document.getElementById("end-year");
-                const itemsSelect = document.getElementById("items");
+                const itemsDropdown = document.getElementById("items-dropdown");
+                const itemsOptions = document.getElementById("items-options");
                 const tableHeader = document.getElementById("table-header");
                 const tableBody = document.getElementById("statistics-body");
 
@@ -120,27 +165,44 @@
 
                 // Populate items dropdown
                 itemNames.forEach(name => {
-                    const option = document.createElement("option");
-                    option.value = name;
-                    option.textContent = name;
-                    itemsSelect.appendChild(option);
+                    const label = document.createElement("label");
+                    const checkbox = document.createElement("input");
+                    checkbox.type = "checkbox";
+                    checkbox.value = name;
+                    checkbox.checked = itemsOptions.children.length < 5; // Default first 5 items selected
+
+                    label.appendChild(checkbox);
+                    label.append(name);
+                    itemsOptions.appendChild(label);
                 });
 
-                // Default to first 5 items
-                for (let i = 0; i < Math.min(5, itemsSelect.options.length); i++) {
-                    itemsSelect.options[i].selected = true;
-                }
+                // Toggle dropdown visibility
+                itemsDropdown.querySelector(".dropdown-button").addEventListener("click", () => {
+                    itemsDropdown.classList.toggle("show");
+                });
+
+                // Close dropdown if clicked outside
+                window.addEventListener("click", (e) => {
+                    if (!itemsDropdown.contains(e.target)) {
+                        itemsDropdown.classList.remove("show");
+                    }
+                });
 
                 // Add commas to numbers for better readability
                 function formatNumber(number) {
                     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 }
 
+                // Get selected items from dropdown
+                function getSelectedItems() {
+                    return Array.from(itemsOptions.querySelectorAll("input[type='checkbox']:checked")).map(cb => cb.value);
+                }
+
                 // Update table based on selected filters
                 function updateTable() {
                     const startYear = parseInt(startYearSelect.value);
                     const endYear = parseInt(endYearSelect.value);
-                    const selectedItems = Array.from(itemsSelect.selectedOptions).map(opt => opt.value);
+                    const selectedItems = getSelectedItems();
 
                     // Clear the table
                     tableHeader.innerHTML = "<th>Year</th>";
@@ -179,7 +241,7 @@
                 // Attach event listeners
                 startYearSelect.addEventListener("change", updateTable);
                 endYearSelect.addEventListener("change", updateTable);
-                itemsSelect.addEventListener("change", updateTable);
+                itemsOptions.addEventListener("change", updateTable);
 
                 // Initialize table
                 updateTable();
