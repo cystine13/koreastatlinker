@@ -56,15 +56,15 @@
         }
 
         .resource-list li {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             margin: 10px 0;
             padding: 10px 15px;
             background-color: #f9f9f9;
             border: 1px solid #ddd;
             border-radius: 5px;
             transition: transform 0.2s, box-shadow 0.2s;
+            white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+            overflow: hidden; /* 넘치는 텍스트 숨김 */
+            text-overflow: ellipsis; /* 넘치는 텍스트에 '...' 추가 */
         }
 
         .resource-list li:hover {
@@ -76,13 +76,10 @@
             text-decoration: none;
             color: #007BFF;
             font-weight: bold;
-            margin-right: 15px;
-            flex: 2;
+            margin-right: 10px;
         }
 
         .resource-list span {
-            flex: 1;
-            text-align: center;
             color: #555;
         }
     </style>
@@ -154,8 +151,7 @@
                         const li = document.createElement('li');
                         li.innerHTML = `
                             <a href="${resource.link}" target="_blank">${resource.name_en}</a>
-                            <span>${resource.category_en}</span>
-                            <span>${resource.source_en}</span>
+                            <span>(${resource.category_en}, ${resource.source_en})</span>
                         `;
                         resourceList.appendChild(li);
                     });
