@@ -1182,5 +1182,13 @@
         "date": "2024-12-12",
         "source_kr": "통계청",
         "source_en": "Statistics Korea"
+    },
+    {
+        "title_kr": "2024년 12월 주민등록인구통계",
+        "title_en": "Resident Population Statistics for 2024-12",
+        "link": "https://jumin.mois.go.kr/statMonth.do",
+        "date": "2025-01-19",
+        "source_kr": "행정안전부 주민등록인구통계",
+        "source_en": "MOIS Resident Population Statistics"
     }
 ]
