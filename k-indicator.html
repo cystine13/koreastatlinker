@@ -10,7 +10,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -44,16 +44,24 @@
         }
 
         .filters {
-            margin-bottom: 20px;
+            margin: 20px 0;
         }
 
         .filters label {
             margin-right: 10px;
+            font-weight: bold;
         }
 
-        .filters select {
-            padding: 5px;
-            font-size: 16px;
+        .filters .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
         }
 
         .statistics-table {
@@ -84,11 +92,8 @@
             <!-- Tabs for categories will be dynamically generated -->
         </div>
 
-        <div class="filters">
-            <label for="year-range">Year:</label>
-            <select id="start-year"></select>
-            <span>~</span>
-            <select id="end-year"></select>
+        <div class="filters" id="filters">
+            <!-- Filters for items will be dynamically generated -->
         </div>
 
         <table class="statistics-table">
@@ -107,32 +112,29 @@
             .then(response => response.json())
             .then(data => {
                 const years = Object.keys(data).sort((a, b) => b - a); // Sort years in descending order
-                const startYearSelect = document.getElementById("start-year");
-                const endYearSelect = document.getElementById("end-year");
                 const tableHeader = document.getElementById("table-header");
                 const tableBody = document.getElementById("statistics-body");
                 const tabs = document.getElementById("tabs");
+                const filters = document.getElementById("filters");
 
-                // Populate year dropdowns
-                years.forEach(year => {
-                    const startOption = document.createElement("option");
-                    const endOption = document.createElement("option");
-                    startOption.value = endOption.value = year;
-                    startOption.textContent = endOption.textContent = year;
-
-                    startYearSelect.appendChild(startOption);
-                    endYearSelect.appendChild(endOption);
-                });
-
-                startYearSelect.value = years[years.length - 1];
-                endYearSelect.value = years[0];
-
-                // Extract categories
+                // Extract unique categories
                 const categories = [...new Set(
                     Object.values(data).flatMap(yearData =>
                         Object.values(yearData).map(item => item.category_en)
                     )
                 )];
+
+                // Extract unique items per category
+                const categoryItems = {};
+                Object.values(data).forEach(yearData => {
+                    Object.entries(yearData).forEach(([itemName, itemData]) => {
+                        const category = itemData.category_en;
+                        if (!categoryItems[category]) {
+                            categoryItems[category] = new Set();
+                        }
+                        categoryItems[category].add(itemName);
+                    });
+                });
 
                 // Create tabs
                 categories.forEach(category => {
@@ -144,7 +146,8 @@
                     tab.addEventListener("click", () => {
                         document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
                         tab.classList.add("active");
-                        updateTable(category);
+                        updateFilters(category);
+                        updateTable(category, []);
                     });
 
                     tabs.appendChild(tab);
@@ -153,19 +156,47 @@
                 // Set the first tab as active
                 tabs.firstChild.classList.add("active");
 
-                // Update table based on selected filters
-                function updateTable(selectedCategory) {
-                    const startYear = parseInt(startYearSelect.value);
-                    const endYear = parseInt(endYearSelect.value);
+                // Update filters based on category
+                function updateFilters(category) {
+                    filters.innerHTML = "";
+                    const label = document.createElement("label");
+                    label.textContent = "Select Items:";
+                    filters.appendChild(label);
 
+                    const checkboxGroup = document.createElement("div");
+                    checkboxGroup.className = "checkbox-group";
+
+                    const items = [...categoryItems[category]];
+                    items.forEach(item => {
+                        const checkboxWrapper = document.createElement("label");
+                        const checkbox = document.createElement("input");
+                        checkbox.type = "checkbox";
+                        checkbox.value = item;
+                        checkbox.checked = true; // Default: all checked
+
+                        checkbox.addEventListener("change", () => {
+                            const selectedItems = Array.from(
+                                filters.querySelectorAll("input[type='checkbox']:checked")
+                            ).map(cb => cb.value);
+                            updateTable(category, selectedItems);
+                        });
+
+                        checkboxWrapper.appendChild(checkbox);
+                        checkboxWrapper.appendChild(document.createTextNode(item));
+                        checkboxGroup.appendChild(checkboxWrapper);
+                    });
+
+                    filters.appendChild(checkboxGroup);
+                }
+
+                // Update table based on category and selected items
+                function updateTable(category, selectedItems) {
                     tableHeader.innerHTML = "<th>Year</th>";
                     tableBody.innerHTML = "";
 
-                    // Get items for the selected category
-                    const items = Object.values(data)
-                        .flatMap(yearData =>
-                            Object.keys(yearData).filter(item => yearData[item].category_en === selectedCategory)
-                        );
+                    const items = selectedItems.length
+                        ? selectedItems
+                        : [...categoryItems[category]];
 
                     items.forEach(item => {
                         const th = document.createElement("th");
@@ -173,38 +204,27 @@
                         tableHeader.appendChild(th);
                     });
 
-                    years
-                        .filter(year => year >= startYear && year <= endYear)
-                        .forEach(year => {
-                            const row = document.createElement("tr");
-                            const yearCell = document.createElement("td");
-                            yearCell.textContent = year;
-                            row.appendChild(yearCell);
+                    years.forEach(year => {
+                        const row = document.createElement("tr");
+                        const yearCell = document.createElement("td");
+                        yearCell.textContent = year;
+                        row.appendChild(yearCell);
 
-                            items.forEach(item => {
-                                const cell = document.createElement("td");
-                                const value = data[year][item]?.value || "-";
-                                cell.textContent = value;
-                                row.appendChild(cell);
-                            });
-
-                            tableBody.appendChild(row);
+                        items.forEach(item => {
+                            const cell = document.createElement("td");
+                            const value = data[year]?.[item]?.value || "-";
+                            cell.textContent = value;
+                            row.appendChild(cell);
                         });
+
+                        tableBody.appendChild(row);
+                    });
                 }
 
-                // Initialize table
-                updateTable(categories[0]);
-
-                // Update table when year range changes
-                startYearSelect.addEventListener("change", () => {
-                    const activeCategory = document.querySelector(".tab.active").dataset.category;
-                    updateTable(activeCategory);
-                });
-
-                endYearSelect.addEventListener("change", () => {
-                    const activeCategory = document.querySelector(".tab.active").dataset.category;
-                    updateTable(activeCategory);
-                });
+                // Initialize filters and table
+                const initialCategory = categories[0];
+                updateFilters(initialCategory);
+                updateTable(initialCategory, [...categoryItems[initialCategory]]);
             })
             .catch(error => console.error("Error loading data:", error));
     </script>
