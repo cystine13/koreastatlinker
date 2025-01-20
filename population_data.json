@@ -1,210 +1,842 @@
 {
     "2000": {
-        "Resident Population (Person)": 47732558,
-        "Births (Person)": 640089,
-        "Deaths (Person)": 248740,
-        "Resident Households (households)": 15765275,
-        "GDP (Hund.M U$)": 5976
+        "Resident Population (Person)": {
+            "value": 47732558,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 640089,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 248740,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 15765275,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 5976,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2001": {
-        "Resident Population (Person)": 48021543,
-        "Births (Person)": 559934,
-        "Deaths (Person)": 243813,
-        "Resident Households (households)": 16080992,
-        "GDP (Hund.M U$)": 5676
+        "Resident Population (Person)": {
+            "value": 48021543,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 559934,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 243813,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 16080992,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 5676,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2002": {
-        "Resident Population (Person)": 48229948,
-        "Births (Person)": 496911,
-        "Deaths (Person)": 247524,
-        "Resident Households (households)": 16489107,
-        "GDP (Hund.M U$)": 6499
+        "Resident Population (Person)": {
+            "value": 48229948,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 496911,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 247524,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 16489107,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 6499,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2003": {
-        "Resident Population (Person)": 48386823,
-        "Births (Person)": 495036,
-        "Deaths (Person)": 246463,
-        "Resident Households (households)": 16987634,
-        "GDP (Hund.M U$)": 7283
+        "Resident Population (Person)": {
+            "value": 48386823,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 495036,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 246463,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 16987634,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 7283,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2004": {
-        "Resident Population (Person)": 48583805,
-        "Births (Person)": 476958,
-        "Deaths (Person)": 246220,
-        "Resident Households (households)": 17391932,
-        "GDP (Hund.M U$)": 8237
+        "Resident Population (Person)": {
+            "value": 48583805,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 476958,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 246220,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 17391932,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 8237,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2005": {
-        "Resident Population (Person)": 48782274,
-        "Births (Person)": 438707,
-        "Deaths (Person)": 245874,
-        "Resident Households (households)": 17857511,
-        "GDP (Hund.M U$)": 9715
+        "Resident Population (Person)": {
+            "value": 48782274,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 438707,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 245874,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 17857511,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 9715,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2006": {
-        "Resident Population (Person)": 48991779,
-        "Births (Person)": 451759,
-        "Deaths (Person)": 244162,
-        "Resident Households (households)": 18326619,
-        "GDP (Hund.M U$)": 10943
+        "Resident Population (Person)": {
+            "value": 48991779,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 451759,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 244162,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 18326619,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 10943,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2007": {
-        "Resident Population (Person)": 49268928,
-        "Births (Person)": 496822,
-        "Deaths (Person)": 246482,
-        "Resident Households (households)": 18687694,
-        "GDP (Hund.M U$)": 12209
+        "Resident Population (Person)": {
+            "value": 49268928,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 496822,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 246482,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 18687694,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 12209,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2008": {
-        "Resident Population (Person)": 49540367,
-        "Births (Person)": 465892,
-        "Deaths (Person)": 246113,
-        "Resident Households (households)": 19005339,
-        "GDP (Hund.M U$)": 10910
+        "Resident Population (Person)": {
+            "value": 49540367,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 465892,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 246113,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 19005339,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 10910,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2009": {
-        "Resident Population (Person)": 49773145,
-        "Births (Person)": 444849,
-        "Deaths (Person)": 246942,
-        "Resident Households (households)": 19261292,
-        "Registered Foreigners (Person)": 870636,
-        "GDP (Hund.M U$)": 9834
+        "Resident Population (Person)": {
+            "value": 49773145,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 444849,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 246942,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 19261292,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 870636,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 9834,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2010": {
-        "Resident Population (Person)": 50515666,
-        "Births (Person)": 470171,
-        "Deaths (Person)": 255405,
-        "Resident Households (households)": 19865179,
-        "Registered Foreigners (Person)": 918917,
-        "GDP (Hund.M U$)": 11930
+        "Resident Population (Person)": {
+            "value": 50515666,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 470171,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 255405,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 19865179,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 918917,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 11930,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2011": {
-        "Resident Population (Person)": 50734284,
-        "Births (Person)": 471265,
-        "Deaths (Person)": 257396,
-        "Resident Households (households)": 20033142,
-        "Crime Occurrence (Cases)": 1752598,
-        "Registered Foreigners (Person)": 982461,
-        "GDP (Hund.M U$)": 13072
+        "Resident Population (Person)": {
+            "value": 50734284,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 471265,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 257396,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 20033142,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": 1752598,
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 982461,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 13072,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2012": {
-        "Resident Population (Person)": 50948272,
-        "Births (Person)": 484550,
-        "Deaths (Person)": 267221,
-        "Resident Households (households)": 20211770,
-        "Crime Occurrence (Cases)": 1793400,
-        "Registered Foreigners (Person)": 932983,
-        "GDP (Hund.M U$)": 13352
+        "Resident Population (Person)": {
+            "value": 50948272,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 484550,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 267221,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 20211770,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": 1793400,
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 932983,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 13352,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2013": {
-        "Resident Population (Person)": 51141463,
-        "Births (Person)": 436455,
-        "Deaths (Person)": 266257,
-        "Resident Households (households)": 20456588,
-        "Crime Occurrence (Cases)": 1857276,
-        "Registered Foreigners (Person)": 985923,
-        "GDP (Hund.M U$)": 14345
+        "Resident Population (Person)": {
+            "value": 51141463,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 436455,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 266257,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 20456588,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": 1857276,
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 985923,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 14345,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2014": {
-        "Resident Population (Person)": 51327916,
-        "Births (Person)": 435435,
-        "Deaths (Person)": 267692,
-        "Resident Households (households)": 20724094,
-        "Crime Occurrence (Cases)": 1778966,
-        "Registered Foreigners (Person)": 1091531,
-        "GDP (Hund.M U$)": 15556
+        "Resident Population (Person)": {
+            "value": 51327916,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 435435,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 267692,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 20724094,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": 1778966,
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 1091531,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 15556,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2015": {
-        "Resident Population (Person)": 51529338,
-        "Births (Person)": 438420,
-        "Deaths (Person)": 275895,
-        "Household (households)": 19560603,
-        "Resident Households (households)": 21011152,
-        "Crime Occurrence (Cases)": 1861657,
-        "Registered Foreigners (Person)": 1143087,
-        "GDP (Hund.M U$)": 15384
+        "Resident Population (Person)": {
+            "value": 51529338,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 438420,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 275895,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Household (households)": {
+            "value": 19560603,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 21011152,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": 1861657,
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 1143087,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 15384,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2016": {
-        "Resident Population (Person)": 51696216,
-        "Births (Person)": 406243,
-        "Deaths (Person)": 280827,
-        "Household (households)": 19837665,
-        "Resident Households (households)": 21294009,
-        "Crime Occurrence (Cases)": 1849450,
-        "Registered Foreigners (Person)": 1161677,
-        "GDP (Hund.M U$)": 15795
+        "Resident Population (Person)": {
+            "value": 51696216,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 406243,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 280827,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Household (households)": {
+            "value": 19837665,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 21294009,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": 1849450,
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 1161677,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 15795,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2017": {
-        "Resident Population (Person)": 51778544,
-        "Births (Person)": 357771,
-        "Deaths (Person)": 285534,
-        "Household (households)": 20167922,
-        "Resident Households (households)": 21632851,
-        "Crime Occurrence (Cases)": 1662341,
-        "Registered Foreigners (Person)": 1171762,
-        "GDP (Hund.M U$)": 17104
+        "Resident Population (Person)": {
+            "value": 51778544,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 357771,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 285534,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Household (households)": {
+            "value": 20167922,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 21632851,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": 1662341,
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 1171762,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 17104,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2018": {
-        "Resident Population (Person)": 51826059,
-        "Births (Person)": 326822,
-        "Deaths (Person)": 298820,
-        "Household (households)": 20499543,
-        "Resident Households (households)": 22042947,
-        "Crime Occurrence (Cases)": 1580751,
-        "Registered Foreigners (Person)": 1246626,
-        "GDP (Hund.M U$)": 18240
+        "Resident Population (Person)": {
+            "value": 51826059,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 326822,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 298820,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Household (households)": {
+            "value": 20499543,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 22042947,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": 1580751,
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 1246626,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 18240,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2019": {
-        "Resident Population (Person)": 51849861,
-        "Births (Person)": 302676,
-        "Deaths (Person)": 295110,
-        "Household (households)": 20891348,
-        "Resident Households (households)": 22481466,
-        "Crime Occurrence (Cases)": 1611906,
-        "Registered Foreigners (Person)": 1271807,
-        "GDP (Hund.M U$)": 17506
+        "Resident Population (Person)": {
+            "value": 51849861,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 302676,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 295110,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Household (households)": {
+            "value": 20891348,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 22481466,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": 1611906,
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 1271807,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 17506,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2020": {
-        "Resident Population (Person)": 51829023,
-        "Births (Person)": 272337,
-        "Deaths (Person)": 304948,
-        "Household (households)": 21484785,
-        "Resident Households (households)": 23093108,
-        "Crime Occurrence (Cases)": 1587866,
-        "Registered Foreigners (Person)": 1145540,
-        "GDP (Hund.M U$)": 17443
+        "Resident Population (Person)": {
+            "value": 51829023,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 272337,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 304948,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Household (households)": {
+            "value": 21484785,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 23093108,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": 1587866,
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 1145540,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 17443,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2021": {
-        "Resident Population (Person)": 51638809,
-        "Births (Person)": 260562,
-        "Deaths (Person)": 317680,
-        "Household (households)": 22022753,
-        "Resident Households (households)": 23472895,
-        "Crime Occurrence (Cases)": 1429826,
-        "Registered Foreigners (Person)": 1093891,
-        "GDP (Hund.M U$)": 19415
+        "Resident Population (Person)": {
+            "value": 51638809,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 260562,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 317680,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Household (households)": {
+            "value": 22022753,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 23472895,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": 1429826,
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 1093891,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 19415,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2022": {
-        "Resident Population (Person)": 51439038,
-        "Births (Person)": 249186,
-        "Deaths (Person)": 372939,
-        "Household (households)": 22383187,
-        "Resident Households (households)": 23705814,
-        "Crime Occurrence (Cases)": 1482433,
-        "Registered Foreigners (Person)": 1189585,
-        "GDP (Hund.M U$)": 17986
+        "Resident Population (Person)": {
+            "value": 51439038,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 249186,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 372939,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Household (households)": {
+            "value": 22383187,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 23705814,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": 1482433,
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 1189585,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 17986,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2023": {
-        "Resident Population (Person)": 51325329,
-        "Births (Person)": 230028,
-        "Deaths (Person)": 352511,
-        "Household (households)": 22728163,
-        "Resident Households (households)": 23914851,
-        "Registered Foreigners (Person)": 1348626,
-        "GDP (Hund.M U$)": 18394
+        "Resident Population (Person)": {
+            "value": 51325329,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": 230028,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": 352511,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Household (households)": {
+            "value": 22728163,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 23914851,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Registered Foreigners (Person)": {
+            "value": 1348626,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "GDP (Hund.M U$)": {
+            "value": 18394,
+            "category_en": "Economy",
+            "category_kr": "경제"
+        }
     },
     "2024": {
-        "Resident Population (Person)": 51217221,
-        "Resident Households (households)": 24118928
+        "Resident Population (Person)": {
+            "value": 51217221,
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Resident Households (households)": {
+            "value": 24118928,
+            "category_en": "Population",
+            "category_kr": "인구"
+        }
     }
 }
