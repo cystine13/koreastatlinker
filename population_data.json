@@ -24,6 +24,11 @@
             "value": 5976,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 248740,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2001": {
@@ -51,6 +56,11 @@
             "value": 5676,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 243813,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2002": {
@@ -78,6 +88,11 @@
             "value": 6499,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 247524,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2003": {
@@ -105,6 +120,11 @@
             "value": 7283,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 246463,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2004": {
@@ -132,6 +152,11 @@
             "value": 8237,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 246220,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2005": {
@@ -159,6 +184,11 @@
             "value": 9715,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 245874,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2006": {
@@ -186,6 +216,11 @@
             "value": 10943,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 244162,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2007": {
@@ -213,6 +248,11 @@
             "value": 12209,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 246482,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2008": {
@@ -240,6 +280,11 @@
             "value": 10910,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 246113,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2009": {
@@ -272,6 +317,11 @@
             "value": 9834,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 246942,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2010": {
@@ -304,6 +354,11 @@
             "value": 11930,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 255405,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2011": {
@@ -341,6 +396,11 @@
             "value": 13072,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 257396,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2012": {
@@ -378,6 +438,11 @@
             "value": 13352,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 267221,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2013": {
@@ -415,6 +480,11 @@
             "value": 14345,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 266257,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2014": {
@@ -452,6 +522,11 @@
             "value": 15556,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 267692,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2015": {
@@ -494,6 +569,11 @@
             "value": 15384,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 275895,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2016": {
@@ -536,6 +616,11 @@
             "value": 15795,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 280827,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2017": {
@@ -578,6 +663,11 @@
             "value": 17104,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 285534,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2018": {
@@ -620,6 +710,11 @@
             "value": 18240,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 298820,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2019": {
@@ -662,6 +757,11 @@
             "value": 17506,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 295110,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2020": {
@@ -704,6 +804,11 @@
             "value": 17443,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 304948,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2021": {
@@ -746,6 +851,11 @@
             "value": 19415,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 317680,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2022": {
@@ -788,6 +898,11 @@
             "value": 17986,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 372939,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2023": {
@@ -825,6 +940,11 @@
             "value": 18394,
             "category_en": "Economy",
             "category_kr": "경제"
+        },
+        "mortality rate (per 100 thousand person)": {
+            "value": 352511,
+            "category_en": "Health",
+            "category_kr": "보건"
         }
     },
     "2024": {
