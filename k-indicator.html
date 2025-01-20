@@ -20,12 +20,31 @@
             margin-bottom: 30px;
         }
 
-        .filters {
+        .tabs {
             display: flex;
             justify-content: space-between;
-            align-items: center;
             margin-bottom: 20px;
-            flex-wrap: wrap;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            background-color: #f9f9f9;
+            border-radius: 4px 4px 0 0;
+            font-size: 16px;
+        }
+
+        .tab.active {
+            background-color: white;
+            font-weight: bold;
+            border: 2px solid #ccc;
+            border-bottom: none;
+        }
+
+        .filters {
+            margin-bottom: 20px;
         }
 
         .filters label {
@@ -35,58 +54,6 @@
         .filters select {
             padding: 5px;
             font-size: 16px;
-            width: auto;
-        }
-
-        /* Custom Dropdown */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-button {
-            padding: 8px 12px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #f9f9f9;
-            cursor: pointer;
-            user-select: none;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            width: 300px; /* 너비 증가 */
-            z-index: 1;
-            max-height: 200px; /* 높이 제한 */
-            overflow-y: auto; /* 스크롤 추가 */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        .dropdown-content label {
-            display: flex; /* 체크박스와 텍스트를 가로로 정렬 */
-            align-items: center; /* 세로 가운데 정렬 */
-            padding: 5px 10px;
-            cursor: pointer;
-            white-space: nowrap; /* 텍스트 줄바꿈 방지 */
-            overflow: hidden;
-            text-overflow: ellipsis; /* 넘치는 텍스트에 '...' 추가 */
-        }
-
-        .dropdown-content label:hover {
-            background-color: #f1f1f1;
-        }
-
-        .dropdown-content input[type="checkbox"] {
-            margin-right: 10px; /* 체크박스와 텍스트 간격 */
-        }
-
-        .dropdown.show .dropdown-content {
-            display: block;
         }
 
         .statistics-table {
@@ -113,20 +80,15 @@
             <h1>Korea Indicator</h1>
         </div>
 
+        <div class="tabs" id="tabs">
+            <!-- Tabs for categories will be dynamically generated -->
+        </div>
+
         <div class="filters">
-            <div>
-                <label for="year-range">Year:</label>
-                <select id="start-year"></select>
-                <span>~</span>
-                <select id="end-year"></select>
-            </div>
-            <div>
-                <label for="items">Items:</label>
-                <div class="dropdown" id="items-dropdown">
-                    <div class="dropdown-button">Select Items</div>
-                    <div class="dropdown-content" id="items-options"></div>
-                </div>
-            </div>
+            <label for="year-range">Year:</label>
+            <select id="start-year"></select>
+            <span>~</span>
+            <select id="end-year"></select>
         </div>
 
         <table class="statistics-table">
@@ -141,17 +103,15 @@
     </div>
 
     <script>
-        // Load data from JSON file
         fetch("population_data.json")
             .then(response => response.json())
             .then(data => {
                 const years = Object.keys(data).sort((a, b) => b - a); // Sort years in descending order
                 const startYearSelect = document.getElementById("start-year");
                 const endYearSelect = document.getElementById("end-year");
-                const itemsDropdown = document.getElementById("items-dropdown");
-                const itemsOptions = document.getElementById("items-options");
                 const tableHeader = document.getElementById("table-header");
                 const tableBody = document.getElementById("statistics-body");
+                const tabs = document.getElementById("tabs");
 
                 // Populate year dropdowns
                 years.forEach(year => {
@@ -164,68 +124,55 @@
                     endYearSelect.appendChild(endOption);
                 });
 
-                // Default year range (last 10 years)
-                const defaultStartYear = years[Math.min(10, years.length) - 1];
-                const defaultEndYear = years[0];
-                startYearSelect.value = defaultStartYear;
-                endYearSelect.value = defaultEndYear;
+                startYearSelect.value = years[years.length - 1];
+                endYearSelect.value = years[0];
 
-                // Get unique item names
-                const itemNames = [...new Set(years.flatMap(year => Object.keys(data[year])))];
+                // Extract categories
+                const categories = [...new Set(
+                    Object.values(data).flatMap(yearData =>
+                        Object.values(yearData).map(item => item.category_en)
+                    )
+                )];
 
-                // Populate items dropdown
-                itemNames.forEach(name => {
-                    const label = document.createElement("label");
-                    const checkbox = document.createElement("input");
-                    checkbox.type = "checkbox";
-                    checkbox.value = name;
-                    checkbox.checked = itemsOptions.children.length < 5; // Default first 5 items selected
+                // Create tabs
+                categories.forEach(category => {
+                    const tab = document.createElement("div");
+                    tab.textContent = category;
+                    tab.className = "tab";
+                    tab.dataset.category = category;
 
-                    label.appendChild(checkbox);
-                    label.append(name);
-                    itemsOptions.appendChild(label);
+                    tab.addEventListener("click", () => {
+                        document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+                        tab.classList.add("active");
+                        updateTable(category);
+                    });
+
+                    tabs.appendChild(tab);
                 });
 
-                // Toggle dropdown visibility
-                itemsDropdown.querySelector(".dropdown-button").addEventListener("click", () => {
-                    itemsDropdown.classList.toggle("show");
-                });
-
-                // Close dropdown if clicked outside
-                window.addEventListener("click", (e) => {
-                    if (!itemsDropdown.contains(e.target)) {
-                        itemsDropdown.classList.remove("show");
-                    }
-                });
-
-                // Add commas to numbers for better readability
-                function formatNumber(number) {
-                    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                }
-
-                // Get selected items from dropdown
-                function getSelectedItems() {
-                    return Array.from(itemsOptions.querySelectorAll("input[type='checkbox']:checked")).map(cb => cb.value);
-                }
+                // Set the first tab as active
+                tabs.firstChild.classList.add("active");
 
                 // Update table based on selected filters
-                function updateTable() {
+                function updateTable(selectedCategory) {
                     const startYear = parseInt(startYearSelect.value);
                     const endYear = parseInt(endYearSelect.value);
-                    const selectedItems = getSelectedItems();
 
-                    // Clear the table
                     tableHeader.innerHTML = "<th>Year</th>";
                     tableBody.innerHTML = "";
 
-                    // Add selected items to table header
-                    selectedItems.forEach(item => {
+                    // Get items for the selected category
+                    const items = Object.values(data)
+                        .flatMap(yearData =>
+                            Object.keys(yearData).filter(item => yearData[item].category_en === selectedCategory)
+                        );
+
+                    items.forEach(item => {
                         const th = document.createElement("th");
                         th.textContent = item;
                         tableHeader.appendChild(th);
                     });
 
-                    // Add rows for each year in the selected range
                     years
                         .filter(year => year >= startYear && year <= endYear)
                         .forEach(year => {
@@ -234,13 +181,10 @@
                             yearCell.textContent = year;
                             row.appendChild(yearCell);
 
-                            selectedItems.forEach(item => {
+                            items.forEach(item => {
                                 const cell = document.createElement("td");
-                                if (data[year][item] !== undefined) {
-                                    cell.textContent = formatNumber(data[year][item]);
-                                } else {
-                                    cell.textContent = "-";
-                                }
+                                const value = data[year][item]?.value || "-";
+                                cell.textContent = value;
                                 row.appendChild(cell);
                             });
 
@@ -248,13 +192,19 @@
                         });
                 }
 
-                // Attach event listeners
-                startYearSelect.addEventListener("change", updateTable);
-                endYearSelect.addEventListener("change", updateTable);
-                itemsOptions.addEventListener("change", updateTable);
-
                 // Initialize table
-                updateTable();
+                updateTable(categories[0]);
+
+                // Update table when year range changes
+                startYearSelect.addEventListener("change", () => {
+                    const activeCategory = document.querySelector(".tab.active").dataset.category;
+                    updateTable(activeCategory);
+                });
+
+                endYearSelect.addEventListener("change", () => {
+                    const activeCategory = document.querySelector(".tab.active").dataset.category;
+                    updateTable(activeCategory);
+                });
             })
             .catch(error => console.error("Error loading data:", error));
     </script>
