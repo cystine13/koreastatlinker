@@ -1,5 +1,13 @@
 [
     {
+        "title_kr": "2024년 12월 생산자물가지수(잠정)",
+        "title_en": "Producer Price Index for December 2024 (tentative)",
+        "link": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?nttId=10089332&menuNo=201264",
+        "date": "2025-01-21",
+        "source_kr": "한국은행",
+        "source_en": "Bank of Korea"
+    },
+    {
         "title_kr": "2024년 12월 주민등록인구통계",
         "title_en": "Resident Population Statistics for 2024-12",
         "link": "https://jumin.mois.go.kr/statMonth.do",
