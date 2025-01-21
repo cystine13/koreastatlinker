@@ -1,962 +1,1087 @@
 {
     "2000": {
         "Resident Population (Person)": {
-            "value": 47732558,
+            "value": "47,732,558",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 640089,
+            "value": "640,089",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 248740,
+            "value": "248,740",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 15765275,
+            "value": "15,765,275",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 5976,
+            "value": "5,976.7",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 248740,
+            "value": "248,740",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "4.4",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2001": {
         "Resident Population (Person)": {
-            "value": 48021543,
+            "value": "48,021,543",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 559934,
+            "value": "559,934",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 243813,
+            "value": "243,813",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 16080992,
+            "value": "16,080,992",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 5676,
+            "value": "5,676.4",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 243813,
+            "value": "243,813",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "4.0",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2002": {
         "Resident Population (Person)": {
-            "value": 48229948,
+            "value": "48,229,948",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 496911,
+            "value": "496,911",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 247524,
+            "value": "247,524",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 16489107,
+            "value": "16,489,107",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 6499,
+            "value": "6,499.4",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 247524,
+            "value": "247,524",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.3",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2003": {
         "Resident Population (Person)": {
-            "value": 48386823,
+            "value": "48,386,823",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 495036,
+            "value": "495,036",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 246463,
+            "value": "246,463",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 16987634,
+            "value": "16,987,634",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 7283,
+            "value": "7,283.5",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 246463,
+            "value": "246,463",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.6",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2004": {
         "Resident Population (Person)": {
-            "value": 48583805,
+            "value": "48,583,805",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 476958,
+            "value": "476,958",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 246220,
+            "value": "246,220",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 17391932,
+            "value": "17,391,932",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 8237,
+            "value": "8,237.2",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 246220,
+            "value": "246,220",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.7",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2005": {
         "Resident Population (Person)": {
-            "value": 48782274,
+            "value": "48,782,274",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 438707,
+            "value": "438,707",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 245874,
+            "value": "245,874",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 17857511,
+            "value": "17,857,511",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 9715,
+            "value": "9,715.6",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 245874,
+            "value": "245,874",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.7",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2006": {
         "Resident Population (Person)": {
-            "value": 48991779,
+            "value": "48,991,779",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 451759,
+            "value": "451,759",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 244162,
+            "value": "244,162",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 18326619,
+            "value": "18,326,619",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 10943,
+            "value": "10,943.5",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 244162,
+            "value": "244,162",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.5",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2007": {
         "Resident Population (Person)": {
-            "value": 49268928,
+            "value": "49,268,928",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 496822,
+            "value": "496,822",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 246482,
+            "value": "246,482",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 18687694,
+            "value": "18,687,694",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 12209,
+            "value": "12,209.9",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 246482,
+            "value": "246,482",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.2",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2008": {
         "Resident Population (Person)": {
-            "value": 49540367,
+            "value": "49,540,367",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 465892,
+            "value": "465,892",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 246113,
+            "value": "246,113",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 19005339,
+            "value": "19,005,339",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 10910,
+            "value": "10,910.4",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 246113,
+            "value": "246,113",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.2",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2009": {
         "Resident Population (Person)": {
-            "value": 49773145,
+            "value": "49,773,145",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 444849,
+            "value": "444,849",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 246942,
+            "value": "246,942",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 19261292,
+            "value": "19,261,292",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Registered Foreigners (Person)": {
-            "value": 870636,
+            "value": "870,636",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 9834,
+            "value": "9,834.7",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 246942,
+            "value": "246,942",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.6",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2010": {
         "Resident Population (Person)": {
-            "value": 50515666,
+            "value": "50,515,666",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 470171,
+            "value": "470,171",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 255405,
+            "value": "255,405",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 19865179,
+            "value": "19,865,179",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Registered Foreigners (Person)": {
-            "value": 918917,
+            "value": "918,917",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 11930,
+            "value": "11,930.4",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 255405,
+            "value": "255,405",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.7",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2011": {
         "Resident Population (Person)": {
-            "value": 50734284,
+            "value": "50,734,284",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 471265,
+            "value": "471,265",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 257396,
+            "value": "257,396",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 20033142,
+            "value": "20,033,142",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Crime Occurrence (Cases)": {
-            "value": 1752598,
+            "value": "1,752,598",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
-            "value": 982461,
+            "value": "982,461",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 13072,
+            "value": "13,072.5",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 257396,
+            "value": "257,396",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.4",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2012": {
         "Resident Population (Person)": {
-            "value": 50948272,
+            "value": "50,948,272",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 484550,
+            "value": "484,550",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 267221,
+            "value": "267,221",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 20211770,
+            "value": "20,211,770",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Crime Occurrence (Cases)": {
-            "value": 1793400,
+            "value": "1,793,400",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
-            "value": 932983,
+            "value": "932,983",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 13352,
+            "value": "13,352.6",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 267221,
+            "value": "267,221",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.2",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2013": {
         "Resident Population (Person)": {
-            "value": 51141463,
+            "value": "51,141,463",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 436455,
+            "value": "436,455",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 266257,
+            "value": "266,257",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 20456588,
+            "value": "20,456,588",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Crime Occurrence (Cases)": {
-            "value": 1857276,
+            "value": "1,857,276",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
-            "value": 985923,
+            "value": "985,923",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 14345,
+            "value": "14,345.9",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 266257,
+            "value": "266,257",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.1",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2014": {
         "Resident Population (Person)": {
-            "value": 51327916,
+            "value": "51,327,916",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 435435,
+            "value": "435,435",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 267692,
+            "value": "267,692",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 20724094,
+            "value": "20,724,094",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Crime Occurrence (Cases)": {
-            "value": 1778966,
+            "value": "1,778,966",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
-            "value": 1091531,
+            "value": "1,091,531",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 15556,
+            "value": "15,556.9",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 267692,
+            "value": "267,692",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.5",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2015": {
         "Resident Population (Person)": {
-            "value": 51529338,
+            "value": "51,529,338",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 438420,
+            "value": "438,420",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 275895,
+            "value": "275,895",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Household (households)": {
-            "value": 19560603,
+            "value": "19,560,603",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 21011152,
+            "value": "21,011,152",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Crime Occurrence (Cases)": {
-            "value": 1861657,
+            "value": "1,861,657",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
-            "value": 1143087,
+            "value": "1,143,087",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 15384,
+            "value": "15,384.8",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 275895,
+            "value": "275,895",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.6",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2016": {
         "Resident Population (Person)": {
-            "value": 51696216,
+            "value": "51,696,216",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 406243,
+            "value": "406,243",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 280827,
+            "value": "280,827",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Household (households)": {
-            "value": 19837665,
+            "value": "19,837,665",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 21294009,
+            "value": "21,294,009",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Crime Occurrence (Cases)": {
-            "value": 1849450,
+            "value": "1,849,450",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
-            "value": 1161677,
+            "value": "1,161,677",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 15795,
+            "value": "15,795.1",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 280827,
+            "value": "280,827",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.7",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2017": {
         "Resident Population (Person)": {
-            "value": 51778544,
+            "value": "51,778,544",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 357771,
+            "value": "357,771",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 285534,
+            "value": "285,534",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Household (households)": {
-            "value": 20167922,
+            "value": "20,167,922",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 21632851,
+            "value": "21,632,851",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Crime Occurrence (Cases)": {
-            "value": 1662341,
+            "value": "1,662,341",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
-            "value": 1171762,
+            "value": "1,171,762",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 17104,
+            "value": "17,104.4",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 285534,
+            "value": "285,534",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.7",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2018": {
         "Resident Population (Person)": {
-            "value": 51826059,
+            "value": "51,826,059",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 326822,
+            "value": "326,822",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 298820,
+            "value": "298,820",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Household (households)": {
-            "value": 20499543,
+            "value": "20,499,543",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 22042947,
+            "value": "22,042,947",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Crime Occurrence (Cases)": {
-            "value": 1580751,
+            "value": "1,580,751",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
-            "value": 1246626,
+            "value": "1,246,626",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 18240,
+            "value": "18,240.2",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 298820,
+            "value": "298,820",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.8",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2019": {
         "Resident Population (Person)": {
-            "value": 51849861,
+            "value": "51,849,861",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 302676,
+            "value": "302,676",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 295110,
+            "value": "295,110",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Household (households)": {
-            "value": 20891348,
+            "value": "20,891,348",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 22481466,
+            "value": "22,481,466",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Crime Occurrence (Cases)": {
-            "value": 1611906,
+            "value": "1,611,906",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
-            "value": 1271807,
+            "value": "1,271,807",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 17506,
+            "value": "17,506.1",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 295110,
+            "value": "295,110",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.8",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2020": {
         "Resident Population (Person)": {
-            "value": 51829023,
+            "value": "51,829,023",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 272337,
+            "value": "272,337",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 304948,
+            "value": "304,948",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Household (households)": {
-            "value": 21484785,
+            "value": "21,484,785",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 23093108,
+            "value": "23,093,108",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Crime Occurrence (Cases)": {
-            "value": 1587866,
+            "value": "1,587,866",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
-            "value": 1145540,
+            "value": "1,145,540",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 17443,
+            "value": "17,443.9",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 304948,
+            "value": "304,948",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "4.0",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2021": {
         "Resident Population (Person)": {
-            "value": 51638809,
+            "value": "51,638,809",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 260562,
+            "value": "260,562",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 317680,
+            "value": "317,680",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Household (households)": {
-            "value": 22022753,
+            "value": "22,022,753",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 23472895,
+            "value": "23,472,895",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Crime Occurrence (Cases)": {
-            "value": 1429826,
+            "value": "1,429,826",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
-            "value": 1093891,
+            "value": "1,093,891",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 19415,
+            "value": "19,415.2",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 317680,
+            "value": "317,680",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "3.7",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2022": {
         "Resident Population (Person)": {
-            "value": 51439038,
+            "value": "51,439,038",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 249186,
+            "value": "249,186",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 372939,
+            "value": "372,939",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Household (households)": {
-            "value": 22383187,
+            "value": "22,383,187",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 23705814,
+            "value": "23,705,814",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Crime Occurrence (Cases)": {
-            "value": 1482433,
+            "value": "1,482,433",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
-            "value": 1189585,
+            "value": "1,189,585",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 17986,
+            "value": "17,986.6",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 372939,
+            "value": "372,939",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "2.9",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2023": {
         "Resident Population (Person)": {
-            "value": 51325329,
+            "value": "51,325,329",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Births (Person)": {
-            "value": 230028,
+            "value": "230,028",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Deaths (Person)": {
-            "value": 352511,
+            "value": "352,511",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Household (households)": {
-            "value": 22728163,
+            "value": "22,728,163",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 23914851,
+            "value": "23,914,851",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Registered Foreigners (Person)": {
-            "value": 1348626,
+            "value": "1,348,626",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "GDP (Hund.M U$)": {
-            "value": 18394,
+            "value": "18,394.1",
             "category_en": "Economy",
             "category_kr": "경제"
         },
         "mortality rate (per 100 thousand person)": {
-            "value": 352511,
+            "value": "352,511",
             "category_en": "Health",
             "category_kr": "보건"
+        },
+        "Unemployment rate (%)": {
+            "value": "2.7",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     },
     "2024": {
         "Resident Population (Person)": {
-            "value": 51217221,
+            "value": "51,217,221",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
-            "value": 24118928,
+            "value": "24,118,928",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Unemployment rate (%)": {
+            "value": "2.8",
+            "category_en": "Labor",
+            "category_kr": "노동"
         }
     }
 }
