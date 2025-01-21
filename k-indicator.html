@@ -47,21 +47,14 @@
             margin: 20px 0;
         }
 
-        .filters label {
-            margin-right: 10px;
-            font-weight: bold;
+        .filters > div {
+            margin-bottom: 20px; /* 줄바꿈 간격 */
         }
 
-        .filters .checkbox-group {
+        .checkbox-group {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin-top: 10px;
-        }
-
-        .checkbox-group label {
-            display: flex;
-            align-items: center;
         }
 
         .statistics-table {
@@ -161,9 +154,10 @@
                     filters.innerHTML = "";
 
                     // Add year selection
+                    const yearFilter = document.createElement("div");
                     const yearLabel = document.createElement("label");
                     yearLabel.textContent = "Select Years:";
-                    filters.appendChild(yearLabel);
+                    yearFilter.appendChild(yearLabel);
 
                     const startYearSelect = document.createElement("select");
                     const endYearSelect = document.createElement("select");
@@ -192,14 +186,16 @@
                         updateTable(category, selectedItems, startYearSelect.value, endYearSelect.value);
                     });
 
-                    filters.appendChild(startYearSelect);
-                    filters.appendChild(document.createTextNode(" ~ "));
-                    filters.appendChild(endYearSelect);
+                    yearFilter.appendChild(startYearSelect);
+                    yearFilter.appendChild(document.createTextNode(" ~ "));
+                    yearFilter.appendChild(endYearSelect);
+                    filters.appendChild(yearFilter);
 
                     // Add item selection
+                    const itemFilter = document.createElement("div");
                     const itemLabel = document.createElement("label");
                     itemLabel.textContent = "Select Items:";
-                    filters.appendChild(itemLabel);
+                    itemFilter.appendChild(itemLabel);
 
                     const checkboxGroup = document.createElement("div");
                     checkboxGroup.className = "checkbox-group";
@@ -222,7 +218,8 @@
                         checkboxGroup.appendChild(checkboxWrapper);
                     });
 
-                    filters.appendChild(checkboxGroup);
+                    itemFilter.appendChild(checkboxGroup);
+                    filters.appendChild(itemFilter);
                 }
 
                 // Get selected items
