@@ -372,6 +372,11 @@
             "value": "3.6",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Area of the land (㎡)": {
+            "value": "99,897,411,054.6",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2010": {
@@ -414,6 +419,11 @@
             "value": "3.7",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,033,075,827.1",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2011": {
@@ -461,6 +471,11 @@
             "value": "3.4",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,148,218,044.1",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2012": {
@@ -508,6 +523,11 @@
             "value": "3.2",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,188,083,290.4",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2013": {
@@ -555,6 +575,11 @@
             "value": "3.1",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,266,245,030.0",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2014": {
@@ -602,6 +627,11 @@
             "value": "3.5",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,283,945,001.3",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2015": {
@@ -654,6 +684,11 @@
             "value": "3.6",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,295,350,806.0",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2016": {
@@ -706,6 +741,11 @@
             "value": "3.7",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,339,486,194.1",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2017": {
@@ -763,6 +803,11 @@
             "value": "7,099.09",
             "category_en": "Income, Consumption and Assets",
             "category_kr": "소득, 소비, 자산"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,363,715,033.7",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2018": {
@@ -820,6 +865,11 @@
             "value": "7,668.18",
             "category_en": "Income, Consumption and Assets",
             "category_kr": "소득, 소비, 자산"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,377,668,317.6",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2019": {
@@ -877,6 +927,11 @@
             "value": "7,910.17",
             "category_en": "Income, Consumption and Assets",
             "category_kr": "소득, 소비, 자산"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,401,284,999.9",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2020": {
@@ -934,6 +989,11 @@
             "value": "8,256.19",
             "category_en": "Income, Consumption and Assets",
             "category_kr": "소득, 소비, 자산"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,412,598,711.4",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2021": {
@@ -991,6 +1051,11 @@
             "value": "8,801.37",
             "category_en": "Income, Consumption and Assets",
             "category_kr": "소득, 소비, 자산"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,431,849,363.5",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2022": {
@@ -1048,6 +1113,11 @@
             "value": "9,169.61",
             "category_en": "Income, Consumption and Assets",
             "category_kr": "소득, 소비, 자산"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,443,553,474.5",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2023": {
@@ -1100,6 +1170,11 @@
             "value": "9,186.40",
             "category_en": "Income, Consumption and Assets",
             "category_kr": "소득, 소비, 자산"
+        },
+        "Area of the land (㎡)": {
+            "value": "100,449,356,102.0",
+            "category_en": "Land Use",
+            "category_kr": "국토이용"
         }
     },
     "2024": {
