@@ -758,6 +758,11 @@
             "value": "3.7",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Liabilities (10 thousand won)": {
+            "value": "7,099.09",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
         }
     },
     "2018": {
@@ -810,6 +815,11 @@
             "value": "3.8",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Liabilities (10 thousand won)": {
+            "value": "7,668.18",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
         }
     },
     "2019": {
@@ -862,6 +872,11 @@
             "value": "3.8",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Liabilities (10 thousand won)": {
+            "value": "7,910.17",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
         }
     },
     "2020": {
@@ -914,6 +929,11 @@
             "value": "4.0",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Liabilities (10 thousand won)": {
+            "value": "8,256.19",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
         }
     },
     "2021": {
@@ -966,6 +986,11 @@
             "value": "3.7",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Liabilities (10 thousand won)": {
+            "value": "8,801.37",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
         }
     },
     "2022": {
@@ -1018,6 +1043,11 @@
             "value": "2.9",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Liabilities (10 thousand won)": {
+            "value": "9,169.61",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
         }
     },
     "2023": {
@@ -1065,6 +1095,11 @@
             "value": "2.7",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Liabilities (10 thousand won)": {
+            "value": "9,186.40",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
         }
     },
     "2024": {
@@ -1082,6 +1117,11 @@
             "value": "2.8",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Liabilities (10 thousand won)": {
+            "value": "9,128.25",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
         }
     }
 }
