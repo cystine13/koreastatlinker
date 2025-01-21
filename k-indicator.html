@@ -104,7 +104,7 @@
         fetch("population_data.json")
             .then(response => response.json())
             .then(data => {
-                const years = Object.keys(data).sort((a, b) => b - a); // Sort years in descending order
+                const years = Object.keys(data).sort((a, b) => a - b); // Sort years in ascending order
                 const tableHeader = document.getElementById("table-header");
                 const tableBody = document.getElementById("statistics-body");
                 const tabs = document.getElementById("tabs");
@@ -254,7 +254,7 @@
 
                             items.forEach(item => {
                                 const cell = document.createElement("td");
-                                const value = data[year]?.[item]?.value;
+                                const value = data[year]?.[item]?.value || "-";
                                 cell.textContent = value ? value.toLocaleString() : "-"; // Add comma for thousands
                                 row.appendChild(cell);
                             });
