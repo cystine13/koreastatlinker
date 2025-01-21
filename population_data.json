@@ -420,6 +420,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Liabilities (10 thousand won)": {
+            "value": "4,618.33",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
+        },
         "Area of the land (㎡)": {
             "value": "100,033,075,827.1",
             "category_en": "Land Use",
@@ -471,6 +476,11 @@
             "value": "3.4",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Liabilities (10 thousand won)": {
+            "value": "5,204.79",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
         },
         "Area of the land (㎡)": {
             "value": "100,148,218,044.1",
@@ -524,6 +534,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Liabilities (10 thousand won)": {
+            "value": "5,449.60",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
+        },
         "Area of the land (㎡)": {
             "value": "100,188,083,290.4",
             "category_en": "Land Use",
@@ -576,6 +591,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Liabilities (10 thousand won)": {
+            "value": "5,857.80",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
+        },
         "Area of the land (㎡)": {
             "value": "100,266,245,030.0",
             "category_en": "Land Use",
@@ -627,6 +647,11 @@
             "value": "3.5",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Liabilities (10 thousand won)": {
+            "value": "6,050.97",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
         },
         "Area of the land (㎡)": {
             "value": "100,283,945,001.3",
@@ -685,6 +710,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Liabilities (10 thousand won)": {
+            "value": "6,256.15",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
+        },
         "Area of the land (㎡)": {
             "value": "100,295,350,806.0",
             "category_en": "Land Use",
@@ -741,6 +771,11 @@
             "value": "3.7",
             "category_en": "Labor",
             "category_kr": "노동"
+        },
+        "Liabilities (10 thousand won)": {
+            "value": "6,718.89",
+            "category_en": "Income, Consumption and Assets",
+            "category_kr": "소득, 소비, 자산"
         },
         "Area of the land (㎡)": {
             "value": "100,339,486,194.1",
