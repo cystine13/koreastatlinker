@@ -93,7 +93,7 @@
         </div>
 
         <div class="filters" id="filters">
-            <!-- Filters for items will be dynamically generated -->
+            <!-- Year and item selection filters will be dynamically generated -->
         </div>
 
         <table class="statistics-table">
@@ -147,7 +147,7 @@
                         document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
                         tab.classList.add("active");
                         updateFilters(category);
-                        updateTable(category, []);
+                        updateTable(category, [], years[0], years[years.length - 1]);
                     });
 
                     tabs.appendChild(tab);
@@ -159,9 +159,47 @@
                 // Update filters based on category
                 function updateFilters(category) {
                     filters.innerHTML = "";
-                    const label = document.createElement("label");
-                    label.textContent = "Select Items:";
-                    filters.appendChild(label);
+
+                    // Add year selection
+                    const yearLabel = document.createElement("label");
+                    yearLabel.textContent = "Select Years:";
+                    filters.appendChild(yearLabel);
+
+                    const startYearSelect = document.createElement("select");
+                    const endYearSelect = document.createElement("select");
+
+                    years.forEach(year => {
+                        const startOption = document.createElement("option");
+                        const endOption = document.createElement("option");
+
+                        startOption.value = endOption.value = year;
+                        startOption.textContent = endOption.textContent = year;
+
+                        startYearSelect.appendChild(startOption);
+                        endYearSelect.appendChild(endOption);
+                    });
+
+                    startYearSelect.value = years[0];
+                    endYearSelect.value = years[years.length - 1];
+
+                    startYearSelect.addEventListener("change", () => {
+                        const selectedItems = getSelectedItems();
+                        updateTable(category, selectedItems, startYearSelect.value, endYearSelect.value);
+                    });
+
+                    endYearSelect.addEventListener("change", () => {
+                        const selectedItems = getSelectedItems();
+                        updateTable(category, selectedItems, startYearSelect.value, endYearSelect.value);
+                    });
+
+                    filters.appendChild(startYearSelect);
+                    filters.appendChild(document.createTextNode(" ~ "));
+                    filters.appendChild(endYearSelect);
+
+                    // Add item selection
+                    const itemLabel = document.createElement("label");
+                    itemLabel.textContent = "Select Items:";
+                    filters.appendChild(itemLabel);
 
                     const checkboxGroup = document.createElement("div");
                     checkboxGroup.className = "checkbox-group";
@@ -175,10 +213,8 @@
                         checkbox.checked = true; // Default: all checked
 
                         checkbox.addEventListener("change", () => {
-                            const selectedItems = Array.from(
-                                filters.querySelectorAll("input[type='checkbox']:checked")
-                            ).map(cb => cb.value);
-                            updateTable(category, selectedItems);
+                            const selectedItems = getSelectedItems();
+                            updateTable(category, selectedItems, startYearSelect.value, endYearSelect.value);
                         });
 
                         checkboxWrapper.appendChild(checkbox);
@@ -189,8 +225,15 @@
                     filters.appendChild(checkboxGroup);
                 }
 
-                // Update table based on category and selected items
-                function updateTable(category, selectedItems) {
+                // Get selected items
+                function getSelectedItems() {
+                    return Array.from(
+                        filters.querySelectorAll("input[type='checkbox']:checked")
+                    ).map(cb => cb.value);
+                }
+
+                // Update table based on category, selected items, and year range
+                function updateTable(category, selectedItems, startYear, endYear) {
                     tableHeader.innerHTML = "<th>Year</th>";
                     tableBody.innerHTML = "";
 
@@ -204,27 +247,29 @@
                         tableHeader.appendChild(th);
                     });
 
-                    years.forEach(year => {
-                        const row = document.createElement("tr");
-                        const yearCell = document.createElement("td");
-                        yearCell.textContent = year;
-                        row.appendChild(yearCell);
+                    years
+                        .filter(year => year >= startYear && year <= endYear)
+                        .forEach(year => {
+                            const row = document.createElement("tr");
+                            const yearCell = document.createElement("td");
+                            yearCell.textContent = year;
+                            row.appendChild(yearCell);
 
-                        items.forEach(item => {
-                            const cell = document.createElement("td");
-                            const value = data[year]?.[item]?.value || "-";
-                            cell.textContent = value;
-                            row.appendChild(cell);
+                            items.forEach(item => {
+                                const cell = document.createElement("td");
+                                const value = data[year]?.[item]?.value;
+                                cell.textContent = value ? value.toLocaleString() : "-"; // Add comma for thousands
+                                row.appendChild(cell);
+                            });
+
+                            tableBody.appendChild(row);
                         });
-
-                        tableBody.appendChild(row);
-                    });
                 }
 
                 // Initialize filters and table
                 const initialCategory = categories[0];
                 updateFilters(initialCategory);
-                updateTable(initialCategory, [...categoryItems[initialCategory]]);
+                updateTable(initialCategory, [...categoryItems[initialCategory]], years[0], years[years.length - 1]);
             })
             .catch(error => console.error("Error loading data:", error));
     </script>
