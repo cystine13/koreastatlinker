@@ -20,7 +20,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "13.7",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "248,740",
             "category_en": "Health",
             "category_kr": "보건"
@@ -77,7 +82,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "14.6",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "243,813",
             "category_en": "Health",
             "category_kr": "보건"
@@ -134,7 +144,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "18.0",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "247,524",
             "category_en": "Health",
             "category_kr": "보건"
@@ -191,7 +206,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "22.7",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "246,463",
             "category_en": "Health",
             "category_kr": "보건"
@@ -248,7 +268,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "23.9",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "246,220",
             "category_en": "Health",
             "category_kr": "보건"
@@ -305,7 +330,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "24.8",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "245,874",
             "category_en": "Health",
             "category_kr": "보건"
@@ -362,7 +392,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "22.0",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "244,162",
             "category_en": "Health",
             "category_kr": "보건"
@@ -419,7 +454,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "24.9",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "246,482",
             "category_en": "Health",
             "category_kr": "보건"
@@ -476,7 +516,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "26.0",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "246,113",
             "category_en": "Health",
             "category_kr": "보건"
@@ -538,7 +583,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "31.0",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "246,942",
             "category_en": "Health",
             "category_kr": "보건"
@@ -605,7 +655,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "31.2",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "255,405",
             "category_en": "Health",
             "category_kr": "보건"
@@ -677,7 +732,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "31.7",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "257,396",
             "category_en": "Health",
             "category_kr": "보건"
@@ -749,7 +809,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "28.1",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "267,221",
             "category_en": "Health",
             "category_kr": "보건"
@@ -821,7 +886,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "28.5",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "266,257",
             "category_en": "Health",
             "category_kr": "보건"
@@ -893,7 +963,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "27.3",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "267,692",
             "category_en": "Health",
             "category_kr": "보건"
@@ -970,7 +1045,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "26.5",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "275,895",
             "category_en": "Health",
             "category_kr": "보건"
@@ -1047,7 +1127,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "25.6",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "280,827",
             "category_en": "Health",
             "category_kr": "보건"
@@ -1129,7 +1214,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "24.3",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "285,534",
             "category_en": "Health",
             "category_kr": "보건"
@@ -1211,7 +1301,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "26.6",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "298,820",
             "category_en": "Health",
             "category_kr": "보건"
@@ -1293,7 +1388,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "26.9",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "295,110",
             "category_en": "Health",
             "category_kr": "보건"
@@ -1375,7 +1475,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "25.7",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "304,948",
             "category_en": "Health",
             "category_kr": "보건"
@@ -1457,7 +1562,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "26.0",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "317,680",
             "category_en": "Health",
             "category_kr": "보건"
@@ -1539,7 +1649,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "25.2",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "372,939",
             "category_en": "Health",
             "category_kr": "보건"
@@ -1621,7 +1736,12 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "mortality rate (per 100 thousand person)": {
+        "Intentional self-harm (per 100 thousand person)": {
+            "value": "27.3",
+            "category_en": "Health",
+            "category_kr": "보건"
+        },
+        "Mortality rate (per 100 thousand person)": {
             "value": "352,511",
             "category_en": "Health",
             "category_kr": "보건"
