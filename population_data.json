@@ -35,6 +35,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "58.5",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "CPI (2020*100)": {
             "value": "63.15",
             "category_en": "Income, Consumption & Assets",
@@ -94,6 +99,11 @@
         },
         "Unemployment rate (%)": {
             "value": "4.0",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
+        "Employment to population ratio (%)": {
+            "value": "59.0",
             "category_en": "Labor",
             "category_kr": "노동"
         },
@@ -159,6 +169,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "60.1",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "CPI (2020*100)": {
             "value": "67.53",
             "category_en": "Income, Consumption & Assets",
@@ -218,6 +233,11 @@
         },
         "Unemployment rate (%)": {
             "value": "3.6",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
+        "Employment to population ratio (%)": {
+            "value": "59.4",
             "category_en": "Labor",
             "category_kr": "노동"
         },
@@ -283,6 +303,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "60.0",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "CPI (2020*100)": {
             "value": "72.42",
             "category_en": "Income, Consumption & Assets",
@@ -342,6 +367,11 @@
         },
         "Unemployment rate (%)": {
             "value": "3.7",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
+        "Employment to population ratio (%)": {
+            "value": "59.9",
             "category_en": "Labor",
             "category_kr": "노동"
         },
@@ -407,6 +437,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "60.0",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "CPI (2020*100)": {
             "value": "76.08",
             "category_en": "Income, Consumption & Assets",
@@ -469,6 +504,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "60.1",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "CPI (2020*100)": {
             "value": "78.01",
             "category_en": "Income, Consumption & Assets",
@@ -528,6 +568,11 @@
         },
         "Unemployment rate (%)": {
             "value": "3.2",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
+        "Employment to population ratio (%)": {
+            "value": "59.8",
             "category_en": "Labor",
             "category_kr": "노동"
         },
@@ -595,6 +640,11 @@
         },
         "Unemployment rate (%)": {
             "value": "3.6",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
+        "Employment to population ratio (%)": {
+            "value": "58.8",
             "category_en": "Labor",
             "category_kr": "노동"
         },
@@ -667,6 +717,11 @@
         },
         "Unemployment rate (%)": {
             "value": "3.7",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
+        "Employment to population ratio (%)": {
+            "value": "58.9",
             "category_en": "Labor",
             "category_kr": "노동"
         },
@@ -747,6 +802,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "59.3",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "5,204.79",
             "category_en": "Income, Consumption & Assets",
@@ -821,6 +881,11 @@
         },
         "Unemployment rate (%)": {
             "value": "3.2",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
+        "Employment to population ratio (%)": {
+            "value": "59.6",
             "category_en": "Labor",
             "category_kr": "노동"
         },
@@ -901,6 +966,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "59.8",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "5,857.80",
             "category_en": "Income, Consumption & Assets",
@@ -975,6 +1045,11 @@
         },
         "Unemployment rate (%)": {
             "value": "3.5",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
+        "Employment to population ratio (%)": {
+            "value": "60.5",
             "category_en": "Labor",
             "category_kr": "노동"
         },
@@ -1060,6 +1135,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "60.5",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "6,256.15",
             "category_en": "Income, Consumption & Assets",
@@ -1139,6 +1219,11 @@
         },
         "Unemployment rate (%)": {
             "value": "3.7",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
+        "Employment to population ratio (%)": {
+            "value": "60.6",
             "category_en": "Labor",
             "category_kr": "노동"
         },
@@ -1229,6 +1314,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "60.8",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "7,099.09",
             "category_en": "Income, Consumption & Assets",
@@ -1263,6 +1353,11 @@
             "value": "98.4",
             "category_en": "Mining & Manufacturing",
             "category_kr": "광업,제조업"
+        },
+        "Transaction value of Online shopping mall (Million Won)": {
+            "value": "94,185,765",
+            "category_en": "Retail, Wholesale and Services",
+            "category_kr": "도소매,서비스"
         },
         "New and Renewable Energy Production (toe)": {
             "value": "8,480,950",
@@ -1316,6 +1411,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "60.7",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "7,668.18",
             "category_en": "Income, Consumption & Assets",
@@ -1328,6 +1428,11 @@
         },
         "Crime Occurrence (Cases)": {
             "value": "1,580,751",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Child Abuse (Cases)": {
+            "value": "24,604",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
@@ -1350,6 +1455,11 @@
             "value": "99.7",
             "category_en": "Mining & Manufacturing",
             "category_kr": "광업,제조업"
+        },
+        "Transaction value of Online shopping mall (Million Won)": {
+            "value": "113,314,010",
+            "category_en": "Retail, Wholesale and Services",
+            "category_kr": "도소매,서비스"
         },
         "New and Renewable Energy Production (toe)": {
             "value": "10,101,986",
@@ -1403,6 +1513,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "60.9",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "7,910.17",
             "category_en": "Income, Consumption & Assets",
@@ -1415,6 +1530,11 @@
         },
         "Crime Occurrence (Cases)": {
             "value": "1,611,906",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Child Abuse (Cases)": {
+            "value": "30,045",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
@@ -1437,6 +1557,11 @@
             "value": "100.2",
             "category_en": "Mining & Manufacturing",
             "category_kr": "광업,제조업"
+        },
+        "Transaction value of Online shopping mall (Million Won)": {
+            "value": "136,600,838",
+            "category_en": "Retail, Wholesale and Services",
+            "category_kr": "도소매,서비스"
         },
         "New and Renewable Energy Production (toe)": {
             "value": "10,595,221",
@@ -1490,6 +1615,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "60.1",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "8,256.19",
             "category_en": "Income, Consumption & Assets",
@@ -1502,6 +1632,11 @@
         },
         "Crime Occurrence (Cases)": {
             "value": "1,587,866",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Child Abuse (Cases)": {
+            "value": "30,905",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
@@ -1524,6 +1659,11 @@
             "value": "100.0",
             "category_en": "Mining & Manufacturing",
             "category_kr": "광업,제조업"
+        },
+        "Transaction value of Online shopping mall (Million Won)": {
+            "value": "158,283,970",
+            "category_en": "Retail, Wholesale and Services",
+            "category_kr": "도소매,서비스"
         },
         "New and Renewable Energy Production (toe)": {
             "value": "12,378,065",
@@ -1577,6 +1717,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "60.5",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "8,801.37",
             "category_en": "Income, Consumption & Assets",
@@ -1589,6 +1734,11 @@
         },
         "Crime Occurrence (Cases)": {
             "value": "1,429,826",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Child Abuse (Cases)": {
+            "value": "37,605",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
@@ -1611,6 +1761,11 @@
             "value": "108.8",
             "category_en": "Mining & Manufacturing",
             "category_kr": "광업,제조업"
+        },
+        "Transaction value of Online shopping mall (Million Won)": {
+            "value": "190,223,110",
+            "category_en": "Retail, Wholesale and Services",
+            "category_kr": "도소매,서비스"
         },
         "New and Renewable Energy Production (toe)": {
             "value": "14,000,317",
@@ -1664,6 +1819,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "62.1",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "9,169.61",
             "category_en": "Income, Consumption & Assets",
@@ -1676,6 +1836,11 @@
         },
         "Crime Occurrence (Cases)": {
             "value": "1,482,433",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
+        "Child Abuse (Cases)": {
+            "value": "27,971",
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
@@ -1698,6 +1863,11 @@
             "value": "109.8",
             "category_en": "Mining & Manufacturing",
             "category_kr": "광업,제조업"
+        },
+        "Transaction value of Online shopping mall (Million Won)": {
+            "value": "211,123,590",
+            "category_en": "Retail, Wholesale and Services",
+            "category_kr": "도소매,서비스"
         },
         "New and Renewable Energy Production (toe)": {
             "value": "15,706,206",
@@ -1751,6 +1921,11 @@
             "category_en": "Labor",
             "category_kr": "노동"
         },
+        "Employment to population ratio (%)": {
+            "value": "62.6",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "9,186.40",
             "category_en": "Income, Consumption & Assets",
@@ -1785,6 +1960,11 @@
             "value": "106.9",
             "category_en": "Mining & Manufacturing",
             "category_kr": "광업,제조업"
+        },
+        "Transaction value of Online shopping mall (Million Won)": {
+            "value": "228,860,713",
+            "category_en": "Retail, Wholesale and Services",
+            "category_kr": "도소매,서비스"
         }
     },
     "2024": {
@@ -1800,6 +1980,11 @@
         },
         "Unemployment rate (%)": {
             "value": "2.8",
+            "category_en": "Labor",
+            "category_kr": "노동"
+        },
+        "Employment to population ratio (%)": {
+            "value": "62.7",
             "category_en": "Labor",
             "category_kr": "노동"
         },
