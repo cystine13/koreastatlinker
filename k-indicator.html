@@ -3,272 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Korea Indicator</title>
+    <title>KoreaStatLinker</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
+        header {
             text-align: center;
-            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
-
-        .tabs {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #ccc;
-        }
-
-        .tab {
-            padding: 10px 20px;
-            cursor: pointer;
-            border: none;
-            background-color: #f9f9f9;
-            border-radius: 4px 4px 0 0;
-            font-size: 16px;
-        }
-
-        .tab.active {
-            background-color: white;
-            font-weight: bold;
-            border: 2px solid #ccc;
-            border-bottom: none;
-        }
-
-        .filters {
+        .search-container {
+            text-align: center;
             margin: 20px 0;
         }
-
-        .filters > div {
-            margin-bottom: 20px; /* 줄바꿈 간격 */
+        .search-container input {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
-
-        .checkbox-group {
+        .search-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+        .category-carousel {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            scroll-behavior: smooth;
         }
-
-        .statistics-table {
-            width: 100%;
-            border-collapse: collapse;
+        .category-card {
+            flex: 0 0 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-card h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-wrap: nowrap; /* 모든 콘텐츠가 한 줄로 보이도록 수정 */
+            justify-content: space-between;
+            margin: 20px auto;
+            max-width: 1200px;
+            gap: 20px;
+        }
+        .content {
+            flex: 1 1 calc(25% - 20px); /* 4개 한 줄 */
+            max-width: calc(25% - 20px);
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .content:hover {
+            transform: scale(1.05);
+        }
+        .content h2 {
+            margin: 0;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
             margin-top: 20px;
         }
-
-        .statistics-table th,
-        .statistics-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-
-        .statistics-table th {
-            background-color: #f4f4f4;
+        @media (max-width: 768px) {
+            .container {
+                flex-wrap: wrap; /* 모바일에서는 한 줄씩 표시 */
+            }
+            .content {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
         }
     </style>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N3SG24QXER"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N3SG24QXER');
+</script>  
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Korea Indicator</h1>
-        </div>
+    <header>
+        <h1>KoreaStatLinker</h1>
+        <p>The hub connecting statistics, agencies, and resources.</p>
+    </header>
 
-        <div class="tabs" id="tabs">
-            <!-- Tabs for categories will be dynamically generated -->
-        </div>
-
-        <div class="filters" id="filters">
-            <!-- Year and item selection filters will be dynamically generated -->
-        </div>
-
-        <table class="statistics-table">
-            <thead>
-                <tr id="table-header">
-                    <th>Year</th>
-                </tr>
-            </thead>
-            <tbody id="statistics-body">
-            </tbody>
-        </table>
+    <!-- 통합 검색창 -->
+    <div class="search-container">
+        <form action="search-results.html" method="GET">
+            <input type="text" name="query" placeholder="Search news, agencies, resources..." required>
+            <button type="submit">Search</button>
+        </form>
     </div>
 
+    <!-- 카테고리 카드 -->
+    <div class="category-carousel" id="categoryCarousel">
+        <!-- JavaScript에서 동적으로 카드 추가 -->
+    </div>
+
+    <!-- 메인 콘텐츠 -->
+    <div class="container">
+        <div class="content" onclick="location.href='statistics-news.html'">
+            <h2>Statistics News</h2>
+            <p>Stay updated with the latest statistics news.</p>
+        </div>
+        <div class="content" onclick="location.href='authoring-agencies.html'">
+            <h2>Authoring Agencies</h2>
+            <p>Explore key authoring agencies and their contributions.</p>
+        </div>
+        <div class="content" onclick="location.href='statistics-resources.html'">
+            <h2>Statistics Resources</h2>
+            <p>Leverage various statistical tools and data sources.</p>
+        </div>
+        <div class="content" onclick="location.href='k-indicator.html'">
+            <h2>K Indicator</h2>
+            <p>Explore key Korean indicators and trends.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 2024 KoreaStatLinker. All rights reserved.</p>
+    </footer>
+
     <script>
+        // Fetch 카테고리 데이터
         fetch("population_data.json")
             .then(response => response.json())
             .then(data => {
-                const years = Object.keys(data).sort((a, b) => a - b); // Sort years in ascending order
-                const tableHeader = document.getElementById("table-header");
-                const tableBody = document.getElementById("statistics-body");
-                const tabs = document.getElementById("tabs");
-                const filters = document.getElementById("filters");
+                const categories = new Set();
+                const categoryData = {};
 
-                // Extract unique categories
-                const categories = [...new Set(
-                    Object.values(data).flatMap(yearData =>
-                        Object.values(yearData).map(item => item.category_en)
-                    )
-                )];
-
-                // Extract unique items per category
-                const categoryItems = {};
+                // 카테고리 및 항목 추출
                 Object.values(data).forEach(yearData => {
                     Object.entries(yearData).forEach(([itemName, itemData]) => {
                         const category = itemData.category_en;
-                        if (!categoryItems[category]) {
-                            categoryItems[category] = new Set();
+                        if (!categories.has(category)) {
+                            categories.add(category);
+                            categoryData[category] = {
+                                name: itemName,
+                                value: itemData.value,
+                                year: Object.keys(data).pop()
+                            };
                         }
-                        categoryItems[category].add(itemName);
                     });
                 });
 
-                // Create tabs
+                // 카테고리 카드 생성
+                const categoryCarousel = document.getElementById("categoryCarousel");
                 categories.forEach(category => {
-                    const tab = document.createElement("div");
-                    tab.textContent = category;
-                    tab.className = "tab";
-                    tab.dataset.category = category;
-
-                    tab.addEventListener("click", () => {
-                        document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-                        tab.classList.add("active");
-                        updateFilters(category);
-                        updateTable(category, [], years[0], years[years.length - 1]);
-                    });
-
-                    tabs.appendChild(tab);
+                    const card = document.createElement("div");
+                    card.className = "category-card";
+                    card.innerHTML = `
+                        <h3>${category}</h3>
+                        <p>${categoryData[category].name}</p>
+                        <p>${categoryData[category].value} (${categoryData[category].year})</p>
+                    `;
+                    card.onclick = () => {
+                        const url = new URL("k-indicator.html", window.location.origin);
+                        url.searchParams.set("category", category);
+                        window.location.href = url.href;
+                    };
+                    categoryCarousel.appendChild(card);
                 });
-
-                // Set the first tab as active
-                tabs.firstChild.classList.add("active");
-
-                // Update filters based on category
-                function updateFilters(category) {
-                    filters.innerHTML = "";
-
-                    // Add year selection
-                    const yearFilter = document.createElement("div");
-                    const yearLabel = document.createElement("label");
-                    yearLabel.textContent = "Select Years:";
-                    yearFilter.appendChild(yearLabel);
-
-                    const startYearSelect = document.createElement("select");
-                    const endYearSelect = document.createElement("select");
-
-                    years.forEach(year => {
-                        const startOption = document.createElement("option");
-                        const endOption = document.createElement("option");
-
-                        startOption.value = endOption.value = year;
-                        startOption.textContent = endOption.textContent = year;
-
-                        startYearSelect.appendChild(startOption);
-                        endYearSelect.appendChild(endOption);
-                    });
-
-                    startYearSelect.value = years[0];
-                    endYearSelect.value = years[years.length - 1];
-
-                    startYearSelect.addEventListener("change", () => {
-                        const selectedItems = getSelectedItems();
-                        updateTable(category, selectedItems, startYearSelect.value, endYearSelect.value);
-                    });
-
-                    endYearSelect.addEventListener("change", () => {
-                        const selectedItems = getSelectedItems();
-                        updateTable(category, selectedItems, startYearSelect.value, endYearSelect.value);
-                    });
-
-                    yearFilter.appendChild(startYearSelect);
-                    yearFilter.appendChild(document.createTextNode(" ~ "));
-                    yearFilter.appendChild(endYearSelect);
-                    filters.appendChild(yearFilter);
-
-                    // Add item selection
-                    const itemFilter = document.createElement("div");
-                    const itemLabel = document.createElement("label");
-                    itemLabel.textContent = "Select Items:";
-                    itemFilter.appendChild(itemLabel);
-
-                    const checkboxGroup = document.createElement("div");
-                    checkboxGroup.className = "checkbox-group";
-
-                    const items = [...categoryItems[category]];
-                    items.forEach(item => {
-                        const checkboxWrapper = document.createElement("label");
-                        const checkbox = document.createElement("input");
-                        checkbox.type = "checkbox";
-                        checkbox.value = item;
-                        checkbox.checked = true; // Default: all checked
-
-                        checkbox.addEventListener("change", () => {
-                            const selectedItems = getSelectedItems();
-                            updateTable(category, selectedItems, startYearSelect.value, endYearSelect.value);
-                        });
-
-                        checkboxWrapper.appendChild(checkbox);
-                        checkboxWrapper.appendChild(document.createTextNode(item));
-                        checkboxGroup.appendChild(checkboxWrapper);
-                    });
-
-                    itemFilter.appendChild(checkboxGroup);
-                    filters.appendChild(itemFilter);
-                }
-
-                // Get selected items
-                function getSelectedItems() {
-                    return Array.from(
-                        filters.querySelectorAll("input[type='checkbox']:checked")
-                    ).map(cb => cb.value);
-                }
-
-                // Update table based on category, selected items, and year range
-                function updateTable(category, selectedItems, startYear, endYear) {
-                    tableHeader.innerHTML = "<th>Year</th>";
-                    tableBody.innerHTML = "";
-
-                    const items = selectedItems.length
-                        ? selectedItems
-                        : [...categoryItems[category]];
-
-                    items.forEach(item => {
-                        const th = document.createElement("th");
-                        th.textContent = item;
-                        tableHeader.appendChild(th);
-                    });
-
-                    years
-                        .filter(year => year >= startYear && year <= endYear)
-                        .forEach(year => {
-                            const row = document.createElement("tr");
-                            const yearCell = document.createElement("td");
-                            yearCell.textContent = year;
-                            row.appendChild(yearCell);
-
-                            items.forEach(item => {
-                                const cell = document.createElement("td");
-                                const value = data[year]?.[item]?.value || "-";
-                                cell.textContent = value ? value.toLocaleString() : "-"; // Add comma for thousands
-                                row.appendChild(cell);
-                            });
-
-                            tableBody.appendChild(row);
-                        });
-                }
-
-                // Initialize filters and table
-                const initialCategory = categories[0];
-                updateFilters(initialCategory);
-                updateTable(initialCategory, [...categoryItems[initialCategory]], years[0], years[years.length - 1]);
             })
-            .catch(error => console.error("Error loading data:", error));
+            .catch(error => console.error("Error loading categories:", error));
     </script>
 </body>
 </html>
