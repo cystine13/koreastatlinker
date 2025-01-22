@@ -22,6 +22,7 @@
             margin: 0;
             font-size: 20px;
             cursor: pointer;
+            display: inline-block;
         }
         nav {
             display: flex;
@@ -62,7 +63,7 @@
         }
         .category-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr); /* 3줄 배치 */
             gap: 20px;
             padding: 20px;
         }
@@ -88,6 +89,25 @@
             max-width: 1200px;
             padding: 20px;
         }
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .news-header h2 {
+            margin: 0;
+        }
+        .news-header button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .news-header button:hover {
+            background-color: #0056b3;
+        }
         .news-item {
             margin-bottom: 10px;
         }
@@ -98,21 +118,6 @@
         }
         .news-item a:hover {
             text-decoration: underline;
-        }
-        .news-more {
-            text-align: center;
-            margin-top: 10px;
-        }
-        .news-more button {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .news-more button:hover {
-            background-color: #0056b3;
         }
         .content-container {
             display: flex;
@@ -165,7 +170,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-N3SG24QXER');
-</script>   
+</script>      
 <body>
     <!-- 헤더 및 네비게이션 -->
     <header>
@@ -193,12 +198,12 @@
 
     <!-- 통계 뉴스 섹션 -->
     <div class="news-section">
-        <h2>Latest Statistics News</h2>
+        <div class="news-header">
+            <h2>Latest Statistics News</h2>
+            <button onclick="location.href='statistics-news.html'">View More</button>
+        </div>
         <div id="newsList">
             <!-- JavaScript에서 뉴스 동적으로 추가 -->
-        </div>
-        <div class="news-more">
-            <button onclick="location.href='statistics-news.html'">View More</button>
         </div>
     </div>
 
@@ -232,17 +237,34 @@
             .then(response => response.json())
             .then(data => {
                 const categoryGrid = document.getElementById("categoryGrid");
-                Object.entries(data).forEach(([year, items]) => {
-                    Object.entries(items).forEach(([name, details]) => {
-                        const card = document.createElement("div");
-                        card.className = "category-item";
-                        card.innerHTML = `
-                            <h3>${name}</h3>
-                            <p>${details.value} (${year})</p>
-                        `;
-                        card.onclick = () => location.href = "k-indicator.html";
-                        categoryGrid.appendChild(card);
+                const categories = new Set();
+                const categoryData = {};
+
+                // 각 카테고리별 첫 번째 최신 데이터만 추가
+                Object.values(data).forEach(yearData => {
+                    Object.entries(yearData).forEach(([name, details]) => {
+                        const category = details.category_en;
+                        if (!categories.has(category)) {
+                            categories.add(category);
+                            categoryData[category] = {
+                                name,
+                                value: details.value,
+                                year: Object.keys(data).pop()
+                            };
+                        }
                     });
+                });
+
+                categories.forEach(category => {
+                    const card = document.createElement("div");
+                    card.className = "category-item";
+                    card.innerHTML = `
+                        <h3>${category}</h3>
+                        <p>${categoryData[category].name}</p>
+                        <p>${categoryData[category].value} (${categoryData[category].year})</p>
+                    `;
+                    card.onclick = () => location.href = "k-indicator.html";
+                    categoryGrid.appendChild(card);
                 });
             });
 
