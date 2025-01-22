@@ -42,8 +42,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "5,976.7",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "KOSPI Index (1980.1.4=100)": {
             "value": "504.62",
@@ -99,8 +99,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "5,676.4",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "KOSPI Index (1980.1.4=100)": {
             "value": "693.70",
@@ -156,8 +156,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "6,499.4",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "KOSPI Index (1980.1.4=100)": {
             "value": "627.55",
@@ -213,8 +213,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "7,283.5",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "KOSPI Index (1980.1.4=100)": {
             "value": "810.71",
@@ -270,8 +270,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "8,237.2",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "KOSPI Index (1980.1.4=100)": {
             "value": "895.92",
@@ -327,8 +327,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "9,715.6",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "KOSPI Index (1980.1.4=100)": {
             "value": "1,379.37",
@@ -384,8 +384,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "10,943.5",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "KOSPI Index (1980.1.4=100)": {
             "value": "1,434.46",
@@ -441,8 +441,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "12,209.9",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "KOSPI Index (1980.1.4=100)": {
             "value": "1,897.13",
@@ -498,8 +498,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "10,910.4",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "KOSPI Index (1980.1.4=100)": {
             "value": "1,124.47",
@@ -560,8 +560,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "9,834.7",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "99,897,411,054.6",
@@ -632,8 +632,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "11,930.4",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,033,075,827.1",
@@ -704,8 +704,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "13,072.5",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,148,218,044.1",
@@ -776,8 +776,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "13,352.6",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,188,083,290.4",
@@ -848,8 +848,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "14,345.9",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,266,245,030.0",
@@ -920,8 +920,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "15,556.9",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,283,945,001.3",
@@ -997,8 +997,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "15,384.8",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,295,350,806.0",
@@ -1074,8 +1074,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "15,795.1",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,339,486,194.1",
@@ -1156,8 +1156,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "17,104.4",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,363,715,033.7",
@@ -1238,8 +1238,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "18,240.2",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,377,668,317.6",
@@ -1320,8 +1320,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "17,506.1",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,401,284,999.9",
@@ -1402,8 +1402,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "17,443.9",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,412,598,711.4",
@@ -1484,8 +1484,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "19,415.2",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,431,849,363.5",
@@ -1566,8 +1566,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "17,986.6",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,443,553,474.5",
@@ -1648,8 +1648,8 @@
         },
         "GDP (Hund.M U$)": {
             "value": "18,394.1",
-            "category_en": "Economy",
-            "category_kr": "경제"
+            "category_en": "Economy & Market",
+            "category_kr": "경제일반,경기"
         },
         "Area of the land (㎡)": {
             "value": "100,449,356,102.0",
