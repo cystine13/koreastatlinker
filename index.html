@@ -41,18 +41,10 @@
         }
         .category-carousel {
             display: flex;
-            overflow: hidden;
+            overflow-x: auto;
             gap: 20px;
             padding: 20px;
-            animation: scroll-left 15s linear infinite;
-        }
-        @keyframes scroll-left {
-            0% {
-                transform: translateX(0%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
+            scroll-behavior: smooth;
         }
         .category-card {
             flex: 0 0 300px;
@@ -74,14 +66,14 @@
         }
         .container {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap; /* 모든 콘텐츠가 한 줄로 보이도록 수정 */
             justify-content: space-between;
             margin: 20px auto;
             max-width: 1200px;
             gap: 20px;
         }
         .content {
-            flex: 1 1 calc(25% - 20px);
+            flex: 1 1 calc(25% - 20px); /* 4개 한 줄 */
             max-width: calc(25% - 20px);
             padding: 20px;
             border: 1px solid #ddd;
@@ -105,6 +97,9 @@
             margin-top: 20px;
         }
         @media (max-width: 768px) {
+            .container {
+                flex-wrap: wrap; /* 모바일에서는 한 줄씩 표시 */
+            }
             .content {
                 flex: 1 1 100%;
                 max-width: 100%;
@@ -120,7 +115,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-N3SG24QXER');
-</script>
+</script>     
 <body>
     <header>
         <h1>KoreaStatLinker</h1>
