@@ -20,6 +20,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Crime Occurrence (Cases)": {
+            "value": "1,739,558",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
         "GDP (Hund.M U$)": {
             "value": "5,976.7",
             "category_en": "Economy",
@@ -56,6 +61,11 @@
             "value": "16,080,992",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": "1,860,687",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
         },
         "GDP (Hund.M U$)": {
             "value": "5,676.4",
@@ -94,6 +104,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Crime Occurrence (Cases)": {
+            "value": "1,833,271",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
         "GDP (Hund.M U$)": {
             "value": "6,499.4",
             "category_en": "Economy",
@@ -130,6 +145,11 @@
             "value": "16,987,634",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": "1,894,762",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
         },
         "GDP (Hund.M U$)": {
             "value": "7,283.5",
@@ -168,6 +188,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Crime Occurrence (Cases)": {
+            "value": "1,968,183",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
         "GDP (Hund.M U$)": {
             "value": "8,237.2",
             "category_en": "Economy",
@@ -204,6 +229,11 @@
             "value": "17,857,511",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": "1,733,122",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
         },
         "GDP (Hund.M U$)": {
             "value": "9,715.6",
@@ -242,6 +272,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Crime Occurrence (Cases)": {
+            "value": "1,719,075",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
         "GDP (Hund.M U$)": {
             "value": "10,943.5",
             "category_en": "Economy",
@@ -278,6 +313,11 @@
             "value": "18,687,694",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": "1,836,496",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
         },
         "GDP (Hund.M U$)": {
             "value": "12,209.9",
@@ -316,6 +356,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Crime Occurrence (Cases)": {
+            "value": "2,063,737",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
         "GDP (Hund.M U$)": {
             "value": "10,910.4",
             "category_en": "Economy",
@@ -352,6 +397,11 @@
             "value": "19,261,292",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": "2,020,209",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
             "value": "870,636",
@@ -399,6 +449,11 @@
             "value": "19,865,179",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": "1,784,953",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
             "value": "918,917",
@@ -1180,6 +1235,11 @@
             "value": "23,914,851",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Crime Occurrence (Cases)": {
+            "value": "1,520,200",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
         },
         "Registered Foreigners (Person)": {
             "value": "1,348,626",
