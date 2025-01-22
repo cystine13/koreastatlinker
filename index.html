@@ -41,10 +41,18 @@
         }
         .category-carousel {
             display: flex;
-            overflow-x: auto;
+            overflow: hidden;
             gap: 20px;
             padding: 20px;
-            scroll-behavior: smooth;
+            animation: scroll-left 15s linear infinite;
+        }
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
         }
         .category-card {
             flex: 0 0 300px;
@@ -73,7 +81,7 @@
             gap: 20px;
         }
         .content {
-            flex: 1 1 calc(25% - 20px); /* 4개 한 줄 */
+            flex: 1 1 calc(25% - 20px);
             max-width: calc(25% - 20px);
             padding: 20px;
             border: 1px solid #ddd;
@@ -98,11 +106,8 @@
         }
         @media (max-width: 768px) {
             .content {
-                flex: 1 1 100%; /* 모바일에서 한 줄 */
+                flex: 1 1 100%;
                 max-width: 100%;
-            }
-            .category-card {
-                flex: 1 1 100%; /* 모바일에서도 한 줄 */
             }
         }
     </style>
@@ -115,7 +120,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-N3SG24QXER');
-</script>  
+</script>
 <body>
     <header>
         <h1>KoreaStatLinker</h1>
@@ -132,7 +137,7 @@
 
     <!-- 카테고리 카드 -->
     <div class="category-carousel" id="categoryCarousel">
-        <!-- JavaScript에서 카테고리 카드 추가 -->
+        <!-- JavaScript에서 동적으로 카드 추가 -->
     </div>
 
     <!-- 메인 콘텐츠 -->
@@ -173,7 +178,11 @@
                         const category = itemData.category_en;
                         if (!categories.has(category)) {
                             categories.add(category);
-                            categoryData[category] = { name: itemName, value: itemData.value, year: Object.keys(data).pop() };
+                            categoryData[category] = {
+                                name: itemName,
+                                value: itemData.value,
+                                year: Object.keys(data).pop()
+                            };
                         }
                     });
                 });
@@ -185,9 +194,14 @@
                     card.className = "category-card";
                     card.innerHTML = `
                         <h3>${category}</h3>
-                        <p>${categoryData[category].name}: ${categoryData[category].value} (${categoryData[category].year})</p>
+                        <p>${categoryData[category].name}</p>
+                        <p>${categoryData[category].value} (${categoryData[category].year})</p>
                     `;
-                    card.onclick = () => location.href = "k-indicator.html";
+                    card.onclick = () => {
+                        const url = new URL("k-indicator.html", window.location.origin);
+                        url.searchParams.set("category", category);
+                        window.location.href = url.href;
+                    };
                     categoryCarousel.appendChild(card);
                 });
             })
