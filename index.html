@@ -11,9 +11,30 @@
             padding: 0;
         }
         header {
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .search-container {
             text-align: center;
@@ -39,68 +60,97 @@
         .search-container button:hover {
             background-color: #0056b3;
         }
-        .category-carousel {
-            display: flex;
-            overflow-x: auto;
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             padding: 20px;
-            scroll-behavior: smooth;
         }
-        .category-card {
-            flex: 0 0 300px;
-            padding: 20px;
+        .category-item {
             border: 1px solid #ddd;
             border-radius: 8px;
-            background-color: #f9f9f9;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
             text-align: center;
-            cursor: pointer;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s;
+            cursor: pointer;
         }
-        .category-card:hover {
+        .category-item:hover {
             transform: scale(1.05);
         }
-        .category-card h3 {
+        .category-item h3 {
             margin-bottom: 10px;
-            color: #333;
+            font-size: 16px;
         }
-        .container {
+        .news-section {
+            margin: 40px auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .news-item {
+            margin-bottom: 10px;
+        }
+        .news-item a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 16px;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+        .news-more {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .news-more button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .news-more button:hover {
+            background-color: #0056b3;
+        }
+        .content-container {
             display: flex;
-            flex-wrap: nowrap; /* 모든 콘텐츠가 한 줄로 보이도록 수정 */
+            flex-wrap: nowrap;
             justify-content: space-between;
             margin: 20px auto;
             max-width: 1200px;
             gap: 20px;
         }
-        .content {
-            flex: 1 1 calc(25% - 20px); /* 4개 한 줄 */
+        .content-item {
+            flex: 1 1 calc(25% - 20px);
             max-width: calc(25% - 20px);
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
-            background-color: #f9f9f9;
+            background-color: #f1f1f1;
             text-align: center;
-            cursor: pointer;
             transition: transform 0.2s;
         }
-        .content:hover {
+        .content-item:hover {
             transform: scale(1.05);
         }
-        .content h2 {
+        .content-item h2 {
             margin: 0;
-            color: #333;
         }
         footer {
             text-align: center;
             padding: 10px;
             background-color: #f4f4f4;
-            margin-top: 20px;
         }
         @media (max-width: 768px) {
-            .container {
-                flex-wrap: wrap; /* 모바일에서는 한 줄씩 표시 */
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
-            .content {
+            .content-container {
+                flex-wrap: wrap;
+            }
+            .content-item {
                 flex: 1 1 100%;
                 max-width: 100%;
             }
@@ -115,11 +165,17 @@
   gtag('js', new Date());
 
   gtag('config', 'G-N3SG24QXER');
-</script>     
+</script>   
 <body>
+    <!-- 헤더 및 네비게이션 -->
     <header>
-        <h1>KoreaStatLinker</h1>
-        <p>The hub connecting statistics, agencies, and resources.</p>
+        <h1 onclick="location.href='index.html'">KoreaStatLinker</h1>
+        <nav>
+            <a href="statistics-news.html">Statistics News</a>
+            <a href="authoring-agencies.html">Authoring Agencies</a>
+            <a href="statistics-resources.html">Statistics Resources</a>
+            <a href="k-indicator.html">K Indicator</a>
+        </nav>
     </header>
 
     <!-- 통합 검색창 -->
@@ -130,26 +186,37 @@
         </form>
     </div>
 
-    <!-- 카테고리 카드 -->
-    <div class="category-carousel" id="categoryCarousel">
-        <!-- JavaScript에서 동적으로 카드 추가 -->
+    <!-- 지표 섹션 -->
+    <div class="category-grid" id="categoryGrid">
+        <!-- JavaScript에서 동적으로 추가 -->
+    </div>
+
+    <!-- 통계 뉴스 섹션 -->
+    <div class="news-section">
+        <h2>Latest Statistics News</h2>
+        <div id="newsList">
+            <!-- JavaScript에서 뉴스 동적으로 추가 -->
+        </div>
+        <div class="news-more">
+            <button onclick="location.href='statistics-news.html'">View More</button>
+        </div>
     </div>
 
     <!-- 메인 콘텐츠 -->
-    <div class="container">
-        <div class="content" onclick="location.href='statistics-news.html'">
+    <div class="content-container">
+        <div class="content-item" onclick="location.href='statistics-news.html'">
             <h2>Statistics News</h2>
             <p>Stay updated with the latest statistics news.</p>
         </div>
-        <div class="content" onclick="location.href='authoring-agencies.html'">
+        <div class="content-item" onclick="location.href='authoring-agencies.html'">
             <h2>Authoring Agencies</h2>
             <p>Explore key authoring agencies and their contributions.</p>
         </div>
-        <div class="content" onclick="location.href='statistics-resources.html'">
+        <div class="content-item" onclick="location.href='statistics-resources.html'">
             <h2>Statistics Resources</h2>
             <p>Leverage various statistical tools and data sources.</p>
         </div>
-        <div class="content" onclick="location.href='k-indicator.html'">
+        <div class="content-item" onclick="location.href='k-indicator.html'">
             <h2>K Indicator</h2>
             <p>Explore key Korean indicators and trends.</p>
         </div>
@@ -160,47 +227,40 @@
     </footer>
 
     <script>
-        // Fetch 카테고리 데이터
+        // 지표 데이터 동적 생성
         fetch("population_data.json")
             .then(response => response.json())
             .then(data => {
-                const categories = new Set();
-                const categoryData = {};
-
-                // 카테고리 및 항목 추출
-                Object.values(data).forEach(yearData => {
-                    Object.entries(yearData).forEach(([itemName, itemData]) => {
-                        const category = itemData.category_en;
-                        if (!categories.has(category)) {
-                            categories.add(category);
-                            categoryData[category] = {
-                                name: itemName,
-                                value: itemData.value,
-                                year: Object.keys(data).pop()
-                            };
-                        }
+                const categoryGrid = document.getElementById("categoryGrid");
+                Object.entries(data).forEach(([year, items]) => {
+                    Object.entries(items).forEach(([name, details]) => {
+                        const card = document.createElement("div");
+                        card.className = "category-item";
+                        card.innerHTML = `
+                            <h3>${name}</h3>
+                            <p>${details.value} (${year})</p>
+                        `;
+                        card.onclick = () => location.href = "k-indicator.html";
+                        categoryGrid.appendChild(card);
                     });
                 });
+            });
 
-                // 카테고리 카드 생성
-                const categoryCarousel = document.getElementById("categoryCarousel");
-                categories.forEach(category => {
-                    const card = document.createElement("div");
-                    card.className = "category-card";
-                    card.innerHTML = `
-                        <h3>${category}</h3>
-                        <p>${categoryData[category].name}</p>
-                        <p>${categoryData[category].value} (${categoryData[category].year})</p>
+        // 통계 뉴스 동적 생성
+        fetch("news_posts.json")
+            .then(response => response.json())
+            .then(news => {
+                const newsList = document.getElementById("newsList");
+                news.slice(0, 5).forEach(item => {
+                    const newsItem = document.createElement("div");
+                    newsItem.className = "news-item";
+                    newsItem.innerHTML = `
+                        <a href="${item.link}" target="_blank">${item.title_en}</a>
+                        <span> (${item.date})</span>
                     `;
-                    card.onclick = () => {
-                        const url = new URL("k-indicator.html", window.location.origin);
-                        url.searchParams.set("category", category);
-                        window.location.href = url.href;
-                    };
-                    categoryCarousel.appendChild(card);
+                    newsList.appendChild(newsItem);
                 });
-            })
-            .catch(error => console.error("Error loading categories:", error));
+            });
     </script>
 </body>
 </html>
