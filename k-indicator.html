@@ -76,16 +76,9 @@
     </style>
 </head>
 <body>
-    <!-- 헤더 및 네비게이션 -->
-    <header>
-        <h1 onclick="location.href='index.html'">KoreaStatLinker</h1>
-        <nav>
-            <a href="statistics-news.html">Statistics News</a>
-            <a href="authoring-agencies.html">Authoring Agencies</a>
-            <a href="statistics-resources.html">Statistics Resources</a>
-            <a href="k-indicator.html">K Indicator</a>
-        </nav>
-    </header>
+    <!-- 동적으로 로드될 헤더 -->
+    <div id="header"></div>
+
     <div class="container">
         <div class="tabs" id="tabs">
             <!-- Tabs for categories will be dynamically generated -->
@@ -107,6 +100,14 @@
     </div>
 
     <script>
+        // 헤더 동적 로드
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading header:", error));
+
         fetch("population_data.json")
             .then(response => response.json())
             .then(data => {
