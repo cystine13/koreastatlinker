@@ -1330,6 +1330,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Average size of household members (In person)": {
+            "value": "2.5",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,529,338",
             "category_en": "Population",
@@ -1434,6 +1439,11 @@
         },
         "Marriages (cases)": {
             "value": "281,635",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Average size of household members (In person)": {
+            "value": "2.5",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1546,6 +1556,11 @@
         },
         "Marriages (cases)": {
             "value": "264,455",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Average size of household members (In person)": {
+            "value": "2.5",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1663,6 +1678,11 @@
         },
         "Marriages (cases)": {
             "value": "257,622",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Average size of household members (In person)": {
+            "value": "2.4",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1788,6 +1808,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Average size of household members (In person)": {
+            "value": "2.4",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,849,861",
             "category_en": "Population",
@@ -1907,6 +1932,11 @@
         },
         "Marriages (cases)": {
             "value": "213,502",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Average size of household members (In person)": {
+            "value": "2.3",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -2032,6 +2062,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Average size of household members (In person)": {
+            "value": "2.3",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,638,809",
             "category_en": "Population",
@@ -2154,6 +2189,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Average size of household members (In person)": {
+            "value": "2.2",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,439,038",
             "category_en": "Population",
@@ -2273,6 +2313,11 @@
         },
         "Marriages (cases)": {
             "value": "193,657",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Average size of household members (In person)": {
+            "value": "2.2",
             "category_en": "Population",
             "category_kr": "인구"
         },
