@@ -7,17 +7,45 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0; /* 로고 상단 여백 제거 */
+            padding: 0; /* 로고 내부 여백 제거 */
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        header nav {
+            margin-left: auto; /* 네비게이션을 오른쪽으로 밀기 */
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
         }
 
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
         }
 
         .tabs {
