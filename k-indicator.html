@@ -11,35 +11,8 @@
             padding: 0;
         }
 
-        header {
-            display: flex;
-            align-items: center;
-            background-color: #007BFF;
-            padding: 10px 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            margin: 0; /* 로고 상단 여백 제거 */
-            padding: 0; /* 로고 내부 여백 제거 */
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-        header nav {
-            margin-left: auto; /* 네비게이션을 오른쪽으로 밀기 */
-        }
-
-        header nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 16px;
-        }
-
-        header nav a:hover {
-            text-decoration: underline;
+        #header {
+            margin-bottom: 20px; /* 헤더와 콘텐츠 간의 간격 */
         }
 
         .container {
@@ -104,7 +77,7 @@
     </style>
 </head>
 <body>
-    <!-- 동적으로 로드될 헤더 -->
+    <!-- 헤더 동적 로드 -->
     <div id="header"></div>
 
     <div class="container">
@@ -136,23 +109,24 @@
             })
             .catch(error => console.error("Error loading header:", error));
 
+        // 인구 데이터 로드 및 렌더링
         fetch("population_data.json")
             .then(response => response.json())
             .then(data => {
-                const years = Object.keys(data).sort((a, b) => a - b); // Sort years in ascending order
+                const years = Object.keys(data).sort((a, b) => a - b); // 연도를 오름차순으로 정렬
                 const tableHeader = document.getElementById("table-header");
                 const tableBody = document.getElementById("statistics-body");
                 const tabs = document.getElementById("tabs");
                 const filters = document.getElementById("filters");
 
-                // Extract unique categories
+                // 카테고리 추출
                 const categories = [...new Set(
                     Object.values(data).flatMap(yearData =>
                         Object.values(yearData).map(item => item.category_en)
                     )
                 )];
 
-                // Extract unique items per category
+                // 카테고리별 항목 추출
                 const categoryItems = {};
                 Object.values(data).forEach(yearData => {
                     Object.entries(yearData).forEach(([itemName, itemData]) => {
@@ -164,7 +138,7 @@
                     });
                 });
 
-                // Create tabs
+                // 탭 생성
                 categories.forEach(category => {
                     const tab = document.createElement("div");
                     tab.textContent = category;
@@ -181,14 +155,14 @@
                     tabs.appendChild(tab);
                 });
 
-                // Set the first tab as active
+                // 첫 번째 탭 활성화
                 tabs.firstChild.classList.add("active");
 
-                // Update filters based on category
+                // 필터 업데이트
                 function updateFilters(category) {
                     filters.innerHTML = "";
 
-                    // Add year selection
+                    // 연도 선택 추가
                     const yearFilter = document.createElement("div");
                     const yearLabel = document.createElement("label");
                     yearLabel.textContent = "Select Years:";
@@ -226,7 +200,7 @@
                     yearFilter.appendChild(endYearSelect);
                     filters.appendChild(yearFilter);
 
-                    // Add item selection
+                    // 항목 선택 추가
                     const itemFilter = document.createElement("div");
                     const itemLabel = document.createElement("label");
                     itemLabel.textContent = "Select Items:";
@@ -241,7 +215,7 @@
                         const checkbox = document.createElement("input");
                         checkbox.type = "checkbox";
                         checkbox.value = item;
-                        checkbox.checked = true; // Default: all checked
+                        checkbox.checked = true;
 
                         checkbox.addEventListener("change", () => {
                             const selectedItems = getSelectedItems();
@@ -257,14 +231,14 @@
                     filters.appendChild(itemFilter);
                 }
 
-                // Get selected items
+                // 선택된 항목 가져오기
                 function getSelectedItems() {
                     return Array.from(
                         filters.querySelectorAll("input[type='checkbox']:checked")
                     ).map(cb => cb.value);
                 }
 
-                // Update table based on category, selected items, and year range
+                // 테이블 업데이트
                 function updateTable(category, selectedItems, startYear, endYear) {
                     tableHeader.innerHTML = "<th>Year</th>";
                     tableBody.innerHTML = "";
@@ -290,7 +264,7 @@
                             items.forEach(item => {
                                 const cell = document.createElement("td");
                                 const value = data[year]?.[item]?.value || "-";
-                                cell.textContent = value ? value.toLocaleString() : "-"; // Add comma for thousands
+                                cell.textContent = value ? value.toLocaleString() : "-"; // 천단위 콤마 추가
                                 row.appendChild(cell);
                             });
 
@@ -298,7 +272,7 @@
                         });
                 }
 
-                // Initialize filters and table
+                // 초기화
                 const initialCategory = categories[0];
                 updateFilters(initialCategory);
                 updateTable(initialCategory, [...categoryItems[initialCategory]], years[0], years[years.length - 1]);
