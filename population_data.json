@@ -1165,6 +1165,11 @@
         }
     },
     "2015": {
+        "One Person Households (household)": {
+            "value": "5,203,440",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,529,338",
             "category_en": "Population",
@@ -1257,6 +1262,11 @@
         }
     },
     "2016": {
+        "One Person Households (household)": {
+            "value": "5,397,615",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,696,216",
             "category_en": "Population",
@@ -1354,6 +1364,11 @@
         }
     },
     "2017": {
+        "One Person Households (household)": {
+            "value": "5,618,677",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,778,544",
             "category_en": "Population",
@@ -1456,6 +1471,11 @@
         }
     },
     "2018": {
+        "One Person Households (household)": {
+            "value": "5,848,594",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,826,059",
             "category_en": "Population",
@@ -1563,6 +1583,11 @@
         }
     },
     "2019": {
+        "One Person Households (household)": {
+            "value": "6,147,516",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,849,861",
             "category_en": "Population",
@@ -1670,6 +1695,11 @@
         }
     },
     "2020": {
+        "One Person Households (household)": {
+            "value": "6,643,354",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,829,023",
             "category_en": "Population",
@@ -1777,6 +1807,11 @@
         }
     },
     "2021": {
+        "One Person Households (household)": {
+            "value": "7,165,788",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,638,809",
             "category_en": "Population",
@@ -1884,6 +1919,11 @@
         }
     },
     "2022": {
+        "One Person Households (household)": {
+            "value": "7,502,350",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,439,038",
             "category_en": "Population",
@@ -1991,6 +2031,11 @@
         }
     },
     "2023": {
+        "One Person Households (household)": {
+            "value": "7,829,035",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,325,329",
             "category_en": "Population",
