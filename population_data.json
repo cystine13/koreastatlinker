@@ -1,5 +1,10 @@
 {
     "2000": {
+        "Births (Person)": {
+            "value": "640,089",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.480",
             "category_en": "Population",
@@ -15,18 +20,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "640,089",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "248,740",
+        "Internal Migrants (Person)": {
+            "value": "9,009,441",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
             "value": "15,765,275",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": "248,740",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -82,6 +87,11 @@
         }
     },
     "2001": {
+        "Births (Person)": {
+            "value": "559,934",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.309",
             "category_en": "Population",
@@ -97,18 +107,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "559,934",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "243,813",
+        "Internal Migrants (Person)": {
+            "value": "9,289,949",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
             "value": "16,080,992",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": "243,813",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -164,6 +174,11 @@
         }
     },
     "2002": {
+        "Births (Person)": {
+            "value": "496,911",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.178",
             "category_en": "Population",
@@ -179,18 +194,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "496,911",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "247,524",
+        "Internal Migrants (Person)": {
+            "value": "9,584,461",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
             "value": "16,489,107",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": "247,524",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -246,6 +261,11 @@
         }
     },
     "2003": {
+        "Births (Person)": {
+            "value": "495,036",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.191",
             "category_en": "Population",
@@ -261,18 +281,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "495,036",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "246,463",
+        "Internal Migrants (Person)": {
+            "value": "9,516,605",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
             "value": "16,987,634",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": "246,463",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -328,6 +348,11 @@
         }
     },
     "2004": {
+        "Births (Person)": {
+            "value": "476,958",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.164",
             "category_en": "Population",
@@ -343,18 +368,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "476,958",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "246,220",
+        "Internal Migrants (Person)": {
+            "value": "8,567,795",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
             "value": "17,391,932",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": "246,220",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -410,6 +435,11 @@
         }
     },
     "2005": {
+        "Births (Person)": {
+            "value": "438,707",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.085",
             "category_en": "Population",
@@ -425,18 +455,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "438,707",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "245,874",
+        "Internal Migrants (Person)": {
+            "value": "8,795,397",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
             "value": "17,857,511",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": "245,874",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -492,6 +522,11 @@
         }
     },
     "2006": {
+        "Births (Person)": {
+            "value": "451,759",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.132",
             "category_en": "Population",
@@ -507,18 +542,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "451,759",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "244,162",
+        "Internal Migrants (Person)": {
+            "value": "9,342,074",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
             "value": "18,326,619",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": "244,162",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -574,6 +609,11 @@
         }
     },
     "2007": {
+        "Births (Person)": {
+            "value": "496,822",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.259",
             "category_en": "Population",
@@ -589,18 +629,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "496,822",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "246,482",
+        "Internal Migrants (Person)": {
+            "value": "9,070,102",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
             "value": "18,687,694",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": "246,482",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -656,6 +696,11 @@
         }
     },
     "2008": {
+        "Births (Person)": {
+            "value": "465,892",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.192",
             "category_en": "Population",
@@ -671,18 +716,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "465,892",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "246,113",
+        "Internal Migrants (Person)": {
+            "value": "8,808,256",
             "category_en": "Population",
             "category_kr": "인구"
         },
         "Resident Households (households)": {
             "value": "19,005,339",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Deaths (Person)": {
+            "value": "246,113",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -738,6 +783,11 @@
         }
     },
     "2009": {
+        "Births (Person)": {
+            "value": "444,849",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.149",
             "category_en": "Population",
@@ -748,18 +798,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Registered Foreigners (Person)": {
+            "value": "870,636",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "49,773,145",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "444,849",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "246,942",
+        "Internal Migrants (Person)": {
+            "value": "8,487,275",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -768,8 +818,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "870,636",
+        "Deaths (Person)": {
+            "value": "246,942",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -830,6 +880,11 @@
         }
     },
     "2010": {
+        "Births (Person)": {
+            "value": "470,171",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.226",
             "category_en": "Population",
@@ -840,18 +895,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Registered Foreigners (Person)": {
+            "value": "918,917",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "50,515,666",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "470,171",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "255,405",
+        "Internal Migrants (Person)": {
+            "value": "8,226,594",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -860,8 +915,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "918,917",
+        "Deaths (Person)": {
+            "value": "255,405",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -927,6 +982,11 @@
         }
     },
     "2011": {
+        "Births (Person)": {
+            "value": "471,265",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.244",
             "category_en": "Population",
@@ -937,18 +997,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Registered Foreigners (Person)": {
+            "value": "982,461",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "50,734,284",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "471,265",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "257,396",
+        "Internal Migrants (Person)": {
+            "value": "8,127,195",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -957,8 +1017,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "982,461",
+        "Deaths (Person)": {
+            "value": "257,396",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1024,6 +1084,11 @@
         }
     },
     "2012": {
+        "Births (Person)": {
+            "value": "484,550",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.297",
             "category_en": "Population",
@@ -1034,18 +1099,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Registered Foreigners (Person)": {
+            "value": "932,983",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "50,948,272",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "484,550",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "267,221",
+        "Internal Migrants (Person)": {
+            "value": "7,506,691",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1054,8 +1119,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "932,983",
+        "Deaths (Person)": {
+            "value": "267,221",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1121,6 +1186,11 @@
         }
     },
     "2013": {
+        "Births (Person)": {
+            "value": "436,455",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.187",
             "category_en": "Population",
@@ -1131,18 +1201,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Registered Foreigners (Person)": {
+            "value": "985,923",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,141,463",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "436,455",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "266,257",
+        "Internal Migrants (Person)": {
+            "value": "7,411,784",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1151,8 +1221,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "985,923",
+        "Deaths (Person)": {
+            "value": "266,257",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1218,6 +1288,11 @@
         }
     },
     "2014": {
+        "Births (Person)": {
+            "value": "435,435",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Total Fertility Rate (per woman of childbearing age)": {
             "value": "1.205",
             "category_en": "Population",
@@ -1228,18 +1303,18 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Registered Foreigners (Person)": {
+            "value": "1,091,531",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,327,916",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "435,435",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "267,692",
+        "Internal Migrants (Person)": {
+            "value": "7,629,098",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1248,8 +1323,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "1,091,531",
+        "Deaths (Person)": {
+            "value": "267,692",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1315,6 +1390,16 @@
         }
     },
     "2015": {
+        "Household (households)": {
+            "value": "19,560,603",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": "438,420",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "One Person Households (household)": {
             "value": "5,203,440",
             "category_en": "Population",
@@ -1335,23 +1420,23 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Multicultural Households (household)": {
+            "value": "299,241",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Registered Foreigners (Person)": {
+            "value": "1,143,087",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,529,338",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "438,420",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "275,895",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Household (households)": {
-            "value": "19,560,603",
+        "Internal Migrants (Person)": {
+            "value": "7,755,286",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1360,8 +1445,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "1,143,087",
+        "Deaths (Person)": {
+            "value": "275,895",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1427,6 +1512,16 @@
         }
     },
     "2016": {
+        "Household (households)": {
+            "value": "19,837,665",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": "406,243",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "One Person Households (household)": {
             "value": "5,397,615",
             "category_en": "Population",
@@ -1447,23 +1542,23 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Multicultural Households (household)": {
+            "value": "316,067",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Registered Foreigners (Person)": {
+            "value": "1,161,677",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,696,216",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "406,243",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "280,827",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Household (households)": {
-            "value": "19,837,665",
+        "Internal Migrants (Person)": {
+            "value": "7,378,430",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1472,8 +1567,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "1,161,677",
+        "Deaths (Person)": {
+            "value": "280,827",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1544,6 +1639,16 @@
         }
     },
     "2017": {
+        "Household (households)": {
+            "value": "20,167,922",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": "357,771",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "One Person Households (household)": {
             "value": "5,618,677",
             "category_en": "Population",
@@ -1564,23 +1669,23 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Multicultural Households (household)": {
+            "value": "318,917",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Registered Foreigners (Person)": {
+            "value": "1,171,762",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,778,544",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "357,771",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "285,534",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Household (households)": {
-            "value": "20,167,922",
+        "Internal Migrants (Person)": {
+            "value": "7,154,226",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1589,8 +1694,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "1,171,762",
+        "Deaths (Person)": {
+            "value": "285,534",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1666,6 +1771,16 @@
         }
     },
     "2018": {
+        "Household (households)": {
+            "value": "20,499,543",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": "326,822",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "One Person Households (household)": {
             "value": "5,848,594",
             "category_en": "Population",
@@ -1686,23 +1801,23 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Multicultural Households (household)": {
+            "value": "334,856",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Registered Foreigners (Person)": {
+            "value": "1,246,626",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,826,059",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "326,822",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "298,820",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Household (households)": {
-            "value": "20,499,543",
+        "Internal Migrants (Person)": {
+            "value": "7,297,099",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1711,8 +1826,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "1,246,626",
+        "Deaths (Person)": {
+            "value": "298,820",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1793,6 +1908,16 @@
         }
     },
     "2019": {
+        "Household (households)": {
+            "value": "20,891,348",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": "302,676",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "One Person Households (household)": {
             "value": "6,147,516",
             "category_en": "Population",
@@ -1813,23 +1938,23 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Multicultural Households (household)": {
+            "value": "353,803",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Registered Foreigners (Person)": {
+            "value": "1,271,807",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,849,861",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "302,676",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "295,110",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Household (households)": {
-            "value": "20,891,348",
+        "Internal Migrants (Person)": {
+            "value": "7,104,398",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1838,8 +1963,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "1,271,807",
+        "Deaths (Person)": {
+            "value": "295,110",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1920,6 +2045,16 @@
         }
     },
     "2020": {
+        "Household (households)": {
+            "value": "21,484,785",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": "272,337",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "One Person Households (household)": {
             "value": "6,643,354",
             "category_en": "Population",
@@ -1940,23 +2075,23 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Multicultural Households (household)": {
+            "value": "367,775",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Registered Foreigners (Person)": {
+            "value": "1,145,540",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,829,023",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "272,337",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "304,948",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Household (households)": {
-            "value": "21,484,785",
+        "Internal Migrants (Person)": {
+            "value": "7,735,491",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1965,8 +2100,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "1,145,540",
+        "Deaths (Person)": {
+            "value": "304,948",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -2047,6 +2182,16 @@
         }
     },
     "2021": {
+        "Household (households)": {
+            "value": "22,022,753",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": "260,562",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "One Person Households (household)": {
             "value": "7,165,788",
             "category_en": "Population",
@@ -2067,23 +2212,23 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Multicultural Households (household)": {
+            "value": "385,219",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Registered Foreigners (Person)": {
+            "value": "1,093,891",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,638,809",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "260,562",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "317,680",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Household (households)": {
-            "value": "22,022,753",
+        "Internal Migrants (Person)": {
+            "value": "7,213,422",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -2092,8 +2237,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "1,093,891",
+        "Deaths (Person)": {
+            "value": "317,680",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -2174,6 +2319,16 @@
         }
     },
     "2022": {
+        "Household (households)": {
+            "value": "22,383,187",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": "249,186",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "One Person Households (household)": {
             "value": "7,502,350",
             "category_en": "Population",
@@ -2194,23 +2349,23 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Multicultural Households (household)": {
+            "value": "399,396",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Registered Foreigners (Person)": {
+            "value": "1,189,585",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,439,038",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "249,186",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "372,939",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Household (households)": {
-            "value": "22,383,187",
+        "Internal Migrants (Person)": {
+            "value": "6,152,155",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -2219,8 +2374,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "1,189,585",
+        "Deaths (Person)": {
+            "value": "372,939",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -2301,6 +2456,16 @@
         }
     },
     "2023": {
+        "Household (households)": {
+            "value": "22,728,163",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Births (Person)": {
+            "value": "230,028",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "One Person Households (household)": {
             "value": "7,829,035",
             "category_en": "Population",
@@ -2321,23 +2486,23 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Multicultural Households (household)": {
+            "value": "415,584",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Registered Foreigners (Person)": {
+            "value": "1,348,626",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,325,329",
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Births (Person)": {
-            "value": "230,028",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Deaths (Person)": {
-            "value": "352,511",
-            "category_en": "Population",
-            "category_kr": "인구"
-        },
-        "Household (households)": {
-            "value": "22,728,163",
+        "Internal Migrants (Person)": {
+            "value": "6,128,738",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -2346,8 +2511,8 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Registered Foreigners (Person)": {
-            "value": "1,348,626",
+        "Deaths (Person)": {
+            "value": "352,511",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -2420,6 +2585,11 @@
     "2024": {
         "Resident Population (Person)": {
             "value": "51,217,221",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Internal Migrants (Person)": {
+            "value": "6,283,319",
             "category_en": "Population",
             "category_kr": "인구"
         },
