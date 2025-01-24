@@ -1,5 +1,10 @@
 {
     "2000": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.480",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "47,732,558",
             "category_en": "Population",
@@ -72,6 +77,11 @@
         }
     },
     "2001": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.309",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "48,021,543",
             "category_en": "Population",
@@ -144,6 +154,11 @@
         }
     },
     "2002": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.178",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "48,229,948",
             "category_en": "Population",
@@ -216,6 +231,11 @@
         }
     },
     "2003": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.191",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "48,386,823",
             "category_en": "Population",
@@ -288,6 +308,11 @@
         }
     },
     "2004": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.164",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "48,583,805",
             "category_en": "Population",
@@ -360,6 +385,11 @@
         }
     },
     "2005": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.085",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "48,782,274",
             "category_en": "Population",
@@ -432,6 +462,11 @@
         }
     },
     "2006": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.132",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "48,991,779",
             "category_en": "Population",
@@ -504,6 +539,11 @@
         }
     },
     "2007": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.259",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "49,268,928",
             "category_en": "Population",
@@ -576,6 +616,11 @@
         }
     },
     "2008": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.192",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "49,540,367",
             "category_en": "Population",
@@ -648,6 +693,11 @@
         }
     },
     "2009": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.149",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "49,773,145",
             "category_en": "Population",
@@ -730,6 +780,11 @@
         }
     },
     "2010": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.226",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "50,515,666",
             "category_en": "Population",
@@ -817,6 +872,11 @@
         }
     },
     "2011": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.244",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "50,734,284",
             "category_en": "Population",
@@ -904,6 +964,11 @@
         }
     },
     "2012": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.297",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "50,948,272",
             "category_en": "Population",
@@ -991,6 +1056,11 @@
         }
     },
     "2013": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.187",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,141,463",
             "category_en": "Population",
@@ -1078,6 +1148,11 @@
         }
     },
     "2014": {
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.205",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,327,916",
             "category_en": "Population",
@@ -1167,6 +1242,11 @@
     "2015": {
         "One Person Households (household)": {
             "value": "5,203,440",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.239",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1264,6 +1344,11 @@
     "2016": {
         "One Person Households (household)": {
             "value": "5,397,615",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.172",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1366,6 +1451,11 @@
     "2017": {
         "One Person Households (household)": {
             "value": "5,618,677",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "1.052",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1473,6 +1563,11 @@
     "2018": {
         "One Person Households (household)": {
             "value": "5,848,594",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "0.977",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1588,6 +1683,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "0.918",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,849,861",
             "category_en": "Population",
@@ -1697,6 +1797,11 @@
     "2020": {
         "One Person Households (household)": {
             "value": "6,643,354",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "0.837",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1812,6 +1917,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "0.808",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,638,809",
             "category_en": "Population",
@@ -1924,6 +2034,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "0.778",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Resident Population (Person)": {
             "value": "51,439,038",
             "category_en": "Population",
@@ -2033,6 +2148,11 @@
     "2023": {
         "One Person Households (household)": {
             "value": "7,829,035",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Total Fertility Rate (per woman of childbearing age)": {
+            "value": "0.721",
             "category_en": "Population",
             "category_kr": "인구"
         },
