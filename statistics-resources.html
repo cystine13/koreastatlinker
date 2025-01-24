@@ -9,176 +9,152 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
         }
 
-        header {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
+        #header {
+            margin-bottom: 20px; /* 헤더와 콘텐츠 사이 간격 */
         }
 
-        header a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            margin-left: 20px;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: #fff;
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .filters {
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
             margin-bottom: 20px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
         }
 
-        .filters select, .filters input {
+        .search-bar input {
+            width: 70%;
             padding: 10px;
             font-size: 16px;
-            border: 1px solid #ccc;
+            border: 1px solid #ddd;
             border-radius: 4px;
         }
 
         .resource-list {
-            list-style: none;
+            list-style-type: none;
             padding: 0;
         }
 
-        .resource-list li {
-            margin: 10px 0;
-            padding: 10px 15px;
-            background-color: #f9f9f9;
+        .resource-item {
+            margin-bottom: 20px;
+            padding: 15px;
             border: 1px solid #ddd;
-            border-radius: 5px;
-            transition: transform 0.2s, box-shadow 0.2s;
-            white-space: nowrap; /* 텍스트 줄바꿈 방지 */
-            overflow: hidden; /* 넘치는 텍스트 숨김 */
-            text-overflow: ellipsis; /* 넘치는 텍스트에 '...' 추가 */
+            border-radius: 8px;
+            background: #f9f9f9;
+            transition: box-shadow 0.2s;
         }
 
-        .resource-list li:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        .resource-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .resource-list a {
-            text-decoration: none;
-            color: #007BFF;
+        .resource-item a {
+            font-size: 18px;
             font-weight: bold;
-            margin-right: 10px;
+            text-decoration: none;
+            color: #007bff;
         }
 
-        .resource-list span {
+        .resource-item a:hover {
+            text-decoration: underline;
+        }
+
+        .resource-item .additional-info {
+            margin-top: 5px;
+            font-size: 14px;
             color: #555;
         }
     </style>
 </head>
 <body>
-    <!-- 헤더 및 네비게이션 -->
-    <header>
-        <h1 onclick="location.href='index.html'">KoreaStatLinker</h1>
-        <nav>
-            <a href="statistics-news.html">Statistics News</a>
-            <a href="authoring-agencies.html">Authoring Agencies</a>
-            <a href="statistics-resources.html">Statistics Resources</a>
-            <a href="k-indicator.html">K Indicator</a>
-        </nav>
-    </header>
-    <main>
-        <!-- 필터 -->
-        <div class="filters">
-            <input type="text" id="searchInput" placeholder="Search resources...">
-            <select id="categoryFilter">
-                <option value="All">All Categories</option>
-            </select>
-        </div>
+    <!-- 헤더 동적 로드 -->
+    <div id="header"></div>
 
-        <!-- JSON 데이터로 채워질 목록 -->
-        <ul class="resource-list" id="resourceList"></ul>
-    </main>
+    <div class="container">
+        <h1>Statistics Resources</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for resources...">
+        </div>
+        <ul id="resourceList" class="resource-list">
+            <!-- JSON 데이터를 기반으로 리소스가 동적으로 추가됩니다 -->
+        </ul>
+    </div>
 
     <script>
-        // JSON 파일 불러오기 및 렌더링
-        async function loadResources() {
-            try {
-                const response = await fetch('statistics-resources.json'); // JSON 파일 경로
-                const resources = await response.json();
+        // 헤더 동적 로드
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading header:", error));
+
+        // JSON 데이터 경로
+        const jsonUrl = './statistics-resources.json';
+
+        let resourceData = []; // JSON 데이터를 저장할 변수
+
+        // 초기 데이터 로드 및 렌더링
+        fetch(jsonUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                resourceData = data; // JSON 데이터를 변수에 저장
+                renderResources(resourceData); // 초기 렌더링
+            })
+            .catch(error => {
+                console.error('Error loading JSON data:', error);
                 const resourceList = document.getElementById('resourceList');
-                const searchInput = document.getElementById('searchInput');
-                const categoryFilter = document.getElementById('categoryFilter');
+                resourceList.innerHTML = `<p style="color: red;">Failed to load resource data. Please try again later.</p>`;
+            });
 
-                // 카테고리 필터 초기화
-                initializeCategoryFilter(resources);
-
-                // 초기 렌더링
-                renderResources(resources);
-
-                // 검색 및 필터 이벤트 추가
-                searchInput.addEventListener('input', () => filterAndRender());
-                categoryFilter.addEventListener('change', () => filterAndRender());
-
-                // 필터 및 검색 적용 함수
-                function filterAndRender() {
-                    const query = searchInput.value.toLowerCase();
-                    const selectedCategory = categoryFilter.value;
-
-                    const filteredResources = resources.filter(resource => {
-                        const matchesSearch = resource.name_en.toLowerCase().includes(query) ||
-                            resource.category_en.toLowerCase().includes(query) ||
-                            resource.source_en.toLowerCase().includes(query);
-                        const matchesCategory = selectedCategory === 'All' || resource.category_en === selectedCategory;
-                        return matchesSearch && matchesCategory;
-                    });
-
-                    renderResources(filteredResources);
-                }
-
-                // 데이터 렌더링 함수
-                function renderResources(data) {
-                    resourceList.innerHTML = '';
-                    if (data.length === 0) {
-                        resourceList.innerHTML = '<li>No results found.</li>';
-                        return;
-                    }
-
-                    data.forEach(resource => {
-                        const li = document.createElement('li');
-                        li.innerHTML = `
-                            <a href="${resource.link}" target="_blank">${resource.name_en}</a>
-                            <span>(${resource.category_en}, ${resource.source_en})</span>
-                        `;
-                        resourceList.appendChild(li);
-                    });
-                }
-
-                // 카테고리 필터 초기화 함수
-                function initializeCategoryFilter(data) {
-                    const categories = [...new Set(data.map(resource => resource.category_en))];
-                    categories.sort().forEach(category => {
-                        const option = document.createElement('option');
-                        option.value = category;
-                        option.textContent = category;
-                        categoryFilter.appendChild(option);
-                    });
-                }
-            } catch (error) {
-                console.error('Error loading resources:', error);
-            }
+        // 리소스 데이터를 렌더링하는 함수
+        function renderResources(resourceItems) {
+            const resourceList = document.getElementById("resourceList");
+            resourceList.innerHTML = ""; // 기존 데이터 초기화
+            resourceItems.forEach(resource => {
+                const resourceItem = document.createElement("li");
+                resourceItem.className = "resource-item";
+                resourceItem.innerHTML = `
+                    <a href="${resource.link}" target="_blank">${resource.name_en}</a>
+                    <div class="additional-info">
+                        ${resource.category_en}, ${resource.source_en}
+                    </div>
+                `;
+                resourceList.appendChild(resourceItem);
+            });
         }
 
-        // 페이지 로드 시 실행
-        window.onload = loadResources;
+        // 검색 기능
+        const searchInput = document.getElementById("searchInput");
+        searchInput.addEventListener("input", function () {
+            const query = searchInput.value.toLowerCase(); // 검색어를 소문자로 변환
+            const filteredResources = resourceData.filter(resource =>
+                resource.name_en.toLowerCase().includes(query) || // 영문 명칭에서 검색
+                resource.category_en.toLowerCase().includes(query) || // 영문 카테고리에서 검색
+                resource.source_en.toLowerCase().includes(query) // 영문 소스에서 검색
+            );
+            renderResources(filteredResources);
+        });
     </script>
 </body>
 </html>
