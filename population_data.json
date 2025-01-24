@@ -30,6 +30,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Population Density(Per ㎢)": {
+            "value": "463.9",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Deaths (Person)": {
             "value": "248,740",
             "category_en": "Population",
@@ -462,6 +467,11 @@
         },
         "Resident Households (households)": {
             "value": "17,857,511",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Population Density(Per ㎢)": {
+            "value": "474.5",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -912,6 +922,11 @@
         },
         "Resident Households (households)": {
             "value": "19,865,179",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Population Density(Per ㎢)": {
+            "value": "485.6",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1445,6 +1460,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Population Density(Per ㎢)": {
+            "value": "509.2",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Deaths (Person)": {
             "value": "275,895",
             "category_en": "Population",
@@ -1564,6 +1584,11 @@
         },
         "Resident Households (households)": {
             "value": "21,294,009",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Population Density(Per ㎢)": {
+            "value": "511.0",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1691,6 +1716,11 @@
         },
         "Resident Households (households)": {
             "value": "21,632,851",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Population Density(Per ㎢)": {
+            "value": "512.4",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1823,6 +1853,11 @@
         },
         "Resident Households (households)": {
             "value": "22,042,947",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Population Density(Per ㎢)": {
+            "value": "514.4",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -1963,6 +1998,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Population Density(Per ㎢)": {
+            "value": "515.7",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Deaths (Person)": {
             "value": "295,110",
             "category_en": "Population",
@@ -2097,6 +2137,11 @@
         },
         "Resident Households (households)": {
             "value": "23,093,108",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Population Density(Per ㎢)": {
+            "value": "516.2",
             "category_en": "Population",
             "category_kr": "인구"
         },
@@ -2237,6 +2282,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Population Density(Per ㎢)": {
+            "value": "515.2",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Deaths (Person)": {
             "value": "317,680",
             "category_en": "Population",
@@ -2374,6 +2424,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Population Density(Per ㎢)": {
+            "value": "514.6",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
         "Deaths (Person)": {
             "value": "372,939",
             "category_en": "Population",
@@ -2508,6 +2563,11 @@
         },
         "Resident Households (households)": {
             "value": "23,914,851",
+            "category_en": "Population",
+            "category_kr": "인구"
+        },
+        "Population Density(Per ㎢)": {
+            "value": "515.4",
             "category_en": "Population",
             "category_kr": "인구"
         },
