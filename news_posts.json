@@ -1,5 +1,45 @@
 [
     {
+        "title_kr": "2024년 12월 기준 사업체노동력조사 결과",
+        "title_en": "Business Labor Force Survey Results as of December 2024",
+        "link": "http://laborstat.moel.go.kr/lsm/bbs/selectBbsDetail.do?bbsId=LSS106&bbsSn=1291",
+        "date": "2025-01-23",
+        "source_kr": "고용노동부 고용노동통계",
+        "source_en": "Employment and Labor Statistics System"
+    },
+    {
+        "title_kr": "낚시어선 어획량 조사 공표(2024년 11월 자료)",
+        "title_en": "Publication of fish catch survey (November 2024 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=4D9BADF2F836A4DD96E4C4D077885838",
+        "date": "2025-01-23",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "등록선박통계 공표(2024년 12월 자료)",
+        "title_en": "Publication of registered ship statistics (December 2024 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=00B5A2EDB12BB86DB17BD70BE14D403C",
+        "date": "2025-01-23",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "입항선박톤급별통계 공표(2024년 12월 자료)",
+        "title_en": "Announcement of statistics by ship ton class (December 2024 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=10E456A0E5FC9CB417C95A84059A7BC9",
+        "date": "2025-01-23",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "화물수송실적 공표(2024년 12월 자료)",
+        "title_en": "Announcement of freight forwarding performance (December 2024 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=651615F7917FE051F6B6F38A30B08BA2",
+        "date": "2025-01-23",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
         "title_kr": "건축통계 정확도 향상 위해 집계방식 개선",
         "title_en": "Improve aggregation method to improve architectural statistics accuracy",
         "link": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?lcmspage=1&id=95090628",
