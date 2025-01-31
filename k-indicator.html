@@ -9,26 +9,23 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
         }
 
-        /* 페이지 전체 컨테이너 */
+        #header {
+            margin-bottom: 20px; /* 헤더와 콘텐츠 간의 간격 */
+        }
+
         .container {
-            max-width: 1280px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        /* 탭 스타일 */
         .tabs {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            border-bottom: 2px solid #ccc;
+            justify-content: space-between;
             margin-bottom: 20px;
+            border-bottom: 2px solid #ccc;
         }
 
         .tab {
@@ -47,23 +44,20 @@
             border-bottom: none;
         }
 
-        /* 필터 영역 */
         .filters {
+            margin: 20px 0;
+        }
+
+        .filters > div {
+            margin-bottom: 20px; /* 줄바꿈 간격 */
+        }
+
+        .checkbox-group {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 20px;
+            gap: 10px;
         }
 
-        .filters select {
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        /* 테이블 스타일 */
         .statistics-table {
             width: 100%;
             border-collapse: collapse;
@@ -73,7 +67,7 @@
         .statistics-table th,
         .statistics-table td {
             border: 1px solid #ddd;
-            padding: 10px;
+            padding: 8px;
             text-align: center;
         }
 
@@ -88,11 +82,11 @@
 
     <div class="container">
         <div class="tabs" id="tabs">
-            <!-- 카테고리 탭 동적 생성 -->
+            <!-- Tabs for categories will be dynamically generated -->
         </div>
 
         <div class="filters" id="filters">
-            <!-- 연도 및 항목 필터 동적 생성 -->
+            <!-- Year and item selection filters will be dynamically generated -->
         </div>
 
         <table class="statistics-table">
@@ -115,24 +109,24 @@
             })
             .catch(error => console.error("Error loading header:", error));
 
-        // JSON 데이터 로드 및 테이블 업데이트
+        // 인구 데이터 로드 및 렌더링
         fetch("population_data.json")
             .then(response => response.json())
             .then(data => {
-                const years = Object.keys(data).sort((a, b) => a - b); // 연도 정렬
+                const years = Object.keys(data).sort((a, b) => a - b); // 연도를 오름차순으로 정렬
                 const tableHeader = document.getElementById("table-header");
                 const tableBody = document.getElementById("statistics-body");
                 const tabs = document.getElementById("tabs");
                 const filters = document.getElementById("filters");
 
-                // 카테고리 리스트 가져오기
+                // 카테고리 추출
                 const categories = [...new Set(
                     Object.values(data).flatMap(yearData =>
                         Object.values(yearData).map(item => item.category_en)
                     )
                 )];
 
-                // 카테고리별 아이템 저장
+                // 카테고리별 항목 추출
                 const categoryItems = {};
                 Object.values(data).forEach(yearData => {
                     Object.entries(yearData).forEach(([itemName, itemData]) => {
@@ -161,13 +155,14 @@
                     tabs.appendChild(tab);
                 });
 
-                tabs.firstChild.classList.add("active"); // 첫 번째 탭 기본 선택
+                // 첫 번째 탭 활성화
+                tabs.firstChild.classList.add("active");
 
                 // 필터 업데이트
                 function updateFilters(category) {
                     filters.innerHTML = "";
 
-                    // 연도 선택 필터
+                    // 연도 선택 추가
                     const yearFilter = document.createElement("div");
                     const yearLabel = document.createElement("label");
                     yearLabel.textContent = "Select Years:";
@@ -179,8 +174,10 @@
                     years.forEach(year => {
                         const startOption = document.createElement("option");
                         const endOption = document.createElement("option");
+
                         startOption.value = endOption.value = year;
                         startOption.textContent = endOption.textContent = year;
+
                         startYearSelect.appendChild(startOption);
                         endYearSelect.appendChild(endOption);
                     });
@@ -203,13 +200,14 @@
                     yearFilter.appendChild(endYearSelect);
                     filters.appendChild(yearFilter);
 
-                    // 항목 선택 필터
+                    // 항목 선택 추가
                     const itemFilter = document.createElement("div");
                     const itemLabel = document.createElement("label");
                     itemLabel.textContent = "Select Items:";
                     itemFilter.appendChild(itemLabel);
 
                     const checkboxGroup = document.createElement("div");
+                    checkboxGroup.className = "checkbox-group";
 
                     const items = [...categoryItems[category]];
                     items.forEach(item => {
@@ -217,7 +215,7 @@
                         const checkbox = document.createElement("input");
                         checkbox.type = "checkbox";
                         checkbox.value = item;
-                        checkbox.checked = true; 
+                        checkbox.checked = true;
 
                         checkbox.addEventListener("change", () => {
                             const selectedItems = getSelectedItems();
@@ -233,9 +231,51 @@
                     filters.appendChild(itemFilter);
                 }
 
+                // 선택된 항목 가져오기
                 function getSelectedItems() {
-                    return Array.from(filters.querySelectorAll("input[type='checkbox']:checked")).map(cb => cb.value);
+                    return Array.from(
+                        filters.querySelectorAll("input[type='checkbox']:checked")
+                    ).map(cb => cb.value);
                 }
+
+                // 테이블 업데이트
+                function updateTable(category, selectedItems, startYear, endYear) {
+                    tableHeader.innerHTML = "<th>Year</th>";
+                    tableBody.innerHTML = "";
+
+                    const items = selectedItems.length
+                        ? selectedItems
+                        : [...categoryItems[category]];
+
+                    items.forEach(item => {
+                        const th = document.createElement("th");
+                        th.textContent = item;
+                        tableHeader.appendChild(th);
+                    });
+
+                    years
+                        .filter(year => year >= startYear && year <= endYear)
+                        .forEach(year => {
+                            const row = document.createElement("tr");
+                            const yearCell = document.createElement("td");
+                            yearCell.textContent = year;
+                            row.appendChild(yearCell);
+
+                            items.forEach(item => {
+                                const cell = document.createElement("td");
+                                const value = data[year]?.[item]?.value || "-";
+                                cell.textContent = value ? value.toLocaleString() : "-"; // 천단위 콤마 추가
+                                row.appendChild(cell);
+                            });
+
+                            tableBody.appendChild(row);
+                        });
+                }
+
+                // 초기화
+                const initialCategory = categories[0];
+                updateFilters(initialCategory);
+                updateTable(initialCategory, [...categoryItems[initialCategory]], years[0], years[years.length - 1]);
             })
             .catch(error => console.error("Error loading data:", error));
     </script>
