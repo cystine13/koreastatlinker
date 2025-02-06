@@ -35,6 +35,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Expectation of life at age (Years)": {
+            "value": "76",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "4.4",
             "category_en": "Labor",
@@ -106,6 +111,11 @@
             "value": "16,080,992",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Expectation of life at age (Years)": {
+            "value": "76",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
         },
         "Unemployment rate (%)": {
             "value": "4.0",
@@ -179,6 +189,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Expectation of life at age (Years)": {
+            "value": "77",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.3",
             "category_en": "Labor",
@@ -251,6 +266,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Expectation of life at age (Years)": {
+            "value": "77",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.6",
             "category_en": "Labor",
@@ -322,6 +342,11 @@
             "value": "17,391,932",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Expectation of life at age (Years)": {
+            "value": "78",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
         },
         "Unemployment rate (%)": {
             "value": "3.7",
@@ -400,6 +425,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Expectation of life at age (Years)": {
+            "value": "78",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.7",
             "category_en": "Labor",
@@ -471,6 +501,11 @@
             "value": "18,326,619",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Expectation of life at age (Years)": {
+            "value": "79",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
         },
         "Unemployment rate (%)": {
             "value": "3.5",
@@ -544,6 +579,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Expectation of life at age (Years)": {
+            "value": "79",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.2",
             "category_en": "Labor",
@@ -615,6 +655,11 @@
             "value": "19,005,339",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Expectation of life at age (Years)": {
+            "value": "80",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
         },
         "Unemployment rate (%)": {
             "value": "3.2",
@@ -692,6 +737,11 @@
             "value": "19,261,292",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Expectation of life at age (Years)": {
+            "value": "80",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
         },
         "Unemployment rate (%)": {
             "value": "3.6",
@@ -780,6 +830,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Expectation of life at age (Years)": {
+            "value": "80",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.7",
             "category_en": "Labor",
@@ -866,6 +921,11 @@
             "value": "20,033,142",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Expectation of life at age (Years)": {
+            "value": "81",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
         },
         "Unemployment rate (%)": {
             "value": "3.4",
@@ -954,6 +1014,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Expectation of life at age (Years)": {
+            "value": "81",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.2",
             "category_en": "Labor",
@@ -1041,6 +1106,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Expectation of life at age (Years)": {
+            "value": "81",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.1",
             "category_en": "Labor",
@@ -1127,6 +1197,11 @@
             "value": "20,724,094",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Expectation of life at age (Years)": {
+            "value": "82",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
         },
         "Unemployment rate (%)": {
             "value": "3.5",
@@ -1240,6 +1315,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Expectation of life at age (Years)": {
+            "value": "82",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.6",
             "category_en": "Labor",
@@ -1351,6 +1431,11 @@
             "value": "511.0",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Expectation of life at age (Years)": {
+            "value": "82",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
         },
         "Unemployment rate (%)": {
             "value": "3.7",
@@ -1468,6 +1553,11 @@
             "value": "512.4",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Expectation of life at age (Years)": {
+            "value": "83",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
         },
         "Unemployment rate (%)": {
             "value": "3.7",
@@ -1590,6 +1680,11 @@
             "value": "514.4",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Expectation of life at age (Years)": {
+            "value": "83",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
         },
         "Unemployment rate (%)": {
             "value": "3.8",
@@ -1718,6 +1813,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Expectation of life at age (Years)": {
+            "value": "83",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.8",
             "category_en": "Labor",
@@ -1844,6 +1944,11 @@
             "value": "516.2",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Expectation of life at age (Years)": {
+            "value": "83",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
         },
         "Unemployment rate (%)": {
             "value": "4.0",
@@ -1972,6 +2077,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Expectation of life at age (Years)": {
+            "value": "84",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.7",
             "category_en": "Labor",
@@ -2099,6 +2209,11 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
+        "Expectation of life at age (Years)": {
+            "value": "83",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "2.9",
             "category_en": "Labor",
@@ -2225,6 +2340,11 @@
             "value": "515.4",
             "category_en": "Population",
             "category_kr": "인구"
+        },
+        "Expectation of life at age (Years)": {
+            "value": "83",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
         },
         "Unemployment rate (%)": {
             "value": "2.7",
