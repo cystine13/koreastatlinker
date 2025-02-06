@@ -1,5 +1,29 @@
 [
     {
+        "title_kr": "에너지통계연보(2024)",
+        "title_en": "Annual Energy Statistics Report (2024)",
+        "link": "https://www.kesis.net/sub/sub_0003.jsp?M_MENU_ID=M_M_002&S_MENU_ID=S_M_012",
+        "date": "2025-02-06",
+        "source_kr": "국가에너지통계종합정보시스",
+        "source_en": "Korea Energy Statistical Information System"
+    },
+    {
+        "title_kr": "주간아파트가격동향조사 시계열통계표",
+        "title_en": "Weekly Apartment Price Trend Survey Time Series Statistics",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-02-06",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
+        "title_kr": "2025년 2월 3일 기준 주간아파트가격 동향",
+        "title_en": "Weekly apartment price trend as of February 3, 2025",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-02-06",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
         "title_kr": "통계작성의 변경승인(협의) 고시(용인시노인등록통계_2차)(통계청 고시 제2025-58호)",
         "title_en": "Notice of Change Approval (Consultation) of Statistical Composition (Statistics on Registration of Seniors in Yongin City_2nd) (Statistics Korea Public Notice No. 2025-58)",
         "link": "https://kostat.go.kr/board.es?mid=a10403040000&act=view&bid=107&list_no=435011",
