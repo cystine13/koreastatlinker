@@ -36,7 +36,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "76",
+            "value": "76.0",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -133,7 +133,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "76",
+            "value": "76.5",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -240,7 +240,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "77",
+            "value": "76.8",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -342,7 +342,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "77",
+            "value": "77.3",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -444,7 +444,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "78",
+            "value": "77.8",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -551,7 +551,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "78",
+            "value": "78.2",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -663,7 +663,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "79",
+            "value": "78.8",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -770,7 +770,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "79",
+            "value": "79.2",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -887,7 +887,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "80",
+            "value": "79.6",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -1009,7 +1009,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "80",
+            "value": "80.0",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -1141,7 +1141,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "80",
+            "value": "80.2",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -1273,7 +1273,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "81",
+            "value": "80.6",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -1405,7 +1405,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "81",
+            "value": "80.9",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -1537,7 +1537,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "81",
+            "value": "81.4",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -1669,7 +1669,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "82",
+            "value": "81.8",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -1826,7 +1826,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "82",
+            "value": "82.1",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -1983,7 +1983,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "82",
+            "value": "82.4",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -2145,7 +2145,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "83",
+            "value": "82.7",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -2312,7 +2312,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "83",
+            "value": "82.7",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -2484,7 +2484,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "83",
+            "value": "83.3",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -2656,7 +2656,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "83",
+            "value": "83.5",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -2828,7 +2828,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "84",
+            "value": "83.6",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -3000,7 +3000,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "83",
+            "value": "82.7",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -3172,7 +3172,7 @@
             "category_kr": "인구"
         },
         "Expectation of life at age (Years)": {
-            "value": "83",
+            "value": "83.5",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
