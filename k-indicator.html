@@ -12,9 +12,9 @@
             background-color: #f9f9f9;
         }
 
-        /* 페이지 너비 */
+        /* 페이지 레이아웃 */
         .container {
-            max-width: 1280px; /* 네이버 기준 */
+            max-width: 1280px;
             margin: 0 auto;
             padding: 20px;
             background-color: white;
@@ -54,17 +54,27 @@
             margin: 20px 0;
         }
 
+        /* 연도 선택 */
+        .year-filter label {
+            font-weight: bold;
+            margin-right: 10px;  /* Select Years: 와 박스 간 간격 */
+        }
+
+        .year-filter select {
+            margin-right: 5px;  /* 연도 선택 간 간격 */
+        }
+
         /* 항목 선택 그룹 */
         .checkbox-group {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 10px;
+            display: flex;
+            flex-wrap: wrap;          /* 한 줄에 나열하면서 넘칠 경우 줄바꿈 */
+            gap: 15px;                /* 항목 간 간격 추가 */
         }
 
         .checkbox-group label {
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 5px;                 /* 체크박스와 텍스트 사이 간격 */
         }
 
         /* 테이블 스타일 */
@@ -72,7 +82,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            table-layout: fixed; /* 고정 테이블 레이아웃 */
+            table-layout: fixed;      /* 고정 테이블 레이아웃 */
         }
 
         .statistics-table th,
@@ -87,9 +97,9 @@
             background-color: #f4f4f4;
         }
 
-        /* 스크롤 제한 */
+        /* 테이블 가로 스크롤 */
         .table-wrapper {
-            overflow-x: auto; /* 가로 스크롤 허용 */
+            overflow-x: auto;         /* 가로 스크롤 허용 */
         }
     </style>
 </head>
@@ -174,8 +184,9 @@
                 function updateFilters(category) {
                     filters.innerHTML = "";
 
-                    // 연도 필터
+                    // ✅ 연도 필터
                     const yearFilter = document.createElement("div");
+                    yearFilter.className = "year-filter";
                     yearFilter.innerHTML = `<label>Select Years:</label>`;
 
                     const startYearSelect = document.createElement("select");
@@ -199,12 +210,13 @@
                         updateTable(category, selectedItems, startYearSelect.value, endYearSelect.value);
                     });
 
+                    yearFilter.appendChild(document.createTextNode(": "));
                     yearFilter.appendChild(startYearSelect);
                     yearFilter.appendChild(document.createTextNode(" ~ "));
                     yearFilter.appendChild(endYearSelect);
                     filters.appendChild(yearFilter);
 
-                    // 항목 필터
+                    // ✅ 항목 필터
                     const itemFilter = document.createElement("div");
                     itemFilter.innerHTML = `<label>Select Items:</label>`;
 
@@ -218,7 +230,7 @@
                         checkbox.type = "checkbox";
                         checkbox.value = item;
 
-                        // ✅ 초기에는 최대 4개 항목만 선택
+                        // ✅ 초기 4개 항목만 선택
                         checkbox.checked = index < 4;
 
                         checkbox.addEventListener("change", () => {
@@ -271,7 +283,6 @@
                         });
                 }
 
-                // 초기화면에 첫 번째 카테고리 표시
                 updateFilters(categories[0]);
                 updateTable(categories[0], getDefaultSelectedItems(categories[0]), years[0], years[years.length - 1]);
             })
