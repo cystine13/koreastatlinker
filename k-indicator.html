@@ -12,25 +12,20 @@
             background-color: #f9f9f9;
         }
 
-        /* 헤더와 콘텐츠 간격 */
-        #header {
-            margin-bottom: 20px;
-        }
-
-        /* 페이지 너비 (네이버 기준) */
+        /* 페이지 너비 */
         .container {
-            max-width: 1280px;  /* 너비 확장 */
-            margin: 0 auto;     /* 중앙 정렬 */
+            max-width: 1280px; /* 네이버 기준 */
+            margin: 0 auto;
             padding: 20px;
             background-color: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
 
-        /* 탭 스타일 */
+        /* 카테고리 탭 */
         .tabs {
             display: flex;
-            justify-content: space-around;  /* 너비 균등 배분 */
+            justify-content: space-around;
             margin-bottom: 20px;
             border-bottom: 2px solid #ccc;
         }
@@ -41,11 +36,6 @@
             background-color: #f9f9f9;
             border-radius: 4px 4px 0 0;
             font-size: 16px;
-            transition: background-color 0.3s;
-        }
-
-        .tab:hover {
-            background-color: #e0e0e0;
         }
 
         .tab.active {
@@ -58,19 +48,23 @@
         /* 필터 스타일 */
         .filters {
             display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: flex-start; /* 왼쪽 정렬 */
+            gap: 20px;
             margin: 20px 0;
         }
 
-        .filters > div {
-            margin: 10px 0;
+        /* 항목 선택 그룹 */
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
         }
 
-        .checkbox-group {
+        .checkbox-group label {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            align-items: center;
+            gap: 5px;
         }
 
         /* 테이블 스타일 */
@@ -78,6 +72,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            table-layout: fixed; /* 고정 테이블 레이아웃 */
         }
 
         .statistics-table th,
@@ -85,38 +80,41 @@
             border: 1px solid #ddd;
             padding: 10px;
             text-align: center;
+            word-wrap: break-word;
         }
 
         .statistics-table th {
             background-color: #f4f4f4;
         }
+
+        /* 스크롤 제한 */
+        .table-wrapper {
+            overflow-x: auto; /* 가로 스크롤 허용 */
+        }
     </style>
 </head>
 <body>
-    <!-- 헤더 동적 로드 -->
+    <!-- 헤더 로드 -->
     <div id="header"></div>
 
     <div class="container">
-        <div class="tabs" id="tabs">
-            <!-- 카테고리 탭 동적 생성 -->
-        </div>
+        <div class="tabs" id="tabs"></div>
+        <div class="filters" id="filters"></div>
 
-        <div class="filters" id="filters">
-            <!-- 연도 및 항목 필터 동적 생성 -->
+        <div class="table-wrapper">
+            <table class="statistics-table">
+                <thead>
+                    <tr id="table-header">
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody id="statistics-body"></tbody>
+            </table>
         </div>
-
-        <table class="statistics-table">
-            <thead>
-                <tr id="table-header">
-                    <th>Year</th>
-                </tr>
-            </thead>
-            <tbody id="statistics-body"></tbody>
-        </table>
     </div>
 
     <script>
-        // 헤더 동적 로드
+        // 헤더 로드
         fetch("header.html")
             .then(response => response.text())
             .then(data => {
@@ -124,15 +122,15 @@
             })
             .catch(error => console.error("Error loading header:", error));
 
-        // 데이터 로드 및 렌더링
+        // JSON 데이터 로드
         fetch("population_data.json")
             .then(response => response.json())
             .then(data => {
                 const years = Object.keys(data).sort((a, b) => a - b);
-                const tableHeader = document.getElementById("table-header");
-                const tableBody = document.getElementById("statistics-body");
                 const tabs = document.getElementById("tabs");
                 const filters = document.getElementById("filters");
+                const tableHeader = document.getElementById("table-header");
+                const tableBody = document.getElementById("statistics-body");
 
                 // 카테고리 추출
                 const categories = [...new Set(
@@ -164,7 +162,7 @@
                         document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
                         tab.classList.add("active");
                         updateFilters(category);
-                        updateTable(category, [], years[0], years[years.length - 1]);
+                        updateTable(category, getDefaultSelectedItems(category), years[0], years[years.length - 1]);
                     });
 
                     tabs.appendChild(tab);
@@ -214,12 +212,14 @@
                     checkboxGroup.className = "checkbox-group";
 
                     const items = [...categoryItems[category]];
-                    items.forEach(item => {
+                    items.forEach((item, index) => {
                         const checkboxWrapper = document.createElement("label");
                         const checkbox = document.createElement("input");
                         checkbox.type = "checkbox";
                         checkbox.value = item;
-                        checkbox.checked = true;
+
+                        // ✅ 초기에는 최대 4개 항목만 선택
+                        checkbox.checked = index < 4;
 
                         checkbox.addEventListener("change", () => {
                             const selectedItems = getSelectedItems();
@@ -235,15 +235,22 @@
                     filters.appendChild(itemFilter);
                 }
 
+                // 기본 선택 항목 (최대 4개)
+                function getDefaultSelectedItems(category) {
+                    return [...categoryItems[category]].slice(0, 4);
+                }
+
+                // 선택된 항목 가져오기
                 function getSelectedItems() {
                     return Array.from(filters.querySelectorAll("input[type='checkbox']:checked")).map(cb => cb.value);
                 }
 
+                // 테이블 업데이트
                 function updateTable(category, selectedItems, startYear, endYear) {
                     tableHeader.innerHTML = "<th>Year</th>";
                     tableBody.innerHTML = "";
 
-                    const items = selectedItems.length ? selectedItems : [...categoryItems[category]];
+                    const items = selectedItems.length ? selectedItems : getDefaultSelectedItems(category);
 
                     items.forEach(item => {
                         tableHeader.innerHTML += `<th>${item}</th>`;
@@ -264,8 +271,9 @@
                         });
                 }
 
+                // 초기화면에 첫 번째 카테고리 표시
                 updateFilters(categories[0]);
-                updateTable(categories[0], [...categoryItems[categories[0]]], years[0], years[years.length - 1]);
+                updateTable(categories[0], getDefaultSelectedItems(categories[0]), years[0], years[years.length - 1]);
             })
             .catch(error => console.error("Error loading data:", error));
     </script>
