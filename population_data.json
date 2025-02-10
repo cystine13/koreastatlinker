@@ -60,6 +60,11 @@
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
+        "Child Care Center (Place)": {
+            "value": "19,276",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "4.4",
             "category_en": "Labor",
@@ -167,6 +172,11 @@
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
+        "Child Care Center (Place)": {
+            "value": "20,097",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "4.0",
             "category_en": "Labor",
@@ -266,6 +276,11 @@
         },
         "Mortality rate (per 100 thousand person)": {
             "value": "247,524",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "22,147",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -371,6 +386,11 @@
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
+        "Child Care Center (Place)": {
+            "value": "24,142",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.6",
             "category_en": "Labor",
@@ -470,6 +490,11 @@
         },
         "Mortality rate (per 100 thousand person)": {
             "value": "246,220",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "26,903",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -590,6 +615,11 @@
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
+        "Child Care Center (Place)": {
+            "value": "28,367",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.7",
             "category_en": "Labor",
@@ -694,6 +724,11 @@
         },
         "Mortality rate (per 100 thousand person)": {
             "value": "244,162",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "29,233",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -814,6 +849,16 @@
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,104,889",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "30,856",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.2",
             "category_en": "Labor",
@@ -928,6 +973,16 @@
         },
         "Mortality rate (per 100 thousand person)": {
             "value": "246,113",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,246,965",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "33,499",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -1050,6 +1105,16 @@
         },
         "Mortality rate (per 100 thousand person)": {
             "value": "246,942",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,429,547",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "35,550",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -1185,6 +1250,16 @@
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,517,312",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "38,021",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.7",
             "category_en": "Labor",
@@ -1314,6 +1389,16 @@
         },
         "Mortality rate (per 100 thousand person)": {
             "value": "257,396",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,519,241",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "39,842",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -1449,6 +1534,21 @@
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,511,159",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Average Height (cm)": {
+            "value": "164.21",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "42,527",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.2",
             "category_en": "Labor",
@@ -1581,6 +1681,21 @@
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,501,112",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Average Height (cm)": {
+            "value": "164.32",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "43,770",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.1",
             "category_en": "Labor",
@@ -1710,6 +1825,21 @@
         },
         "Mortality rate (per 100 thousand person)": {
             "value": "267,692",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,494,460",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Average Height (cm)": {
+            "value": "164.40",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "43,742",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -1870,6 +2000,21 @@
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,490,406",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Average Height (cm)": {
+            "value": "164.41",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "42,517",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.6",
             "category_en": "Labor",
@@ -2024,6 +2169,21 @@
         },
         "Mortality rate (per 100 thousand person)": {
             "value": "280,827",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,511,051",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Average Height (cm)": {
+            "value": "164.42",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "41,084",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -2186,6 +2346,21 @@
         },
         "Mortality rate (per 100 thousand person)": {
             "value": "285,534",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,545,637",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Average Height (cm)": {
+            "value": "164.25",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "40,238",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -2353,6 +2528,21 @@
         },
         "Mortality rate (per 100 thousand person)": {
             "value": "298,820",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,585,850",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Average Height (cm)": {
+            "value": "164.38",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "39,171",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -2528,6 +2718,21 @@
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,618,724",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Average Height (cm)": {
+            "value": "164.75",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "37,371",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.8",
             "category_en": "Labor",
@@ -2697,6 +2902,21 @@
         },
         "Mortality rate (per 100 thousand person)": {
             "value": "304,948",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,632,328",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Average Height (cm)": {
+            "value": "164.93",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "35,352",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
@@ -2872,6 +3092,21 @@
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,642,922",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Average Height (cm)": {
+            "value": "164.92",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "33,246",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "3.7",
             "category_en": "Labor",
@@ -3044,6 +3279,21 @@
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,643,696",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Average Height (cm)": {
+            "value": "165.10",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "30,923",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
         "Unemployment rate (%)": {
             "value": "2.9",
             "category_en": "Labor",
@@ -3193,6 +3443,16 @@
         },
         "Mortality rate (per 100 thousand person)": {
             "value": "352,511",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Number of The Registered Disabled (person)": {
+            "value": "2,633,262",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지"
+        },
+        "Child Care Center (Place)": {
+            "value": "28,954",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지"
         },
