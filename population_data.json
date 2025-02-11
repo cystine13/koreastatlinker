@@ -30,7 +30,7 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Population Density(Per ㎢)": {
+        "Population Density (Per ㎢)": {
             "value": "463.9",
             "category_en": "Population",
             "category_kr": "인구"
@@ -67,13 +67,18 @@
         },
         "Unemployment rate (%)": {
             "value": "4.4",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "58.5",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "22,151",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "CPI (2020*100)": {
             "value": "63.15",
@@ -179,13 +184,18 @@
         },
         "Unemployment rate (%)": {
             "value": "4.0",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "59.0",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "22,511",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "CPI (2020*100)": {
             "value": "65.72",
@@ -286,13 +296,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.3",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "60.1",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "22,982",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "CPI (2020*100)": {
             "value": "67.53",
@@ -393,13 +408,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.6",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "59.4",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "23,043",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "CPI (2020*100)": {
             "value": "69.91",
@@ -500,13 +520,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.7",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "60.0",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "23,544",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "CPI (2020*100)": {
             "value": "72.42",
@@ -570,7 +595,7 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Population Density(Per ㎢)": {
+        "Population Density (Per ㎢)": {
             "value": "474.5",
             "category_en": "Population",
             "category_kr": "인구"
@@ -622,13 +647,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.7",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "59.9",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "23,718",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "CPI (2020*100)": {
             "value": "74.41",
@@ -734,13 +764,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.5",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "60.0",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "24,024",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "CPI (2020*100)": {
             "value": "76.08",
@@ -861,13 +896,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.2",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "60.1",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "24,351",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "CPI (2020*100)": {
             "value": "78.01",
@@ -988,13 +1028,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.2",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "59.8",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "24,551",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "CPI (2020*100)": {
             "value": "81.66",
@@ -1120,13 +1165,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.6",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "58.8",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "24,582",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "CPI (2020*100)": {
             "value": "83.91",
@@ -1200,7 +1250,7 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Population Density(Per ㎢)": {
+        "Population Density (Per ㎢)": {
             "value": "485.6",
             "category_en": "Population",
             "category_kr": "인구"
@@ -1262,13 +1312,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.7",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "58.9",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "24,956",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "4,618.33",
@@ -1404,13 +1459,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.4",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "59.3",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "25,389",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "5,204.79",
@@ -1551,13 +1611,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.2",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "59.6",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "25,781",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "5,449.60",
@@ -1698,13 +1763,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.1",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "59.8",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "26,108",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "5,857.80",
@@ -1845,13 +1915,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.5",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "60.5",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "26,836",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "6,050.97",
@@ -1950,7 +2025,7 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Population Density(Per ㎢)": {
+        "Population Density (Per ㎢)": {
             "value": "509.2",
             "category_en": "Population",
             "category_kr": "인구"
@@ -2017,13 +2092,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.6",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "60.5",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "27,153",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "6,256.15",
@@ -2122,7 +2202,7 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Population Density(Per ㎢)": {
+        "Population Density (Per ㎢)": {
             "value": "511.0",
             "category_en": "Population",
             "category_kr": "인구"
@@ -2189,13 +2269,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.7",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "60.6",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "27,418",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "6,718.89",
@@ -2299,7 +2384,7 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Population Density(Per ㎢)": {
+        "Population Density (Per ㎢)": {
             "value": "512.4",
             "category_en": "Population",
             "category_kr": "인구"
@@ -2366,13 +2451,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.7",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "60.8",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "27,748",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "7,099.09",
@@ -2481,7 +2571,7 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Population Density(Per ㎢)": {
+        "Population Density (Per ㎢)": {
             "value": "514.4",
             "category_en": "Population",
             "category_kr": "인구"
@@ -2548,13 +2638,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.8",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "60.7",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "27,895",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "7,668.18",
@@ -2668,7 +2763,7 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Population Density(Per ㎢)": {
+        "Population Density (Per ㎢)": {
             "value": "515.7",
             "category_en": "Population",
             "category_kr": "인구"
@@ -2735,13 +2830,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.8",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "60.9",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "28,186",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "7,910.17",
@@ -2855,7 +2955,7 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Population Density(Per ㎢)": {
+        "Population Density (Per ㎢)": {
             "value": "516.2",
             "category_en": "Population",
             "category_kr": "인구"
@@ -2922,13 +3022,18 @@
         },
         "Unemployment rate (%)": {
             "value": "4.0",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "60.1",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "28,012",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "8,256.19",
@@ -3042,7 +3147,7 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Population Density(Per ㎢)": {
+        "Population Density (Per ㎢)": {
             "value": "515.2",
             "category_en": "Population",
             "category_kr": "인구"
@@ -3109,13 +3214,18 @@
         },
         "Unemployment rate (%)": {
             "value": "3.7",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "60.5",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "28,310",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "8,801.37",
@@ -3229,7 +3339,7 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Population Density(Per ㎢)": {
+        "Population Density (Per ㎢)": {
             "value": "514.6",
             "category_en": "Population",
             "category_kr": "인구"
@@ -3296,13 +3406,18 @@
         },
         "Unemployment rate (%)": {
             "value": "2.9",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "62.1",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "28,922",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "9,169.61",
@@ -3416,7 +3531,7 @@
             "category_en": "Population",
             "category_kr": "인구"
         },
-        "Population Density(Per ㎢)": {
+        "Population Density (Per ㎢)": {
             "value": "515.4",
             "category_en": "Population",
             "category_kr": "인구"
@@ -3458,13 +3573,18 @@
         },
         "Unemployment rate (%)": {
             "value": "2.7",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "62.6",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "29,203",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "9,186.40",
@@ -3530,13 +3650,18 @@
         },
         "Unemployment rate (%)": {
             "value": "2.8",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Employment to population ratio (%)": {
             "value": "62.7",
-            "category_en": "Labor",
-            "category_kr": "노동"
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Economically Active Population (Thousand Person)": {
+            "value": "29,398",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
         },
         "Liabilities (10 thousand won)": {
             "value": "9,128.25",
