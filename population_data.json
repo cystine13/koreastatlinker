@@ -80,6 +80,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Elementary School Students (Person)": {
+            "value": "4,019,991",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "CPI (2020*100)": {
             "value": "63.15",
             "category_en": "Income, Consumption & Assets",
@@ -197,6 +202,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Elementary School Students (Person)": {
+            "value": "4,089,429",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "CPI (2020*100)": {
             "value": "65.72",
             "category_en": "Income, Consumption & Assets",
@@ -306,6 +316,11 @@
         },
         "Economically Active Population (Thousand Person)": {
             "value": "22,982",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Elementary School Students (Person)": {
+            "value": "4,138,366",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -421,6 +436,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Elementary School Students (Person)": {
+            "value": "4,175,626",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "CPI (2020*100)": {
             "value": "69.91",
             "category_en": "Income, Consumption & Assets",
@@ -530,6 +550,11 @@
         },
         "Economically Active Population (Thousand Person)": {
             "value": "23,544",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Elementary School Students (Person)": {
+            "value": "4,116,195",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -660,6 +685,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Elementary School Students (Person)": {
+            "value": "4,022,801",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "CPI (2020*100)": {
             "value": "74.41",
             "category_en": "Income, Consumption & Assets",
@@ -774,6 +804,11 @@
         },
         "Economically Active Population (Thousand Person)": {
             "value": "24,024",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Elementary School Students (Person)": {
+            "value": "3,925,043",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -909,6 +944,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Elementary School Students (Person)": {
+            "value": "3,829,998",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "CPI (2020*100)": {
             "value": "78.01",
             "category_en": "Income, Consumption & Assets",
@@ -1038,6 +1078,11 @@
         },
         "Economically Active Population (Thousand Person)": {
             "value": "24,551",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Elementary School Students (Person)": {
+            "value": "3,672,207",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -1175,6 +1220,11 @@
         },
         "Economically Active Population (Thousand Person)": {
             "value": "24,582",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Elementary School Students (Person)": {
+            "value": "3,474,395",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -1325,6 +1375,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Elementary School Students (Person)": {
+            "value": "3,299,094",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "4,618.33",
             "category_en": "Income, Consumption & Assets",
@@ -1469,6 +1524,11 @@
         },
         "Economically Active Population (Thousand Person)": {
             "value": "25,389",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Elementary School Students (Person)": {
+            "value": "3,132,477",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -1624,6 +1684,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Elementary School Students (Person)": {
+            "value": "2,951,995",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "5,449.60",
             "category_en": "Income, Consumption & Assets",
@@ -1776,6 +1841,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Elementary School Students (Person)": {
+            "value": "2,784,000",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "5,857.80",
             "category_en": "Income, Consumption & Assets",
@@ -1925,6 +1995,11 @@
         },
         "Economically Active Population (Thousand Person)": {
             "value": "26,836",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Elementary School Students (Person)": {
+            "value": "2,728,509",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -2105,6 +2180,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Elementary School Students (Person)": {
+            "value": "2,714,610",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "6,256.15",
             "category_en": "Income, Consumption & Assets",
@@ -2279,6 +2359,11 @@
         },
         "Economically Active Population (Thousand Person)": {
             "value": "27,418",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Elementary School Students (Person)": {
+            "value": "2,672,843",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -2461,6 +2546,11 @@
         },
         "Economically Active Population (Thousand Person)": {
             "value": "27,748",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Elementary School Students (Person)": {
+            "value": "2,674,227",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -2648,6 +2738,11 @@
         },
         "Economically Active Population (Thousand Person)": {
             "value": "27,895",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Elementary School Students (Person)": {
+            "value": "2,711,385",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -2843,6 +2938,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Elementary School Students (Person)": {
+            "value": "2,747,219",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "7,910.17",
             "category_en": "Income, Consumption & Assets",
@@ -3032,6 +3132,11 @@
         },
         "Economically Active Population (Thousand Person)": {
             "value": "28,012",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Elementary School Students (Person)": {
+            "value": "2,693,716",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -3227,6 +3332,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Elementary School Students (Person)": {
+            "value": "2,672,340",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "8,801.37",
             "category_en": "Income, Consumption & Assets",
@@ -3419,6 +3529,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Elementary School Students (Person)": {
+            "value": "2,664,278",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "9,169.61",
             "category_en": "Income, Consumption & Assets",
@@ -3583,6 +3698,11 @@
         },
         "Economically Active Population (Thousand Person)": {
             "value": "29,203",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Elementary School Students (Person)": {
+            "value": "2,603,929",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
