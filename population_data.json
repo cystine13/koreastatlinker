@@ -85,6 +85,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Middle School Students (Person)": {
+            "value": "1,860,539",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "CPI (2020*100)": {
             "value": "63.15",
             "category_en": "Income, Consumption & Assets",
@@ -207,6 +212,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Middle School Students (Person)": {
+            "value": "1,831,152",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "CPI (2020*100)": {
             "value": "65.72",
             "category_en": "Income, Consumption & Assets",
@@ -321,6 +331,11 @@
         },
         "Elementary School Students (Person)": {
             "value": "4,138,366",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Middle School Students (Person)": {
+            "value": "1,841,030",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -441,6 +456,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Middle School Students (Person)": {
+            "value": "1,854,641",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "CPI (2020*100)": {
             "value": "69.91",
             "category_en": "Income, Consumption & Assets",
@@ -555,6 +575,11 @@
         },
         "Elementary School Students (Person)": {
             "value": "4,116,195",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Middle School Students (Person)": {
+            "value": "1,933,543",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -690,6 +715,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Middle School Students (Person)": {
+            "value": "2,010,704",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "CPI (2020*100)": {
             "value": "74.41",
             "category_en": "Income, Consumption & Assets",
@@ -809,6 +839,11 @@
         },
         "Elementary School Students (Person)": {
             "value": "3,925,043",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Middle School Students (Person)": {
+            "value": "2,075,311",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -949,6 +984,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Middle School Students (Person)": {
+            "value": "2,063,159",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "CPI (2020*100)": {
             "value": "78.01",
             "category_en": "Income, Consumption & Assets",
@@ -1083,6 +1123,11 @@
         },
         "Elementary School Students (Person)": {
             "value": "3,672,207",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Middle School Students (Person)": {
+            "value": "2,038,611",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -1225,6 +1270,11 @@
         },
         "Elementary School Students (Person)": {
             "value": "3,474,395",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Middle School Students (Person)": {
+            "value": "2,006,972",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -1380,6 +1430,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Middle School Students (Person)": {
+            "value": "1,974,798",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "4,618.33",
             "category_en": "Income, Consumption & Assets",
@@ -1529,6 +1584,11 @@
         },
         "Elementary School Students (Person)": {
             "value": "3,132,477",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Middle School Students (Person)": {
+            "value": "1,910,572",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -1689,6 +1749,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Middle School Students (Person)": {
+            "value": "1,849,094",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "5,449.60",
             "category_en": "Income, Consumption & Assets",
@@ -1846,6 +1911,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Middle School Students (Person)": {
+            "value": "1,804,189",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "5,857.80",
             "category_en": "Income, Consumption & Assets",
@@ -2000,6 +2070,11 @@
         },
         "Elementary School Students (Person)": {
             "value": "2,728,509",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Middle School Students (Person)": {
+            "value": "1,717,911",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -2185,6 +2260,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Middle School Students (Person)": {
+            "value": "1,585,951",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "6,256.15",
             "category_en": "Income, Consumption & Assets",
@@ -2364,6 +2444,11 @@
         },
         "Elementary School Students (Person)": {
             "value": "2,672,843",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Middle School Students (Person)": {
+            "value": "1,457,490",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -2551,6 +2636,11 @@
         },
         "Elementary School Students (Person)": {
             "value": "2,674,227",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Middle School Students (Person)": {
+            "value": "1,381,334",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -2743,6 +2833,11 @@
         },
         "Elementary School Students (Person)": {
             "value": "2,711,385",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Middle School Students (Person)": {
+            "value": "1,334,288",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -2943,6 +3038,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Middle School Students (Person)": {
+            "value": "1,294,559",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "7,910.17",
             "category_en": "Income, Consumption & Assets",
@@ -3137,6 +3237,11 @@
         },
         "Elementary School Students (Person)": {
             "value": "2,693,716",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Middle School Students (Person)": {
+            "value": "1,315,846",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -3337,6 +3442,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Middle School Students (Person)": {
+            "value": "1,350,770",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "8,801.37",
             "category_en": "Income, Consumption & Assets",
@@ -3534,6 +3644,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Middle School Students (Person)": {
+            "value": "1,348,428",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "9,169.61",
             "category_en": "Income, Consumption & Assets",
@@ -3703,6 +3818,11 @@
         },
         "Elementary School Students (Person)": {
             "value": "2,603,929",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Middle School Students (Person)": {
+            "value": "1,326,831",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
