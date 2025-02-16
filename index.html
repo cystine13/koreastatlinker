@@ -39,35 +39,28 @@
         }
     
         /* 지표 섹션 */
-        .category-section {
-            margin-bottom: 40px;
-        }
-        .category-title {
-            font-size: 22px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        .statistics-box {
+            display: flex;
+            flex-wrap: wrap;
             gap: 20px;
-        }
-        .category-item {
-            padding: 15px;
+            padding: 20px;
             background: #ffffff;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.2s;
         }
-        .category-item:hover {
-            transform: scale(1.05);
+        .statistic-item {
+            flex: 1 1 calc(50% - 20px);
+            min-width: 300px;
+            padding: 15px;
+            background: #f1f1f1;
+            border-radius: 8px;
         }
-        .category-item h3 {
+        .statistic-item h3 {
             margin: 5px 0;
             font-size: 18px;
         }
-        .category-item p {
+        .statistic-item p {
             margin: 5px 0;
             font-size: 16px;
         }
@@ -169,8 +162,8 @@
 
     <!-- 지표 섹션 -->
     <div class="container">
-        <h1>Population Statistics</h1>
-        <div id="categoriesContainer"></div>
+        <h1>K indicator</h1>
+        <div class="statistics-box" id="statisticsBox"></div>
     </div>
 
     <!-- 통계 뉴스 섹션 -->
@@ -222,38 +215,23 @@
         fetch("population_data.json")
             .then(response => response.json())
             .then(data => {
-                const categoriesContainer = document.getElementById("categoriesContainer");
-                const latestYear = Math.max(...Object.keys(data).map(Number));
-                const latestData = data[latestYear];
-                const categories = {};
-
-                Object.entries(latestData).forEach(([name, details]) => {
-                    if (!categories[details.category_en]) {
-                        categories[details.category_en] = [];
-                    }
-                    categories[details.category_en].push({ name, value: details.value });
-                });
-
-                Object.entries(categories).forEach(([category, indicators]) => {
-                    const section = document.createElement("div");
-                    section.className = "category-section";
-                    section.innerHTML = `<div class="category-title">${category}</div>`;
-
-                    const grid = document.createElement("div");
-                    grid.className = "category-grid";
-                    
-                    indicators.forEach(indicator => {
-                        const card = document.createElement("div");
-                        card.className = "category-item";
-                        card.innerHTML = `
-                            <h3>${indicator.name}</h3>
-                            <p><strong>${indicator.value}</strong></p>
-                        `;
-                        grid.appendChild(card);
+                const statisticsBox = document.getElementById("statisticsBox");
+                const latestDataByIndicator = {};
+                
+                Object.keys(data).sort((a, b) => a - b).forEach(year => {
+                    Object.entries(data[year]).forEach(([name, details]) => {
+                        latestDataByIndicator[name] = { value: details.value, year };
                     });
-                    
-                    section.appendChild(grid);
-                    categoriesContainer.appendChild(section);
+                });
+                
+                Object.entries(latestDataByIndicator).forEach(([name, details]) => {
+                    const item = document.createElement("div");
+                    item.className = "statistic-item";
+                    item.innerHTML = `
+                        <h3>${name}</h3>
+                        <p><strong>${details.value}</strong> (${details.year})</p>
+                    `;
+                    statisticsBox.appendChild(item);
                 });
             })
             .catch(error => console.error("Error loading data:", error));
