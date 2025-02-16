@@ -210,34 +210,17 @@
             .then(response => response.json())
             .then(data => {
                 const categoryGrid = document.getElementById("categoryGrid");
-                const latestDataByCategory = {};
-
-                // 최신 데이터 찾기
-                Object.keys(data).sort((a, b) => b - a).forEach(year => {
-                    const yearData = data[year];
-                    Object.entries(yearData).forEach(([name, details]) => {
-                        const category = details.category_en;
-
-                        if (!latestDataByCategory[category] && details.value) {
-                            latestDataByCategory[category] = {
-                                name,
-                                value: details.value,
-                                year
-                            };
-                        }
-                    });
-                });
-
-                // 지표 카드 생성
-                Object.entries(latestDataByCategory).forEach(([category, info]) => {
+                const latestYear = Math.max(...Object.keys(data).map(Number));
+                const latestData = data[latestYear];
+                
+                Object.entries(latestData).forEach(([name, details]) => {
                     const card = document.createElement("div");
                     card.className = "category-item";
                     card.innerHTML = `
-                        <h3>${category}</h3>
-                        <p>${info.name}</p>
-                        <p><strong>${info.value}</strong> (${info.year})</p>
+                        <h3>${details.category_en}</h3>
+                        <p>${name}</p>
+                        <p><strong>${details.value}</strong></p>
                     `;
-                    card.onclick = () => location.href = "k-indicator.html";
                     categoryGrid.appendChild(card);
                 });
             })
