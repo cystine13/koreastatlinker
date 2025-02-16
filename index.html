@@ -39,30 +39,23 @@
         }
     
         /* 지표 섹션 */
-        .statistics-box {
-            display: flex;
-            flex-wrap: wrap;
+        .statistics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
             gap: 20px;
             padding: 20px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
         .statistic-item {
-            flex: 1 1 calc(50% - 20px);
-            min-width: 300px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 15px;
             background: #f1f1f1;
             border-radius: 8px;
         }
-        .statistic-item h3 {
-            margin: 5px 0;
+        .statistic-item h3, .statistic-item p {
+            margin: 0;
             font-size: 18px;
-        }
-        .statistic-item p {
-            margin: 5px 0;
-            font-size: 16px;
         }
     
         /* 뉴스 섹션 */
@@ -163,7 +156,7 @@
     <!-- 지표 섹션 -->
     <div class="container">
         <h1>K indicator</h1>
-        <div class="statistics-box" id="statisticsBox"></div>
+        <div class="statistics-grid" id="statisticsGrid"></div>
     </div>
 
     <!-- 통계 뉴스 섹션 -->
@@ -215,7 +208,7 @@
         fetch("population_data.json")
             .then(response => response.json())
             .then(data => {
-                const statisticsBox = document.getElementById("statisticsBox");
+                const statisticsGrid = document.getElementById("statisticsGrid");
                 const latestDataByIndicator = {};
                 
                 Object.keys(data).sort((a, b) => a - b).forEach(year => {
@@ -231,7 +224,7 @@
                         <h3>${name}</h3>
                         <p><strong>${details.value}</strong> (${details.year})</p>
                     `;
-                    statisticsBox.appendChild(item);
+                    statisticsGrid.appendChild(item);
                 });
             })
             .catch(error => console.error("Error loading data:", error));
