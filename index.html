@@ -39,11 +39,18 @@
         }
     
         /* 지표 섹션 */
+        .category-section {
+            margin-bottom: 40px;
+        }
+        .category-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
         .category-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
-            padding: 20px;
         }
         .category-item {
             padding: 15px;
@@ -161,8 +168,9 @@
     </div>
 
     <!-- 지표 섹션 -->
-    <div class="category-grid" id="categoryGrid">
-        <!-- JavaScript에서 동적으로 지표 추가 -->
+    <div class="container">
+        <h1>Population Statistics</h1>
+        <div id="categoriesContainer"></div>
     </div>
 
     <!-- 통계 뉴스 섹션 -->
@@ -214,19 +222,38 @@
         fetch("population_data.json")
             .then(response => response.json())
             .then(data => {
-                const categoryGrid = document.getElementById("categoryGrid");
+                const categoriesContainer = document.getElementById("categoriesContainer");
                 const latestYear = Math.max(...Object.keys(data).map(Number));
                 const latestData = data[latestYear];
-                
+                const categories = {};
+
                 Object.entries(latestData).forEach(([name, details]) => {
-                    const card = document.createElement("div");
-                    card.className = "category-item";
-                    card.innerHTML = `
-                        <h3>${details.category_en}</h3>
-                        <p>${name}</p>
-                        <p><strong>${details.value}</strong></p>
-                    `;
-                    categoryGrid.appendChild(card);
+                    if (!categories[details.category_en]) {
+                        categories[details.category_en] = [];
+                    }
+                    categories[details.category_en].push({ name, value: details.value });
+                });
+
+                Object.entries(categories).forEach(([category, indicators]) => {
+                    const section = document.createElement("div");
+                    section.className = "category-section";
+                    section.innerHTML = `<div class="category-title">${category}</div>`;
+
+                    const grid = document.createElement("div");
+                    grid.className = "category-grid";
+                    
+                    indicators.forEach(indicator => {
+                        const card = document.createElement("div");
+                        card.className = "category-item";
+                        card.innerHTML = `
+                            <h3>${indicator.name}</h3>
+                            <p><strong>${indicator.value}</strong></p>
+                        `;
+                        grid.appendChild(card);
+                    });
+                    
+                    section.appendChild(grid);
+                    categoriesContainer.appendChild(section);
                 });
             })
             .catch(error => console.error("Error loading data:", error));
