@@ -1,0 +1,27 @@
+name: KOSIS Data Update  # 워크플로우 이름
+
+on:
+  schedule:
+    - cron: "0 9 * * *"  # 매일 오전 9시 실행 (UTC 기준 → 한국 시간 오후 6시)
+  workflow_dispatch:  # 수동 실행 가능
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest  # 실행 환경 (리눅스)
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # 코드 가져오기
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"  # 원하는 파이썬 버전 지정
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt  # 필요하면 패키지 설치
+
+      - name: Run KOSIS script
+        run: python 6.kosis_20250207.py
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+          KOSIS_API_KEY: ${{ secrets.KOSIS_API_KEY }}
