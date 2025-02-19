@@ -2,3 +2,5 @@ feedparser
 requests
 translate
 selenium
+beautifulsoup4
+lxml
