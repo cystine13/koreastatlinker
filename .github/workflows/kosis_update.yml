@@ -50,3 +50,8 @@ jobs:
         run: python github_html_link_20250219.py
         env:
           TOKEN: ${{ secrets.TOKEN }}
+
+      - name: Run HTML Rel Scraping script
+        run: python github_html_rel_20250219.py
+        env:
+          TOKEN: ${{ secrets.TOKEN }}          
