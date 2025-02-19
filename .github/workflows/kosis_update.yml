@@ -25,3 +25,8 @@ jobs:
         env:
           TOKEN: ${{ secrets.TOKEN }}
           KOSIS_API_KEY: ${{ secrets.KOSIS_API_KEY }}
+          
+      - name: Run RSS script
+        run: python github_rss_20250219.py
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
