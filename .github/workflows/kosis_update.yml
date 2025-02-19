@@ -21,7 +21,7 @@ jobs:
         run: pip install -r requirements.txt  # 필요하면 패키지 설치
 
       - name: Run KOSIS script
-        run: python 6.kosis_20250218.py
+        run: python github_kosis_20250218.py
         env:
           TOKEN: ${{ secrets.TOKEN }}
           KOSIS_API_KEY: ${{ secrets.KOSIS_API_KEY }}
