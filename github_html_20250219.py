@@ -18,15 +18,26 @@ BRANCH_NAME = "main"
 
 # 사이트별 크롤링 설정
 rss_feeds = [
+    #통계누리
     {
         "url": "https://stat.molit.go.kr/portal/notice/newNoticeView.do?tab=colmn",
         "source_kr": "국토교통부 통계누리",
-        "source_en": "MOLIT Statistics",
+        "source_en": "Ministry of Land, Infrastructure, and Transport (MOLIT) Statistics System",
         "row_selector": "tbody tr",
         "title_selector": "td.mobile-show.tl a",
         "date_selector": "dd",
-        "date_format": "%Y-%m-%d"
-    }
+        "date_format": "%Y-%m-%d"  # 날짜 형식
+    },
+    #농림추산식품부
+    {
+        "url": "https://www.mafra.go.kr/home/5102/subview.do",
+        "source_kr": "농림축산식품부",
+        "source_en": "Ministry of Agriculture, Food and Rural Affairs",
+        "row_selector": "table tbody tr",
+        "title_selector": "td p a",
+        "date_selector": "dd.date",
+        "date_format": "%Y.%m.%d"  # 날짜 형식
+    }  
 ]
 
 # 번역 함수
