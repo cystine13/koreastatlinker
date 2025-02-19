@@ -3400,6 +3400,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Total hours Worked (Hour)": {
+            "value": "160.6",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "8,256.19",
             "category_en": "Income, Consumption & Assets",
@@ -3609,6 +3614,11 @@
         },
         "Indices of Labor Productivity (2020=100)": {
             "value": "104.1",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Total hours Worked (Hour)": {
+            "value": "160.7",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
@@ -3824,6 +3834,11 @@
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
+        "Total hours Worked (Hour)": {
+            "value": "158.7",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
         "Liabilities (10 thousand won)": {
             "value": "9,169.61",
             "category_en": "Income, Consumption & Assets",
@@ -4008,6 +4023,11 @@
         },
         "Indices of Labor Productivity (2020=100)": {
             "value": "109.9",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Total hours Worked (Hour)": {
+            "value": "156.2",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
