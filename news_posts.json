@@ -1,21 +1,5 @@
 [
     {
-        "title_kr": "에너지통계월보 (2025.02)",
-        "title_en": "Energy Statistics Monthly Report (2025.02)",
-        "link": "https://www.kesis.net/sub/sub_0003.jsp?M_MENU_ID=M_M_002&S_MENU_ID=S_M_011",
-        "date": "2025-02-18",
-        "source_kr": "국가에너지통계종합정보시스템",
-        "source_en": "Korea Energy Statistical Information System"
-    },
-    {
-        "title_kr": "2025년 1월 자동차 산업 동향",
-        "title_en": "Automotive Industry Trends January 2025",
-        "link": "https://www.motie.go.kr/kor/article/ATCL3f49a5a8c/170158/view",
-        "date": "2025-02-18",
-        "source_kr": "산업통상자원부",
-        "source_en": "Ministry of Trade, Industry and Energy"
-    },
-    {
         "title_kr": "2024년 3분기(8월 기준) 임금근로 일자리동향",
         "title_en": "Wage employment trends in the third quarter of 2024 (as of August)",
         "link": "https://kostat.go.kr/board.es?mid=a10301030500&act=view&bid=11113&list_no=435124",
@@ -38,6 +22,22 @@
         "date": "2025-02-18",
         "source_kr": "한국은행",
         "source_en": "Bank of Korea"
+    },
+    {
+        "title_kr": "에너지통계월보 (2025.02)",
+        "title_en": "Energy Statistics Monthly Report (2025.02)",
+        "link": "https://www.kesis.net/sub/sub_0003.jsp?M_MENU_ID=M_M_002&S_MENU_ID=S_M_011",
+        "date": "2025-02-18",
+        "source_kr": "국가에너지통계종합정보시스템",
+        "source_en": "Korea Energy Statistical Information System"
+    },
+    {
+        "title_kr": "2025년 1월 자동차 산업 동향",
+        "title_en": "Automotive Industry Trends January 2025",
+        "link": "https://www.motie.go.kr/kor/article/ATCL3f49a5a8c/170158/view",
+        "date": "2025-02-18",
+        "source_kr": "산업통상자원부",
+        "source_en": "Ministry of Trade, Industry and Energy"
     },
     {
         "title_kr": "전국주택가격동향조사(월간) 시계열 통계표",
