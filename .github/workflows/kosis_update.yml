@@ -44,4 +44,9 @@ jobs:
       - name: Run HTML HREF Scraping script
         run: python github_html_href_20250219.py
         env:
-          TOKEN: ${{ secrets.TOKEN }}          
+          TOKEN: ${{ secrets.TOKEN }}      
+
+      - name: Run HTML Link Scraping script
+        run: python github_html_link_20250219.py
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
