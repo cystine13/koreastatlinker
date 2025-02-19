@@ -87,6 +87,29 @@ def translate_text(text, src="ko", dest="en"):
     except Exception:
         return text
 
+# GitHub 업로드 함수
+def upload_to_github(repo, file_path, data, branch_name):
+    url = f"https://api.github.com/repos/{repo}/contents/{file_path}"
+    headers = {"Authorization": f"token {GITHUB_TOKEN}"}
+
+    response = requests.get(url, headers=headers)
+    if response.status_code == 200:
+        sha = response.json().get("sha")
+        existing_content = json.loads(base64.b64decode(response.json()["content"]).decode("utf-8"))
+        data.extend(existing_content)
+        data = list({item["title_kr"]: item for item in data}.values())  # 중복 제거
+    else:
+        sha = None
+
+    encoded_content = base64.b64encode(json.dumps(data, ensure_ascii=False, indent=4).encode("utf-8")).decode("utf-8")
+    payload = {"message": "Update news_posts.json", "content": encoded_content, "branch": branch_name}
+    if sha:
+        payload["sha"] = sha
+
+    response = requests.put(url, headers=headers, json=payload)
+    return response.status_code in [200, 201]
+
+
 # 크롤링 함수
 def scrape_feed(feed, target_date):
     options = webdriver.ChromeOptions()
