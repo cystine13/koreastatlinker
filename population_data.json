@@ -4091,6 +4091,11 @@
             "category_en": "Crime & Safety",
             "category_kr": "범죄와 안전"
         },
+        "Child Abuse (Cases)": {
+            "value": "25,739",
+            "category_en": "Crime & Safety",
+            "category_kr": "범죄와 안전"
+        },
         "GDP (Hund.M U$)": {
             "value": "18,394.1",
             "category_en": "Economy & Market",
@@ -4150,6 +4155,21 @@
         },
         "Economically Active Population (Thousand Person)": {
             "value": "29,398",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Elementary School Students (Person)": {
+            "value": "2,495,005",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "Middle School Students (Person)": {
+            "value": "1,332,850",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동"
+        },
+        "High School Students (Person)": {
+            "value": "1,304,325",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동"
         },
