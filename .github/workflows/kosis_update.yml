@@ -54,4 +54,9 @@ jobs:
       - name: Run HTML Rel Scraping script
         run: python github_html_rel_20250219.py
         env:
+          TOKEN: ${{ secrets.TOKEN }}  
+
+      - name: Run Jumin Scraping script
+        run: python github_jumin_20250219.py
+        env:
           TOKEN: ${{ secrets.TOKEN }}          
