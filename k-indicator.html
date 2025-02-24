@@ -79,9 +79,17 @@
             font-size: 14px;
             border-radius: 5px;
         }
+
+        .source-container strong {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+
+    <!-- 헤더 추가 -->
+    <div id="header"></div>
+
     <div class="container">
         <div class="tabs" id="tabs"></div>
         <div class="filters" id="filters"></div>
@@ -98,12 +106,20 @@
         </div>
 
         <div class="source-container" id="source-container">
-            <strong>Sources:</strong>
             <div id="source-list"></div>
         </div>
     </div>
 
     <script>
+        // 헤더 로드
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading header:", error));
+
+        // JSON 데이터 로드
         fetch("k-indicator_data.json")
             .then(response => response.json())
             .then(data => {
@@ -238,7 +254,7 @@
                                 row.innerHTML += `<td>${value}</td>`;
 
                                 if (dataEntry) {
-                                    sources.add(`${dataEntry.name_en}: ${dataEntry.source_en} / ${dataEntry.source_kr}`);
+                                    sources.add(`<strong>${dataEntry.name_en}</strong>: ${dataEntry.source_en}`);
                                 }
                             });
 
@@ -247,7 +263,7 @@
 
                     sources.forEach(source => {
                         const sourceElement = document.createElement("div");
-                        sourceElement.textContent = `* ${source}`;
+                        sourceElement.innerHTML = `* ${source}`;
                         sourceList.appendChild(sourceElement);
                     });
                 }
