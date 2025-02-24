@@ -51,7 +51,7 @@
         .news-table th, .news-table td {
             border: 1px solid #ddd;
             padding: 12px;
-            text-align: left;
+            text-align: center;  /* ✅ 모든 데이터 가운데 정렬 */
         }
 
         .news-table th {
@@ -67,6 +67,22 @@
 
         .news-table td a:hover {
             text-decoration: underline;
+        }
+
+        /* 📌 칼럼 크기 조정 */
+        .news-table th:nth-child(1),
+        .news-table td:nth-child(1) {
+            text-align: left; /* 제목은 왼쪽 정렬 유지 */
+        }
+
+        .news-table th:nth-child(2),
+        .news-table td:nth-child(2) {
+            width: 200px; /* ✅ 출처 칸 너비 조정 */
+        }
+
+        .news-table th:nth-child(3),
+        .news-table td:nth-child(3) {
+            width: 120px; /* ✅ 날짜 칸 최소화 */
         }
 
         /* 반응형 테이블 */
@@ -92,7 +108,7 @@
                     <tr>
                         <th>Title</th>
                         <th>Source</th>
-                        <th>Published Date</th>
+                        <th>Date</th>  <!-- ✅ "Published Date" → "Date"로 변경 -->
                     </tr>
                 </thead>
                 <tbody id="newsList">
@@ -143,9 +159,9 @@
             newsItems.forEach(news => {
                 const row = document.createElement("tr");
                 row.innerHTML = `
-                    <td><a href="${news.link}" target="_blank">${news.title_en}</a></td>
+                    <td style="text-align: left;"><a href="${news.link}" target="_blank">${news.title_en}</a></td>
                     <td>${news.source_en}</td>
-                    <td>${news.date}</td>
+                    <td>${news.date}</td>  <!-- ✅ "Published Date" → "Date" 변경 -->
                 `;
                 newsList.appendChild(row);
             });
