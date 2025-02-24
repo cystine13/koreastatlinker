@@ -204,19 +204,19 @@
             })
             .catch(error => console.error("Error loading header:", error));
 
-        // 지표 데이터 동적 생성
-        fetch("population_data.json")
+        // 지표 데이터 동적 생성 (JSON 파일 변경됨)
+        fetch("k-indicator_data.json")
             .then(response => response.json())
             .then(data => {
                 const statisticsGrid = document.getElementById("statisticsGrid");
                 const latestDataByIndicator = {};
-                
+    
                 Object.keys(data).sort((a, b) => a - b).forEach(year => {
-                    Object.entries(data[year]).forEach(([name, details]) => {
-                        latestDataByIndicator[name] = { value: details.value, year };
+                    data[year].forEach(entry => {
+                        latestDataByIndicator[entry.name_en] = { value: entry.value, year };
                     });
                 });
-                
+    
                 Object.entries(latestDataByIndicator).forEach(([name, details]) => {
                     const item = document.createElement("div");
                     item.className = "statistic-item";
