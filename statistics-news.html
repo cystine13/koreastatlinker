@@ -11,24 +11,28 @@
             padding: 0;
             background-color: #f9f9f9;
         }
+
         .container {
-            max-width: 800px;
+            max-width: 1280px;
             margin: 20px auto;
             padding: 20px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
             text-align: center;
             font-size: 24px;
             margin-bottom: 20px;
         }
+
         .search-bar {
             margin-bottom: 20px;
             display: flex;
             justify-content: center;
         }
+
         .search-bar input {
             width: 70%;
             padding: 10px;
@@ -36,26 +40,38 @@
             border: 1px solid #ddd;
             border-radius: 4px;
         }
-        .news-item {
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
+
+        /* 📌 테이블 스타일 */
+        .news-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
         }
-        .news-item:last-child {
-            border-bottom: none;
+
+        .news-table th, .news-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
         }
-        .news-item a {
-            font-size: 18px;
+
+        .news-table th {
+            background-color: #f4f4f4;
             font-weight: bold;
+        }
+
+        .news-table td a {
             text-decoration: none;
             color: #007bff;
+            font-weight: bold;
         }
-        .news-item a:hover {
+
+        .news-table td a:hover {
             text-decoration: underline;
         }
-        .news-item .date, .news-item .source {
-            font-size: 14px;
-            color: #555;
-            margin-top: 5px;
+
+        /* 반응형 테이블 */
+        .table-wrapper {
+            overflow-x: auto;
         }
     </style>
 </head>
@@ -64,11 +80,25 @@
     <div id="header"></div>
 
     <div class="container">
+        <h1>Statistics News</h1>
+        
         <div class="search-bar">
             <input type="text" id="searchInput" placeholder="Search for news...">
         </div>
-        <div id="newsList">
-            <!-- 뉴스 데이터가 동적으로 추가됩니다 -->
+
+        <div class="table-wrapper">
+            <table class="news-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Source</th>
+                        <th>Published Date</th>
+                    </tr>
+                </thead>
+                <tbody id="newsList">
+                    <!-- 뉴스 데이터가 동적으로 추가됩니다 -->
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -103,22 +133,21 @@
             .catch(error => {
                 console.error('Error loading JSON data:', error);
                 const newsList = document.getElementById('newsList');
-                newsList.innerHTML = `<p style="color: red;">Failed to load news data. Please try again later.</p>`;
+                newsList.innerHTML = `<tr><td colspan="3" style="color: red; text-align: center;">Failed to load news data. Please try again later.</td></tr>`;
             });
 
-        // 뉴스 데이터를 렌더링하는 함수
+        // 뉴스 데이터를 테이블에 렌더링하는 함수
         function renderNews(newsItems) {
             const newsList = document.getElementById("newsList");
             newsList.innerHTML = ""; // 기존 데이터 초기화
             newsItems.forEach(news => {
-                const newsItem = document.createElement("div");
-                newsItem.className = "news-item";
-                newsItem.innerHTML = `
-                    <a href="${news.link}" target="_blank">${news.title_en}</a>
-                    <div class="source">Source: ${news.source_en}</div>
-                    <div class="date">Published on: ${news.date}</div>
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td><a href="${news.link}" target="_blank">${news.title_en}</a></td>
+                    <td>${news.source_en}</td>
+                    <td>${news.date}</td>
                 `;
-                newsList.appendChild(newsItem);
+                newsList.appendChild(row);
             });
         }
 
