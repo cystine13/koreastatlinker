@@ -1,0 +1,2590 @@
+{
+    "2000": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "640,089",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.480",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "332,090",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "47,732,558",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "9,009,441",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "15,765,275",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Population Density (per/㎢)",
+            "name_kr": "인구밀도 (명/㎢)",
+            "value": "463.9",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "76.0",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "248,740",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "13.7",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2001": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "559,934",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.309",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "318,407",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "48,021,543",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "9,289,949",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "16,080,992",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "76.5",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "243,813",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "14.6",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2002": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "496,911",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.178",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "304,877",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "48,229,948",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "9,584,461",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "16,489,107",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "76.8",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "247,524",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "18.0",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2003": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "495,036",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.191",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "302,503",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "48,386,823",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "9,516,605",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "16,987,634",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "77.3",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "246,463",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "22.7",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2004": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "476,958",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.164",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "308,598",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "48,583,805",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "8,567,795",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "17,391,932",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "77.8",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "246,220",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "23.9",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2005": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "438,707",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.085",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "314,304",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "48,782,274",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "8,795,397",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "17,857,511",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Population Density (per/㎢)",
+            "name_kr": "인구밀도 (명/㎢)",
+            "value": "474.5",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "78.2",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "245,874",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "24.8",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2006": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "451,759",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.132",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "330,634",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "48,991,779",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "9,342,074",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "18,326,619",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "78.8",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "244,162",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "22.0",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2007": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "496,822",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.259",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "343,559",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "49,268,928",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "9,070,102",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "18,687,694",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "79.2",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "246,482",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "24.9",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2008": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "465,892",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.192",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "327,715",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "49,540,367",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "8,808,256",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "19,005,339",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "79.6",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "246,113",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "26.0",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2009": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "444,849",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.149",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "309,759",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "870,636",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "49,773,145",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "8,487,275",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "19,261,292",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "80.0",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "246,942",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "31.0",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2010": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "470,171",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.226",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "326,104",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "918,917",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "50,515,666",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "8,226,594",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "19,865,179",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Population Density (per/㎢)",
+            "name_kr": "인구밀도 (명/㎢)",
+            "value": "485.6",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "80.2",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "255,405",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "31.2",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2011": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "471,265",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.244",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "329,087",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "982,461",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "50,734,284",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "8,127,195",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "20,033,142",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "80.6",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "257,396",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "31.7",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2012": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "484,550",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.297",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "327,073",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "932,983",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "50,948,272",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "7,506,691",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "20,211,770",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "80.9",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "267,221",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "28.1",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2013": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "436,455",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.187",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "322,807",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "985,923",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "51,141,463",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "7,411,784",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "20,456,588",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "81.4",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "266,257",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "28.5",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2014": [
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "435,435",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.205",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "305,507",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "1,091,531",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "51,327,916",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "7,629,098",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "20,724,094",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "81.8",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "267,692",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "27.3",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2015": [
+        {
+            "name_en": "Household (households)",
+            "name_kr": "가구수 (가구)",
+            "value": "19,560,603",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "438,420",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "One Person Households (household)",
+            "name_kr": "1인 가구수 (가구)",
+            "value": "5,203,440",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.239",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "302,828",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Average Household Size (Persons)",
+            "name_kr": "평균 가구원수 (명)",
+            "value": "2.5",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Multicultural Households",
+            "name_kr": "다문화 가구 (가구)",
+            "value": "299,241",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "1,143,087",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "51,529,338",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "7,755,286",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "21,011,152",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Population Density (per/㎢)",
+            "name_kr": "인구밀도 (명/㎢)",
+            "value": "509.2",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "82.1",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "275,895",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "26.5",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2016": [
+        {
+            "name_en": "Household (households)",
+            "name_kr": "가구수 (가구)",
+            "value": "19,837,665",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "406,243",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "One Person Households (household)",
+            "name_kr": "1인 가구수 (가구)",
+            "value": "5,397,615",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.172",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "281,635",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Average Household Size (Persons)",
+            "name_kr": "평균 가구원수 (명)",
+            "value": "2.5",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Multicultural Households",
+            "name_kr": "다문화 가구 (가구)",
+            "value": "316,067",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "1,161,677",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "51,696,216",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "7,378,430",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "21,294,009",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Population Density (per/㎢)",
+            "name_kr": "인구밀도 (명/㎢)",
+            "value": "511.0",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "82.4",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "280,827",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "25.6",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2017": [
+        {
+            "name_en": "Household (households)",
+            "name_kr": "가구수 (가구)",
+            "value": "20,167,922",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "357,771",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "One Person Households (household)",
+            "name_kr": "1인 가구수 (가구)",
+            "value": "5,618,677",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "1.052",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "264,455",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Average Household Size (Persons)",
+            "name_kr": "평균 가구원수 (명)",
+            "value": "2.5",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Multicultural Households",
+            "name_kr": "다문화 가구 (가구)",
+            "value": "318,917",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "1,171,762",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "51,778,544",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "7,154,226",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "21,632,851",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Population Density (per/㎢)",
+            "name_kr": "인구밀도 (명/㎢)",
+            "value": "512.4",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "82.7",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "285,534",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "24.3",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2018": [
+        {
+            "name_en": "Household (households)",
+            "name_kr": "가구수 (가구)",
+            "value": "20,499,543",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "326,822",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "One Person Households (household)",
+            "name_kr": "1인 가구수 (가구)",
+            "value": "5,848,594",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "0.977",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "257,622",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Average Household Size (Persons)",
+            "name_kr": "평균 가구원수 (명)",
+            "value": "2.4",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Multicultural Households",
+            "name_kr": "다문화 가구 (가구)",
+            "value": "334,856",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "1,246,626",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "51,826,059",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "7,297,099",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "22,042,947",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Population Density (per/㎢)",
+            "name_kr": "인구밀도 (명/㎢)",
+            "value": "514.4",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "82.7",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "298,820",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "26.6",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2019": [
+        {
+            "name_en": "Household (households)",
+            "name_kr": "가구수 (가구)",
+            "value": "20,891,348",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "302,676",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "One Person Households (household)",
+            "name_kr": "1인 가구수 (가구)",
+            "value": "6,147,516",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "0.918",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "239,159",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Average Household Size (Persons)",
+            "name_kr": "평균 가구원수 (명)",
+            "value": "2.4",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Multicultural Households",
+            "name_kr": "다문화 가구 (가구)",
+            "value": "353,803",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "1,271,807",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "51,849,861",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "7,104,398",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "22,481,466",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Population Density (per/㎢)",
+            "name_kr": "인구밀도 (명/㎢)",
+            "value": "515.7",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "83.3",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "295,110",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "26.9",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2020": [
+        {
+            "name_en": "Household (households)",
+            "name_kr": "가구수 (가구)",
+            "value": "21,484,785",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "272,337",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "One Person Households (household)",
+            "name_kr": "1인 가구수 (가구)",
+            "value": "6,643,354",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "0.837",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "213,502",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Average Household Size (Persons)",
+            "name_kr": "평균 가구원수 (명)",
+            "value": "2.3",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Multicultural Households",
+            "name_kr": "다문화 가구 (가구)",
+            "value": "367,775",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "1,145,540",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "51,829,023",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "7,735,491",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "23,093,108",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Population Density (per/㎢)",
+            "name_kr": "인구밀도 (명/㎢)",
+            "value": "516.2",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "83.5",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "304,948",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "25.7",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2021": [
+        {
+            "name_en": "Household (households)",
+            "name_kr": "가구수 (가구)",
+            "value": "22,022,753",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "260,562",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "One Person Households (household)",
+            "name_kr": "1인 가구수 (가구)",
+            "value": "7,165,788",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "0.808",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "192,507",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Average Household Size (Persons)",
+            "name_kr": "평균 가구원수 (명)",
+            "value": "2.3",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Multicultural Households",
+            "name_kr": "다문화 가구 (가구)",
+            "value": "385,219",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "1,093,891",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "51,638,809",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "7,213,422",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "23,472,895",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Population Density (per/㎢)",
+            "name_kr": "인구밀도 (명/㎢)",
+            "value": "515.2",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "83.6",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "317,680",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "26.0",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2022": [
+        {
+            "name_en": "Household (households)",
+            "name_kr": "가구수 (가구)",
+            "value": "22,383,187",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "249,186",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "One Person Households (household)",
+            "name_kr": "1인 가구수 (가구)",
+            "value": "7,502,350",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "0.778",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "191,690",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Average Household Size (Persons)",
+            "name_kr": "평균 가구원수 (명)",
+            "value": "2.2",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Multicultural Households",
+            "name_kr": "다문화 가구 (가구)",
+            "value": "399,396",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "1,189,585",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "51,439,038",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "6,152,155",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "23,705,814",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Population Density (per/㎢)",
+            "name_kr": "인구밀도 (명/㎢)",
+            "value": "514.6",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "82.7",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "372,939",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "25.2",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2023": [
+        {
+            "name_en": "Household (households)",
+            "name_kr": "가구수 (가구)",
+            "value": "22,728,163",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "230,028",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "One Person Households (household)",
+            "name_kr": "1인 가구수 (가구)",
+            "value": "7,829,035",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "0.721",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "193,657",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구동향조사",
+            "source_en": "Statistics Korea, Vital Statistics"
+        },
+        {
+            "name_en": "Average Household Size (Persons)",
+            "name_kr": "평균 가구원수 (명)",
+            "value": "2.2",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Multicultural Households",
+            "name_kr": "다문화 가구 (가구)",
+            "value": "415,584",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "1,348,626",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "법무부, 출입국자및체류외국인통계",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures"
+        },
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "51,325,329",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "6,128,738",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "23,914,851",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Population Density (per/㎢)",
+            "name_kr": "인구밀도 (명/㎢)",
+            "value": "515.4",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 인구총조사",
+            "source_en": "Statistics Korea, Population Census"
+        },
+        {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "83.5",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 생명표",
+            "source_en": "Statistics Korea, Life Tables By Province"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "352,511",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        },
+        {
+            "name_en": "Suicide Rate (per 100k Persons)",
+            "name_kr": "자살률 (십만명당)",
+            "value": "27.3",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_kr": "통계청, 사망원인통계",
+            "source_en": "Statistics Korea, Causes of Death Statistics"
+        }
+    ],
+    "2024": [
+        {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "51,217,221",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        },
+        {
+            "name_en": "Internal Migrants (Persons)",
+            "name_kr": "국내인구 이동자수 (명)",
+            "value": "6,283,319",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "통계청, 국내인구이동통계",
+            "source_en": "Statistics Korea, Internal Migration Statistics"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "24,118,928",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_kr": "행정안전부, 주민등록인구현황",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration"
+        }
+    ]
+}
