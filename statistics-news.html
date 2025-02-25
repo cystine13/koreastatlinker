@@ -24,48 +24,66 @@
             font-size: 24px;
             margin-bottom: 20px;
         }
-        .table-wrapper {
-            overflow-x: auto;
+        .search-bar {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            table-layout: fixed;
         }
         th, td {
             border: 1px solid #ddd;
             padding: 10px;
             text-align: center;
-            word-wrap: break-word;
         }
         th {
             background-color: #f4f4f4;
         }
-        .date-column {
-            width: 100px;
+        .number-col {
+            width: 50px; /* 최소한의 크기로 설정 */
         }
-        .source-column {
-            width: 200px;
+        .date-col {
+            width: 100px; /* 날짜 열 크기 최소화 */
+        }
+        .source-col {
+            font-size: 12px; /* 출처 글자 크기 축소 */
+            width: 150px; /* 출처 열 크기 조정 */
+        }
+        .title-col {
+            text-align: left; /* 제목은 왼쪽 정렬 */
         }
     </style>
 </head>
 <body>
     <div id="header"></div>
+
     <div class="container">
         <h1>Statistics News</h1>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Title</th>
-                        <th class="source-column">Source</th>
-                        <th class="date-column">Date</th>
-                    </tr>
-                </thead>
-                <tbody id="newsList"></tbody>
-            </table>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for news...">
         </div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="number-col">#</th>
+                    <th class="title-col">Title</th>
+                    <th class="source-col">Source</th>
+                    <th class="date-col">Date</th>
+                </tr>
+            </thead>
+            <tbody id="newsList">
+                <!-- 뉴스 데이터가 동적으로 추가됩니다 -->
+            </tbody>
+        </table>
     </div>
 
     <script>
@@ -76,24 +94,52 @@
             })
             .catch(error => console.error("Error loading header:", error));
 
-        fetch("./news_posts.json")
-            .then(response => response.json())
-            .then(data => {
-                const newsList = document.getElementById("newsList");
-                newsList.innerHTML = "";
+        const jsonUrl = './news_posts.json';
 
-                data.forEach((news, index) => {
-                    const row = document.createElement("tr");
-                    row.innerHTML = `
-                        <td>${index + 1}</td>
-                        <td><a href="${news.link}" target="_blank">${news.title_en}</a></td>
-                        <td>${news.source_en}</td>
-                        <td class="date-column">${news.date}</td>
-                    `;
-                    newsList.appendChild(row);
-                });
+        let newsData = [];
+
+        fetch(jsonUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
             })
-            .catch(error => console.error("Error loading JSON data:", error));
+            .then(data => {
+                newsData = data.reverse(); // 최신 뉴스가 마지막 번호가 되도록 정렬
+                renderNews(newsData);
+            })
+            .catch(error => {
+                console.error('Error loading JSON data:', error);
+                const newsList = document.getElementById('newsList');
+                newsList.innerHTML = `<tr><td colspan="4" style="color: red; text-align: center;">Failed to load news data. Please try again later.</td></tr>`;
+            });
+
+        function renderNews(newsItems) {
+            const newsList = document.getElementById("newsList");
+            newsList.innerHTML = "";
+            newsItems.forEach((news, index) => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td class="title-col"><a href="${news.link}" target="_blank">${news.title_en}</a></td>
+                    <td class="source-col">${news.source_en}</td>
+                    <td class="date-col">${news.date}</td>
+                `;
+                newsList.appendChild(row);
+            });
+        }
+
+        const searchInput = document.getElementById("searchInput");
+        searchInput.addEventListener("input", function () {
+            const query = searchInput.value.toLowerCase();
+            const filteredNews = newsData.filter(news =>
+                news.title_en.toLowerCase().includes(query) ||
+                news.source_en.toLowerCase().includes(query) ||
+                news.date.includes(query)
+            );
+            renderNews(filteredNews);
+        });
     </script>
 </body>
 </html>
