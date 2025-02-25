@@ -1,150 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistics News</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        .container {
-            max-width: 1280px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        .search-bar {
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-        }
-        .search-bar input {
-            width: 70%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        .no-col {
-            width: 50px;
-        }
-        .title-col {
-            text-align: center;
-            width: auto;
-        }
-        .title-data {
-            text-align: left;
-        }
-        .source-col {
-            width: 150px;
-        }
-        .date-col {
-            width: 100px;
-        }
-    </style>
-</head>
-<body>
-    <div id="header"></div>
+<script>
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading header:", error));
 
-    <div class="container">
-        <h1>Statistics News</h1>
-        <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Search for news...">
-        </div>
-        <table>
-            <thead>
-                <tr>
-                    <th class="no-col">No</th>
-                    <th class="title-col">Title</th>
-                    <th class="source-col">Source</th>
-                    <th class="date-col">Date</th>
-                </tr>
-            </thead>
-            <tbody id="newsList">
-                <!-- 뉴스 데이터가 동적으로 추가됩니다 -->
-            </tbody>
-        </table>
-    </div>
+    const jsonUrl = './news_posts.json';
+    let newsData = [];
 
-    <script>
-        fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading header:", error));
-
-        const jsonUrl = './news_posts.json';
-
-        let newsData = [];
-
-        fetch(jsonUrl)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(data => {
-                newsData = data.reverse(); // 최신 뉴스가 위쪽에 오도록 역순 정렬 (기존 유지)
-                renderNews(newsData);
-            })
-            .catch(error => {
-                console.error('Error loading JSON data:', error);
-                document.getElementById('newsList').innerHTML = 
-                    `<tr><td colspan="4" style="color: red; text-align: center;">Failed to load news data. Please try again later.</td></tr>`;
-            });
-
-        function renderNews(newsItems) {
-            const newsList = document.getElementById("newsList");
-            newsList.innerHTML = "";
-
-            const totalNews = newsItems.length; // 총 뉴스 개수
-
-            newsItems.forEach((news, index) => {
-                const row = document.createElement("tr");
-                row.innerHTML = `
-                    <td class="no-col">${totalNews - index}</td>  <!-- 번호는 오래된 뉴스가 1, 최신 뉴스가 가장 큰 번호 -->
-                    <td class="title-data"><a href="${news.link}" target="_blank">${news.title_en}</a></td>
-                    <td class="source-col">${news.source_en}</td>
-                    <td class="date-col">${news.date}</td>
-                `;
-                newsList.appendChild(row);
-            });
-        }
-
-        document.getElementById("searchInput").addEventListener("input", function () {
-            const query = this.value.toLowerCase();
-            const filteredNews = newsData.filter(news =>
-                news.title_en.toLowerCase().includes(query) ||
-                news.source_en.toLowerCase().includes(query) ||
-                news.date.includes(query)
-            );
-            renderNews(filteredNews);
+    fetch(jsonUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            newsData = data; // JSON 데이터 그대로 사용 (순서 유지)
+            renderNews(newsData);
+        })
+        .catch(error => {
+            console.error('Error loading JSON data:', error);
+            document.getElementById('newsList').innerHTML = 
+                `<tr><td colspan="3" style="color: red; text-align: center;">Failed to load news data. Please try again later.</td></tr>`;
         });
-    </script>
-</body>
-</html>
+
+    function renderNews(newsItems) {
+        const newsList = document.getElementById("newsList");
+        newsList.innerHTML = "";
+
+        newsItems.forEach(news => {  // JSON 순서대로 출력 (가장 최근 뉴스가 위쪽)
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td class="title-data"><a href="${news.link}" target="_blank">${news.title_en}</a></td>
+                <td class="source-col">${news.source_en}</td>
+                <td class="date-col">${news.date}</td>
+            `;
+            newsList.appendChild(row);
+        });
+    }
+
+    document.getElementById("searchInput").addEventListener("input", function () {
+        const query = this.value.toLowerCase();
+        const filteredNews = newsData.filter(news =>
+            news.title_en.toLowerCase().includes(query) ||
+            news.source_en.toLowerCase().includes(query) ||
+            news.date.includes(query)
+        );
+        renderNews(filteredNews);
+    });
+</script>
