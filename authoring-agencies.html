@@ -22,22 +22,22 @@
             padding: 20px;
         }
 
-        /* 🔥 필터 & 검색창 개선 */
+        /* 🔥 필터 & 검색창: 더 깔끔하게 조정 */
         .filters {
-            max-width: 1280px;
-            margin: 20px auto;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start; /* 왼쪽 정렬 */
             align-items: center;
-            padding: 15px;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 10px;
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
 
         .filters label {
             font-weight: bold;
-            margin-right: 10px;
         }
 
         .filters select, .filters input {
@@ -45,6 +45,7 @@
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            width: 200px;
         }
 
         /* 🔥 한 줄에 2개씩 배치 */
@@ -91,15 +92,25 @@
             .agency-list {
                 grid-template-columns: 1fr;
             }
+
+            .filters {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .filters select, .filters input {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <div id="header"></div>
 
+    <!-- 🔥 필터 & 검색창 -->
     <div class="filters">
         <div>
-            <label for="categoryFilter">Filter by Category:</label>
+            <label for="categoryFilter">Filter:</label>
             <select id="categoryFilter">
                 <option value="All">All Categories</option>
                 <option value="Central Administrative Agencies">Central Administrative Agencies</option>
@@ -111,7 +122,7 @@
         </div>
         <div>
             <label for="searchBar">Search:</label>
-            <input type="text" id="searchBar" placeholder="Search by name or description">
+            <input type="text" id="searchBar" placeholder="Search agencies...">
         </div>
     </div>
 
@@ -130,4 +141,40 @@
             .catch(error => console.error("Error loading header:", error));
 
         fetch('agencies.json')
-      
+            .then(response => response.json())
+            .then(data => {
+                const agencyList = document.getElementById('agencyList');
+                const categoryFilter = document.getElementById('categoryFilter');
+                const searchBar = document.getElementById('searchBar');
+
+                function renderAgencies(filteredData) {
+                    agencyList.innerHTML = '';
+                    filteredData.forEach(agency => {
+                        const card = document.createElement('a');
+                        card.className = 'agency-card';
+                        card.href = agency.Website;
+                        card.target = '_blank';
+                        card.innerHTML = `<h3>${agency.Name}</h3><span>${agency.Category}</span>`;
+                        agencyList.appendChild(card);
+                    });
+                }
+
+                function filterData() {
+                    const selectedCategory = categoryFilter.value;
+                    const searchKeyword = searchBar.value.toLowerCase();
+                    const filteredData = data.filter(agency => {
+                        const matchesCategory = selectedCategory === 'All' || agency.Category === selectedCategory;
+                        const matchesSearch = agency.Name.toLowerCase().includes(searchKeyword);
+                        return matchesCategory && matchesSearch;
+                    });
+                    renderAgencies(filteredData);
+                }
+
+                renderAgencies(data);
+                categoryFilter.addEventListener('change', filterData);
+                searchBar.addEventListener('input', filterData);
+            })
+            .catch(error => console.error('Error loading JSON:', error));
+    </script>
+</body>
+</html>
