@@ -11,7 +11,6 @@
             padding: 0;
             background-color: #f9f9f9;
         }
-
         .container {
             max-width: 1280px;
             margin: 20px auto;
@@ -20,164 +19,81 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
         h1 {
             text-align: center;
             font-size: 24px;
             margin-bottom: 20px;
         }
-
-        .search-bar {
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .search-bar input {
-            width: 70%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        /* 📌 테이블 스타일 */
-        .news-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        .news-table th, .news-table td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: center;  /* ✅ 모든 데이터 가운데 정렬 */
-        }
-
-        .news-table th {
-            background-color: #f4f4f4;
-            font-weight: bold;
-        }
-
-        .news-table td a {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-        }
-
-        .news-table td a:hover {
-            text-decoration: underline;
-        }
-
-        /* 📌 칼럼 크기 조정 */
-        .news-table th:nth-child(1),
-        .news-table td:nth-child(1) {
-            text-align: left; /* 제목은 왼쪽 정렬 유지 */
-        }
-
-        .news-table th:nth-child(2),
-        .news-table td:nth-child(2) {
-            width: 200px; /* ✅ 출처 칸 너비 조정 */
-        }
-
-        .news-table th:nth-child(3),
-        .news-table td:nth-child(3) {
-            width: 120px; /* ✅ 날짜 칸 최소화 */
-        }
-
-        /* 반응형 테이블 */
         .table-wrapper {
             overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            word-wrap: break-word;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .date-column {
+            width: 100px;
+        }
+        .source-column {
+            width: 200px;
         }
     </style>
 </head>
 <body>
-    <!-- 동적으로 로드될 헤더 -->
     <div id="header"></div>
-
     <div class="container">
         <h1>Statistics News</h1>
-        
-        <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Search for news...">
-        </div>
-
         <div class="table-wrapper">
-            <table class="news-table">
+            <table>
                 <thead>
                     <tr>
+                        <th>No</th>
                         <th>Title</th>
-                        <th>Source</th>
-                        <th>Date</th>  <!-- ✅ "Published Date" → "Date"로 변경 -->
+                        <th class="source-column">Source</th>
+                        <th class="date-column">Date</th>
                     </tr>
                 </thead>
-                <tbody id="newsList">
-                    <!-- 뉴스 데이터가 동적으로 추가됩니다 -->
-                </tbody>
+                <tbody id="newsList"></tbody>
             </table>
         </div>
     </div>
 
     <script>
-        // 헤더 동적 로드
         fetch("header.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("header").innerHTML = data;
             })
-            .catch(error => {
-                console.error("Error loading header:", error);
-            });
+            .catch(error => console.error("Error loading header:", error));
 
-        // JSON 데이터 경로
-        const jsonUrl = './news_posts.json';
-
-        let newsData = []; // JSON 데이터를 저장할 변수
-
-        // 초기 데이터 로드 및 렌더링
-        fetch(jsonUrl)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
+        fetch("./news_posts.json")
+            .then(response => response.json())
             .then(data => {
-                newsData = data; // JSON 데이터를 변수에 저장
-                renderNews(newsData); // 초기 렌더링
+                const newsList = document.getElementById("newsList");
+                newsList.innerHTML = "";
+
+                data.forEach((news, index) => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td>${index + 1}</td>
+                        <td><a href="${news.link}" target="_blank">${news.title_en}</a></td>
+                        <td>${news.source_en}</td>
+                        <td class="date-column">${news.date}</td>
+                    `;
+                    newsList.appendChild(row);
+                });
             })
-            .catch(error => {
-                console.error('Error loading JSON data:', error);
-                const newsList = document.getElementById('newsList');
-                newsList.innerHTML = `<tr><td colspan="3" style="color: red; text-align: center;">Failed to load news data. Please try again later.</td></tr>`;
-            });
-
-        // 뉴스 데이터를 테이블에 렌더링하는 함수
-        function renderNews(newsItems) {
-            const newsList = document.getElementById("newsList");
-            newsList.innerHTML = ""; // 기존 데이터 초기화
-            newsItems.forEach(news => {
-                const row = document.createElement("tr");
-                row.innerHTML = `
-                    <td style="text-align: left;"><a href="${news.link}" target="_blank">${news.title_en}</a></td>
-                    <td>${news.source_en}</td>
-                    <td>${news.date}</td>  <!-- ✅ "Published Date" → "Date" 변경 -->
-                `;
-                newsList.appendChild(row);
-            });
-        }
-
-        // 검색 기능
-        const searchInput = document.getElementById("searchInput");
-        searchInput.addEventListener("input", function () {
-            const query = searchInput.value.toLowerCase(); // 검색어를 소문자로 변환
-            const filteredNews = newsData.filter(news =>
-                news.title_en.toLowerCase().includes(query) || // 영문 제목에서 검색
-                news.source_en.toLowerCase().includes(query) || // 영문 출처에서 검색
-                news.date.includes(query) // 날짜에서 검색
-            );
-            renderNews(filteredNews);
-        });
+            .catch(error => console.error("Error loading JSON data:", error));
     </script>
 </body>
 </html>
