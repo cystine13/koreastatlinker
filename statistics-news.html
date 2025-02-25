@@ -109,7 +109,7 @@
                 return response.json();
             })
             .then(data => {
-                newsData = data; // 최신 뉴스가 마지막 번호가 되도록 그대로 둠
+                newsData = data.reverse(); // 최신 뉴스가 위쪽에 오도록 역순 정렬
                 renderNews(newsData);
             })
             .catch(error => {
@@ -124,7 +124,7 @@
             newsItems.forEach((news, index) => {
                 const row = document.createElement("tr");
                 row.innerHTML = `
-                    <td class="no-col">${index + 1}</td>
+                    <td class="no-col">${index + 1}</td>  <!-- 가장 오래된 뉴스가 1번이 되도록 변경 -->
                     <td class="title-data"><a href="${news.link}" target="_blank">${news.title_en}</a></td>
                     <td class="source-col">${news.source_en}</td>
                     <td class="date-col">${news.date}</td>
