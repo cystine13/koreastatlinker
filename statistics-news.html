@@ -1,53 +1,159 @@
-<script>
-    fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header").innerHTML = data;
-        })
-        .catch(error => console.error("Error loading header:", error));
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .search-container input {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .title-data {
+            text-align: left;
+        }
+        .source-col {
+            font-size: 14px;
+        }
+        .date-col {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 🔹 헤더 동적 로드 -->
+    <div id="header"></div>
 
-    const jsonUrl = './news_posts.json';
-    let newsData = [];
+    <div class="container">
+        <h1>Statistics News</h1>
 
-    fetch(jsonUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+        <!-- 🔹 검색 기능 -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for news...">
+        </div>
+
+        <!-- 🔹 뉴스 테이블 -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Source</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="newsList">
+                <!-- 뉴스 데이터가 동적으로 추가됩니다 -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // 🔹 헤더 로드
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    const headerElement = document.getElementById("header");
+                    if (headerElement) {
+                        headerElement.innerHTML = data;
+                    }
+                })
+                .catch(error => console.error("Error loading header:", error));
+
+            // 🔹 JSON 데이터 로드
+            const jsonUrl = './news_posts.json';
+            let newsData = [];
+
+            fetch(jsonUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    newsData = data;
+                    renderNews(newsData);
+                })
+                .catch(error => {
+                    console.error('Error loading JSON data:', error);
+                    const newsList = document.getElementById('newsList');
+                    if (newsList) {
+                        newsList.innerHTML = `<tr><td colspan="3" style="color: red; text-align: center;">Failed to load news data. Please try again later.</td></tr>`;
+                    }
+                });
+
+            // 🔹 뉴스 데이터 렌더링 함수
+            function renderNews(newsItems) {
+                const newsList = document.getElementById("newsList");
+                if (!newsList) return;
+
+                newsList.innerHTML = "";
+                newsItems.forEach(news => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td class="title-data"><a href="${news.link}" target="_blank">${news.title_en}</a></td>
+                        <td class="source-col">${news.source_en}</td>
+                        <td class="date-col">${news.date}</td>
+                    `;
+                    newsList.appendChild(row);
+                });
             }
-            return response.json();
-        })
-        .then(data => {
-            newsData = data; // JSON 데이터 그대로 사용 (순서 유지)
-            renderNews(newsData);
-        })
-        .catch(error => {
-            console.error('Error loading JSON data:', error);
-            document.getElementById('newsList').innerHTML = 
-                `<tr><td colspan="3" style="color: red; text-align: center;">Failed to load news data. Please try again later.</td></tr>`;
+
+            // 🔹 검색 기능
+            const searchInput = document.getElementById("searchInput");
+            if (searchInput) {
+                searchInput.addEventListener("input", function () {
+                    const query = this.value.toLowerCase();
+                    const filteredNews = newsData.filter(news =>
+                        news.title_en.toLowerCase().includes(query) ||
+                        news.source_en.toLowerCase().includes(query) ||
+                        news.date.includes(query)
+                    );
+                    renderNews(filteredNews);
+                });
+            }
         });
-
-    function renderNews(newsItems) {
-        const newsList = document.getElementById("newsList");
-        newsList.innerHTML = "";
-
-        newsItems.forEach(news => {  // JSON 순서대로 출력 (가장 최근 뉴스가 위쪽)
-            const row = document.createElement("tr");
-            row.innerHTML = `
-                <td class="title-data"><a href="${news.link}" target="_blank">${news.title_en}</a></td>
-                <td class="source-col">${news.source_en}</td>
-                <td class="date-col">${news.date}</td>
-            `;
-            newsList.appendChild(row);
-        });
-    }
-
-    document.getElementById("searchInput").addEventListener("input", function () {
-        const query = this.value.toLowerCase();
-        const filteredNews = newsData.filter(news =>
-            news.title_en.toLowerCase().includes(query) ||
-            news.source_en.toLowerCase().includes(query) ||
-            news.date.includes(query)
-        );
-        renderNews(filteredNews);
-    });
-</script>
+    </script>
+</body>
+</html>
