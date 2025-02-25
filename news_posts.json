@@ -1,9 +1,33 @@
 [
     {
+        "title_kr": "2023년 임금근로일자리 소득(보수) 결과",
+        "title_en": "Wage Job Income (Remuneration) Results 2023",
+        "link": "https://kostat.go.kr/board.es?mid=a10301030500&act=view&bid=11113&list_no=435195",
+        "date": "2025-02-24",
+        "source_kr": "통계청",
+        "source_en": "Statistics Korea"
+    },
+    {
+        "title_kr": "「국민 삶의 질 2024」 보고서 발간",
+        "title_en": "Publication of the report “National Quality of Life 2024”",
+        "link": "https://kostat.go.kr/board.es?mid=a10301150000&act=view&bid=246&list_no=435192",
+        "date": "2025-02-24",
+        "source_kr": "통계청",
+        "source_en": "Statistics Korea"
+    },
+    {
+        "title_kr": "국가통계포털, 새로운 시각화콘텐츠 통해 국민의 통계데이터 활용 제고",
+        "title_en": "National Statistical Portal improves the use of statistical data of citizens through new visualization contents",
+        "link": "https://kostat.go.kr/board.es?mid=a10301150000&act=view&bid=246&list_no=435191",
+        "date": "2025-02-24",
+        "source_kr": "통계청",
+        "source_en": "Statistics Korea"
+    },
+    {
         "title_kr": "2025년 01월 주민등록인구통계",
         "title_en": "Resident Population Statistics for 2025.01",
         "link": "https://jumin.mois.go.kr/statMonth.do",
-        "date": "2025-02-02",
+        "date": "2025-02-04",
         "source_kr": "행정안전부 주민등록인구통계",
         "source_en": "MOIS Resident Population Statistics"
     },
@@ -270,14 +294,6 @@
         "date": "2025-02-05",
         "source_kr": "통계청",
         "source_en": "Statistics Korea"
-    },
-    {
-        "title_kr": "2025년 01월 주민등록인구통계",
-        "title_en": "Resident Population Statistics for 2025.01",
-        "link": "https://jumin.mois.go.kr/statMonth.do",
-        "date": "2025-02-04",
-        "source_kr": "행정안전부 주민등록인구통계",
-        "source_en": "MOIS Resident Population Statistics"
     },
     {
         "title_kr": "에너지통계월보 (2025.01)",
@@ -1734,5 +1750,5 @@
         "date": "2024-12-12",
         "source_kr": "통계청",
         "source_en": "Statistics Korea"
-    }    
+    }
 ]
