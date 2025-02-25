@@ -48,18 +48,21 @@
         th {
             background-color: #f4f4f4;
         }
-        .number-col {
-            width: 50px; /* 최소한의 크기로 설정 */
-        }
-        .date-col {
-            width: 100px; /* 날짜 열 크기 최소화 */
-        }
-        .source-col {
-            font-size: 12px; /* 출처 글자 크기 축소 */
-            width: 150px; /* 출처 열 크기 조정 */
+        .no-col {
+            width: 50px;
         }
         .title-col {
-            text-align: left; /* 제목은 왼쪽 정렬 */
+            text-align: center; /* 제목 헤더 가운데 정렬 */
+            width: auto;
+        }
+        .title-data {
+            text-align: left; /* 제목 데이터 왼쪽 정렬 */
+        }
+        .source-col {
+            width: 150px;
+        }
+        .date-col {
+            width: 100px;
         }
     </style>
 </head>
@@ -74,7 +77,7 @@
         <table>
             <thead>
                 <tr>
-                    <th class="number-col">#</th>
+                    <th class="no-col">No</th>
                     <th class="title-col">Title</th>
                     <th class="source-col">Source</th>
                     <th class="date-col">Date</th>
@@ -106,7 +109,7 @@
                 return response.json();
             })
             .then(data => {
-                newsData = data.reverse(); // 최신 뉴스가 마지막 번호가 되도록 정렬
+                newsData = data; // 최신 뉴스가 마지막 번호가 되도록 그대로 둠
                 renderNews(newsData);
             })
             .catch(error => {
@@ -121,8 +124,8 @@
             newsItems.forEach((news, index) => {
                 const row = document.createElement("tr");
                 row.innerHTML = `
-                    <td>${index + 1}</td>
-                    <td class="title-col"><a href="${news.link}" target="_blank">${news.title_en}</a></td>
+                    <td class="no-col">${index + 1}</td>
+                    <td class="title-data"><a href="${news.link}" target="_blank">${news.title_en}</a></td>
                     <td class="source-col">${news.source_en}</td>
                     <td class="date-col">${news.date}</td>
                 `;
