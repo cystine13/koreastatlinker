@@ -172,6 +172,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,419,995",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2002": [
@@ -255,6 +264,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,351,185",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2003": [
@@ -338,6 +356,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,374,405",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2004": [
@@ -421,6 +448,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,424,088",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2005": [
@@ -513,6 +549,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,513,352",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2006": [
@@ -596,6 +641,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,534,950",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2007": [
@@ -679,6 +733,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,549,848",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2008": [
@@ -762,6 +825,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,529,939",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2009": [
@@ -854,6 +926,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,568,533",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2010": [
@@ -955,6 +1036,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,549,820",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2011": [
@@ -1047,6 +1137,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,469,254",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2012": [
@@ -1139,6 +1238,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,394,042",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2013": [
@@ -1231,6 +1339,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,350,891",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2014": [
@@ -1323,6 +1440,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,328,713",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2015": [
@@ -1460,6 +1586,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,646,363",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2016": [
@@ -1597,6 +1732,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,630,614",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2017": [
@@ -1734,6 +1878,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,581,646",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2018": [
@@ -1871,6 +2024,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,743,690",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2019": [
@@ -2008,6 +2170,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "1,881,357",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2020": [
@@ -2145,6 +2316,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "2,134,186",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2021": [
@@ -2282,6 +2462,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "2,359,672",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2022": [
@@ -2419,6 +2608,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "2,451,458",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2023": [
@@ -2556,6 +2754,15 @@
             "category_kr": "보건, 복지",
             "source_en": "Statistics Korea, Causes of Death Statistics",
             "source_kr": "통계청, 사망원인통계"
+        },
+        {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "2,554,627",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         }
     ],
     "2024": [
