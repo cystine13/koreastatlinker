@@ -50,7 +50,9 @@ items = [
     {"orgId": "101", "tblId": "DT_1B8000F", "objL1": "12", "itmId": "T1", "prdSe": "Y", "name_en": "Deaths (Persons)", "name_kr": "사망자수 (명)", "decimal_places": 0,
      "category_en": "Health & Welfare", "category_kr": "보건, 복지", "source_en": "Statistics Korea, Causes of Death Statistics", "source_kr": "통계청, 사망원인통계"},
     {"orgId": "101", "tblId": "DT_1B34E01", "objL1": "J06", "objL2": "0", "objL3": "00", "itmId": "T5", "prdSe": "Y", "name_en": "Suicide Rate (per 100k Persons)", "name_kr": "자살률 (십만명당)" , "decimal_places": 1,
-     "category_en": "Health & Welfare", "category_kr": "보건, 복지", "source_en": "Statistics Korea, Causes of Death Statistics", "source_kr": "통계청, 사망원인통계"}
+     "category_en": "Health & Welfare", "category_kr": "보건, 복지", "source_en": "Statistics Korea, Causes of Death Statistics", "source_kr": "통계청, 사망원인통계"},
+    {"orgId": "117", "tblId": "DT_11714_N001", "itmId": "TT", "objL1" : "00", "prdSe": "Y", "name_en": "Recipient of National Basic Livelihood (person)", "name_kr": "국민기초생활수급자수 (명)", "decimal_places": 0,
+     "category_en": "Health & Welfare", "category_kr": "보건,복지", "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics", "source_kr": "보건복지부, 국민기초생활보장수급자현황"}    
 ]
 
 # 📌 데이터를 저장할 딕셔너리 (연도별로 정리)
