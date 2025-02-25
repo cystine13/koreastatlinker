@@ -11,81 +11,90 @@
             padding: 0;
             background-color: #f9f9f9;
         }
+
         #header {
-            margin-bottom: 20px; /* 헤더와 콘텐츠 간격 */
+            margin-bottom: 20px;
         }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 🔥 필터 & 검색창 개선 */
         .filters {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 20px auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        .filters label, .filters select, .filters input {
+
+        .filters label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .filters select, .filters input {
+            padding: 10px;
             font-size: 16px;
-            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+
+        /* 🔥 한 줄에 2개씩 배치 */
         .agency-list {
-            display: flex;
-            flex-direction: column; /* 1열 정렬 */
-            gap: 20px; /* 콘텐츠 간 간격 */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 한 줄에 2개 */
+            gap: 20px;
+            margin-top: 20px;
         }
+
         .agency-card {
-            display: flex; /* 이름과 카테고리 가로 정렬 */
+            display: flex;
+            justify-content: space-between;
             align-items: center;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
-            background-color: #f9f9f9;
+            background-color: white;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
-            text-decoration: none; /* 링크 기본 스타일 제거 */
-            color: inherit; /* 텍스트 색상 유지 */
+            text-decoration: none;
+            color: inherit;
         }
+
         .agency-card:hover {
-            transform: scale(1.02); /* 호버 시 확대 효과 */
+            transform: scale(1.02);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         .agency-card h3 {
             margin: 0;
+            font-size: 18px;
             color: #333;
-            flex: none;
-            white-space: nowrap; /* 텍스트 줄바꿈 방지 */
-            overflow: hidden; /* 넘치는 텍스트 숨김 */
-            text-overflow: ellipsis; /* 넘치는 텍스트에 '...' 추가 */
         }
+
         .agency-card span {
-            margin-left: 20px; /* 카테고리와 기관명 간의 간격 */
             color: #555;
-            flex: 1; /* 나머지 공간에 카테고리 표시 */
             font-size: 14px;
-            white-space: nowrap; /* 줄바꿈 방지 */
         }
+
+        /* 🔥 반응형 (모바일에서 한 줄 1개) */
         @media (max-width: 768px) {
-            .agency-card {
-                flex-direction: column; /* 모바일에서 세로 정렬 */
-                text-align: left; /* 텍스트 왼쪽 정렬 */
-            }
-            .agency-card h3, .agency-card span {
-                max-width: 100%; /* 전체 너비 사용 */
-                flex: none; /* 너비 제한 해제 */
-                white-space: normal; /* 모바일에서는 줄바꿈 허용 */
-            }
-            .agency-card span {
-                margin-left: 0; /* 모바일에서는 간격 제거 */
+            .agency-list {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <!-- 헤더 동적 로드 -->
     <div id="header"></div>
 
     <div class="filters">
@@ -105,70 +114,20 @@
             <input type="text" id="searchBar" placeholder="Search by name or description">
         </div>
     </div>
+
     <div class="container">
-        <div class="agency-list" id="agencyList">
-            <!-- JSON 데이터를 기반으로 콘텐츠가 동적으로 추가됩니다 -->
-        </div>
+        <div class="agency-list" id="agencyList"></div>
     </div>
+
     <footer>
-        <p>Copyright © 2024 KoreaStatLinker. All rights reserved.</p>
+        <p style="text-align: center;">Copyright © 2024 KoreaStatLinker. All rights reserved.</p>
     </footer>
+
     <script>
-        // 헤더 동적 로드
         fetch("header.html")
             .then(response => response.text())
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            })
+            .then(data => { document.getElementById("header").innerHTML = data; })
             .catch(error => console.error("Error loading header:", error));
 
-        // JSON 파일 로드 및 데이터 추가
         fetch('agencies.json')
-            .then(response => response.json())
-            .then(data => {
-                const agencyList = document.getElementById('agencyList');
-                const categoryFilter = document.getElementById('categoryFilter');
-                const searchBar = document.getElementById('searchBar');
-
-                // 데이터 렌더링 함수
-                function renderAgencies(filteredData) {
-                    agencyList.innerHTML = ''; // 기존 콘텐츠 제거
-                    filteredData.forEach(agency => {
-                        const card = document.createElement('a');
-                        card.className = 'agency-card';
-                        card.href = agency.Website; // 카드 전체를 링크로 설정
-                        card.target = '_blank'; // 새 탭에서 열기
-                        card.innerHTML = `
-                            <h3>${agency.Name}</h3>
-                            <span>${agency.Category}</span>
-                        `;
-                        agencyList.appendChild(card);
-                    });
-                }
-
-                // 데이터 필터링 함수
-                function filterData() {
-                    const selectedCategory = categoryFilter.value;
-                    const searchKeyword = searchBar.value.toLowerCase();
-
-                    // 카테고리와 검색 키워드에 따라 데이터 필터링
-                    const filteredData = data.filter(agency => {
-                        const matchesCategory = selectedCategory === 'All' || agency.Category === selectedCategory;
-                        const matchesSearch = agency.Name.toLowerCase().includes(searchKeyword);
-                        return matchesCategory && matchesSearch;
-                    });
-
-                    renderAgencies(filteredData);
-                }
-
-                // 초기 렌더링 (모든 데이터 표시)
-                renderAgencies(data);
-
-                // 필터 변경 및 검색 입력 이벤트 처리
-                categoryFilter.addEventListener('change', filterData);
-                searchBar.addEventListener('input', filterData);
-            })
-            .catch(error => console.error('Error loading JSON:', error));
-    </script>
-</body>
-</html>
+      
