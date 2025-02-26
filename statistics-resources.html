@@ -9,16 +9,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
             background-color: #f4f4f4;
         }
 
         #header {
-            margin-bottom: 20px; /* 헤더와 콘텐츠 사이 간격 */
+            margin-bottom: 20px;
         }
 
         main {
-            max-width: 900px;
+            max-width: 1280px;
             margin: 2rem auto;
             padding: 1rem;
             background-color: #fff;
@@ -26,11 +25,12 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
+        /* 🔥 필터 영역 (카테고리 왼쪽, 검색창 오른쪽) */
         .filters {
-            margin-bottom: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 20px;
         }
 
         .filters select, .filters input {
@@ -40,21 +40,42 @@
             border-radius: 4px;
         }
 
+        .category-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 🔥 카테고리 스타일 */
+        .category-header {
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+
+        .category-header:hover {
+            background-color: #0056b3;
+        }
+
         .resource-list {
             list-style: none;
             padding: 0;
+            margin-top: 5px;
+            display: none; /* 기본적으로 숨김 */
         }
 
         .resource-list li {
-            margin: 10px 0;
             padding: 10px 15px;
             background-color: #f9f9f9;
             border: 1px solid #ddd;
             border-radius: 5px;
             transition: transform 0.2s, box-shadow 0.2s;
-            white-space: nowrap; /* 텍스트 줄바꿈 방지 */
-            overflow: hidden; /* 넘치는 텍스트 숨김 */
-            text-overflow: ellipsis; /* 넘치는 텍스트에 '...' 추가 */
+            margin-top: 5px;
         }
 
         .resource-list li:hover {
@@ -66,11 +87,19 @@
             text-decoration: none;
             color: #007BFF;
             font-weight: bold;
-            margin-right: 10px;
         }
 
-        .resource-list span {
-            color: #555;
+        /* 🔥 반응형 조정 */
+        @media (max-width: 768px) {
+            .filters {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .filters select, .filters input {
+                width: 100%;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -79,16 +108,16 @@
     <div id="header"></div>
 
     <main>
-        <!-- 필터 -->
+        <!-- 🔥 필터: 카테고리 왼쪽, 검색 오른쪽 -->
         <div class="filters">
-            <input type="text" id="searchInput" placeholder="Search resources...">
             <select id="categoryFilter">
                 <option value="All">All Categories</option>
             </select>
+            <input type="text" id="searchInput" placeholder="Search resources...">
         </div>
 
-        <!-- JSON 데이터로 채워질 목록 -->
-        <ul class="resource-list" id="resourceList"></ul>
+        <!-- 🔥 통계 목록 -->
+        <div id="resourceContainer"></div>
     </main>
 
     <script>
@@ -100,60 +129,86 @@
             })
             .catch(error => console.error("Error loading header:", error));
 
-        // JSON 파일 불러오기 및 렌더링
+        // JSON 파일 불러오기 및 데이터 렌더링
         async function loadResources() {
             try {
                 const response = await fetch('statistics-resources.json'); // JSON 파일 경로
                 const resources = await response.json();
-                const resourceList = document.getElementById('resourceList');
+                const resourceContainer = document.getElementById('resourceContainer');
                 const searchInput = document.getElementById('searchInput');
                 const categoryFilter = document.getElementById('categoryFilter');
 
-                // 카테고리 필터 초기화
+                // 🔥 카테고리 필터 초기화
                 initializeCategoryFilter(resources);
 
-                // 초기 렌더링
-                renderResources(resources);
+                // 🔥 초기 렌더링 (카테고리만 표시)
+                renderCategories(resources);
 
                 // 검색 및 필터 이벤트 추가
-                searchInput.addEventListener('input', () => filterAndRender());
-                categoryFilter.addEventListener('change', () => filterAndRender());
+                searchInput.addEventListener('input', () => filterAndRender(resources));
+                categoryFilter.addEventListener('change', () => filterAndRender(resources));
 
-                // 필터 및 검색 적용 함수
-                function filterAndRender() {
+                // 🔥 카테고리 목록 렌더링
+                function renderCategories(data) {
+                    resourceContainer.innerHTML = '';
+
+                    // 카테고리 그룹화
+                    const groupedResources = {};
+                    data.forEach(resource => {
+                        if (!groupedResources[resource.category_en]) {
+                            groupedResources[resource.category_en] = [];
+                        }
+                        groupedResources[resource.category_en].push(resource);
+                    });
+
+                    // 카테고리별 렌더링
+                    Object.keys(groupedResources).forEach(category => {
+                        const categoryDiv = document.createElement('div');
+                        categoryDiv.classList.add('category-list');
+
+                        // 카테고리 헤더 추가
+                        const categoryHeader = document.createElement('div');
+                        categoryHeader.classList.add('category-header');
+                        categoryHeader.textContent = category;
+                        categoryHeader.addEventListener('click', () => {
+                            const list = categoryDiv.querySelector('.resource-list');
+                            list.style.display = list.style.display === 'none' ? 'block' : 'none';
+                        });
+
+                        // 리소스 목록 추가
+                        const resourceList = document.createElement('ul');
+                        resourceList.classList.add('resource-list');
+                        resourceList.style.display = 'none';
+
+                        groupedResources[category].forEach(resource => {
+                            const li = document.createElement('li');
+                            li.innerHTML = `<a href="${resource.link}" target="_blank">${resource.name_en}</a> <span>(${resource.source_en})</span>`;
+                            resourceList.appendChild(li);
+                        });
+
+                        categoryDiv.appendChild(categoryHeader);
+                        categoryDiv.appendChild(resourceList);
+                        resourceContainer.appendChild(categoryDiv);
+                    });
+                }
+
+                // 🔥 검색 및 필터 적용
+                function filterAndRender(data) {
                     const query = searchInput.value.toLowerCase();
                     const selectedCategory = categoryFilter.value;
 
-                    const filteredResources = resources.filter(resource => {
+                    // 검색어 및 카테고리 필터 적용
+                    const filteredResources = data.filter(resource => {
                         const matchesSearch = resource.name_en.toLowerCase().includes(query) ||
-                            resource.category_en.toLowerCase().includes(query) ||
                             resource.source_en.toLowerCase().includes(query);
                         const matchesCategory = selectedCategory === 'All' || resource.category_en === selectedCategory;
                         return matchesSearch && matchesCategory;
                     });
 
-                    renderResources(filteredResources);
+                    renderCategories(filteredResources);
                 }
 
-                // 데이터 렌더링 함수
-                function renderResources(data) {
-                    resourceList.innerHTML = '';
-                    if (data.length === 0) {
-                        resourceList.innerHTML = '<li>No results found.</li>';
-                        return;
-                    }
-
-                    data.forEach(resource => {
-                        const li = document.createElement('li');
-                        li.innerHTML = `
-                            <a href="${resource.link}" target="_blank">${resource.name_en}</a>
-                            <span>(${resource.category_en}, ${resource.source_en})</span>
-                        `;
-                        resourceList.appendChild(li);
-                    });
-                }
-
-                // 카테고리 필터 초기화 함수
+                // 🔥 카테고리 필터 초기화
                 function initializeCategoryFilter(data) {
                     const categories = [...new Set(data.map(resource => resource.category_en))];
                     categories.sort().forEach(category => {
