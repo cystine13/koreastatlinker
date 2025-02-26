@@ -12,16 +12,22 @@
             background-color: #f9f9f9;
         }
 
+        /* 🔥 컨테이너 설정 */
         .container {
             max-width: 1280px;
             margin: 0 auto;
             padding: 20px;
         }
 
-        /* 🔥 검색 & 버튼 그룹 */
+        /* 🔥 헤더 스타일 */
+        #header {
+            margin-bottom: 20px;
+        }
+
+        /* 🔥 검색 & 모두 펼치기/닫기 버튼 */
         .top-controls {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
             gap: 10px;
             margin-bottom: 10px;
@@ -32,7 +38,7 @@
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            width: 200px;
+            width: 250px;
         }
 
         .top-controls button {
@@ -50,27 +56,33 @@
             background-color: #0056b3;
         }
 
-        /* 🔥 카테고리 버튼 */
-        .category-buttons {
+        /* 🔥 카테고리 카드 (한 줄) */
+        .category-cards {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 10px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
-        .category-buttons button {
-            padding: 10px 15px;
+        .category-cards .category-card {
+            padding: 12px 20px;
             font-size: 14px;
             cursor: pointer;
             border: none;
             background-color: #f1f1f1;
             border-radius: 4px;
-            transition: background 0.3s;
+            transition: background 0.3s, transform 0.2s;
         }
 
-        .category-buttons button:hover {
+        .category-cards .category-card:hover {
             background-color: #ddd;
+        }
+
+        .category-cards .active {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
         }
 
         /* 🔥 카테고리 제목 */
@@ -81,10 +93,11 @@
             color: white;
             padding: 10px;
             border-radius: 5px;
+            cursor: pointer;
             margin-top: 20px;
         }
 
-        /* 🔥 기관 목록 */
+        /* 🔥 기관 목록 (2개씩 배치) */
         .agency-list {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -123,59 +136,85 @@
     </style>
 </head>
 <body>
+    <!-- 🔥 헤더 추가 -->
+    <div id="header"></div>
+
     <div class="container">
         <!-- 🔥 검색 & 모두 펼치기/닫기 버튼 -->
         <div class="top-controls">
             <input type="text" id="searchBar" placeholder="Search agencies...">
-            <button id="expandAll">Expand All</button>
-            <button id="collapseAll">Collapse All</button>
+            <div>
+                <button id="expandAll">Expand All</button>
+                <button id="collapseAll">Collapse All</button>
+            </div>
         </div>
 
-        <!-- 🔥 카테고리 버튼 -->
-        <div class="category-buttons" id="categoryButtons"></div>
+        <!-- 🔥 카테고리 카드 (한 줄) -->
+        <div class="category-cards" id="categoryCards"></div>
 
         <!-- 🔥 기관 목록 -->
         <div id="agencyContainer"></div>
     </div>
 
     <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading header:", error));
+
         fetch('agencies.json')
             .then(response => response.json())
             .then(data => {
                 const agencyContainer = document.getElementById('agencyContainer');
-                const categoryButtons = document.getElementById('categoryButtons');
+                const categoryCards = document.getElementById('categoryCards');
                 const searchBar = document.getElementById('searchBar');
                 const expandAllBtn = document.getElementById('expandAll');
                 const collapseAllBtn = document.getElementById('collapseAll');
 
-                // 카테고리 그룹화
+                // 🔥 카테고리 그룹화
                 const categories = [...new Set(data.map(a => a.Category))].sort();
                 const agencyData = categories.reduce((acc, category) => {
                     acc[category] = data.filter(a => a.Category === category);
                     return acc;
                 }, {});
 
-                // 🔥 카테고리 버튼 생성
+                // 🔥 카테고리 카드 생성
                 categories.forEach(category => {
                     const btn = document.createElement('button');
                     btn.textContent = category;
-                    btn.onclick = () => toggleCategory(category);
-                    categoryButtons.appendChild(btn);
+                    btn.className = "category-card";
+                    btn.onclick = () => selectCategory(category, btn);
+                    categoryCards.appendChild(btn);
                 });
 
-                // 🔥 카테고리별 기관 표시
+                // 🔥 카테고리별 섹션 생성 (초기 상태: 카테고리만 표시, 기관 숨김)
                 categories.forEach(category => {
                     const section = document.createElement('div');
                     section.classList.add('category-section');
                     section.dataset.category = category;
                     section.innerHTML = `
-                        <div class="category-title">${category}</div>
-                        <div class="agency-list"></div>
+                        <div class="category-title" onclick="toggleCategory('${category}')">${category}</div>
+                        <div class="agency-list" style="display: none;"></div>
                     `;
                     agencyContainer.appendChild(section);
-                    updateAgencyList(section.querySelector('.agency-list'), agencyData[category]);
-                    section.style.display = 'none'; // 기본적으로 숨김
                 });
+
+                // 🔥 카테고리 선택 시 해당 목록만 표시
+                function selectCategory(category, button) {
+                    document.querySelectorAll('.category-card').forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    document.querySelectorAll('.category-section').forEach(section => {
+                        section.style.display = (section.dataset.category === category) ? 'block' : 'none';
+                        const agencyList = section.querySelector('.agency-list');
+                        if (section.dataset.category === category) {
+                            updateAgencyList(agencyList, agencyData[category]);
+                            agencyList.style.display = 'grid';
+                        }
+                    });
+                }
 
                 // 🔥 기관 목록 업데이트
                 function updateAgencyList(container, agencies) {
@@ -190,41 +229,22 @@
                     });
                 }
 
-                // 🔥 카테고리 토글
-                function toggleCategory(category) {
+                // 🔥 카테고리 토글 (펼치기/닫기)
+                window.toggleCategory = function(category) {
                     const section = document.querySelector(`.category-section[data-category="${category}"]`);
-                    section.style.display = (section.style.display === 'none') ? 'block' : 'none';
+                    const agencyList = section.querySelector('.agency-list');
+                    agencyList.style.display = (agencyList.style.display === 'none') ? 'grid' : 'none';
                 }
 
                 // 🔥 모두 펼치기 / 닫기
                 expandAllBtn.addEventListener('click', () => {
-                    document.querySelectorAll('.category-section').forEach(section => {
-                        section.style.display = 'block';
-                    });
+                    document.querySelectorAll('.agency-list').forEach(list => list.style.display = 'grid');
                 });
 
                 collapseAllBtn.addEventListener('click', () => {
-                    document.querySelectorAll('.category-section').forEach(section => {
-                        section.style.display = 'none';
-                    });
+                    document.querySelectorAll('.agency-list').forEach(list => list.style.display = 'none');
                 });
 
-                // 🔥 검색 기능
-                searchBar.addEventListener('input', function () {
-                    const query = this.value.toLowerCase();
-                    document.querySelectorAll('.category-section').forEach(section => {
-                        const agencies = section.querySelectorAll('.agency-card');
-                        let hasMatch = false;
-
-                        agencies.forEach(agency => {
-                            const matches = agency.textContent.toLowerCase().includes(query);
-                            agency.style.display = matches ? 'block' : 'none';
-                            if (matches) hasMatch = true;
-                        });
-
-                        section.style.display = hasMatch ? 'block' : 'none';
-                    });
-                });
             })
             .catch(error => console.error('Error loading JSON:', error));
     </script>
