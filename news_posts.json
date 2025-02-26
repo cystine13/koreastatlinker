@@ -1,5 +1,37 @@
 [
     {
+        "title_kr": "낚시어선어획량조사 공표(2024년 12월 자료)",
+        "title_en": "Announcement of fishing fish catch survey (December 2024 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=AFA45ECDB54618E60F4A7D1B00C41908",
+        "date": "2025-02-25",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "입항선박톤급별통계 공표(2025년 1월 자료)",
+        "title_en": "Announcement of statistics by ship ton class (January 2025 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=0C4643208D025C29BAE632EF09EA6198",
+        "date": "2025-02-25",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "화물수송실적 공표(2025년 1월 자료)",
+        "title_en": "Announcement of freight forwarding performance (January 2025 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=CBF1B70A036A3B4898E9B9BA528BA77D",
+        "date": "2025-02-25",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "등록선박통계 공표(2025년 1월 자료)",
+        "title_en": "Publication of registered ship statistics (January 2025 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=8F071EA5B7F0AF0764B7B6415CC15439",
+        "date": "2025-02-25",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
         "title_kr": "2025년 1월 국내인구이동 결과",
         "title_en": "Results of domestic population movements in January 2025",
         "link": "https://kostat.go.kr/board.es?mid=a10301020400&act=view&bid=205&list_no=435213",
