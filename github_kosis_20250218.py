@@ -52,7 +52,21 @@ items = [
     {"orgId": "101", "tblId": "DT_1B34E01", "objL1": "J06", "objL2": "0", "objL3": "00", "itmId": "T5", "prdSe": "Y", "name_en": "Suicide Rate (per 100k Persons)", "name_kr": "자살률 (십만명당)" , "decimal_places": 1,
      "category_en": "Health & Welfare", "category_kr": "보건, 복지", "source_en": "Statistics Korea, Causes of Death Statistics", "source_kr": "통계청, 사망원인통계"},
     {"orgId": "117", "tblId": "DT_11714_N001", "itmId": "TT", "objL1" : "00", "prdSe": "Y", "name_en": "Recipient of National Basic Livelihood (person)", "name_kr": "국민기초생활수급자수 (명)", "decimal_places": 0,
-     "category_en": "Health & Welfare", "category_kr": "보건,복지", "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics", "source_kr": "보건복지부, 국민기초생활보장수급자현황"}    
+     "category_en": "Health & Welfare", "category_kr": "보건,복지", "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics", "source_kr": "보건복지부, 국민기초생활보장수급자현황"},
+    {"orgId": "350", "tblId": "TX_35003_A003", "itmId": "16350AAB7", "objL1" : "11101HJG00", "objL2" : "15350AB000", "prdSe": "Y", "name_en": "Medical Personnel (person)", "name_kr" : "의료인력수 (명)", "decimal_places": 0,
+     "category_en": "Health & Welfare", "category_kr": "보건,복지", "source_en": "National Health Insurance Service, Medical Service Usage Statistics by Region", "source_kr": "국민건강보험공단, 지역별의료이용통계"}, 
+    {"orgId": "117", "tblId": "DT_117N_A00023", "itmId": "16117ac000101", "objL1" : "15117AC000101", "objL2" : "11101SSB20", "objL3" : "15117AC001101", "prdSe": "Y", "name_en": "Cancers (person)", "name_kr" : "암발생자수 (명)", "decimal_places": 0,
+    "category_en": "Health & Welfare", "category_kr": "보건,복지", "source_en": "Ministry of Health and Welfare, Cancer Registration Statistics", "source_kr": "보건복지부, 암등록통계"}, 
+    {"orgId": "177", "tblId": "DT_11702_N012", "itmId": "RATIO", "objL1" : "1", "objL2" : "103", "prdSe": "Y", "name_en": "Monthly Alcohol Drinking (%)", "name_kr" : "음주율 (%)", "decimal_places": 1,
+    "category_en": "Health & Welfare", "category_kr": "보건,복지", "source_en": "Korea Disease Contrl and Prevention Agency, Korea National Health and Nutrition Examination Survey", "source_kr": "질병관리청, 국민건강영양조사"}, 
+    {"orgId": "101", "tblId": "DT_1B34E01", "objL1" : "0", "objL2" : "0", "objL3" : "00", "itmId": "T1", "prdSe": "Y", "name_en": "Mortality rate (per 100 thousand person)", "name_kr" : "사망률 (십만명당)", "decimal_places": 0,
+    "category_en": "Health & Welfare", "category_kr": "보건,복지", "source_en": "Statistics Korea, Causes of Death Statistics", "source_kr": "통계청, 사망원인통계"}, 
+    {"orgId": "117", "tblId": "DT_11761_N005", "itmId": "00", "objL1" : "00", "objL2" : "CHUT0", "objL3" : "TT", "prdSe": "Y", "name_en": "Number of The Registered Disabled (person)", "name_kr" : "장애인인구 (명)", "decimal_places": 0,
+     "category_en": "Health & Welfare", "category_kr": "보건,복지", "source_en": "Ministry of Health and Welfare, Registered Disabled Persons", "source_kr": "보건복지부, 장애인현황"}, 
+    {"orgId": "350", "tblId": "DT_35007_N130", "itmId": "001", "objL1" : "15350AC400Z1", "objL2" : "001", "objL3" : "001", "prdSe": "Y", "name_en": "Average Height (㎝)", "name_kr" : "평균신장 (㎝)", "decimal_places": 2,
+     "category_en": "Health & Welfare", "category_kr": "보건,복지", "source_en": "National Health Insurance Service, National Health Screening Statistics", "source_kr": "국민건강보험공단, 건강검진통계"}, 
+    {"orgId": "112", "tblId": "DT_15407_NN001", "itmId": "A", "objL1" : "01", "prdSe": "Y", "name_en": "Child Care Center (Place)", "name_kr" : "어린이집수 (개소)", "decimal_places": 0,
+    "category_en": "Health & Welfare", "category_kr": "보건,복지", "source_en": "Ministry of Education, Statistics on Childcare Facilities and Users", "source_kr": "교육부, 어린이집및이용자통계"}    
 ]
 
 # 📌 데이터를 저장할 딕셔너리 (연도별로 정리)
