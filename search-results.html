@@ -9,25 +9,32 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
             background-color: #f4f4f4;
         }
+
+        #header {
+            margin-bottom: 20px; /* 헤더와 콘텐츠 간격 */
+        }
+
         .results-container {
-            max-width: 800px;
+            max-width: 1280px;
             margin: 20px auto;
             padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         .result-section {
             margin-bottom: 30px;
         }
+
         .result-section h2 {
             margin-bottom: 10px;
             border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
         }
+
         .result-item {
             display: flex;
             justify-content: space-between;
@@ -35,39 +42,42 @@
             border-bottom: 1px solid #ddd;
             padding: 10px 0;
         }
+
         .result-item:last-child {
             border-bottom: none;
         }
+
         .result-item h3 {
             margin: 0;
             flex: 1;
         }
+
         .result-item h3 a {
             color: #007BFF;
             text-decoration: none;
         }
+
         .result-item h3 a:hover {
             text-decoration: underline;
         }
+
         .result-item p {
             margin: 0;
             color: #555;
             flex: 0 0 auto;
             margin-left: 20px;
         }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
     </style>
 </head>
 <body>
-    <!-- 헤더 및 네비게이션 -->
-    <header>
-        <h1 onclick="location.href='index.html'">KoreaStatLinker</h1>
-        <nav>
-            <a href="statistics-news.html">Statistics News</a>
-            <a href="authoring-agencies.html">Authoring Agencies</a>
-            <a href="statistics-resources.html">Statistics Resources</a>
-            <a href="k-indicator.html">K Indicator</a>
-        </nav>
-    </header>
+    <!-- 동적 헤더 로드 -->
+    <div id="header"></div>
 
     <div class="results-container" id="results">
         <!-- 검색 결과가 동적으로 추가됩니다 -->
@@ -78,9 +88,15 @@
     </footer>
 
     <script>
+        // 헤더 동적 로드
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => { document.getElementById("header").innerHTML = data; })
+            .catch(error => console.error("Error loading header:", error));
+
         // 검색어 가져오기
         const urlParams = new URLSearchParams(window.location.search);
-        const query = urlParams.get("query").toLowerCase();
+        const query = urlParams.get("query") ? urlParams.get("query").toLowerCase() : "";
 
         // JSON 파일 경로
         const jsonFiles = {
@@ -125,23 +141,28 @@
 
             // 각 JSON 파일 처리
             for (const [key, file] of Object.entries(jsonFiles)) {
-                const response = await fetch(file);
-                const data = await response.json();
+                try {
+                    const response = await fetch(file);
+                    if (!response.ok) throw new Error(`Failed to fetch ${file}`);
+                    const data = await response.json();
 
-                // 검색 결과 필터링
-                const results = data.filter(item => {
-                    return Object.values(item).some(value => 
-                        typeof value === "string" && value.toLowerCase().includes(query)
-                    );
-                });
+                    // 검색 결과 필터링
+                    const results = data.filter(item => {
+                        return Object.values(item).some(value => 
+                            typeof value === "string" && value.toLowerCase().includes(query)
+                        );
+                    });
 
-                // 섹션별로 결과 표시
-                let sectionTitle;
-                if (key === "agencies") sectionTitle = "Authoring Agencies";
-                else if (key === "news") sectionTitle = "Statistics News";
-                else if (key === "resources") sectionTitle = "Statistics Resources";
+                    // 섹션별로 결과 표시
+                    let sectionTitle;
+                    if (key === "agencies") sectionTitle = "Authoring Agencies";
+                    else if (key === "news") sectionTitle = "Statistics News";
+                    else if (key === "resources") sectionTitle = "Statistics Resources";
 
-                displayResults(sectionTitle, results, resultsContainer);
+                    displayResults(sectionTitle, results, resultsContainer);
+                } catch (error) {
+                    console.error(`Error loading ${file}:`, error);
+                }
             }
         }
 
