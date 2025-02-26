@@ -22,7 +22,7 @@
             padding: 20px;
         }
 
-        /* 🔥 상단 컨트롤: 서치 + 버튼 */
+        /* 🔥 상단 컨트롤: 서치 + 펼치기 버튼 */
         .top-controls {
             display: flex;
             justify-content: flex-end;
@@ -32,16 +32,16 @@
         }
 
         .top-controls input {
-            padding: 10px;
-            font-size: 16px;
+            padding: 8px;
+            font-size: 14px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            width: 220px;
+            width: 200px;
         }
 
         .top-controls button {
-            padding: 10px 15px;
-            font-size: 16px;
+            padding: 8px 12px;
+            font-size: 14px;
             border: none;
             cursor: pointer;
             border-radius: 4px;
@@ -53,19 +53,17 @@
             background-color: #0056b3;
         }
 
-        /* 🔥 카테고리 카드 (한 줄 유지) */
+        /* 🔥 카테고리 카드 (한 줄, 스크롤 제거) */
         .category-list {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            flex-wrap: wrap;
             gap: 8px;
-            overflow-x: auto;
-            white-space: nowrap;
             margin-bottom: 20px;
         }
 
         .category-card {
-            flex: 1;
-            padding: 10px;
+            padding: 8px 15px;
             text-align: center;
             border: 1px solid #ccc;
             border-radius: 6px;
@@ -73,6 +71,7 @@
             font-size: 14px;
             background-color: white;
             transition: background 0.2s, transform 0.2s;
+            white-space: nowrap;
         }
 
         .category-card:hover, .category-card.active {
@@ -81,35 +80,34 @@
             transform: scale(1.05);
         }
 
-        /* 🔥 기관 목록 (1줄에 2개씩) */
-        .agency-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-
+        /* 🔥 기관 목록 */
         .agency-group {
-            display: flex;
-            flex-direction: column;
+            margin-bottom: 20px;
         }
 
         .agency-category {
             font-weight: bold;
             font-size: 18px;
-            padding: 10px;
+            padding: 12px;
             background-color: #ddd;
             border-radius: 6px;
             cursor: pointer;
             text-align: center;
-            margin-bottom: 5px;
         }
 
         .agency-category:hover {
             background-color: #bbb;
         }
 
+        .agency-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding-top: 10px;
+        }
+
         .agency-item {
-            padding: 15px;
+            padding: 12px;
             background-color: white;
             border: 1px solid #ddd;
             border-radius: 6px;
@@ -136,7 +134,7 @@
             }
 
             .category-list {
-                flex-wrap: wrap;
+                justify-content: flex-start;
             }
         }
     </style>
@@ -152,11 +150,11 @@
             <button id="collapseAll">Collapse All</button>
         </div>
 
-        <!-- 🔥 카테고리 카드 (한 줄 유지) -->
+        <!-- 🔥 카테고리 카드 -->
         <div class="category-list" id="categoryList"></div>
 
         <!-- 🔥 기관 목록 -->
-        <div class="agency-list" id="agencyList"></div>
+        <div id="agencyContainer"></div>
     </div>
 
     <footer>
@@ -173,7 +171,7 @@
             .then(response => response.json())
             .then(data => {
                 const categoryList = document.getElementById('categoryList');
-                const agencyList = document.getElementById('agencyList');
+                const agencyContainer = document.getElementById('agencyContainer');
                 const searchBar = document.getElementById('searchBar');
                 const expandAllBtn = document.getElementById('expandAll');
                 const collapseAllBtn = document.getElementById('collapseAll');
@@ -193,7 +191,7 @@
 
                 // 🔥 기관 목록 생성
                 function renderAgencies() {
-                    agencyList.innerHTML = '';
+                    agencyContainer.innerHTML = '';
                     allCategories.forEach(category => {
                         if (!activeCategories.has(category)) return;
 
@@ -207,15 +205,19 @@
                         group.appendChild(catHeader);
 
                         const filteredAgencies = data.filter(a => a.Category === category);
+                        const agencyList = document.createElement('div');
+                        agencyList.className = 'agency-list';
+
                         filteredAgencies.forEach(agency => {
                             const item = document.createElement('div');
                             item.className = 'agency-item';
                             item.textContent = agency.Name;
                             item.addEventListener('click', () => window.open(agency.Website, '_blank'));
-                            group.appendChild(item);
+                            agencyList.appendChild(item);
                         });
 
-                        agencyList.appendChild(group);
+                        group.appendChild(agencyList);
+                        agencyContainer.appendChild(group);
                     });
 
                     // 🔥 선택된 카테고리 카드 스타일 적용
