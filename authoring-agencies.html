@@ -53,17 +53,19 @@
             background-color: #0056b3;
         }
 
-        /* 🔥 카테고리 카드 (한 줄, 스크롤 제거) */
+        /* 🔥 카테고리 카드 (한 줄, 1280px 안에 배치) */
         .category-list {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 8px;
+            flex-wrap: nowrap;  /* 한 줄 유지 */
+            overflow-x: auto; /* 넘칠 경우 가로 스크롤 */
+            gap: 5px;
             margin-bottom: 20px;
+            padding-bottom: 5px;
         }
 
         .category-card {
-            padding: 8px 15px;
+            padding: 8px 12px;
             text-align: center;
             border: 1px solid #ccc;
             border-radius: 6px;
@@ -72,6 +74,7 @@
             background-color: white;
             transition: background 0.2s, transform 0.2s;
             white-space: nowrap;
+            min-width: 120px;
         }
 
         .category-card:hover, .category-card.active {
@@ -179,7 +182,7 @@
                 let activeCategories = new Set();
                 let allCategories = [...new Set(data.map(a => a.Category))];
 
-                // 🔥 카테고리 카드 생성
+                // 🔥 카테고리 카드 생성 (한 줄 유지)
                 allCategories.forEach(category => {
                     const card = document.createElement('div');
                     card.className = 'category-card';
@@ -193,8 +196,7 @@
                 function renderAgencies() {
                     agencyContainer.innerHTML = '';
                     allCategories.forEach(category => {
-                        if (!activeCategories.has(category)) return;
-
+                        // 🔥 항상 카테고리는 보이도록
                         const group = document.createElement('div');
                         group.className = 'agency-group';
                         
@@ -203,6 +205,11 @@
                         catHeader.textContent = category;
                         catHeader.addEventListener('click', () => toggleCategory(category));
                         group.appendChild(catHeader);
+
+                        if (!activeCategories.has(category)) {
+                            agencyContainer.appendChild(group);
+                            return;
+                        }
 
                         const filteredAgencies = data.filter(a => a.Category === category);
                         const agencyList = document.createElement('div');
@@ -248,7 +255,7 @@
                     renderAgencies();
                 });
 
-                // 🔥 초기 화면 (카테고리만 보이도록)
+                // 🔥 초기 화면 (카테고리는 보이지만 기관 목록은 숨김)
                 renderAgencies();
             })
             .catch(error => console.error('Error loading JSON:', error));
