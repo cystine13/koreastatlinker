@@ -22,69 +22,122 @@
             padding: 20px;
         }
 
-        .controls {
+        /* 🔥 상단 컨트롤: 서치 + 버튼 */
+        .top-controls {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-
-        .controls input {
-            padding: 8px;
-            font-size: 14px;
-            width: 200px;
-        }
-
-        .category-cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
             gap: 10px;
             margin-bottom: 20px;
         }
 
+        .top-controls input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 220px;
+        }
+
+        .top-controls button {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        .top-controls button:hover {
+            background-color: #0056b3;
+        }
+
+        /* 🔥 카테고리 카드 (한 줄 유지) */
+        .category-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            overflow-x: auto;
+            white-space: nowrap;
+            margin-bottom: 20px;
+        }
+
         .category-card {
-            padding: 8px 16px;
-            background: #e0e0e0;
-            border-radius: 5px;
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 14px;
-            transition: background 0.3s;
+            background-color: white;
+            transition: background 0.2s, transform 0.2s;
         }
 
-        .category-card.selected {
-            background: #007bff;
+        .category-card:hover, .category-card.active {
+            background-color: #007bff;
             color: white;
-            font-weight: bold;
+            transform: scale(1.05);
         }
 
+        /* 🔥 기관 목록 (1줄에 2개씩) */
         .agency-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .agency-group {
             display: flex;
             flex-direction: column;
-            gap: 10px;
         }
 
-        .category-header {
-            font-size: 16px;
+        .agency-category {
             font-weight: bold;
-            background: #007bff;
-            color: white;
-            padding: 8px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .agency-card {
+            font-size: 18px;
             padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background: white;
-            transition: transform 0.2s;
+            background-color: #ddd;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+            margin-bottom: 5px;
         }
 
-        .agency-card:hover {
-            transform: scale(1.02);
+        .agency-category:hover {
+            background-color: #bbb;
+        }
+
+        .agency-item {
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .agency-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 🔥 반응형 (모바일에서는 한 줄 1개) */
+        @media (max-width: 768px) {
+            .agency-list {
+                grid-template-columns: 1fr;
+            }
+
+            .top-controls {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .category-list {
+                flex-wrap: wrap;
+            }
         }
     </style>
 </head>
@@ -92,15 +145,23 @@
     <div id="header"></div>
 
     <div class="container">
-        <div class="controls">
+        <!-- 🔥 상단 컨트롤 (서치 + 펼치기 버튼) -->
+        <div class="top-controls">
+            <input type="text" id="searchBar" placeholder="Search agencies...">
             <button id="expandAll">Expand All</button>
             <button id="collapseAll">Collapse All</button>
-            <input type="text" id="search" placeholder="Search agencies...">
         </div>
 
-        <div class="category-cards" id="categoryCards"></div>
+        <!-- 🔥 카테고리 카드 (한 줄 유지) -->
+        <div class="category-list" id="categoryList"></div>
+
+        <!-- 🔥 기관 목록 -->
         <div class="agency-list" id="agencyList"></div>
     </div>
+
+    <footer>
+        <p style="text-align: center;">Copyright © 2024 KoreaStatLinker. All rights reserved.</p>
+    </footer>
 
     <script>
         fetch("header.html")
@@ -108,117 +169,87 @@
             .then(data => { document.getElementById("header").innerHTML = data; })
             .catch(error => console.error("Error loading header:", error));
 
-        fetch("agencies.json")
+        fetch('agencies.json')
             .then(response => response.json())
             .then(data => {
-                const categoryCards = document.getElementById("categoryCards");
-                const agencyList = document.getElementById("agencyList");
-                const searchInput = document.getElementById("search");
-                const expandAllBtn = document.getElementById("expandAll");
-                const collapseAllBtn = document.getElementById("collapseAll");
+                const categoryList = document.getElementById('categoryList');
+                const agencyList = document.getElementById('agencyList');
+                const searchBar = document.getElementById('searchBar');
+                const expandAllBtn = document.getElementById('expandAll');
+                const collapseAllBtn = document.getElementById('collapseAll');
 
-                let selectedCategories = new Set();
-                let expandedCategories = new Set();
+                let activeCategories = new Set();
+                let allCategories = [...new Set(data.map(a => a.Category))];
 
-                function renderCategories() {
-                    categoryCards.innerHTML = "";
-                    const categories = [...new Set(data.map(agency => agency.Category))];
-                    categories.forEach(category => {
-                        const card = document.createElement("div");
-                        card.className = "category-card";
-                        card.textContent = category;
-                        if (selectedCategories.has(category)) {
-                            card.classList.add("selected");
-                        }
-                        card.addEventListener("click", () => {
-                            if (selectedCategories.has(category)) {
-                                selectedCategories.delete(category);
-                                expandedCategories.delete(category);
-                            } else {
-                                selectedCategories.add(category);
-                                expandedCategories.add(category);
-                            }
-                            renderCategories();
-                            renderAgencies();
-                        });
-                        categoryCards.appendChild(card);
-                    });
-                }
+                // 🔥 카테고리 카드 생성
+                allCategories.forEach(category => {
+                    const card = document.createElement('div');
+                    card.className = 'category-card';
+                    card.textContent = category;
+                    card.dataset.category = category;
+                    card.addEventListener('click', () => toggleCategory(category));
+                    categoryList.appendChild(card);
+                });
 
+                // 🔥 기관 목록 생성
                 function renderAgencies() {
-                    agencyList.innerHTML = "";
-                    const filteredData = data.filter(agency => 
-                        selectedCategories.size === 0 || selectedCategories.has(agency.Category)
-                    );
-                    
-                    const groupedByCategory = {};
-                    filteredData.forEach(agency => {
-                        if (!groupedByCategory[agency.Category]) {
-                            groupedByCategory[agency.Category] = [];
-                        }
-                        groupedByCategory[agency.Category].push(agency);
+                    agencyList.innerHTML = '';
+                    allCategories.forEach(category => {
+                        if (!activeCategories.has(category)) return;
+
+                        const group = document.createElement('div');
+                        group.className = 'agency-group';
+                        
+                        const catHeader = document.createElement('div');
+                        catHeader.className = 'agency-category';
+                        catHeader.textContent = category;
+                        catHeader.addEventListener('click', () => toggleCategory(category));
+                        group.appendChild(catHeader);
+
+                        const filteredAgencies = data.filter(a => a.Category === category);
+                        filteredAgencies.forEach(agency => {
+                            const item = document.createElement('div');
+                            item.className = 'agency-item';
+                            item.textContent = agency.Name;
+                            item.addEventListener('click', () => window.open(agency.Website, '_blank'));
+                            group.appendChild(item);
+                        });
+
+                        agencyList.appendChild(group);
                     });
 
-                    Object.entries(groupedByCategory).forEach(([category, agencies]) => {
-                        const categoryHeader = document.createElement("div");
-                        categoryHeader.className = "category-header";
-                        categoryHeader.textContent = category;
-                        categoryHeader.addEventListener("click", () => {
-                            if (expandedCategories.has(category)) {
-                                expandedCategories.delete(category);
-                                selectedCategories.delete(category);
-                            } else {
-                                expandedCategories.add(category);
-                                selectedCategories.add(category);
-                            }
-                            renderCategories();
-                            renderAgencies();
-                        });
-                        agencyList.appendChild(categoryHeader);
-                        
-                        if (expandedCategories.has(category)) {
-                            agencies.forEach(agency => {
-                                const card = document.createElement("div");
-                                card.className = "agency-card";
-                                card.textContent = agency.Name;
-                                agencyList.appendChild(card);
-                            });
-                        }
+                    // 🔥 선택된 카테고리 카드 스타일 적용
+                    document.querySelectorAll('.category-card').forEach(card => {
+                        card.classList.toggle('active', activeCategories.has(card.dataset.category));
                     });
                 }
 
-                searchInput.addEventListener("input", () => {
-                    const searchTerm = searchInput.value.toLowerCase();
-                    selectedCategories.clear();
-                    expandedCategories.clear();
-                    data.forEach(agency => {
-                        if (agency.Name.toLowerCase().includes(searchTerm)) {
-                            selectedCategories.add(agency.Category);
-                            expandedCategories.add(agency.Category);
-                        }
-                    });
-                    renderCategories();
+                // 🔥 카테고리 토글 기능
+                function toggleCategory(category) {
+                    if (activeCategories.has(category)) {
+                        activeCategories.delete(category);
+                    } else {
+                        activeCategories.add(category);
+                    }
+                    renderAgencies();
+                }
+
+                // 🔥 모두 펼치기
+                expandAllBtn.addEventListener('click', () => {
+                    activeCategories = new Set(allCategories);
                     renderAgencies();
                 });
 
-                expandAllBtn.addEventListener("click", () => {
-                    expandedCategories = new Set(data.map(agency => agency.Category));
-                    selectedCategories = new Set(expandedCategories);
-                    renderCategories();
+                // 🔥 모두 닫기
+                collapseAllBtn.addEventListener('click', () => {
+                    activeCategories.clear();
                     renderAgencies();
                 });
 
-                collapseAllBtn.addEventListener("click", () => {
-                    expandedCategories.clear();
-                    selectedCategories.clear();
-                    renderCategories();
-                    renderAgencies();
-                });
-
-                renderCategories();
+                // 🔥 초기 화면 (카테고리만 보이도록)
                 renderAgencies();
             })
-            .catch(error => console.error("Error loading JSON:", error));
+            .catch(error => console.error('Error loading JSON:', error));
     </script>
 </body>
 </html>
