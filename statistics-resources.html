@@ -25,19 +25,32 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        /* 🔥 필터 영역 (카테고리 왼쪽, 검색창 오른쪽) */
+        /* 🔥 필터 영역 (검색창 > 카테고리 > 전체 펼치기 > 전체 닫기) */
         .filters {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
+            gap: 10px;
             margin-bottom: 20px;
         }
 
-        .filters select, .filters input {
+        .filters select, .filters input, .filters button {
             padding: 10px;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 4px;
+        }
+
+        .filters button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background 0.2s;
+        }
+
+        .filters button:hover {
+            background-color: #0056b3;
         }
 
         .category-list {
@@ -96,7 +109,7 @@
                 align-items: flex-start;
             }
 
-            .filters select, .filters input {
+            .filters select, .filters input, .filters button {
                 width: 100%;
                 margin-top: 10px;
             }
@@ -108,12 +121,12 @@
     <div id="header"></div>
 
     <main>
-        <!-- 🔥 필터: 카테고리 왼쪽, 검색 오른쪽 -->
+        <!-- 🔥 필터: 검색창 > 카테고리 > 전체 펼치기 > 전체 닫기 -->
         <div class="filters">
-            <select id="categoryFilter">
-                <option value="All">All Categories</option>
-            </select>
             <input type="text" id="searchInput" placeholder="Search resources...">
+            <select id="categoryFilter"></select>
+            <button id="expandAll">Expand All</button>
+            <button id="collapseAll">Collapse All</button>
         </div>
 
         <!-- 🔥 통계 목록 -->
@@ -137,6 +150,8 @@
                 const resourceContainer = document.getElementById('resourceContainer');
                 const searchInput = document.getElementById('searchInput');
                 const categoryFilter = document.getElementById('categoryFilter');
+                const expandAllBtn = document.getElementById('expandAll');
+                const collapseAllBtn = document.getElementById('collapseAll');
 
                 // 🔥 카테고리 필터 초기화
                 initializeCategoryFilter(resources);
@@ -147,6 +162,8 @@
                 // 검색 및 필터 이벤트 추가
                 searchInput.addEventListener('input', () => filterAndRender(resources));
                 categoryFilter.addEventListener('change', () => filterAndRender(resources));
+                expandAllBtn.addEventListener('click', expandAllCategories);
+                collapseAllBtn.addEventListener('click', collapseAllCategories);
 
                 // 🔥 카테고리 목록 렌더링
                 function renderCategories(data) {
@@ -201,8 +218,7 @@
                     const filteredResources = data.filter(resource => {
                         const matchesSearch = resource.name_en.toLowerCase().includes(query) ||
                             resource.source_en.toLowerCase().includes(query);
-                        const matchesCategory = selectedCategory === 'All' || resource.category_en === selectedCategory;
-                        return matchesSearch && matchesCategory;
+                        return matchesSearch && (selectedCategory === resource.category_en);
                     });
 
                     renderCategories(filteredResources);
@@ -217,6 +233,16 @@
                         option.textContent = category;
                         categoryFilter.appendChild(option);
                     });
+                }
+
+                // 🔥 전체 펼치기 기능
+                function expandAllCategories() {
+                    document.querySelectorAll('.resource-list').forEach(list => list.style.display = 'block');
+                }
+
+                // 🔥 전체 닫기 기능
+                function collapseAllCategories() {
+                    document.querySelectorAll('.resource-list').forEach(list => list.style.display = 'none');
                 }
             } catch (error) {
                 console.error('Error loading resources:', error);
