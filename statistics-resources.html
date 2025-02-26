@@ -25,7 +25,7 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        /* 🔥 필터 영역 (검색창 > 카테고리 > 전체 펼치기 > 전체 닫기) */
+        /* 🔥 필터 영역 */
         .filters {
             display: flex;
             justify-content: flex-end;
@@ -121,10 +121,12 @@
     <div id="header"></div>
 
     <main>
-        <!-- 🔥 필터: 검색창 > 카테고리 > 전체 펼치기 > 전체 닫기 -->
+        <!-- 🔥 필터 -->
         <div class="filters">
             <input type="text" id="searchInput" placeholder="Search resources...">
-            <select id="categoryFilter"></select>
+            <select id="categoryFilter">
+                <option value="">Category</option> <!-- 기본값 설정 -->
+            </select>
             <button id="expandAll">Expand All</button>
             <button id="collapseAll">Collapse All</button>
         </div>
@@ -145,7 +147,7 @@
         // JSON 파일 불러오기 및 데이터 렌더링
         async function loadResources() {
             try {
-                const response = await fetch('statistics-resources.json'); // JSON 파일 경로
+                const response = await fetch('statistics-resources.json');
                 const resources = await response.json();
                 const resourceContainer = document.getElementById('resourceContainer');
                 const searchInput = document.getElementById('searchInput');
@@ -161,7 +163,10 @@
 
                 // 검색 및 필터 이벤트 추가
                 searchInput.addEventListener('input', () => filterAndRender(resources));
-                categoryFilter.addEventListener('change', () => filterAndRender(resources));
+                categoryFilter.addEventListener('change', () => {
+                    filterAndRender(resources);
+                    autoExpandCategory(categoryFilter.value);
+                });
                 expandAllBtn.addEventListener('click', expandAllCategories);
                 collapseAllBtn.addEventListener('click', collapseAllCategories);
 
@@ -169,7 +174,6 @@
                 function renderCategories(data) {
                     resourceContainer.innerHTML = '';
 
-                    // 카테고리 그룹화
                     const groupedResources = {};
                     data.forEach(resource => {
                         if (!groupedResources[resource.category_en]) {
@@ -178,7 +182,6 @@
                         groupedResources[resource.category_en].push(resource);
                     });
 
-                    // 카테고리별 렌더링
                     Object.keys(groupedResources).forEach(category => {
                         const categoryDiv = document.createElement('div');
                         categoryDiv.classList.add('category-list');
@@ -187,15 +190,16 @@
                         const categoryHeader = document.createElement('div');
                         categoryHeader.classList.add('category-header');
                         categoryHeader.textContent = category;
+                        categoryHeader.dataset.category = category;
                         categoryHeader.addEventListener('click', () => {
-                            const list = categoryDiv.querySelector('.resource-list');
-                            list.style.display = list.style.display === 'none' ? 'block' : 'none';
+                            toggleCategory(category);
                         });
 
                         // 리소스 목록 추가
                         const resourceList = document.createElement('ul');
                         resourceList.classList.add('resource-list');
                         resourceList.style.display = 'none';
+                        resourceList.dataset.category = category;
 
                         groupedResources[category].forEach(resource => {
                             const li = document.createElement('li');
@@ -214,11 +218,10 @@
                     const query = searchInput.value.toLowerCase();
                     const selectedCategory = categoryFilter.value;
 
-                    // 검색어 및 카테고리 필터 적용
                     const filteredResources = data.filter(resource => {
                         const matchesSearch = resource.name_en.toLowerCase().includes(query) ||
                             resource.source_en.toLowerCase().includes(query);
-                        return matchesSearch && (selectedCategory === resource.category_en);
+                        return matchesSearch && (selectedCategory === "" || resource.category_en === selectedCategory);
                     });
 
                     renderCategories(filteredResources);
@@ -235,6 +238,19 @@
                     });
                 }
 
+                // 🔥 선택된 카테고리 자동 펼치기
+                function autoExpandCategory(category) {
+                    document.querySelectorAll('.resource-list').forEach(list => {
+                        list.style.display = list.dataset.category === category ? 'block' : 'none';
+                    });
+                }
+
+                // 🔥 카테고리 토글
+                function toggleCategory(category) {
+                    const list = document.querySelector(`.resource-list[data-category="${category}"]`);
+                    list.style.display = list.style.display === 'none' ? 'block' : 'none';
+                }
+
                 // 🔥 전체 펼치기 기능
                 function expandAllCategories() {
                     document.querySelectorAll('.resource-list').forEach(list => list.style.display = 'block');
@@ -249,7 +265,6 @@
             }
         }
 
-        // 페이지 로드 시 실행
         window.onload = loadResources;
     </script>
 </body>
