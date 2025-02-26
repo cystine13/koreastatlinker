@@ -1,5 +1,13 @@
 [
     {
+        "title_kr": "2025년 1월 지가동향",
+        "title_en": "January 2025 Land price Trends",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-02-25",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
         "title_kr": "낚시어선어획량조사 공표(2024년 12월 자료)",
         "title_en": "Announcement of fishing fish catch survey (December 2024 data)",
         "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=AFA45ECDB54618E60F4A7D1B00C41908",
@@ -62,14 +70,6 @@
         "date": "2025-02-25",
         "source_kr": "통계청",
         "source_en": "Statistics Korea"
-    },
-    {
-        "title_kr": "2025년 1월 지가동향",
-        "title_en": "January 2025 Land price Trends",
-        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
-        "date": "2025-02-25",
-        "source_kr": "부동산 통계정보",
-        "source_en": "Real Estate Statistics Information System"
     },
     {
         "title_kr": "항만국통제통계 공표(2024년)",
