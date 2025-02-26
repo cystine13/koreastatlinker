@@ -22,38 +22,22 @@
             padding: 20px;
         }
 
-        /* 🔥 검색창 & 버튼 */
+        /* 🔥 상단 컨트롤 영역 */
         .top-controls {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             flex-wrap: wrap;
-            max-width: 1280px;
-            margin: 0 auto 10px;
-            padding: 10px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .search-container {
-            flex: 1;
-            display: flex;
-            align-items: center;
             gap: 10px;
+            margin-bottom: 15px;
         }
 
         .search-container input {
-            padding: 10px;
+            padding: 8px;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            width: 250px;
-        }
-
-        .toggle-buttons {
-            display: flex;
-            gap: 10px;
+            width: 200px;
         }
 
         .toggle-buttons button {
@@ -70,52 +54,27 @@
             background-color: #ddd;
         }
 
-        /* 🔥 카테고리 필터 */
-        .category-filter {
+        /* 🔥 카테고리 버튼 */
+        .category-buttons {
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             flex-wrap: wrap;
             gap: 10px;
-            max-width: 1280px;
-            margin: 0 auto 15px;
-            padding: 10px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
         }
 
-        .category-filter label {
-            font-weight: bold;
-        }
-
-        .category-filter select {
-            padding: 8px;
+        .category-buttons button {
+            padding: 10px 15px;
             font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        /* 🔥 아코디언 (카테고리) */
-        .accordion {
-            background-color: #007bff;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            padding: 15px;
-            width: 100%;
             border: none;
             border-radius: 6px;
-            text-align: left;
-            outline: none;
-            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
             transition: background-color 0.3s;
         }
 
-        .accordion:hover {
-            background-color: #0056b3;
-        }
-
-        .accordion.active {
+        .category-buttons button:hover, .category-buttons button.active {
             background-color: #0056b3;
         }
 
@@ -124,7 +83,6 @@
             display: none;
             grid-template-columns: repeat(2, 1fr);
             gap: 15px;
-            margin-top: 10px;
             padding: 10px;
             background: white;
             border-radius: 6px;
@@ -132,17 +90,16 @@
         }
 
         .agency-card {
-            display: flex;
-            align-items: center;
             padding: 15px;
             border: 1px solid #ddd;
             border-radius: 8px;
             background-color: white;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
             text-decoration: none;
             color: inherit;
+            display: flex;
+            align-items: center;
         }
 
         .agency-card:hover {
@@ -162,25 +119,6 @@
             .agency-list {
                 grid-template-columns: 1fr;
             }
-
-            .top-controls {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .search-container {
-                width: 100%;
-            }
-
-            .search-container input {
-                width: 100%;
-            }
-
-            .toggle-buttons {
-                width: 100%;
-                justify-content: center;
-                margin-top: 10px;
-            }
         }
     </style>
 </head>
@@ -189,29 +127,20 @@
 
     <!-- 🔥 검색 & 펼치기/접기 버튼 -->
     <div class="top-controls">
-        <div class="search-container">
-            <input type="text" id="searchBar" placeholder="Search agencies...">
-        </div>
         <div class="toggle-buttons">
             <button id="expandAll">Expand All</button>
             <button id="collapseAll">Collapse All</button>
         </div>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search agencies...">
+        </div>
     </div>
 
-    <!-- 🔥 카테고리 필터 -->
-    <div class="category-filter">
-        <label for="categoryFilter">Filter by Category:</label>
-        <select id="categoryFilter">
-            <option value="Central Administrative Agencies">Central Administrative Agencies</option>
-            <option value="Research Institutes">Research Institutes</option>
-            <option value="Financial Institutions">Financial Institutions</option>
-            <option value="Public Corporations">Public Corporations</option>
-            <option value="Local Governments">Local Governments</option>
-        </select>
-    </div>
+    <!-- 🔥 카테고리 버튼 -->
+    <div class="category-buttons" id="categoryButtons"></div>
 
     <div class="container" id="agencyContainer">
-        <!-- 카테고리 & 기관 목록이 여기에 추가됨 -->
+        <!-- 기관 목록이 여기에 추가됨 -->
     </div>
 
     <footer>
@@ -228,7 +157,7 @@
             .then(response => response.json())
             .then(data => {
                 const container = document.getElementById('agencyContainer');
-                const searchBar = document.getElementById('searchBar');
+                const categoryButtonsContainer = document.getElementById('categoryButtons');
                 const expandAllBtn = document.getElementById('expandAll');
                 const collapseAllBtn = document.getElementById('collapseAll');
 
@@ -240,15 +169,11 @@
                     categorizedData[agency.Category].push(agency);
                 });
 
-                const categoryButtons = [];
-                const agencyLists = [];
-
                 Object.entries(categorizedData).forEach(([category, agencies]) => {
                     const categoryButton = document.createElement('button');
-                    categoryButton.className = 'accordion';
+                    categoryButton.className = 'category-btn';
                     categoryButton.textContent = category;
-                    container.appendChild(categoryButton);
-                    categoryButtons.push(categoryButton);
+                    categoryButtonsContainer.appendChild(categoryButton);
 
                     const agencyList = document.createElement('div');
                     agencyList.className = 'agency-list';
@@ -263,22 +188,13 @@
                     });
 
                     container.appendChild(agencyList);
-                    agencyLists.push(agencyList);
-
                     categoryButton.addEventListener('click', () => {
-                        const isActive = categoryButton.classList.contains("active");
-                        document.querySelectorAll('.accordion').forEach(btn => btn.classList.remove("active"));
-                        document.querySelectorAll('.agency-list').forEach(list => list.style.display = "none");
-
-                        if (!isActive) {
-                            categoryButton.classList.add("active");
-                            agencyList.style.display = "grid";
-                        }
+                        agencyList.style.display = agencyList.style.display === 'grid' ? 'none' : 'grid';
                     });
                 });
 
-                expandAllBtn.addEventListener('click', () => agencyLists.forEach(list => list.style.display = "grid"));
-                collapseAllBtn.addEventListener('click', () => agencyLists.forEach(list => list.style.display = "none"));
+                expandAllBtn.addEventListener('click', () => document.querySelectorAll('.agency-list').forEach(list => list.style.display = 'grid'));
+                collapseAllBtn.addEventListener('click', () => document.querySelectorAll('.agency-list').forEach(list => list.style.display = 'none'));
             })
             .catch(error => console.error('Error loading JSON:', error));
     </script>
