@@ -204,7 +204,7 @@
             })
             .catch(error => console.error("Error loading header:", error));
 
-        // 지표 데이터 동적 생성 (JSON 파일 변경됨)
+        // 지표 데이터 동적 생성
         fetch("k-indicator_data.json")
             .then(response => response.json())
             .then(data => {
@@ -224,6 +224,13 @@
                         <h3>${name}</h3>
                         <p><strong>${details.value}</strong> (${details.year})</p>
                     `;
+    
+                    // 클릭 시 해당 지표명을 URL에 추가하여 이동
+                    item.addEventListener("click", () => {
+                        const encodedName = encodeURIComponent(name);
+                        location.href = `k-indicator.html?indicator=${encodedName}`;
+                    });
+    
                     statisticsGrid.appendChild(item);
                 });
             })
