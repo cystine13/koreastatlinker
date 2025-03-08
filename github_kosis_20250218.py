@@ -94,7 +94,15 @@ items = [
     {"orgId": "101", "tblId": "DT_1HDAAA01", "itmId": "T01", "objL1" : "A0100", "objL2" : "B0500", "objL3" : "C06", "prdSe": "Y", "name_en": "Average of all households Liabilities (10 thousand won)", "name_kr" : "전가구 평균부채 (만원)", "decimal_places": 2,
      "category_en": "Income, Consumption & Assets", "category_kr": "소득,소비,자산", "source_en": "Statistics Korea, Bank of Korea, Financial Supervisory Service, Survey of Household Finances and Living Conditions", "source_kr": "통계청, 한국은행, 금융감독원, 가계금융복지조"}, #  부채('18~)
     {"orgId": "101", "tblId": "DT_1J22001", "itmId": "T", "objL1" : "T10", "objL2" : "0", "prdSe": "Y", "name_en": "CPI (2020*100)", "name_kr" : "소비자물가조사 (2020=100)", "decimal_places": 2,
-     "category_en": "Income, Consumption & Assets", "category_kr": "소득,소비,자산", "source_en": "Statistics Korea, Consumer Price Survey (Index)", "source_kr": "통계청, 소비자물가조사"}
+     "category_en": "Income, Consumption & Assets", "category_kr": "소득,소비,자산", "source_en": "Statistics Korea, Consumer Price Survey (Index)", "source_kr": "통계청, 소비자물가조사"},
+    {"orgId": "301", "tblId": "DT_404Y014", "itmId" : "13103134604999", "objL1" : "13102134604ACC_CD.*AA", "prdSe": "Y", "name_en": "Producer Price Indices (Basic Groups) (2020=100)", "name_kr" : "생산자물가조사 (2020=100)", "decimal_places": 2,
+     "category_en": "Income, Consumption & Assets", "category_kr": "소득,소비,자산", "source_en": "Bank of Korea, Producer Price Index", "source_kr": "한국은행, 생산자물가조사"},
+    {"orgId": "101", "tblId": "DT_1L9U001", "itmId": "T110", "objL1" : "F", "prdSe": "Y", "name_en": "Monthly Consumption Expenditure of Households (Won)", "name_kr" : "가구소비지출 (원)", "decimal_places": 0,
+     "category_en": "Income, Consumption & Assets", "category_kr": "소득,소비,자산", "source_en": "Statistics Korea, Household Income and Expenditure Survey", "source_kr": "통계청, 가계동향조사"},
+    #{"orgId": "101", "tblId": "DT_1HDALF05", "itmId": "T002", "objL1" : "30", "prdSe": "Y", "name_en": "Equivalised median income of Household (10 thousand won)", "name_kr" : "가구중위소득 (만원)", "decimal_places": 0,
+     #"category_en": "Income, Consumption & Assets", "category_kr": "소득,소비,자산", "source_en": "Statistics Korea, Bank of Korea, Financial Supervisory Service, Survey of Household Finances and Living Conditions", "source_kr": "통계청, 한국은행, 금융감독원, 가계금융복지조사"}, #  부채('10~'11)    
+    {"orgId": "101", "tblId": "DT_1EA1501", "itmId": "T100", "objL1" : "000", "prdSe": "Y", "name_en": "Average Farm Household Income (thousand won)", "name_kr" : "농가소득 (천원)", "decimal_places": 0,
+     "category_en": "Income, Consumption & Assets", "category_kr": "소득,소비,자산", "source_en": "Statistics Korea, Farm Household Economy Survey", "source_kr": "통계청, 농가경제조사"}
 ]
 
 # 📌 데이터를 저장할 딕셔너리 (연도별로 정리)
