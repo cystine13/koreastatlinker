@@ -186,29 +186,64 @@
 
                 function updateFilters(category) {
                     filters.innerHTML = "";
-
+                
+                    const yearFilter = document.createElement("div");
+                    yearFilter.innerHTML = `<label>Select Years:</label>`;
+                
+                    const startYearSelect = document.createElement("select");
+                    const endYearSelect = document.createElement("select");
+                
+                    years.forEach(year => {
+                        startYearSelect.innerHTML += `<option value="${year}">${year}</option>`;
+                        endYearSelect.innerHTML += `<option value="${year}">${year}</option>`;
+                    });
+                
+                    startYearSelect.value = years[0];
+                    endYearSelect.value = years[years.length - 1];
+                
+                    startYearSelect.addEventListener("change", () => {
+                        updateTable(category, getSelectedItems(), startYearSelect.value, endYearSelect.value);
+                    });
+                
+                    endYearSelect.addEventListener("change", () => {
+                        updateTable(category, getSelectedItems(), startYearSelect.value, endYearSelect.value);
+                    });
+                
+                    yearFilter.appendChild(startYearSelect);
+                    yearFilter.appendChild(document.createTextNode(" ~ "));
+                    yearFilter.appendChild(endYearSelect);
+                    filters.appendChild(yearFilter);
+                
                     const itemFilter = document.createElement("div");
                     itemFilter.innerHTML = `<label>Select Items:</label>`;
-
+                
                     const checkboxGroup = document.createElement("div");
-
+                    checkboxGroup.className = "checkbox-group";
+                
                     const items = [...categoryItems[category]];
-                    items.forEach((item, index) => {
+                
+                    items.forEach(item => {
                         const checkboxWrapper = document.createElement("label");
                         const checkbox = document.createElement("input");
                         checkbox.type = "checkbox";
                         checkbox.value = item;
-                        checkbox.checked = selectedIndicator === item || index < 4;
-
+                
+                        // ✅ 선택한 지표가 있으면 해당 지표만 선택
+                        if (selectedIndicator) {
+                            checkbox.checked = (item === selectedIndicator);
+                        } else {
+                            checkbox.checked = false;
+                        }
+                
                         checkbox.addEventListener("change", () => {
-                            updateTable(category, getSelectedItems(category));
+                            updateTable(category, getSelectedItems(), startYearSelect.value, endYearSelect.value);
                         });
-
+                
                         checkboxWrapper.appendChild(checkbox);
                         checkboxWrapper.appendChild(document.createTextNode(item));
                         checkboxGroup.appendChild(checkboxWrapper);
                     });
-
+                
                     itemFilter.appendChild(checkboxGroup);
                     filters.appendChild(itemFilter);
                 }
@@ -217,27 +252,48 @@
                     return Array.from(filters.querySelectorAll("input[type='checkbox']:checked")).map(cb => cb.value);
                 }
 
-                function updateTable(category, selectedItems) {
+                function updateTable(category, selectedItems, startYear, endYear) {
                     tableHeader.innerHTML = "<th>Year</th>";
                     tableBody.innerHTML = "";
-
-                    const items = selectedItems.length ? selectedItems : [...categoryItems[category]].slice(0, 4);
-
+                    sourceList.innerHTML = "";
+                
+                    // ✅ 선택한 지표가 있으면 해당 지표만 선택, 없으면 기본 4개 선택
+                    let items;
+                    if (selectedIndicator) {
+                        items = [selectedIndicator];
+                    } else {
+                        items = selectedItems.length ? selectedItems : getDefaultSelectedItems(category);
+                    }
+                
                     items.forEach(item => {
                         tableHeader.innerHTML += `<th>${item}</th>`;
                     });
-
-                    years.forEach(year => {
-                        const row = document.createElement("tr");
-                        row.innerHTML = `<td>${year}</td>`;
-
-                        items.forEach(item => {
-                            const dataEntry = data[year]?.find(entry => entry.name_en === item);
-                            const value = dataEntry ? dataEntry.value : "-";
-                            row.innerHTML += `<td>${value}</td>`;
+                
+                    const sources = new Set();
+                
+                    years
+                        .filter(year => year >= startYear && year <= endYear)
+                        .forEach(year => {
+                            const row = document.createElement("tr");
+                            row.innerHTML = `<td>${year}</td>`;
+                
+                            items.forEach(item => {
+                                const dataEntry = data[year]?.find(entry => entry.name_en === item);
+                                const value = dataEntry ? dataEntry.value : "-";
+                                row.innerHTML += `<td>${value}</td>`;
+                
+                                if (dataEntry) {
+                                    sources.add(`<strong>${dataEntry.name_en}</strong>: ${dataEntry.source_en}`);
+                                }
+                            });
+                
+                            tableBody.appendChild(row);
                         });
-
-                        tableBody.appendChild(row);
+                
+                    sources.forEach(source => {
+                        const sourceElement = document.createElement("div");
+                        sourceElement.innerHTML = `* ${source}`;
+                        sourceList.appendChild(sourceElement);
                     });
                 }
 
