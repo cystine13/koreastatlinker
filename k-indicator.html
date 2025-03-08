@@ -187,35 +187,19 @@
                 function updateFilters(category) {
                     filters.innerHTML = "";
 
-                    const yearFilter = document.createElement("div");
-                    yearFilter.innerHTML = `<label>Select Years:</label>`;
-
-                    const startYearSelect = document.createElement("select");
-                    const endYearSelect = document.createElement("select");
-
-                    years.forEach(year => {
-                        startYearSelect.innerHTML += `<option value="${year}">${year}</option>`;
-                        endYearSelect.innerHTML += `<option value="${year}">${year}</option>`;
-                    });
-
-                    startYearSelect.value = years[0];
-                    endYearSelect.value = years[years.length - 1];
-
-                    filters.appendChild(yearFilter);
-
                     const itemFilter = document.createElement("div");
                     itemFilter.innerHTML = `<label>Select Items:</label>`;
 
                     const checkboxGroup = document.createElement("div");
 
-                    [...categoryItems[category]].forEach(item => {
+                    [...categoryItems[category]].forEach((item, index) => {
                         const checkbox = document.createElement("input");
                         checkbox.type = "checkbox";
                         checkbox.value = item;
-                        checkbox.checked = selectedIndicator ? item === selectedIndicator : false;
+                        checkbox.checked = selectedIndicator ? item === selectedIndicator : index < 4;
 
                         checkbox.addEventListener("change", () => {
-                            updateTable(category, getSelectedItems(category), startYearSelect.value, endYearSelect.value);
+                            updateTable(category, getSelectedItems(category), years[0], years[years.length - 1]);
                         });
 
                         const label = document.createElement("label");
@@ -238,7 +222,7 @@
                     tableBody.innerHTML = "";
                     sourceList.innerHTML = "";
 
-                    let items = selectedIndicator ? [selectedIndicator] : selectedItems;
+                    let items = selectedItems.length ? selectedItems : [...categoryItems[category]].slice(0, 4);
 
                     items.forEach(item => {
                         tableHeader.innerHTML += `<th>${item}</th>`;
@@ -259,7 +243,7 @@
                 }
 
                 updateFilters(defaultCategory);
-                updateTable(defaultCategory, selectedIndicator ? [selectedIndicator] : [...categoryItems[defaultCategory]]);
+                updateTable(defaultCategory, selectedIndicator ? [selectedIndicator] : [...categoryItems[defaultCategory]].slice(0, 4));
             })
             .catch(error => console.error("❌ 데이터 로드 실패", error));
     </script>
