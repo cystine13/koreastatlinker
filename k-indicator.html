@@ -87,13 +87,16 @@
 </head>
 <body>
 
-    <!-- 헤더 추가 -->
+    <!-- 🔹 헤더 추가 -->
     <div id="header"></div>
 
     <div class="container">
+        <!-- 🔹 카테고리 탭 -->
         <div class="tabs" id="tabs"></div>
+        <!-- 🔹 필터 (연도 선택 / 지표 선택) -->
         <div class="filters" id="filters"></div>
 
+        <!-- 🔹 통계 테이블 -->
         <div class="table-wrapper">
             <table class="statistics-table">
                 <thead>
@@ -105,13 +108,14 @@
             </table>
         </div>
 
+        <!-- 🔹 데이터 출처 정보 -->
         <div class="source-container" id="source-container">
             <div id="source-list"></div>
         </div>
     </div>
 
     <script>
-        // 🔹 헤더 로드
+        // 🔹 헤더 로드 (header.html 동적 불러오기)
         fetch("header.html")
             .then(response => response.text())
             .then(data => {
@@ -123,12 +127,13 @@
         const urlParams = new URLSearchParams(window.location.search);
         const selectedIndicator = urlParams.get("indicator");
 
-        // 🔹 JSON 데이터 로드
+        // 🔹 JSON 데이터 로드 (지표 데이터)
         fetch("k-indicator_data.json")
             .then(response => response.json())
             .then(data => {
                 console.log("✅ 데이터 불러오기 성공", data);
 
+                // 🔹 연도 정렬 (오름차순)
                 const years = Object.keys(data).sort((a, b) => a - b);
                 const tabs = document.getElementById("tabs");
                 const filters = document.getElementById("filters");
@@ -136,14 +141,14 @@
                 const tableBody = document.getElementById("statistics-body");
                 const sourceList = document.getElementById("source-list");
 
-                // 🔹 카테고리 분류
+                // 🔹 카테고리 분류 (중복 제거)
                 const categories = [...new Set(
                     Object.values(data).flatMap(yearData =>
                         yearData.map(item => item.category_en)
                     )
                 )];
 
-                // 🔹 각 카테고리별 지표 정리
+                // 🔹 각 카테고리별 지표 목록 저장
                 const categoryItems = {};
                 Object.values(data).forEach(yearData => {
                     yearData.forEach(item => {
@@ -165,7 +170,7 @@
                     }
                 }
 
-                // 🔹 탭 생성 (카테고리)
+                // 🔹 탭 생성 (카테고리별)
                 categories.forEach(category => {
                     const tab = document.createElement("div");
                     tab.textContent = category;
@@ -184,6 +189,7 @@
 
                 document.querySelector(`.tab[data-category="${defaultCategory}"]`).classList.add("active");
 
+                // 🔹 필터 업데이트 (연도 & 지표 선택)
                 function updateFilters(category) {
                     filters.innerHTML = "";
 
@@ -215,10 +221,12 @@
                     filters.appendChild(itemFilter);
                 }
 
+                // 🔹 선택된 아이템 가져오기
                 function getSelectedItems(category) {
                     return Array.from(filters.querySelectorAll("input[type='checkbox']:checked")).map(cb => cb.value);
                 }
 
+                // 🔹 테이블 업데이트 (지표 & 연도 반영)
                 function updateTable(category, selectedItems, startYear, endYear) {
                     tableHeader.innerHTML = "<th>Year</th>";
                     tableBody.innerHTML = "";
