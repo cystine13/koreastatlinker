@@ -212,7 +212,6 @@
                         const checkbox = document.createElement("input");
                         checkbox.type = "checkbox";
                         checkbox.value = item;
-
                         checkbox.checked = selectedIndicator ? item === selectedIndicator : false;
 
                         checkbox.addEventListener("change", () => {
@@ -248,6 +247,13 @@
                     years.forEach(year => {
                         const row = document.createElement("tr");
                         row.innerHTML = `<td>${year}</td>`;
+
+                        items.forEach(item => {
+                            const dataEntry = data[year]?.find(entry => entry.name_en === item);
+                            const value = dataEntry ? dataEntry.value : "-";
+                            row.innerHTML += `<td>${value}</td>`;
+                        });
+
                         tableBody.appendChild(row);
                     });
                 }
