@@ -196,6 +196,8 @@
                         const checkbox = document.createElement("input");
                         checkbox.type = "checkbox";
                         checkbox.value = item;
+                        
+                        // ✅ 선택한 지표가 있으면 해당 지표만 체크, 없으면 4개 기본 선택
                         checkbox.checked = selectedIndicator ? item === selectedIndicator : index < 4;
 
                         checkbox.addEventListener("change", () => {
@@ -222,6 +224,7 @@
                     tableBody.innerHTML = "";
                     sourceList.innerHTML = "";
 
+                    // ✅ 선택한 지표가 있으면 해당 지표만 선택, 없으면 기본 4개 선택
                     let items = selectedItems.length ? selectedItems : [...categoryItems[category]].slice(0, 4);
 
                     items.forEach(item => {
@@ -242,6 +245,7 @@
                     });
                 }
 
+                // ✅ K-Indicator 클릭 시 기본 4개 선택 & 지표 선택 시 해당 지표만 선택
                 updateFilters(defaultCategory);
                 updateTable(defaultCategory, selectedIndicator ? [selectedIndicator] : [...categoryItems[defaultCategory]].slice(0, 4));
             })
