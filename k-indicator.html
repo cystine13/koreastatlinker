@@ -72,9 +72,9 @@
             overflow-x: auto;
         }
 
-        /* 🔹 출처 박스 (source-container) 스타일 */
+        /* 🔹 출처 박스 스타일 */
         .source-container {
-            margin: 20px 0 20px 0; /* 🔹 상단 & 하단 공간 동일하게 조정 */
+            margin: 20px 0 20px 0; /* 🔹 상하 공간 동일 */
             padding: 10px;
             background-color: #f1f1f1;
             font-size: 14px;
@@ -82,7 +82,7 @@
         }
 
         .source-container strong {
-            font-weight: bold; /* 🔹 항목명을 bold 처리 */
+            font-weight: bold;
         }
     </style>
 </head>
@@ -109,9 +109,9 @@
             </table>
         </div>
 
-        <!-- 🔹 데이터 출처 (source_en 표시) -->
+        <!-- 🔹 데이터 출처 -->
         <div class="source-container" id="source-container">
-            <div id="source-list"></div> <!-- ✅ `Data Sources` 텍스트 제거 -->
+            <div id="source-list"></div>
         </div>
     </div>
 
@@ -132,7 +132,7 @@
         fetch("k-indicator_data.json")
             .then(response => response.json())
             .then(data => {
-                console.log("✅ 데이터 불러오기 성공", data); // 데이터 확인 로그
+                console.log("✅ 데이터 로드 성공", data);
 
                 const years = Object.keys(data).sort((a, b) => a - b);
                 const tabs = document.getElementById("tabs");
@@ -141,14 +141,14 @@
                 const tableBody = document.getElementById("statistics-body");
                 const sourceList = document.getElementById("source-list");
 
-                // 🔹 카테고리 분류
+                // 🔹 카테고리 정리
                 const categories = [...new Set(
                     Object.values(data).flatMap(yearData =>
                         yearData.map(item => item.category_en)
                     )
                 )];
 
-                // 🔹 각 카테고리별 지표 정리
+                // 🔹 카테고리별 지표 정리
                 const categoryItems = {};
                 Object.values(data).forEach(yearData => {
                     yearData.forEach(item => {
@@ -176,8 +176,8 @@
                     tabs.appendChild(tab);
                 });
 
-                // 🔹 선택한 지표가 포함된 카테고리 자동 활성화
                 let defaultCategory = categories[0];
+
                 if (selectedIndicator) {
                     for (const category of categories) {
                         if (categoryItems[category].has(selectedIndicator)) {
@@ -197,58 +197,56 @@
                 
                     const startYearSelect = document.createElement("select");
                     const endYearSelect = document.createElement("select");
-                
+
                     years.forEach(year => {
                         startYearSelect.innerHTML += `<option value="${year}">${year}</option>`;
                         endYearSelect.innerHTML += `<option value="${year}">${year}</option>`;
                     });
-                
+
                     startYearSelect.value = years[0];
                     endYearSelect.value = years[years.length - 1];
-                
+
                     startYearSelect.addEventListener("change", () => {
                         updateTable(category, getSelectedItems(), startYearSelect.value, endYearSelect.value);
                     });
-                
+
                     endYearSelect.addEventListener("change", () => {
                         updateTable(category, getSelectedItems(), startYearSelect.value, endYearSelect.value);
                     });
-                
+
                     yearFilter.appendChild(startYearSelect);
                     yearFilter.appendChild(document.createTextNode(" ~ "));
                     yearFilter.appendChild(endYearSelect);
                     filters.appendChild(yearFilter);
-                
-                    const itemFilter = document.createElement("div");
-                    itemFilter.innerHTML = `<label>Select Items:</label>`;
-                
-                    const checkboxGroup = document.createElement("div");
-                    checkboxGroup.className = "checkbox-group";
-                
-                    const items = [...categoryItems[category]];
-                
-                    items.forEach(item => {
-                        const checkboxWrapper = document.createElement("label");
-                        const checkbox = document.createElement("input");
-                        checkbox.type = "checkbox";
-                        checkbox.value = item;
-                        checkbox.checked = selectedIndicator ? item === selectedIndicator : false;
-                
-                        checkbox.addEventListener("change", () => {
-                            updateTable(category, getSelectedItems(), startYearSelect.value, endYearSelect.value);
-                        });
-                
-                        checkboxWrapper.appendChild(checkbox);
-                        checkboxWrapper.appendChild(document.createTextNode(item));
-                        checkboxGroup.appendChild(checkboxWrapper);
-                    });
-
-                    itemFilter.appendChild(checkboxGroup);
-                    filters.appendChild(itemFilter);
                 }
 
                 function getSelectedItems() {
                     return Array.from(filters.querySelectorAll("input[type='checkbox']:checked")).map(cb => cb.value);
+                }
+
+                function updateTable(category, selectedItems, startYear, endYear) {
+                    tableHeader.innerHTML = "<th>Year</th>";
+                    tableBody.innerHTML = "";
+                    sourceList.innerHTML = "";
+
+                    selectedItems.forEach(item => {
+                        tableHeader.innerHTML += `<th>${item}</th>`;
+                    });
+
+                    years
+                        .filter(year => year >= startYear && year <= endYear)
+                        .forEach(year => {
+                            const row = document.createElement("tr");
+                            row.innerHTML = `<td>${year}</td>`;
+
+                            selectedItems.forEach(item => {
+                                const dataEntry = data[year]?.find(entry => entry.name_en === item);
+                                const value = dataEntry ? dataEntry.value : "-";
+                                row.innerHTML += `<td>${value}</td>`;
+                            });
+
+                            tableBody.appendChild(row);
+                        });
                 }
 
                 updateFilters(defaultCategory);
