@@ -243,6 +243,12 @@
                                 const dataEntry = data[year]?.find(entry => entry.name_en === item);
                                 const value = dataEntry ? dataEntry.value : "-";
                                 row.innerHTML += `<td>${value}</td>`;
+
+                                if (dataEntry && dataEntry.source_en) {
+                                    const sourceItem = document.createElement("div");
+                                    sourceItem.innerHTML = `<strong>${item}:</strong> ${dataEntry.source_en}`;
+                                    sourceList.appendChild(sourceItem);
+                                }
                             });
 
                             tableBody.appendChild(row);
