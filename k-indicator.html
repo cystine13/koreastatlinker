@@ -21,13 +21,10 @@
             border-radius: 8px;
         }
 
-        /* 🔹 카테고리 탭 스타일 */
         .tabs {
             display: flex;
-            justify-content: flex-start;
-            overflow-x: auto;
-            gap: 10px;
-            padding-bottom: 10px;
+            justify-content: space-around;
+            margin-bottom: 20px;
             border-bottom: 2px solid #ccc;
         }
 
@@ -46,16 +43,14 @@
             border-bottom: none;
         }
 
-        /* 🔹 필터 스타일 (연도 선택 / 지표 선택) */
         .filters {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 10px;
+            gap: 20px;
             margin: 20px 0;
         }
 
-        /* 🔹 통계 테이블 스타일 */
         .statistics-table {
             width: 100%;
             border-collapse: collapse;
@@ -77,9 +72,8 @@
             overflow-x: auto;
         }
 
-        /* 🔹 출처 박스 스타일 */
         .source-container {
-            margin: 20px 0;
+            margin-top: 20px;
             padding: 10px;
             background-color: #f1f1f1;
             font-size: 14px;
@@ -114,14 +108,15 @@
             </table>
         </div>
 
-        <!-- 🔹 데이터 출처 -->
+        <!-- 🔹 데이터 출처 (source_en 표시) -->
         <div class="source-container" id="source-container">
+            <h3>Data Sources:</h3>
             <div id="source-list"></div>
         </div>
     </div>
 
     <script>
-        // 🔹 헤더 로드
+        // 🔹 헤더 로드 (header.html 동적 불러오기)
         fetch("header.html")
             .then(response => response.text())
             .then(data => {
@@ -133,12 +128,13 @@
         const urlParams = new URLSearchParams(window.location.search);
         const selectedIndicator = urlParams.get("indicator");
 
-        // 🔹 JSON 데이터 로드
+        // 🔹 JSON 데이터 로드 (지표 데이터)
         fetch("k-indicator_data.json")
             .then(response => response.json())
             .then(data => {
-                console.log("✅ 데이터 로드 성공", data);
+                console.log("✅ 데이터 불러오기 성공", data);
 
+                // 🔹 연도 정렬 (오름차순)
                 const years = Object.keys(data).sort((a, b) => a - b);
                 const tabs = document.getElementById("tabs");
                 const filters = document.getElementById("filters");
@@ -146,14 +142,14 @@
                 const tableBody = document.getElementById("statistics-body");
                 const sourceList = document.getElementById("source-list");
 
-                // 🔹 카테고리 정리
+                // 🔹 카테고리 분류 (중복 제거)
                 const categories = [...new Set(
                     Object.values(data).flatMap(yearData =>
                         yearData.map(item => item.category_en)
                     )
                 )];
 
-                // 🔹 카테고리별 지표 정리
+                // 🔹 각 카테고리별 지표 목록 저장
                 const categoryItems = {};
                 Object.values(data).forEach(yearData => {
                     yearData.forEach(item => {
@@ -164,7 +160,18 @@
                     });
                 });
 
-                // 🔹 탭 생성 (카테고리)
+                // 🔹 선택한 지표가 포함된 카테고리 자동 활성화
+                let defaultCategory = categories[0];
+                if (selectedIndicator) {
+                    for (const category of categories) {
+                        if (categoryItems[category].has(selectedIndicator)) {
+                            defaultCategory = category;
+                            break;
+                        }
+                    }
+                }
+
+                // 🔹 탭 생성 (카테고리별)
                 categories.forEach(category => {
                     const tab = document.createElement("div");
                     tab.textContent = category;
@@ -181,84 +188,85 @@
                     tabs.appendChild(tab);
                 });
 
-                let defaultCategory = categories[0];
-
-                if (selectedIndicator) {
-                    for (const category of categories) {
-                        if (categoryItems[category].has(selectedIndicator)) {
-                            defaultCategory = category;
-                            break;
-                        }
-                    }
-                }
-
                 document.querySelector(`.tab[data-category="${defaultCategory}"]`).classList.add("active");
 
+                // 🔹 필터 업데이트 (연도 & 지표 선택)
                 function updateFilters(category) {
                     filters.innerHTML = "";
-                
-                    const yearFilter = document.createElement("div");
-                    yearFilter.innerHTML = `<label>Select Years:</label>`;
-                
-                    const startYearSelect = document.createElement("select");
-                    const endYearSelect = document.createElement("select");
 
-                    years.forEach(year => {
-                        startYearSelect.innerHTML += `<option value="${year}">${year}</option>`;
-                        endYearSelect.innerHTML += `<option value="${year}">${year}</option>`;
+                    const itemFilter = document.createElement("div");
+                    itemFilter.innerHTML = `<label>Select Items:</label>`;
+
+                    const checkboxGroup = document.createElement("div");
+
+                    [...categoryItems[category]].forEach((item, index) => {
+                        const checkbox = document.createElement("input");
+                        checkbox.type = "checkbox";
+                        checkbox.value = item;
+                        
+                        // ✅ 선택한 지표가 있으면 해당 지표만 체크, 없으면 4개 기본 선택
+                        checkbox.checked = selectedIndicator ? item === selectedIndicator : index < 4;
+
+                        checkbox.addEventListener("change", () => {
+                            updateTable(category, getSelectedItems(category), years[0], years[years.length - 1]);
+                        });
+
+                        const label = document.createElement("label");
+                        label.appendChild(checkbox);
+                        label.appendChild(document.createTextNode(item));
+
+                        checkboxGroup.appendChild(label);
                     });
 
-                    startYearSelect.value = years[0];
-                    endYearSelect.value = years[years.length - 1];
-
-                    startYearSelect.addEventListener("change", () => {
-                        updateTable(category, getSelectedItems(), startYearSelect.value, endYearSelect.value);
-                    });
-
-                    endYearSelect.addEventListener("change", () => {
-                        updateTable(category, getSelectedItems(), startYearSelect.value, endYearSelect.value);
-                    });
-
-                    yearFilter.appendChild(startYearSelect);
-                    yearFilter.appendChild(document.createTextNode(" ~ "));
-                    yearFilter.appendChild(endYearSelect);
-                    filters.appendChild(yearFilter);
+                    itemFilter.appendChild(checkboxGroup);
+                    filters.appendChild(itemFilter);
                 }
 
-                function getSelectedItems() {
+                // 🔹 선택된 아이템 가져오기
+                function getSelectedItems(category) {
                     return Array.from(filters.querySelectorAll("input[type='checkbox']:checked")).map(cb => cb.value);
                 }
 
+                // 🔹 테이블 업데이트 (지표 & 연도 반영 + 출처 추가)
                 function updateTable(category, selectedItems, startYear, endYear) {
                     tableHeader.innerHTML = "<th>Year</th>";
                     tableBody.innerHTML = "";
                     sourceList.innerHTML = "";
 
-                    selectedItems.forEach(item => {
+                    let items = selectedItems.length ? selectedItems : [...categoryItems[category]].slice(0, 4);
+
+                    items.forEach(item => {
                         tableHeader.innerHTML += `<th>${item}</th>`;
                     });
+
+                    const sources = new Set();
 
                     years.forEach(year => {
                         const row = document.createElement("tr");
                         row.innerHTML = `<td>${year}</td>`;
 
-                        selectedItems.forEach(item => {
+                        items.forEach(item => {
                             const dataEntry = data[year]?.find(entry => entry.name_en === item);
                             const value = dataEntry ? dataEntry.value : "-";
                             row.innerHTML += `<td>${value}</td>`;
 
-                            if (dataEntry && dataEntry.source_en) {
-                                const sourceItem = document.createElement("div");
-                                sourceItem.innerHTML = `<strong>${item}:</strong> ${dataEntry.source_en}`;
-                                sourceList.appendChild(sourceItem);
+                            if (dataEntry) {
+                                sources.add(`${dataEntry.name_en}: ${dataEntry.source_en}`);
                             }
                         });
 
                         tableBody.appendChild(row);
                     });
+
+                    sources.forEach(source => {
+                        const sourceElement = document.createElement("div");
+                        sourceElement.innerHTML = `* ${source}`;
+                        sourceList.appendChild(sourceElement);
+                    });
                 }
 
                 updateFilters(defaultCategory);
+                updateTable(defaultCategory, selectedIndicator ? [selectedIndicator] : [...categoryItems[defaultCategory]].slice(0, 4));
             })
             .catch(error => console.error("❌ 데이터 로드 실패", error));
     </script>
