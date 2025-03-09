@@ -108,8 +108,9 @@
             </table>
         </div>
 
-        <!-- 🔹 데이터 출처 정보 -->
+        <!-- 🔹 데이터 출처 (source_en 표시) -->
         <div class="source-container" id="source-container">
+            <h3>Data Sources:</h3>
             <div id="source-list"></div>
         </div>
     </div>
@@ -226,18 +227,19 @@
                     return Array.from(filters.querySelectorAll("input[type='checkbox']:checked")).map(cb => cb.value);
                 }
 
-                // 🔹 테이블 업데이트 (지표 & 연도 반영)
+                // 🔹 테이블 업데이트 (지표 & 연도 반영 + 출처 추가)
                 function updateTable(category, selectedItems, startYear, endYear) {
                     tableHeader.innerHTML = "<th>Year</th>";
                     tableBody.innerHTML = "";
                     sourceList.innerHTML = "";
 
-                    // ✅ 선택한 지표가 있으면 해당 지표만 선택, 없으면 기본 4개 선택
                     let items = selectedItems.length ? selectedItems : [...categoryItems[category]].slice(0, 4);
 
                     items.forEach(item => {
                         tableHeader.innerHTML += `<th>${item}</th>`;
                     });
+
+                    const sources = new Set();
 
                     years.forEach(year => {
                         const row = document.createElement("tr");
@@ -247,13 +249,22 @@
                             const dataEntry = data[year]?.find(entry => entry.name_en === item);
                             const value = dataEntry ? dataEntry.value : "-";
                             row.innerHTML += `<td>${value}</td>`;
+
+                            if (dataEntry) {
+                                sources.add(`${dataEntry.name_en}: ${dataEntry.source_en}`);
+                            }
                         });
 
                         tableBody.appendChild(row);
                     });
+
+                    sources.forEach(source => {
+                        const sourceElement = document.createElement("div");
+                        sourceElement.innerHTML = `* ${source}`;
+                        sourceList.appendChild(sourceElement);
+                    });
                 }
 
-                // ✅ K-Indicator 클릭 시 기본 4개 선택 & 지표 선택 시 해당 지표만 선택
                 updateFilters(defaultCategory);
                 updateTable(defaultCategory, selectedIndicator ? [selectedIndicator] : [...categoryItems[defaultCategory]].slice(0, 4));
             })
