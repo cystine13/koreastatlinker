@@ -6493,6 +6493,15 @@
             "source_kr": "한국교육개발원, 교육기본통계"
         },
         {
+            "name_en": "Total hours Worked (Hour)",
+            "name_kr": "전체 근로시간 (시간)",
+            "value": "154.9",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동",
+            "source_en": "Ministry of Employment and Labor, Labor Force Survey at Establishments",
+            "source_kr": "고용노동부, 사업체노동력조사"
+        },
+        {
             "name_en": "Average of all households Liabilities (10 thousand won)",
             "name_kr": "전가구 평균부채 (만원)",
             "value": "9,128.25",
