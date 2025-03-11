@@ -102,7 +102,19 @@ items = [
     #{"orgId": "101", "tblId": "DT_1HDALF05", "itmId": "T002", "objL1" : "30", "prdSe": "Y", "name_en": "Equivalised median income of Household (10 thousand won)", "name_kr" : "가구중위소득 (만원)", "decimal_places": 0,
      #"category_en": "Income, Consumption & Assets", "category_kr": "소득,소비,자산", "source_en": "Statistics Korea, Bank of Korea, Financial Supervisory Service, Survey of Household Finances and Living Conditions", "source_kr": "통계청, 한국은행, 금융감독원, 가계금융복지조사"}, #  부채('10~'11)    
     {"orgId": "101", "tblId": "DT_1EA1501", "itmId": "T100", "objL1" : "000", "prdSe": "Y", "name_en": "Average Farm Household Income (thousand won)", "name_kr" : "농가소득 (천원)", "decimal_places": 0,
-     "category_en": "Income, Consumption & Assets", "category_kr": "소득,소비,자산", "source_en": "Statistics Korea, Farm Household Economy Survey", "source_kr": "통계청, 농가경제조사"}
+     "category_en": "Income, Consumption & Assets", "category_kr": "소득,소비,자산", "source_en": "Statistics Korea, Farm Household Economy Survey", "source_kr": "통계청, 농가경제조사"},
+    {"orgId": "101", "tblId": "DT_1SSCL020R", "itmId": "T10", "objL1" : "00", "objL2" : "000", "prdSe": "Y", "name_en": "Average Number of Reading Books per person (Volumes)", "name_kr" : "1인당 평균 독서권수 (권)", "decimal_places": 1,
+     "category_en": "Culture & Leisure", "category_kr": "문화, 여가", "source_en": "Statistics Korea, Social Survey", "source_kr": "통계청, 사회조사"},
+    {"orgId": "127", "tblId": "DT_120019N_2016_001", "itmId": "T001", "objL1" : "A01", "objL2" : "B00", "prdSe": "Y", "name_en": "Smartphone Addiction Risk Group (%)", "name_kr" : "스마트폰 과의존 위험군 (%)", "decimal_places": 1,
+     "category_en": "Culture & Leisure", "category_kr": "문화, 여가", "source_en": "Ministry of Science and ICT, The survey on smartphone overdependence", "source_kr": "과학기술정보통신부, 스마트폰과의존실태조사"},
+    {"orgId": "101", "tblId": "DT_1SSCL060R", "itmId": "T10", "objL1" : "00", "objL2" : "000", "prdSe": "Y", "name_en": "Experience of Traveling Overseas (%)", "name_kr" : "해외여행 경험률 (%)", "decimal_places": 1,
+     "category_en": "Culture & Leisure", "category_kr": "문화, 여가", "source_en": "Statistics Korea, Social Survey", "source_kr": "통계청, 사회조사"},
+    {"orgId": "113", "tblId": "DT_113_STBL_1013509", "itmId": "13103976568T1", "objL1" : "131029765681.001", "prdSe": "Y", "name_en": "Attendance Rate of Cultural and Artistic Events (%)", "name_kr" : "문화예술행사 관람률 (%)", "decimal_places": 1,
+     "category_en": "Culture & Leisure", "category_kr": "문화, 여가", "source_en": "Ministry of Culture, Sports and Tourism, Survey on Cultural Enjoyment", "source_kr": "문화체육관광부, 국민문화예술활동조사"},
+    {"orgId": "101", "tblId": "DT_1SSCL050R", "itmId": "T10", "objL1" : "00", "objL2" : "000", "prdSe": "Y", "name_en": "Experience of Domestic Tours (%)", "name_kr" : "국내여행 경험률 (%)", "decimal_places": 1,
+     "category_en": "Culture & Leisure", "category_kr": "문화, 여가", "source_en": "Statistics Korea, Social Survey", "source_kr": "통계청, 사회조사"},
+    {"orgId": "113", "tblId": "DT_113_STBL_1028308", "itmId": "13103125311T1", "objL1" : "131021253111.001", "prdSe": "Y", "name_en": "Number of Libraries (ea)", "name_kr" : "전국 도서관수 (개)", "decimal_places": 0,
+     "category_en": "Culture & Leisure", "category_kr": "문화, 여가", "source_en": "Ministry of Culture, Sports and Tourism, Library Statistics in Korea", "source_kr": "문화체육관광부, 전국도서관통계"}    
 ]
 
 # 📌 데이터를 저장할 딕셔너리 (연도별로 정리)
