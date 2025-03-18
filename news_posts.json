@@ -1,5 +1,37 @@
 [
     {
+        "title_kr": "전국주택가격동향조사(월간) 시계열 통계표",
+        "title_en": "National Housing Price Trend Survey (Monthly) Time Series Statistical Table",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-03-17",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
+        "title_kr": "2025년 1월 공동주택 실거래가격지수",
+        "title_en": "January 2025 Real Price Index for Condominiums",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-03-17",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
+        "title_kr": "2025년 2월 전국주택가격동향조사",
+        "title_en": "February 2025 National Housing Price Trend Survey",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-03-17",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
+        "title_kr": "2025년 2월 오피스텔가격동향조사",
+        "title_en": "February 2025 Officetel Price Trend Survey",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-03-17",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
         "title_kr": "2025년 2월 정보통신산업(ICT) 수출입 동향",
         "title_en": "February 2025 Information and Communication Industry (ICT) Import and Export Trends",
         "link": "https://www.motie.go.kr/kor/article/ATCL3f49a5a8c/170286/view",
