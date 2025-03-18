@@ -114,7 +114,9 @@ items = [
     {"orgId": "101", "tblId": "DT_1SSCL050R", "itmId": "T10", "objL1" : "00", "objL2" : "000", "prdSe": "Y", "name_en": "Experience of Domestic Tours (%)", "name_kr" : "국내여행 경험률 (%)", "decimal_places": 1,
      "category_en": "Culture & Leisure", "category_kr": "문화, 여가", "source_en": "Statistics Korea, Social Survey", "source_kr": "통계청, 사회조사"},
     {"orgId": "113", "tblId": "DT_113_STBL_1028308", "itmId": "13103125311T1", "objL1" : "131021253111.001", "prdSe": "Y", "name_en": "Number of Libraries (ea)", "name_kr" : "전국 도서관수 (개)", "decimal_places": 0,
-     "category_en": "Culture & Leisure", "category_kr": "문화, 여가", "source_en": "Ministry of Culture, Sports and Tourism, Library Statistics in Korea", "source_kr": "문화체육관광부, 전국도서관통계"}    
+     "category_en": "Culture & Leisure", "category_kr": "문화, 여가", "source_en": "Ministry of Culture, Sports and Tourism, Library Statistics in Korea", "source_kr": "문화체육관광부, 전국도서관통계"},
+    {"orgId": "116", "tblId": "DT_MLTM_2100", "itmId": "13103871096T6", "objL1" : "13102871096A.0001", "prdSe": "Y", "name_en": "Housing Supply Ratio (%)", "name_kr" : "주택 보급률 (%)", "decimal_places": 1,
+     "category_en": "Housing & Traffic", "category_kr": "주거, 교통", "source_en": "Ministry of Land, Infrastructure and Transport, Housing Supply Ratio", "source_kr": "국토교통부, 주택보급률"}    
 ]
 
 # 📌 데이터를 저장할 딕셔너리 (연도별로 정리)
