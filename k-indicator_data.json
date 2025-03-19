@@ -6896,6 +6896,15 @@
             "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         },
         {
+            "name_en": "Medical Personnel (person)",
+            "name_kr": "의료인력수 (명)",
+            "value": "540,310",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "National Health Insurance Service, Medical Service Usage Statistics by Region",
+            "source_kr": "국민건강보험공단, 지역별의료이용통계"
+        },
+        {
             "name_en": "Monthly Alcohol Drinking (%)",
             "name_kr": "음주율 (%)",
             "value": "58.9",
