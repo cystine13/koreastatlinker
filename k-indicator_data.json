@@ -7150,6 +7150,15 @@
             "source_kr": "통계청, 인구동향조사"
         },
         {
+            "name_en": "Marriages (cases)",
+            "name_kr": "혼인건수 (건)",
+            "value": "222,412",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_en": "Statistics Korea, Vital Statistics",
+            "source_kr": "통계청, 인구동향조사"
+        },
+        {
             "name_en": "Resident Population (Persons)",
             "name_kr": "주민등록인구 (명)",
             "value": "51,217,221",
