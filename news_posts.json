@@ -1,5 +1,21 @@
 [
     {
+        "title_kr": "주간아파트가격동향조사 시계열통계표",
+        "title_en": "Weekly Apartment Price Trend Survey Time Series Statistics",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-02-06",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
+        "title_kr": "2025년 3월 24일 기준 주간아파트가격 동향",
+        "title_en": "Weekly apartment price trend as of March 24, 2025",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-03-27",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
         "title_kr": "2025년 2월 기준 사업체노동력조사 결과",
         "title_en": "Business Labor Force Survey Results as of February 2025",
         "link": "http://laborstat.moel.go.kr/lsm/bbs/selectBbsDetail.do?bbsId=LSS106&bbsSn=1293",
@@ -294,14 +310,6 @@
         "date": "2025-03-20",
         "source_kr": "국가에너지통계종합정보시스템",
         "source_en": "Korea Energy Statistical Information System"
-    },
-    {
-        "title_kr": "주간아파트가격동향조사 시계열통계표",
-        "title_en": "Weekly Apartment Price Trend Survey Time Series Statistics",
-        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
-        "date": "2025-02-06",
-        "source_kr": "부동산 통계정보",
-        "source_en": "Real Estate Statistics Information System"
     },
     {
         "title_kr": "2025년 3월 17일 기준 주간아파트가격 동향",
