@@ -6997,7 +6997,7 @@
         {
             "name_en": "Indices of Labor Productivity (2020=100)",
             "name_kr": "노동생산성지수 (2020=100)",
-            "value": "109.9",
+            "value": "109.7",
             "category_en": "Education & Labor",
             "category_kr": "교육,노동",
             "source_en": "Korea Productivity Center, Labor Productivity Index",
@@ -7247,6 +7247,15 @@
             "category_kr": "교육,노동",
             "source_en": "Korean Educational Development Institute, Statistics of Education",
             "source_kr": "한국교육개발원, 교육기본통계"
+        },
+        {
+            "name_en": "Indices of Labor Productivity (2020=100)",
+            "name_kr": "노동생산성지수 (2020=100)",
+            "value": "111.8",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동",
+            "source_en": "Korea Productivity Center, Labor Productivity Index",
+            "source_kr": "한국생산성본부, 노동생산성지수"
         },
         {
             "name_en": "Total hours Worked (Hour)",
