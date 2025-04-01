@@ -2758,5 +2758,13 @@
         "date": "2025-03-03",
         "source_kr": "행정안전부 주민등록인구통계",
         "source_en": "MOIS Resident Population Statistics"
+    },
+    {
+        "title_kr": "2025년 03월 주민등록인구통계",
+        "title_en": "Resident Population Statistics for 2025.03",
+        "link": "https://jumin.mois.go.kr/statMonth.do",
+        "date": "2025-03-31",
+        "source_kr": "행정안전부 주민등록인구통계",
+        "source_en": "MOIS Resident Population Statistics"
     }
 ]
