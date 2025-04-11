@@ -1,5 +1,21 @@
 [
     {
+        "title_kr": "주간아파트가격동향조사 시계열통계표",
+        "title_en": "Weekly Apartment Price Trend Survey Time Series Statistics",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-02-06",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
+        "title_kr": "2025년 4월 7일 기준 주간아파트가격 동향",
+        "title_en": "Weekly apartment price trend as of April 7, 2025",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-04-10",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
         "title_kr": "통계작성의 변경승인(협의) 고시(경기도용인시기본통계)(통계청 고시 제2025-182호)",
         "title_en": "Notice of Change Approval of Statistical Preparation (Consultation) (Gyeonggi Province Recipient Statistics) (Statistical Office Notification No. 2025-182)",
         "link": "https://kostat.go.kr/board.es?mid=a10403040000&act=view&bid=107&list_no=436008",
@@ -398,14 +414,6 @@
         "date": "2025-03-28",
         "source_kr": "한국은행",
         "source_en": "Bank of Korea"
-    },
-    {
-        "title_kr": "주간아파트가격동향조사 시계열통계표",
-        "title_en": "Weekly Apartment Price Trend Survey Time Series Statistics",
-        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
-        "date": "2025-02-06",
-        "source_kr": "부동산 통계정보",
-        "source_en": "Real Estate Statistics Information System"
     },
     {
         "title_kr": "2025년 3월 24일 기준 주간아파트가격 동향",
