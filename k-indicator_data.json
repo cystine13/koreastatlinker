@@ -2179,33 +2179,6 @@
             "source_kr": "통계청, 농가경제조사"
         },
         {
-            "name_en": "Average Number of Reading Books per person (Volumes)",
-            "name_kr": "1인당 평균 독서권수 (권)",
-            "value": "10.8",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
-            "name_en": "Experience of Traveling Overseas (%)",
-            "name_kr": "해외여행 경험률 (%)",
-            "value": "13.6",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
-            "name_en": "Experience of Domestic Tours (%)",
-            "name_kr": "국내여행 경험률 (%)",
-            "value": "64.8",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
             "name_en": "Number of Libraries (ea)",
             "name_kr": "전국 도서관수 (개)",
             "value": "703",
@@ -2766,33 +2739,6 @@
             "category_kr": "소득,소비,자산",
             "source_en": "Statistics Korea, Farm Household Economy Survey",
             "source_kr": "통계청, 농가경제조사"
-        },
-        {
-            "name_en": "Average Number of Reading Books per person (Volumes)",
-            "name_kr": "1인당 평균 독서권수 (권)",
-            "value": "12.8",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
-            "name_en": "Experience of Traveling Overseas (%)",
-            "name_kr": "해외여행 경험률 (%)",
-            "value": "15.9",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
-            "name_en": "Experience of Domestic Tours (%)",
-            "name_kr": "국내여행 경험률 (%)",
-            "value": "63.2",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
         },
         {
             "name_en": "Number of Libraries (ea)",
@@ -3382,33 +3328,6 @@
             "category_kr": "소득,소비,자산",
             "source_en": "Statistics Korea, Farm Household Economy Survey",
             "source_kr": "통계청, 농가경제조사"
-        },
-        {
-            "name_en": "Average Number of Reading Books per person (Volumes)",
-            "name_kr": "1인당 평균 독서권수 (권)",
-            "value": "11.2",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
-            "name_en": "Experience of Traveling Overseas (%)",
-            "name_kr": "해외여행 경험률 (%)",
-            "value": "17.2",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
-            "name_en": "Experience of Domestic Tours (%)",
-            "name_kr": "국내여행 경험률 (%)",
-            "value": "67.1",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
         },
         {
             "name_en": "Number of Libraries (ea)",
@@ -4052,33 +3971,6 @@
             "category_kr": "소득,소비,자산",
             "source_en": "Statistics Korea, Farm Household Economy Survey",
             "source_kr": "통계청, 농가경제조사"
-        },
-        {
-            "name_en": "Average Number of Reading Books per person (Volumes)",
-            "name_kr": "1인당 평균 독서권수 (권)",
-            "value": "9.3",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
-            "name_en": "Experience of Traveling Overseas (%)",
-            "name_kr": "해외여행 경험률 (%)",
-            "value": "19.7",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
-            "name_en": "Experience of Domestic Tours (%)",
-            "name_kr": "국내여행 경험률 (%)",
-            "value": "66.7",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
         },
         {
             "name_en": "Number of Libraries (ea)",
@@ -4796,15 +4688,6 @@
             "source_kr": "통계청, 농가경제조사"
         },
         {
-            "name_en": "Average Number of Reading Books per person (Volumes)",
-            "name_kr": "1인당 평균 독서권수 (권)",
-            "value": "9.5",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
             "name_en": "Smartphone Addiction Risk Group (%)",
             "name_kr": "스마트폰 과의존 위험군 (%)",
             "value": "18.6",
@@ -4812,24 +4695,6 @@
             "category_kr": "문화, 여가",
             "source_en": "Ministry of Science and ICT, The survey on smartphone overdependence",
             "source_kr": "과학기술정보통신부, 스마트폰과의존실태조사"
-        },
-        {
-            "name_en": "Experience of Traveling Overseas (%)",
-            "name_kr": "해외여행 경험률 (%)",
-            "value": "26.5",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
-            "name_en": "Experience of Domestic Tours (%)",
-            "name_kr": "국내여행 경험률 (%)",
-            "value": "70.6",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
         },
         {
             "name_en": "Number of Libraries (ea)",
@@ -5547,15 +5412,6 @@
             "source_kr": "통계청, 농가경제조사"
         },
         {
-            "name_en": "Average Number of Reading Books per person (Volumes)",
-            "name_kr": "1인당 평균 독서권수 (권)",
-            "value": "7.3",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
             "name_en": "Smartphone Addiction Risk Group (%)",
             "name_kr": "스마트폰 과의존 위험군 (%)",
             "value": "20.0",
@@ -5565,15 +5421,6 @@
             "source_kr": "과학기술정보통신부, 스마트폰과의존실태조사"
         },
         {
-            "name_en": "Experience of Traveling Overseas (%)",
-            "name_kr": "해외여행 경험률 (%)",
-            "value": "30.4",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
             "name_en": "Attendance Rate of Cultural and Artistic Events (%)",
             "name_kr": "문화예술행사 관람률 (%)",
             "value": "81.8",
@@ -5581,15 +5428,6 @@
             "category_kr": "문화, 여가",
             "source_en": "Ministry of Culture, Sports and Tourism, Survey on Cultural Enjoyment",
             "source_kr": "문화체육관광부, 국민문화예술활동조사"
-        },
-        {
-            "name_en": "Experience of Domestic Tours (%)",
-            "name_kr": "국내여행 경험률 (%)",
-            "value": "69.2",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
         },
         {
             "name_en": "Number of Libraries (ea)",
@@ -6316,15 +6154,6 @@
             "source_kr": "통계청, 농가경제조사"
         },
         {
-            "name_en": "Average Number of Reading Books per person (Volumes)",
-            "name_kr": "1인당 평균 독서권수 (권)",
-            "value": "7.0",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
             "name_en": "Smartphone Addiction Risk Group (%)",
             "name_kr": "스마트폰 과의존 위험군 (%)",
             "value": "24.2",
@@ -6334,15 +6163,6 @@
             "source_kr": "과학기술정보통신부, 스마트폰과의존실태조사"
         },
         {
-            "name_en": "Experience of Traveling Overseas (%)",
-            "name_kr": "해외여행 경험률 (%)",
-            "value": "1.1",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
             "name_en": "Attendance Rate of Cultural and Artistic Events (%)",
             "name_kr": "문화예술행사 관람률 (%)",
             "value": "33.6",
@@ -6350,15 +6170,6 @@
             "category_kr": "문화, 여가",
             "source_en": "Ministry of Culture, Sports and Tourism, Survey on Cultural Enjoyment",
             "source_kr": "문화체육관광부, 국민문화예술활동조사"
-        },
-        {
-            "name_en": "Experience of Domestic Tours (%)",
-            "name_kr": "국내여행 경험률 (%)",
-            "value": "39.8",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
         },
         {
             "name_en": "Number of Libraries (ea)",
@@ -7067,15 +6878,6 @@
             "source_kr": "통계청, 농가경제조사"
         },
         {
-            "name_en": "Average Number of Reading Books per person (Volumes)",
-            "name_kr": "1인당 평균 독서권수 (권)",
-            "value": "7.2",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
             "name_en": "Smartphone Addiction Risk Group (%)",
             "name_kr": "스마트폰 과의존 위험군 (%)",
             "value": "23.1",
@@ -7085,15 +6887,6 @@
             "source_kr": "과학기술정보통신부, 스마트폰과의존실태조사"
         },
         {
-            "name_en": "Experience of Traveling Overseas (%)",
-            "name_kr": "해외여행 경험률 (%)",
-            "value": "15.1",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
-        },
-        {
             "name_en": "Attendance Rate of Cultural and Artistic Events (%)",
             "name_kr": "문화예술행사 관람률 (%)",
             "value": "58.6",
@@ -7101,15 +6894,6 @@
             "category_kr": "문화, 여가",
             "source_en": "Ministry of Culture, Sports and Tourism, Survey on Cultural Enjoyment",
             "source_kr": "문화체육관광부, 국민문화예술활동조사"
-        },
-        {
-            "name_en": "Experience of Domestic Tours (%)",
-            "name_kr": "국내여행 경험률 (%)",
-            "value": "66.7",
-            "category_en": "Culture & Leisure",
-            "category_kr": "문화, 여가",
-            "source_en": "Statistics Korea, Social Survey",
-            "source_kr": "통계청, 사회조사"
         },
         {
             "name_en": "Number of Libraries (ea)",
