@@ -1,5 +1,37 @@
 [
     {
+        "title_kr": "주간아파트가격동향조사 시계열통계표",
+        "title_en": "Weekly Apartment Price Trend Survey Time Series Statistics",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-02-06",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
+        "title_kr": "2025년 3월 지가동향",
+        "title_en": "Jiga Trends for March 2025",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-04-24",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
+        "title_kr": "2025년 4월 21일 기준 주간아파트가격 동향",
+        "title_en": "Weekly apartment price trend as of April 21, 2025",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-04-24",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
+        "title_kr": "2025년 1분기 상업용부동산 임대동향조사",
+        "title_en": "Q1 2025 Commercial Real Estate Rental Trend Survey",
+        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
+        "date": "2025-04-24",
+        "source_kr": "부동산 통계정보",
+        "source_en": "Real Estate Statistics Information System"
+    },
+    {
         "title_kr": "화물수송실적 공표(2025년 3월 자료)",
         "title_en": "Announcement of freight forwarding results (March 2025 data)",
         "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=D4E7AC1D7D389B0299DE196FFA49BE8B",
@@ -238,14 +270,6 @@
         "date": "2025-04-21",
         "source_kr": "한국은행",
         "source_en": "Bank of Korea"
-    },
-    {
-        "title_kr": "주간아파트가격동향조사 시계열통계표",
-        "title_en": "Weekly Apartment Price Trend Survey Time Series Statistics",
-        "link": "https://www.reb.or.kr/r-one/portal/bbs/rpt/searchBulletinPage.do",
-        "date": "2025-02-06",
-        "source_kr": "부동산 통계정보",
-        "source_en": "Real Estate Statistics Information System"
     },
     {
         "title_kr": "2025년 4월 14일 기준 주간아파트가격 동향",
