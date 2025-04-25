@@ -1,5 +1,29 @@
 [
     {
+        "title_kr": "화물수송실적 공표(2025년 3월 자료)",
+        "title_en": "Announcement of freight forwarding results (March 2025 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=D4E7AC1D7D389B0299DE196FFA49BE8B",
+        "date": "2025-04-24",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "등록선박통계 공표(2025년 3월 자료)",
+        "title_en": "Publication of registered ship statistics (March 2025 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=24DF2EED0A06E352DB8CF3BA24575BEB",
+        "date": "2025-04-24",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "입항선박톤급별통계 공표(2025년 3월 자료)",
+        "title_en": "Announcement of statistics by ship ton class (March 2025 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=4521DE1714E6B40F1F62D95CEB10E957",
+        "date": "2025-04-24",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
         "title_kr": "’25년 1분기 전국 지가 0.50% 상승",
         "title_en": "Nationwide land increased by 0.50% in Q1 ’25",
         "link": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?lcmspage=1&id=95090890",
