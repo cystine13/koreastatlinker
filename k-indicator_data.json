@@ -6988,6 +6988,15 @@
             "source_kr": "보건복지부, 장애인현황"
         },
         {
+            "name_en": "Child Care Center (Place)",
+            "name_kr": "어린이집수 (개소)",
+            "value": "27,387",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Education, Statistics on Childcare Facilities and Users",
+            "source_kr": "교육부, 어린이집및이용자통계"
+        },
+        {
             "name_en": "Unemployment rate (%)",
             "name_kr": "실업률 (%)",
             "value": "2.8",
