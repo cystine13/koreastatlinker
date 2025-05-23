@@ -7105,6 +7105,15 @@
             "source_kr": "통계청, 가계동향조사"
         },
         {
+            "name_en": "Average Farm Household Income (thousand won)",
+            "name_kr": "농가소득 (천원)",
+            "value": "50,597",
+            "category_en": "Income, Consumption & Assets",
+            "category_kr": "소득,소비,자산",
+            "source_en": "Statistics Korea, Farm Household Economy Survey",
+            "source_kr": "통계청, 농가경제조사"
+        },
+        {
             "name_en": "Attendance Rate of Cultural and Artistic Events (%)",
             "name_kr": "문화예술행사 관람률 (%)",
             "value": "63.0",
