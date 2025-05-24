@@ -1,5 +1,29 @@
 [
     {
+        "title_kr": "화물수송실적 공표(2025년 4월 자료)",
+        "title_en": "Announcement of freight forwarding performance (April 2025 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=84FE265B2BD70FF60D78C3ED14F047BB",
+        "date": "2025-05-23",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "입항선박톤급별통계 공표(2025년 4월 자료)",
+        "title_en": "Announcement of statistics by ship ton class (April 2025 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=F0B79A7CB0A6471C26F6140FA0F582F4",
+        "date": "2025-05-23",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "등록선박통계 공표(2025년 4월 자료)",
+        "title_en": "Publication of registered ship statistics (April 2025 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=1E5BCCE6AA0EF732293F8A0226EBFDD1",
+        "date": "2025-05-23",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
         "title_kr": "통계작성의 변경승인(협의) 고시(장애인건강보건통계)(통계청 고시 제2025-324호)",
         "title_en": "Notice of Change Approval (Consultation) of Statistics Preparation (Statistics on Health and Health for the Disabled) (Statistics Korea Notification No. 2025-324)",
         "link": "https://kostat.go.kr/board.es?mid=a10403040000&act=view&bid=107&list_no=436782",
