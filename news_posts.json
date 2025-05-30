@@ -1,5 +1,29 @@
 [
     {
+        "title_kr": "2025년 4월 기준 사업체노동력조사 결과",
+        "title_en": "Business Labor Force Survey Results as of April 2025",
+        "link": "http://laborstat.moel.go.kr/lsm/bbs/selectBbsDetail.do?bbsId=LSS106&bbsSn=1297",
+        "date": "2025-05-29",
+        "source_kr": "고용노동부 고용노동통계",
+        "source_en": "Employment and Labor Statistics System"
+    },
+    {
+        "title_kr": "한국선원통계 공표(2024년)",
+        "title_en": "Announcement of Korean Sailwire Statistics (2024)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=1DA18EE9A22C8308F2933A175ACC2F49",
+        "date": "2025-05-29",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "통상환경과 수출통제, 경제제재, 기술보호 정책 동향을 살피다",
+        "title_en": "Investigate trends in the normal environment, export controls, economic sanctions, and technology protection policies",
+        "link": "https://www.motie.go.kr/kor/article/ATCL3f49a5a8c/170574/view",
+        "date": "2025-05-29",
+        "source_kr": "산업통상자원부",
+        "source_en": "Ministry of Trade, Industry and Energy"
+    },
+    {
         "title_kr": "2025년 4월 배합사료 생산실적 및 가격 통계(수정) 새글",
         "title_en": "April 2025 Mixed Feed Production Performance and Price Statistics (Revised) New",
         "link": "https://www.mafra.go.kr/bbs/home/789/574300/artclView.do",
