@@ -7069,6 +7069,15 @@
             "source_kr": "고용노동부, 사업체노동력조사"
         },
         {
+            "name_en": "Dual-earner households (1,000 household)",
+            "name_kr": "맞벌이가구 (천가구)",
+            "value": "6,086",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동",
+            "source_en": "Statistics Korea, Local Area Labour Force Survey",
+            "source_kr": "통계청, 지역별고용조사"
+        },
+        {
             "name_en": "Average of all households Liabilities (10 thousand won)",
             "name_kr": "전가구 평균부채 (만원)",
             "value": "9,128.25",
