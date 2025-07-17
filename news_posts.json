@@ -1,5 +1,29 @@
 [
     {
+        "title_kr": "2024년 국민대차대조표 결과(잠정)",
+        "title_en": "National Balance Sheet Results 2024 (tentative)",
+        "link": "https://kostat.go.kr/board.es?mid=a10301130200&act=view&bid=11865&list_no=437611",
+        "date": "2025-07-16",
+        "source_kr": "통계청",
+        "source_en": "Statistics Korea"
+    },
+    {
+        "title_kr": "2025년 6월 고용동향",
+        "title_en": "Employment Trends for June 2025",
+        "link": "https://kostat.go.kr/board.es?mid=a10301030200&act=view&bid=210&list_no=437607",
+        "date": "2025-07-16",
+        "source_kr": "통계청",
+        "source_en": "Statistics Korea"
+    },
+    {
+        "title_kr": "2025년 6월 수출입물가지수 및 무역지수(잠정)",
+        "title_en": "Import/Export Price Index and Trade Index for June 2025 (tentative)",
+        "link": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?nttId=10092500&menuNo=201264",
+        "date": "2025-07-16",
+        "source_kr": "한국은행",
+        "source_en": "Bank of Korea"
+    },
+    {
         "title_kr": "’25년 상반기 고속철도 이용객 5,825만명, … 전년 대비 1.6% 증가(외국인 이용13.4%↑)",
         "title_en": "58.25 million high-speed rail users in the first half of ’25, … 1.6% YoY increase (13.4% foreign use↑)",
         "link": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?lcmspage=1&id=95091069",
