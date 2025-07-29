@@ -6916,6 +6916,15 @@
     ],
     "2024": [
         {
+            "name_en": "Household (households)",
+            "name_kr": "가구수 (가구)",
+            "value": "22,997,120",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_en": "Statistics Korea, Population Census",
+            "source_kr": "통계청, 인구총조사"
+        },
+        {
             "name_en": "Births (Person)",
             "name_kr": "출생아수 (명)",
             "value": "238,300",
@@ -6923,6 +6932,15 @@
             "category_kr": "인구",
             "source_en": "Statistics Korea, Vital Statistics",
             "source_kr": "통계청, 인구동향조사"
+        },
+        {
+            "name_en": "One Person Households (household)",
+            "name_kr": "1인 가구수 (가구)",
+            "value": "8,044,948",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_en": "Statistics Korea, Population Census",
+            "source_kr": "통계청, 인구총조사"
         },
         {
             "name_en": "Total Fertility Rate (per woman of childbearing age)",
@@ -6941,6 +6959,24 @@
             "category_kr": "인구",
             "source_en": "Statistics Korea, Vital Statistics",
             "source_kr": "통계청, 인구동향조사"
+        },
+        {
+            "name_en": "Average Household Size (Persons)",
+            "name_kr": "평균 가구원수 (명)",
+            "value": "2.2",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_en": "Statistics Korea, Population Census",
+            "source_kr": "통계청, 인구총조사"
+        },
+        {
+            "name_en": "Multicultural Households",
+            "name_kr": "다문화 가구 (가구)",
+            "value": "439,304",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_en": "Statistics Korea, Population Census",
+            "source_kr": "통계청, 인구총조사"
         },
         {
             "name_en": "Resident Population (Persons)",
@@ -6968,6 +7004,15 @@
             "category_kr": "인구",
             "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration",
             "source_kr": "행정안전부, 주민등록인구현황"
+        },
+        {
+            "name_en": "Population Density (per/㎢)",
+            "name_kr": "인구밀도 (명/㎢)",
+            "value": "515.7",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_en": "Statistics Korea, Population Census",
+            "source_kr": "통계청, 인구총조사"
         },
         {
             "name_en": "Deaths (Persons)",
