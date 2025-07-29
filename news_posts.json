@@ -1,5 +1,29 @@
 [
     {
+        "title_kr": "화물수송실적 공표(2025년 6월 자료)",
+        "title_en": "Announcement of freight forwarding performance (June 2025 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=E62328059972D89A640F309B1A8C0464",
+        "date": "2025-07-28",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "등록선박통계 공표(2025년 6월 자료)",
+        "title_en": "Publication of registered ship statistics (June 2025 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=9105B04E66B83FD89CBB54C1ADBCCDFE",
+        "date": "2025-07-28",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "입항선박톤급별통계 공표(2025년 6월 자료)",
+        "title_en": "Announcement of statistics by ship ton class (June 2025 data)",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=75549AF1BE37BEBD7D124F4A06AA8F8C",
+        "date": "2025-07-28",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
         "title_kr": "2024년 인구주택총조사 등록센서스 방식 결과",
         "title_en": "2024 Population and Housing Census Registration Census Results",
         "link": "https://kostat.go.kr/board.es?mid=a10301020200&act=view&bid=203&list_no=437767",
