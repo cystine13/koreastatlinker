@@ -1,5 +1,21 @@
 [
     {
+        "title_kr": "2025년 6월 기준 사업체노동력조사 결과",
+        "title_en": "Business Labor Force Survey Results as of June 2025",
+        "link": "http://laborstat.moel.go.kr/lsm/bbs/selectBbsDetail.do?bbsId=LSS106&bbsSn=1300",
+        "date": "2025-07-30",
+        "source_kr": "고용노동부 고용노동통계",
+        "source_en": "Employment and Labor Statistics System"
+    },
+    {
+        "title_kr": "2025년 7월 수출입 동향",
+        "title_en": "Import and Export Trends July 2025",
+        "link": "https://www.motie.go.kr/kor/article/ATCL3f49a5a8c/170772/view",
+        "date": "2025-08-01",
+        "source_kr": "산업통상자원부",
+        "source_en": "Ministry of Trade, Industry and Energy"
+    },
+    {
         "title_kr": "‘25년 6월 주택통계",
         "title_en": "June ‘25 Housing Statistics",
         "link": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?lcmspage=1&id=95091105",
@@ -134,14 +150,6 @@
         "date": "2025-07-31",
         "source_kr": "통계청",
         "source_en": "Statistics Korea"
-    },
-    {
-        "title_kr": "2025년 6월 기준 사업체노동력조사 결과",
-        "title_en": "Business Labor Force Survey Results as of June 2025",
-        "link": "http://laborstat.moel.go.kr/lsm/bbs/selectBbsDetail.do?bbsId=LSS106&bbsSn=1300",
-        "date": "2025-07-30",
-        "source_kr": "고용노동부 고용노동통계",
-        "source_en": "Employment and Labor Statistics System"
     },
     {
         "title_kr": "'25년 상반기 및 6월 주요 유통업체 매출 동향",
