@@ -6927,7 +6927,7 @@
         {
             "name_en": "Births (Person)",
             "name_kr": "출생아수 (명)",
-            "value": "238,300",
+            "value": "238,317",
             "category_en": "Population",
             "category_kr": "인구",
             "source_en": "Statistics Korea, Vital Statistics",
@@ -6945,7 +6945,7 @@
         {
             "name_en": "Total Fertility Rate (per woman of childbearing age)",
             "name_kr": "합계출산율 (명/가임여성1명당)",
-            "value": "0.750",
+            "value": "0.748",
             "category_en": "Population",
             "category_kr": "인구",
             "source_en": "Statistics Korea, Vital Statistics",
