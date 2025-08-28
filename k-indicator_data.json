@@ -6743,6 +6743,15 @@
             "source_kr": "보건복지부, 장애인현황"
         },
         {
+            "name_en": "Average Height (㎝)",
+            "name_kr": "평균신장 (㎝)",
+            "value": "165.17",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "National Health Insurance Service, National Health Screening Statistics",
+            "source_kr": "국민건강보험공단, 건강검진통계"
+        },
+        {
             "name_en": "Child Care Center (Place)",
             "name_kr": "어린이집수 (개소)",
             "value": "28,954",
