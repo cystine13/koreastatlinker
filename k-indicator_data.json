@@ -7033,6 +7033,15 @@
             "source_kr": "통계청, 사망원인통계"
         },
         {
+            "name_en": "Recipient of National Basic Livelihood (person)",
+            "name_kr": "국민기초생활수급자수 (명)",
+            "value": "2,673,485",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Ministry of Health and Welfare, Livelihood Protection Recipients Statistics",
+            "source_kr": "보건복지부, 국민기초생활보장수급자현황"
+        },
+        {
             "name_en": "Number of The Registered Disabled (person)",
             "name_kr": "장애인인구 (명)",
             "value": "2,631,356",
