@@ -7186,6 +7186,15 @@
             "source_kr": "통계청, 농가경제조사"
         },
         {
+            "name_en": "Smartphone Addiction Risk Group (%)",
+            "name_kr": "스마트폰 과의존 위험군 (%)",
+            "value": "22.9",
+            "category_en": "Culture & Leisure",
+            "category_kr": "문화, 여가",
+            "source_en": "Ministry of Science and ICT, The survey on smartphone overdependence",
+            "source_kr": "과학기술정보통신부, 스마트폰과의존실태조사"
+        },
+        {
             "name_en": "Attendance Rate of Cultural and Artistic Events (%)",
             "name_kr": "문화예술행사 관람률 (%)",
             "value": "63.0",
