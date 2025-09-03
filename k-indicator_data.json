@@ -6988,6 +6988,15 @@
             "source_kr": "통계청, 인구총조사"
         },
         {
+            "name_en": "Registered Foreigners (Persons)",
+            "name_kr": "등록 외국인 (명)",
+            "value": "1,488,353",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_en": "Ministry of Justice, Statistics of Arrivals and Departures",
+            "source_kr": "법무부, 출입국자및체류외국인통계"
+        },
+        {
             "name_en": "Resident Population (Persons)",
             "name_kr": "주민등록인구 (명)",
             "value": "51,217,221",
