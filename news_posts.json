@@ -1,5 +1,37 @@
 [
     {
+        "title_kr": "최근 20년간 수도권 인구이동",
+        "title_en": "Population movement in the metropolitan area in the last 20 years",
+        "link": "https://kostat.go.kr/board.es?mid=a10301020400&act=view&bid=205&list_no=438645",
+        "date": "2025-09-16",
+        "source_kr": "통계청",
+        "source_en": "Statistics Korea"
+    },
+    {
+        "title_kr": "통계청, 통계데이터 강원센터 설치로 강원지역에 통계데이터 서비스 인프라 구축",
+        "title_en": "Statistics Korea Establishes Statistical Data Service Infrastructure in Gangwon Region by Establishing Statistical Data Gangwon Center",
+        "link": "https://kostat.go.kr/board.es?mid=a10301150000&act=view&bid=246&list_no=438648",
+        "date": "2025-09-16",
+        "source_kr": "통계청",
+        "source_en": "Statistics Korea"
+    },
+    {
+        "title_kr": "2025년 7월 통화 및 유동성",
+        "title_en": "July 2025 Currency and liquidity",
+        "link": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?nttId=10093561&menuNo=201264",
+        "date": "2025-09-16",
+        "source_kr": "한국은행",
+        "source_en": "Bank of Korea"
+    },
+    {
+        "title_kr": "2025년 8월 수출입물가지수 및 무역지수(잠정)",
+        "title_en": "Export/Import Price Index and Trade Index for August 2025 (provisional)",
+        "link": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?nttId=10093558&menuNo=201264",
+        "date": "2025-09-16",
+        "source_kr": "한국은행",
+        "source_en": "Bank of Korea"
+    },
+    {
         "title_kr": "2025년 8월 정보통신산업(ICT) 수출입 동향",
         "title_en": "Information and Communication Industry (ICT) Import and Export Trends August 2025",
         "link": "https://www.motie.go.kr/kor/article/ATCL3f49a5a8c/170908/view",
