@@ -7033,6 +7033,15 @@
             "source_kr": "통계청, 인구총조사"
         },
         {
+            "name_en": "Life Expectancy (Years)",
+            "name_kr": "기대수명 (년)",
+            "value": "83.7",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_en": "Statistics Korea, Life Tables By Province",
+            "source_kr": "통계청, 생명표"
+        },
+        {
             "name_en": "Deaths (Persons)",
             "name_kr": "사망자수 (명)",
             "value": "358,569",
