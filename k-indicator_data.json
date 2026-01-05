@@ -7251,6 +7251,24 @@
     ],
     "2025": [
         {
+            "name_en": "Resident Population (Persons)",
+            "name_kr": "주민등록인구 (명)",
+            "value": "51,117,378",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration",
+            "source_kr": "행정안전부, 주민등록인구현황"
+        },
+        {
+            "name_en": "Resident Households (Households)",
+            "name_kr": "주민등록세대수 (세대)",
+            "value": "24,300,087",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration",
+            "source_kr": "행정안전부, 주민등록인구현황"
+        },
+        {
             "name_en": "Elementary School Students (Person)",
             "name_kr": "초등학교 학생수 (명)",
             "value": "2,345,488",
