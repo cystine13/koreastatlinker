@@ -7247,6 +7247,15 @@
             "category_kr": "문화, 여가",
             "source_en": "Ministry of Culture, Sports and Tourism, Library Statistics in Korea",
             "source_kr": "문화체육관광부, 전국도서관통계"
+        },
+        {
+            "name_en": "Housing Supply Ratio (%)",
+            "name_kr": "주택 보급률 (%)",
+            "value": "102.9",
+            "category_en": "Housing & Traffic",
+            "category_kr": "주거, 교통",
+            "source_en": "Ministry of Land, Infrastructure and Transport, Housing Supply Ratio",
+            "source_kr": "국토교통부, 주택보급률"
         }
     ],
     "2025": [
