@@ -7278,6 +7278,33 @@
             "source_kr": "행정안전부, 주민등록인구현황"
         },
         {
+            "name_en": "Unemployment rate (%)",
+            "name_kr": "실업률 (%)",
+            "value": "2.8",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동",
+            "source_en": "Statistics Korea, Economically Active Population Survey",
+            "source_kr": "통계청, 경제활동인구조사"
+        },
+        {
+            "name_en": "Employment to population ratio (%)",
+            "name_kr": "고용률 (%)",
+            "value": "62.9",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동",
+            "source_en": "Statistics Korea, Economically Active Population Survey",
+            "source_kr": "통계청, 경제활동인구조사"
+        },
+        {
+            "name_en": "Economically Active Population (Thousand Person)",
+            "name_kr": "경제활동인구 (명)",
+            "value": "29,599",
+            "category_en": "Education & Labor",
+            "category_kr": "교육,노동",
+            "source_en": "Statistics Korea, Economically Active Population Survey",
+            "source_kr": "통계청, 경제활동인구조사"
+        },
+        {
             "name_en": "Elementary School Students (Person)",
             "name_kr": "초등학교 학생수 (명)",
             "value": "2,345,488",
