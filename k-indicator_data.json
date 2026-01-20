@@ -7348,6 +7348,15 @@
             "category_kr": "소득,소비,자산",
             "source_en": "Statistics Korea, Consumer Price Survey (Index)",
             "source_kr": "통계청, 소비자물가조사"
+        },
+        {
+            "name_en": "Producer Price Indices (Basic Groups) (2020=100)",
+            "name_kr": "생산자물가조사 (2020=100)",
+            "value": "120.45",
+            "category_en": "Income, Consumption & Assets",
+            "category_kr": "소득,소비,자산",
+            "source_en": "Bank of Korea, Producer Price Index",
+            "source_kr": "한국은행, 생산자물가조사"
         }
     ]
 }
