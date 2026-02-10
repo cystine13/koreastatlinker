@@ -7078,6 +7078,15 @@
             "source_kr": "보건복지부, 국민기초생활보장수급자현황"
         },
         {
+            "name_en": "Monthly Alcohol Drinking (%)",
+            "name_kr": "음주율 (%)",
+            "value": "59.7",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건,복지",
+            "source_en": "Korea Disease Contrl and Prevention Agency, Korea National Health and Nutrition Examination Survey",
+            "source_kr": "질병관리청, 국민건강영양조사"
+        },
+        {
             "name_en": "Mortality rate (per 100 thousand person)",
             "name_kr": "사망률 (십만명당)",
             "value": "358,569",
