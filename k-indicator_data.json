@@ -7278,6 +7278,24 @@
     ],
     "2025": [
         {
+            "name_en": "Births (Person)",
+            "name_kr": "출생아수 (명)",
+            "value": "254,457",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_en": "Statistics Korea, Vital Statistics",
+            "source_kr": "통계청, 인구동향조사"
+        },
+        {
+            "name_en": "Total Fertility Rate (per woman of childbearing age)",
+            "name_kr": "합계출산율 (명/가임여성1명당)",
+            "value": "0.800",
+            "category_en": "Population",
+            "category_kr": "인구",
+            "source_en": "Statistics Korea, Vital Statistics",
+            "source_kr": "통계청, 인구동향조사"
+        },
+        {
             "name_en": "Resident Population (Persons)",
             "name_kr": "주민등록인구 (명)",
             "value": "51,117,378",
@@ -7303,6 +7321,15 @@
             "category_kr": "인구",
             "source_en": "Ministry of the Interior and Safety, Population Statistics Based on Resident Registration",
             "source_kr": "행정안전부, 주민등록인구현황"
+        },
+        {
+            "name_en": "Deaths (Persons)",
+            "name_kr": "사망자수 (명)",
+            "value": "363,389",
+            "category_en": "Health & Welfare",
+            "category_kr": "보건, 복지",
+            "source_en": "Statistics Korea, Causes of Death Statistics",
+            "source_kr": "통계청, 사망원인통계"
         },
         {
             "name_en": "Unemployment rate (%)",
