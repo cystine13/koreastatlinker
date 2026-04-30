@@ -7456,6 +7456,15 @@
             "category_kr": "소득,소비,자산",
             "source_en": "Bank of Korea, Producer Price Index",
             "source_kr": "한국은행, 생산자물가조사"
+        },
+        {
+            "name_en": "Smartphone Addiction Risk Group (%)",
+            "name_kr": "스마트폰 과의존 위험군 (%)",
+            "value": "22.7",
+            "category_en": "Culture & Leisure",
+            "category_kr": "문화, 여가",
+            "source_en": "Ministry of Science and ICT, The survey on smartphone overdependence",
+            "source_kr": "과학기술정보통신부, 스마트폰과의존실태조사"
         }
     ]
 }
