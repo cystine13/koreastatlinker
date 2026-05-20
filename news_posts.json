@@ -1,5 +1,21 @@
 [
     {
+        "title_kr": "2026년 1분기 지역경제동향",
+        "title_en": "Regional Economic Trends in Q1 2026",
+        "link": "https://mods.go.kr/board.es?mid=a10301130700&act=view&bid=12031&list_no=445184",
+        "date": "2026-05-19",
+        "source_kr": "통계청",
+        "source_en": "Statistics Korea"
+    },
+    {
+        "title_kr": "2026년 1/4분기중 가계신용(잠정)",
+        "title_en": "Household credit during the first quarter of 2026 (provisional)",
+        "link": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?nttId=10098042&menuNo=201264",
+        "date": "2026-05-19",
+        "source_kr": "한국은행",
+        "source_en": "Bank of Korea"
+    },
+    {
         "title_kr": "2025년 4분기(11월 기준)  임금근로 일자리동향",
         "title_en": "Wage employment trends in the fourth quarter of 2025 (as of November)",
         "link": "https://mods.go.kr/board.es?mid=a10301030500&act=view&bid=11113&list_no=445166",
