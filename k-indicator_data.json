@@ -7467,6 +7467,15 @@
             "source_kr": "한국은행, 생산자물가조사"
         },
         {
+            "name_en": "Average Farm Household Income (thousand won)",
+            "name_kr": "농가소득 (천원)",
+            "value": "54,667",
+            "category_en": "Income, Consumption & Assets",
+            "category_kr": "소득,소비,자산",
+            "source_en": "Statistics Korea, Farm Household Economy Survey",
+            "source_kr": "통계청, 농가경제조사"
+        },
+        {
             "name_en": "Smartphone Addiction Risk Group (%)",
             "name_kr": "스마트폰 과의존 위험군 (%)",
             "value": "22.7",
