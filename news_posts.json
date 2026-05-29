@@ -1,5 +1,45 @@
 [
     {
+        "title_kr": "2026년 4월 기준 사업체노동력조사 결과",
+        "title_en": "Business Labor Force Survey Results as of April 2026",
+        "link": "http://laborstat.moel.go.kr/lsm/bbs/selectBbsDetail.do?bbsId=LSS106&bbsSn=1317",
+        "date": "2026-05-28",
+        "source_kr": "고용노동부 고용노동통계",
+        "source_en": "Employment and Labor Statistics System"
+    },
+    {
+        "title_kr": "2025년 한국선원통계",
+        "title_en": "Korean Sail Source Statistics 2025",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=E3564E550E88ED54844371878DB1182C",
+        "date": "2026-05-28",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "2026년 4월 등록선박통계",
+        "title_en": "April 2026 Registered Ship Statistics",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=72A16A565C3FCE60125525E97124962B",
+        "date": "2026-05-28",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "2026년 4월 화물수송실적",
+        "title_en": "April 2026 freight forwarding performance",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=C0157414B6C61E4FB1B313F76F6D5581",
+        "date": "2026-05-28",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
+        "title_kr": "2026년 4월 입항선박톤급별통계",
+        "title_en": "Statistics by ship ton class in April 2026",
+        "link": "https://www.mof.go.kr/statPortal/stp/cmm/bbs/bbsDetail.do?menuId=0010739674680&bbsId=STAT102&encBbsSn=F1A2B5A41D2862F3AF314913FB27AEA4",
+        "date": "2026-05-28",
+        "source_kr": "해양수산부 해양수산통계",
+        "source_en": "Oceans and Fisheries Statistics System"
+    },
+    {
         "title_kr": "국가데이터처-한국사회보장정보원,  사회보장 데이터 연계로 데이터 기반 복지 정책 뒷받침 강화",
         "title_en": "National Data Service-Korea Social Security Information Service strengthens support for data-driven welfare policies by linking social security data",
         "link": "https://mods.go.kr/board.es?mid=a10301150000&act=view&bid=246&list_no=445304",
