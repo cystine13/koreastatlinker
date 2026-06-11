@@ -1783,7 +1783,7 @@
         {
             "name_en": "Medical Personnel (person)",
             "name_kr": "의료인력수 (명)",
-            "value": "164,843",
+            "value": "164,154",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지",
             "source_en": "National Health Insurance Service, Medical Service Usage Statistics by Region",
@@ -2046,7 +2046,7 @@
         {
             "name_en": "Medical Personnel (person)",
             "name_kr": "의료인력수 (명)",
-            "value": "171,890",
+            "value": "171,889",
             "category_en": "Health & Welfare",
             "category_kr": "보건,복지",
             "source_en": "National Health Insurance Service, Medical Service Usage Statistics by Region",
