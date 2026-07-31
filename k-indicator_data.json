@@ -7546,6 +7546,15 @@
             "category_kr": "문화, 여가",
             "source_en": "Ministry of Science and ICT, The survey on smartphone overdependence",
             "source_kr": "과학기술정보통신부, 스마트폰과의존실태조사"
+        },
+        {
+            "name_en": "Attendance Rate of Cultural and Artistic Events (%)",
+            "name_kr": "문화예술행사 관람률 (%)",
+            "value": "60.2",
+            "category_en": "Culture & Leisure",
+            "category_kr": "문화, 여가",
+            "source_en": "Ministry of Culture, Sports and Tourism, Survey on Cultural Enjoyment",
+            "source_kr": "문화체육관광부, 국민문화예술활동조사"
         }
     ]
 }
